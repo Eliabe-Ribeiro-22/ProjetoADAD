@@ -1,20 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>ADAD e Igreja</title>
+    <title>Projeto ADAD</title>
 </head>
-
 <body>
-    <h1>
-        Seja muito ben-vindo a página do ADAD e Igreja Campo Belo do Sul!
-        <br />
-        O deploy do site foi realizado com sucesso! Parabéns!
-    </h1>
-
+    <h1>Bem-vindo ao Projeto ADAD!</h1>
+    <h2>Página Igreja AD CBS</h2>
+    <h2>Página ADAD</h2>
 </body>
-
 </html>
