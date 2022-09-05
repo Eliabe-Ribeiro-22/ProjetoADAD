@@ -16,4 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
         return view('igreja.index');
     }
-);;
+);
+Route::get('/create', function () {
+    try {
+        return view('igreja.formIgreja');
+    } catch (Exception $e) {
+        echo "Ocorreu um erro ao exibir o formulário de contato";
+        echo "</br>";
+    }
+});

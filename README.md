@@ -106,11 +106,13 @@ Criada a página de início da Igreja Evangélica Assembleia de Deus em Campo Be
 <br/>
 Criada a rota que exibe a página citada anteriormente.
 <br/>
-<br/>
 <h4>29/08 - Eliabe</h4>
 Criada main do Igreja Campo Belo do Sul, destinada a exibir os conteúdos da página principal da Igreja.
 <br/>
-
+<h4>29/08 - Eliabe</h4>
+Criado Header e Footer da página AD Campo Belo do Sul.
+Realizada componentização do Head, Header e Footer da Igreja Evangélica de Campo Belo do Sul.
+<br/>
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----

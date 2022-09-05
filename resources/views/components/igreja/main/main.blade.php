@@ -1,6 +1,4 @@
 <!-- Main Igreja-->
-<h5>--------------------------------------------</h5>
-
 @section("corpo")
 <div class="main">
     <div class="boas-vindas">

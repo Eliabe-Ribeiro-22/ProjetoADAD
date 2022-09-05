@@ -1,6 +1,6 @@
 {{-- Index Igreja --}}
 
-@extends("layouts.template_igreja")
+@extends("layouts.templateIgreja")
 
 @section("titulo", "Inicio")
 
