@@ -6,4 +6,4 @@
 
 @section("corpo")
 <x-igreja.main.main />
-@endsection 
+@endsection
