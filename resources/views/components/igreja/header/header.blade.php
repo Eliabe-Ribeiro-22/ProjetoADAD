@@ -16,15 +16,10 @@
                 <ul class="grid">
                     <li><a href="/">Início</a></li>
                     <li><a href="/">Institucional</a></li>
-                    <li><a href="/">Contato</a></li>
+                    <li><a href="/create">Contato</a></li>
                     <li><a href="/">Nossas Reuniões</a></li>
                 </ul>
             </div>
-        </div>
-
-        <div class="right">
-            <div class="toggle icon-menu"></div>
-            <div class="toggle icon-x"></div>
         </div>
     </nav>
 </header>
