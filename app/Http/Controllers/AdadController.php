@@ -36,7 +36,7 @@ class AdadController extends Controller
         $mensagem = $request->mensagem;
 
         if ($credentials) {
-            Mail::send('email.forgetPassword', ['mensagem' => $mensagem], function ($message) use ($request) {
+            Mail::send('email.sendMail', ['mensagem' => $mensagem], function ($message) use ($request) {
             $message->to('adcbsul@gmail.com');
             $message->from('adcbsul@gmail.com', 'ADCBSUL');
             $message->subject('Mensagem via formulário');
