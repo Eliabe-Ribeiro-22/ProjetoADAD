@@ -25,19 +25,21 @@ class AdadController extends Controller
         // salvar
     }
 
-    public function sendForm()
+    public function sendForm(Request $request)
     {
         $credentials = $request->validate([            
             'nome' => ['required'],
             'telefone' => ['required'],
             'mensagem' => ['required'],
         ]);
+        
+        $mensagem = $request->mensagem;
 
         if ($credentials) {
-            Mail::send('email.sendMail', function ($message) use ($request) {
-                    $message->to('adcbsul@gmail.com');
-                    $message->from('adcbsul@gmail.com', 'ADCBSUL');
-                    $message->subject('Mensagem via formulário');
+            Mail::send('email.forgetPassword', ['mensagem' => $mensagem], function ($message) use ($request) {
+            $message->to('adcbsul@gmail.com');
+            $message->from('adcbsul@gmail.com', 'ADCBSUL');
+            $message->subject('Mensagem via formulário');
                 });
 
                 return redirect('/')->with("msg", "O formulário foi enviado com sucesso");
