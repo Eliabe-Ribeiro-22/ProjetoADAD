@@ -27,25 +27,28 @@ class AdadController extends Controller
 
     public function sendForm(Request $request)
     {
-        $credentials = $request->validate([            
-            'nome' => ['required'],
-            'telefone' => ['required'],
-            'mensagem' => ['required'],
-        ]);
-        
-        $mensagem = $request->mensagem;
+        try {
+            $credentials = $request->validate([
+                'nome' => ['required'],
+                'telefone' => ['required'],
+                'mensagem' => ['required'],
+            ]);
 
-        if ($credentials) {
-            Mail::send('email.sendMail', ['mensagem' => $mensagem], function ($message) use ($request) {
-            $message->to('adcbsul@gmail.com');
-            $message->from('adcbsul@gmail.com', 'ADCBSUL');
-            $message->subject('Mensagem via formulário');
+            $mensagem = $request->mensagem;
+
+            if ($credentials) {
+                Mail::send('email.sendMail', ['mensagem' => $mensagem], function ($message) use ($request) {
+                    $message->to('adcbsul@gmail.com');
+                    $message->from('adcbsul@gmail.com', 'ADCBSUL');
+                    $message->subject('Mensagem via formulário');
                 });
 
                 return redirect('/')->with("msg", "O formulário foi enviado com sucesso");
             } else {
                 return redirect('/')->with('message', "Falha ao enviar o formulário. Tente mais tarde");
             }
+        } catch (Exception $e) {
+            return $e->getMessage();
         }
     }
 }
