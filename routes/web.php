@@ -11,19 +11,26 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 use App\Http\Controllers\AdadController;
 
 Route::get('/', function () {
         return view('igreja.index');
     }
 );
-Route::get('/create', function () {
-    try {
-        return view('igreja.formIgreja');
-    } catch (Exception $e) {
-        echo "Ocorreu um erro ao exibir o formulário de contato";
-        echo "</br>";
-    }
-});
+// ADAD's routes
 
-Route::post('/sendForm', [AdadController::class, 'sendForm']);
+//  Login
+Route::get('/logar', [AdadController::class, 'login']);
+
+Route::post('/validar', [AdadController::class, 'auth']);
+
+// Criado pelo jetstream
+Route::middleware([
+'auth:sanctum',
+config('jetstream.auth_session'),
+'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+    return view('dashboard');})->name('dashboard');
+});

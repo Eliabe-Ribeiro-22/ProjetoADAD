@@ -16,8 +16,9 @@
                 <ul class="grid">
                     <li><a href="/">Início</a></li>
                     <li><a href="/">Institucional</a></li>
-                    <li><a href="/create">Contato</a></li>
+                    <li><a href="/">Contato</a></li>
                     <li><a href="/">Nossas Reuniões</a></li>
+                    <li><a href="/logar">Login</a></li>
                 </ul>
             </div>
         </div>

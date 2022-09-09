@@ -95,29 +95,6 @@ Criação da branch Heroku, branch em que o projeto será deployado. <br/>
 Alteração no welcome.blade.php para testar se as atualizações do código-fonte estão sendo deployadas corretamente na WEB, através da Heroku<br/>
 Realizado com sucesso o deploy do ProjetoADAD na plataforma Heroku, através da URL: https://adcbsul.herokuapp.com/
 
-<br/>
-<h4>10/08 - Eliabe</h4>
-Criada a página de início da Igreja Evangélica Assembleia de Deus em Campo Belo do Sul <br/>
-Criada a rota que exibe a página citada anteriormente.
-
-<br/>
-<h4>29/08 - Eliabe</h4>
-Criada main do Igreja Campo Belo do Sul, destinada a exibir os conteúdos da página principal da Igreja.
-
-<br/>
-<h4>29/08 - Eliabe</h4>
-Criado Header e Footer da página AD Campo Belo do Sul.<br/>
-Realizada componentização do Head, Header e Footer da Igreja Evangélica de Campo Belo do Sul.
-
-<br/>
-<h4>05/09 - Eliabe </h4>
-Criado um formulário para o visitante possa entrar em contato com a IEAD Campo Belo do Sul. <br/>
-Ele foi criado na view <em>formIgreja</em>
-
-<br/>
-<h4>07/09 - Alessandro </h4>
-Criado função para envio do formulário de contato via email. <br/>
-Criado template de email.
 
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 

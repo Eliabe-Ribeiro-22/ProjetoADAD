@@ -9,46 +9,22 @@ use Illuminate\Support\Facades\Mail;
 
 class AdadController extends Controller
 {
-
-    public function indexADAD()
-    {
-        // return view('welcome');
-    }
-
-    public function arearestrita()
-    {
-        // exibir os alunos
-    }
-
-    public function store()
-    {
-        // salvar
-    }
-
-    public function sendForm(Request $request)
+    public function login()
     {
         try {
-            $credentials = $request->validate([
-                'nome' => ['required'],
-                'telefone' => ['required'],
-                'mensagem' => ['required'],
-            ]);
-
-            $mensagem = $request->mensagem;
-
-            if ($credentials) {
-                Mail::send('email.sendMail', ['mensagem' => $mensagem], function ($message) use ($request) {
-                    $message->to('adcbsul@gmail.com');
-                    $message->from('adcbsul@gmail.com', 'ADCBSUL');
-                    $message->subject('Mensagem via formulário');
-                });
-
-                return redirect('/')->with("msg", "O formulário foi enviado com sucesso");
-            } else {
-                return redirect('/')->with('message', "Falha ao enviar o formulário. Tente mais tarde");
-            }
+            return view('adad.login');
         } catch (Exception $e) {
-            return $e->getMessage();
+            return 'Ocorreu um erro no Login do ADAD<br/>' . $e->getMessage();
+        }
+    }
+
+    public function auth()
+    {
+        try {
+            //authentication with Sanctum
+            return 'OK, autenticação deu certo';
+        } catch (Exception $e) {
+            return 'Ocorreu um erro ao fazer login<br/>' . $e->getMessage();
         }
     }
 }
