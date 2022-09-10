@@ -118,7 +118,7 @@ Ele foi criado na view <em>formIgreja</em>
 <h4>07/09 - Alessandro </h4>
 Criado função para envio do formulário de contato via email. <br/>
 Criado template de email.
-
+    
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----

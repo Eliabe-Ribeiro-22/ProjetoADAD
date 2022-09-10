@@ -13,10 +13,8 @@ use Illuminate\Support\Facades\Route;
 */
 use App\Http\Controllers\AdadController;
 
-Route::get('/', function () {
-        return view('igreja.index');
-    }
-);
+Route::get('/', [ChurchController::class, 'index']);
+
 Route::get('/create', function () {
     try {
         return view('igreja.formIgreja');
