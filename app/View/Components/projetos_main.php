@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class igreja extends Component
+class projetos_main extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class igreja extends Component
      */
     public function render()
     {
-        return view('components.igreja');
+        return view('components.igreja.projetos.projetos_main');
     }
 }

@@ -12,8 +12,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 use App\Http\Controllers\AdadController;
+use App\Http\Controllers\IgrejaController;
 
-Route::get('/', [ChurchController::class, 'index']);
+Route::get('/', [IgrejaController::class, 'index']);
+
+Route::get('/institucional', [IgrejaController::class, 'createInstitucional']);
+
+
+// Projects
+Route::get('/nossosProjetos', [IgrejaController::class, 'createProjetos']);
+
+// Our Meetings
+Route::get('/nossasReunioes', [IgrejaController::class, 'createNossasReunioes']);
+
+// Contact's form
+Route::get('/createformIgreja', [IgrejaController::class, 'createFormIgreja']);
 
 Route::get('/create', function () {
     try {

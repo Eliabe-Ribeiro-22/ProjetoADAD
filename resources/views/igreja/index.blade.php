@@ -1,9 +1,8 @@
-{{-- Index Igreja --}}
+{{-- Index da Igreja --}}
+@extends('layouts.templateIgreja')
 
-@extends("layouts.templateIgreja")
+@section('titulo', 'Início')
 
-@section("titulo", "Inicio")
-
-@section("corpo")
-<x-igreja.main.main />
+@section('corpo')
+    <x-igreja.index.main />
 @endsection
