@@ -1,15 +1,13 @@
 /* Form Contato */
 
-/* a fazer:
- btnEnviar - pegar do pc Igreja
-*/
-
 #h1 {
     margin: 40px;
 
     font-family: var(--font-family-form);
-    color: #2b2a2a;
     font-size: 50px;
+    color: #2b2a2a;
+
+    text-align: center;
 }
 
 /* form */
@@ -27,6 +25,7 @@ form {
 }
 
 #formTitle {
+    text-align: center;
     color: #cccccc;
     font-family: var(--font-family-form);
 }
@@ -85,11 +84,18 @@ textarea:focus {
     border-color: #504f4f;
 }
 
-/* Button Enviar GMAIL */
+/* Button to Submit Form */
 #submit {
-    /* margin: 25px 10% 0 10%; */
-    padding: 12px 38px;
+    margin: 25px 25% 10px 25%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-left: 25%;
 
+    padding: 12px 38px;
+    
+    /* width: 40%; */
+    width: 50%;
+    
     display: inline-block;
 
     background: linear-gradient(to bottom, #e6e6e6 5%, #5e6161 100%);
