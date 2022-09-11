@@ -3,16 +3,16 @@
 <details open>
     <summary name="index">Sumário do Projeto</summary>
     <ol>
-        <li><a href="#projeto">Sobre o projeto</a></li>
-        <li><a href="#estrutura">Estrutura do projeto</a></li>
-        <li><a href="#backlog">Backlog do projeto</a></li>
-        <li><a href="#log">Log de eventos</a></li>
-        <li><a href="#tecnologias">Dependências e Tecnologias usadas</a></li>
-        <li><a href="#projetoWeb">Projeto online</a></li>
+        <li><a href="#objetivo-do-projeto">Objetivo do projeto</a></li>
+        <li><a href="#backlog-do-produto">Backlog do projeto</a></li>
+        <li><a href="#log">Log de eventos</a></li>     
+        <li><a href="#projeto-online">Projeto online</a></li>
         <li><a href="#developers">Developers</a>
     </ol>
 
 </details>
+ <!-- li --><!-- a href="#estrutura">Estrutura do projeto</a --><!--/li -->
+ <!-- li><a href="#tecnologias">Dependências e Tecnologias usadas</a></li -->
 
 -----
 
@@ -75,7 +75,7 @@ Queremos também uma área restrita, usando um login, onde acessaremos uma área
 
 -----
 
-## Backlog do Produto<br /> <a name="backlog"></a>
+## Backlog do Produto
 
 [Ver SCRUM](https://trello.com/b/Otut9SlE/projeto-adad-scrum)<br/>
 <a href="https://trello.com/b/rwOTsaWS/projeto-adad-kanban">Ver KANBAN - Alessandro</a><br/>
