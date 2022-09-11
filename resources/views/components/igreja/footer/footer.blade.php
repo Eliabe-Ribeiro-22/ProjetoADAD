@@ -9,7 +9,7 @@
     </div>
     <div id="filho2">
         <div>
-            <img src="ssets/img/igreja/whats.png" alt="Logo What's App" id="imgW" />
+            <img src="assets/img/igreja/whats.png" alt="Logo What's App" id="imgW" />
         </div>
         <div>+55 (049) 9 8847-7611</div>
     </div>
@@ -17,13 +17,13 @@
     <div id="filho3">
         <div href="https://www.facebook.com/deusprovera.campobelodosul" class="imagens">
             <a href="https://www.facebook.com/deusprovera.campobelodosul" target="_blank">
-                <img src="ssets/img/igreja/face.png" alt="Logo Facebook" id="img" />
+                <img src="ssets/img/igreja/logoFace.png" alt="Logo Facebook" id="img" />
             </a>
         </div>
 
         <div class="imagens">
             <a href="mailto:adcbsul@gmail.com" target="_blank">
-                <img src="ssets/img/igreja/gmail.png" alt="Logo Gmail" id="img" />
+                <img src="assets/img/igreja/logoGmail.png" alt="Logo Gmail" id="img" />
             </a>
         </div>
     </div>

@@ -4,5 +4,5 @@
 @section('titulo', 'Início')
 
 @section('corpo')
-    <x-igreja.index.main />
+    <x-igreja.index.index_main />
 @endsection

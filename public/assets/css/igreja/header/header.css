@@ -17,21 +17,31 @@ header > nav {
 
 /* logo do site e nome da pagina*/
 header > nav > div#logo {
-    margin: 10px 13px;
+    margin: 0;
     width: 35%;
 
     display: flex;
 }
 
 header > nav > div#logo > div#logoIgreja {
-    margin-right: 14px;
+    /* margin-right: 14px; */
+    margin: 0 13px;
+    padding: 0;
 
-    height: 78px;
+    /* width: 128px; */
+    height: 90px;
     width: 30%;
-    /* background: green; */
+
+    background-color: #fff;
+}
+
+#t {
+    width: 128px;
+    height: 78px;
 }
 
 #nomeIgreja {
+    margin: 10px 13px;
     padding-top: 1px;
     width: 75%;
 
