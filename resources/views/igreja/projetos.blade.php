@@ -1,4 +1,4 @@
-{{-- projetos --}}
+{{-- Projetos --}}
 
 {{-- Projetos desenvolvidos pela Igreja --}}
 @extends('layouts.templateIgreja')

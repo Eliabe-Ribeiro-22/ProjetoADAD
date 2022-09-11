@@ -6,7 +6,6 @@
     font-family: var(--font-family-form);
     font-size: 50px;
     color: #2b2a2a;
-
     text-align: center;
 }
 
@@ -25,30 +24,34 @@ form {
 }
 
 #formTitle {
-    text-align: center;
-    color: #cccccc;
     font-family: var(--font-family-form);
+    color: #cccccc;
+    text-align: center;
 }
 
 form div {
     margin: 25px 10% 0 10%;
+
     width: 80%;
 }
 
 label {
-    display: block;
     width: 100%;
-    text-align: left;
+
+    display: block;
 
     font-family: var(--font-family-form);
     font-size: 30px;
     color: #cccccc;
     font-weight: bold;
+
+    text-align: left;
 }
 
 input,
 textarea {
     margin-top: 10px;
+
     padding: 5px;
     padding-left: 20px;
 
@@ -87,21 +90,15 @@ textarea:focus {
 /* Button to Submit Form */
 #submit {
     margin: 25px 25% 10px 25%;
-    margin-top: 25px;
-    margin-bottom: 10px;
-    margin-left: 25%;
-
     padding: 12px 38px;
-    
-    /* width: 40%; */
+
     width: 50%;
-    
+
     display: inline-block;
 
-    background: linear-gradient(to bottom, #e6e6e6 5%, #5e6161 100%);
     background-color: #e6e6e6;
+    background: linear-gradient(to bottom, #e6e6e6 5%, #5e6161 100%);
 
-    box-shadow: inset 0px 1px 3px 0px #f5f5f5;
 
     border: 1px solid #566963;
     border-radius: 5px;
@@ -110,19 +107,21 @@ textarea:focus {
     font-size: 22px;
     color: #000000;
     font-weight: bold;
-
     text-decoration: none;
+    
     text-shadow: 0px -1px 0px #c7c7c7;
-
+    box-shadow: inset 0px 1px 3px 0px #f5f5f5;
+    
     cursor: pointer;
 }
 
 #submit:hover {
-    background: linear-gradient(to bottom, #5e6161 5%, #e6e6e6 100%);
     background-color: #5e6161;
+    background: linear-gradient(to bottom, #5e6161 5%, #e6e6e6 100%);
 }
 
 #submit:active {
-    position: relative;
     top: 1px;
+
+    position: relative;
 }
