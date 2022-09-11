@@ -1,0 +1,122 @@
+/* Form Contato */
+
+/* a fazer:
+ btnEnviar - pegar do pc Igreja
+*/
+
+#h1 {
+    margin: 40px;
+
+    font-family: var(--font-family-form);
+    color: #2b2a2a;
+    font-size: 50px;
+}
+
+/* form */
+form {
+    margin: 0 auto;
+    margin-bottom: 70px;
+    padding: 10px;
+
+    width: 50%;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    background-color: #575656;
+}
+
+#formTitle {
+    color: #cccccc;
+    font-family: var(--font-family-form);
+}
+
+form div {
+    margin: 25px 10% 0 10%;
+    width: 80%;
+}
+
+label {
+    display: block;
+    width: 100%;
+    text-align: left;
+
+    font-family: var(--font-family-form);
+    font-size: 30px;
+    color: #cccccc;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    margin-top: 10px;
+    padding: 5px;
+    padding-left: 20px;
+
+    width: 100%;
+
+    background-color: #fff;
+
+    font-family: "Arial";
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+
+    border: none;
+    border-radius: 6px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #a8a8a8;
+}
+
+textarea {
+    height: 100px;
+
+    border-radius: 10px;
+
+    vertical-align: top;
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #504f4f;
+}
+
+/* Button Enviar GMAIL */
+#submit {
+    /* margin: 25px 10% 0 10%; */
+    padding: 12px 38px;
+
+    display: inline-block;
+
+    background: linear-gradient(to bottom, #e6e6e6 5%, #5e6161 100%);
+    background-color: #e6e6e6;
+
+    box-shadow: inset 0px 1px 3px 0px #f5f5f5;
+
+    border: 1px solid #566963;
+    border-radius: 5px;
+
+    font-family: Arial;
+    font-size: 22px;
+    color: #000000;
+    font-weight: bold;
+
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #c7c7c7;
+
+    cursor: pointer;
+}
+
+#submit:hover {
+    background: linear-gradient(to bottom, #5e6161 5%, #e6e6e6 100%);
+    background-color: #5e6161;
+}
+
+#submit:active {
+    position: relative;
+    top: 1px;
+}

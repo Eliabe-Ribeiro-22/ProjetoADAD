@@ -19,6 +19,6 @@
         <textarea rows="5" cols="33" placeholder="Digite sua mensagem"></textarea>
     </div>
 
-    <button type="submit">Enviar</button>
+    <button type="submit" href="#" id="submit">Enviar</a>
 
 </form>

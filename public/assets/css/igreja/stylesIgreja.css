@@ -11,6 +11,9 @@
 @import "header/header.css";
 @import "footer/footer.css";
 
+/* Form Contato */
+@import "formContato/form_main.css";
+
 /* Página Institucional */
 @import "institucional/institucional_main.css";
 
