@@ -95,6 +95,12 @@ Criação da branch Heroku, branch em que o projeto será deployado. <br/>
 Alteração no welcome.blade.php para testar se as atualizações do código-fonte estão sendo deployadas corretamente na WEB, através da Heroku<br/>
 Realizado com sucesso o deploy do ProjetoADAD na plataforma Heroku, através da URL: https://adcbsul.herokuapp.com/
 
+<h4> 01/09 - Vinícius </h4>
+Criada rota para a página "objetivos" do programa ADAD. <br />
+Criada rota para a página "contato" do programa ADAD. <br />
+Criada rota para a página "nossos encontros" do programa ADAD. <br />
+Criada rota restrita de login para o programa ADAD. (ainda não funcional) <br />
+
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----
