@@ -3,16 +3,16 @@
 <details open>
     <summary name="index">Sumário do Projeto</summary>
     <ol>
-        <li><a href="#projeto">Sobre o projeto</a></li>
-        <li><a href="#estrutura">Estrutura do projeto</a></li>
-        <li><a href="#backlog">Backlog do projeto</a></li>
-        <li><a href="#log">Log de eventos</a></li>
-        <li><a href="#tecnologias">Dependências e Tecnologias usadas</a></li>
-        <li><a href="#link">Projeto online</a></li>
+        <li><a href="#objetivo-do-projeto">Objetivo do projeto</a></li>
+        <li><a href="#backlog-do-produto">Backlog do projeto</a></li>
+        <li><a href="#log">Log de eventos</a></li>     
+        <li><a href="#projeto-online">Projeto online</a></li>
         <li><a href="#developers">Developers</a>
     </ol>
 
 </details>
+ <!-- li --><!-- a href="#estrutura">Estrutura do projeto</a --><!--/li -->
+ <!-- li><a href="#tecnologias">Dependências e Tecnologias usadas</a></li -->
 
 -----
 
@@ -71,17 +71,17 @@ Deve conter uma local para descrever os objetivos do ADAD, sendo eles:
 
 Queremos também uma área restrita, usando um login, onde acessaremos uma área para realizar o cadastro dos alunos ADAD. Os dados que queremos armazenar são como a foto em anexo.
 
-[Voltar ao índice](#summary)
+<p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----
 
-## Backlog do Produto<br /> <a name="backlog"></a>
+## Backlog do Produto
 
 [Ver SCRUM](https://trello.com/b/Otut9SlE/projeto-adad-scrum)<br/>
 <a href="https://trello.com/b/rwOTsaWS/projeto-adad-kanban">Ver KANBAN - Alessandro</a><br/>
 <a href="https://trello.com/b/txmJC7si/projeto-adad-kanban-eliabe">Ver KANBAN - Eliabe</a>
 
-[Voltar ao índice](#summary)
+<p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 <h2 name="log">Log de eventos</h2>
 <h4>08/08 - Eliabe</h4>
@@ -127,13 +127,13 @@ Criado conteúdos da página inicial do site
 
 -----
 
-## Api
+## Projeto Online
 
-<a name="api"></a>
+<a name="projetoWeb"></a>
 
-[Api](https://adcbsul.herokuapp.com/)
+[Projeto Web](https://adcbsul.herokuapp.com/)
 
-[Voltar ao índice](#summary)
+<p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 ## The Developers
 
@@ -163,4 +163,4 @@ Vinícius Jung <br/>
 [Github](https://github.com/Vinnie-Jung) <br>
 [Outlook](mailto:viniciusjung@outlook.com) <br><br>
 
-[Voltar ao índice](#summary)
+<p align="right">(<a href="#index">Voltar ao índice</a>)</p>
