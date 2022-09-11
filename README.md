@@ -78,8 +78,9 @@ Queremos também uma área restrita, usando um login, onde acessaremos uma área
 ## Backlog do Produto<br /> <a name="backlog"></a>
 
 [Ver SCRUM](https://trello.com/b/Otut9SlE/projeto-adad-scrum)<br/>
-<a href="https://trello.com/b/rwOTsaWS/projeto-adad-kanban">Ver KANBAN - Alessandro</a><br/>
-<a href="https://trello.com/b/txmJC7si/projeto-adad-kanban-eliabe">Ver KANBAN - Eliabe</a>
+<a href="https://trello.com/b/rwOTsaWS/projeto-adad-kanban">Ver KANBAN - Alessandro</a><br />
+<a href="https://trello.com/b/txmJC7si/projeto-adad-kanban-eliabe">Ver KANBAN - Eliabe</a> <br />
+<a href="https://trello.com/b/BgMh5vRx/projeto-adad-kanban">Ver KANBAN - Vinícius</a><br />
 
 [Voltar ao índice](#summary)
 
