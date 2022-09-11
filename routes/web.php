@@ -37,4 +37,4 @@ Route::get('/create', function () {
     }
 });
 
-Route::post('/sendForm', [AdadController::class, 'sendForm']);
+Route::post('/sendForm', [IgrejaController::class, 'sendForm']);
