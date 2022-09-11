@@ -1,7 +1,7 @@
 {{-- Main do Form - Formulário de Contato --}}
 <h1 id="h1">Entre em Contato Conosco!</h1>
 
-<form method="post">
+<form action="/sendForm" method="post">
     <h1 id="formTitle">Formulário de Contato</h1>
 
     <div>
