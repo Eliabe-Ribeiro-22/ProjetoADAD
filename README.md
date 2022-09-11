@@ -118,7 +118,7 @@ Realizada componentização das páginas recém-criadas: Institucional, Nossas R
 <h4>10/09 - Eliabe </h4>
 Realizada componentização do Formulário de Contato.
 Criado arquivo de estilização da Igreja, com as devidas componentizações.
-Estilização do header e footer do site IEAD Campo Belo.    
+Estilização do header e footer do site IEAD Campo Belo.
 
 <h4>11/09 - Eliabe </h4>
 Criado conteúdos da página inicial do site
