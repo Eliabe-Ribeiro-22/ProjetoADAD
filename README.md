@@ -123,6 +123,10 @@ Estilização do header e footer do site IEAD Campo Belo.
 <h4>11/09 - Eliabe </h4>
 Criado conteúdos da página inicial do site
 
+<h4>11/09 - Domingo - Alessandro </h4>
+Criada página Institucional.<br>
+Criada página Nossas Reuniões.
+
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----
