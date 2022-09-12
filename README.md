@@ -84,7 +84,7 @@ Queremos também uma área restrita, usando um login, onde acessaremos uma área
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 <h2 name="log">Log de eventos</h2>
-<h4>08/08 - Eliabe</h4>
+<h4>08/08 - Segunda-feira - Eliabe</h4>
 Criado repositório ProjetoADAD no meu Perfil da GitHub.<br/>
 Clonagem do repositório para minha máquina local.<br/>
 Realizada a instalação do Laravel em nossa aplicação<br/>
@@ -92,35 +92,35 @@ Criação da branch Heroku, branch em que o projeto será deployado.<br/>
 Alteração no welcome.blade.php para testar se as atualizações do código-fonte estão sendo deployadas corretamente na WEB, através da Heroku.<br/>
 Realizado com sucesso o deploy do ProjetoADAD na plataforma Heroku, através da URL: https://adcbsul.herokuapp.com/
 
-<h4>10/08 - Eliabe</h4>
+<h4>10/08 - Quarta-feira - Eliabe</h4>
 Criada a página de início da Igreja Evangélica Assembleia de Deus em Campo Belo do Sul <br/>
 Criada a rota que exibe a página citada anteriormente.
 
-<h4>29/08 - Eliabe</h4>
+<h4>29/08 - Segunda-feira - Eliabe</h4>
 Criada main do Igreja Campo Belo do Sul, destinada a exibir os conteúdos da página principal da Igreja.
 
-<h4>29/08 - Eliabe</h4>
+<h4>29/08 - Segunda-feira - Eliabe</h4>
 Criado Header e Footer da página AD Campo Belo do Sul.<br/>
 Realizada componentização do Head, Header e Footer da Igreja Evangélica de Campo Belo do Sul.
 
-<h4>05/09 - Eliabe </h4>
-Criado um formulário para o visitante possa entrar em contato com a IEAD Campo Belo do Sul. <br/>
+<h4>05/09 - Segunda-feira - Eliabe </h4>
+Criado um formulário para o visitante possa entrar em contato com a IEAD Campo Belo do Sul.<br/>
 Ele foi criado na view <em>formIgreja</em>
 
-<h4>07/09 - Alessandro </h4>
+<h4>07/09 - Quarta-feira - Alessandro </h4>
 Criado função para envio do formulário de contato via email. <br/>
 Criado template de email.
 
-<h4> 10/09 - Eliabe </h4>
+<h4> 10/09 - Sábado - Eliabe </h4>
 Criação do Controller IgrejaController, contendo as funções solicitadas nas Rotas da Igreja.
 Realizada componentização das páginas recém-criadas: Institucional, Nossas Reuniões e Projetos.
 
-<h4>10/09 - Eliabe </h4>
+<h4>10/09 - Sábado - Eliabe </h4>
 Realizada componentização do Formulário de Contato.
 Criado arquivo de estilização da Igreja, com as devidas componentizações.
 Estilização do header e footer do site IEAD Campo Belo.
 
-<h4>11/09 - Eliabe </h4>
+<h4>11/09 - Domingo - Eliabe </h4>
 Criado conteúdos da página inicial do site
 
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
