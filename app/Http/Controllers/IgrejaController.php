@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class IgrejaController extends Controller
 {
@@ -80,7 +81,7 @@ class IgrejaController extends Controller
 
                 return redirect('/')->with('msg', 'O formulário foi enviado com sucesso');
             } else {
-                return redirect('/')->with('message', 'Falha ao enviar o formulário. Tente mais tarde');
+                return redirect('/')->with('msg', 'Falha ao enviar o formulário. Tente mais tarde');
             }
         } catch (Exception $e) {
             return $e->getMessage();
