@@ -1,10 +1,16 @@
 {{-- Main do nossas-reunioes --}}
-<h1>Nossas Reuniões</h1>
+<div id="divNossasR">
+    <div id="positionNossasR">
+        <h1 id="h1NossasR">Nossas Reuniões</h1>
+        <div class="text NossasR">
+            <h2>Cultos</h2>
 
-<h2>Cultos</h2>
-
-<h3>Noite da Vitória</h3>
-<p>Quintas-feiras às 19:15hs</p>
-
-<h3>Noite da Família</h3>
-<p>Domingos às 19:00hs</p>
+            <br>
+            <h3 id="pNossasR">Noite da Vitória</h3>
+            <p>Quintas-Feiras às 19:15 hs</p>
+            <br>
+            <h3 id="pNossasR">Noite da Família</h3>
+            <p id="pNossasR">Domingos às 19:00 hs</p>
+        </div>
+    </div>
+</div>

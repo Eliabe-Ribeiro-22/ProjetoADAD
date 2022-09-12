@@ -34,8 +34,11 @@ body {
     background: #fff;
 }
 
-:root{
+:root {
     --color-primary: #fff;
     --background-button: #cccccc;
     --background-header: #666666;
+
+    /* Form de Contato */
+    --font-family-form: "arial black";
 }
