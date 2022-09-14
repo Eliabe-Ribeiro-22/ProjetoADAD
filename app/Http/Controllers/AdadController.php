@@ -22,5 +22,6 @@ class AdadController extends Controller
     public function store()
     {
         // salvar
+        
     }
 }

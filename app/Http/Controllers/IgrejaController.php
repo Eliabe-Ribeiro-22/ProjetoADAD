@@ -5,11 +5,18 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
+use App\Models\User;
 class IgrejaController extends Controller
 {
     public function index()
     {
-        return view('igreja.index');
+		try{
+			$u = '2';
+			$u = User::all();
+			return view('igreja.index', ['u' => $u]);
+		}catch(Exception $e){
+			echo $e->getMessage();
+		}
     }
 
     public function createFormIgreja()
