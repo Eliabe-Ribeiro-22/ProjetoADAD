@@ -103,6 +103,12 @@ Criada main do Igreja Campo Belo do Sul, destinada a exibir os conteúdos da pá
 Criado Header e Footer da página AD Campo Belo do Sul.<br/>
 Realizada componentização do Head, Header e Footer da Igreja Evangélica de Campo Belo do Sul.
 
+<h4> 01/09 - Vinícius </h4>
+Criada rota para a página "objetivos" do programa ADAD. <br />
+Criada rota para a página "contato" do programa ADAD. <br />
+Criada rota para a página "nossos encontros" do programa ADAD. <br />
+Criada rota restrita de login para o programa ADAD. (ainda não funcional)
+
 <h4>05/09 - Segunda-feira - Eliabe </h4>
 Criado um formulário para o visitante possa entrar em contato com a IEAD Campo Belo do Sul.<br/>
 Ele foi criado na view <em>formIgreja</em>
