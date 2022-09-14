@@ -4,8 +4,5 @@
 @section('titulo', 'Início')
 
 @section('corpo')
-	<?php
-	dd($u);
-	?>
-    {{-- <x-igreja.index.index_main /> --}}
+    <x-igreja.index.index_main />
 @endsection
