@@ -5,7 +5,10 @@ namespace App\Http\Controllers;
 use Exception;
 use Illuminate\Console\View\Components\Alert;
 use Illuminate\Http\Request;
+use App\Models\User;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class AdadController extends Controller
 {
@@ -50,7 +53,7 @@ class AdadController extends Controller
         }
     }
 
-    public function store(Resquest $request)
+    public function store(Request $request)
     {
         // Validação de senha
         $request->validate([
