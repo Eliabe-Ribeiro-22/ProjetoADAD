@@ -18,19 +18,13 @@ Route::get('/', function () {
         return view('igreja.index');
     }
 );
-// ADAD's routes
 
-//  Login
-Route::get('/logar', [AdadController::class, 'login']);
+// Rotas ADAD
+
+//  Login / Registrar (get)
+Route::get('/auth/login', [AdadController::class, 'login']);
+Route::get('/auth/register', [AdadController::class, "register"])->name('register');
+Route::get('forgot-password', [AdadController::class, 'showForgetPasswordForm'])->name('showForgetPasswordForm');
 
 Route::post('/validar', [AdadController::class, 'auth']);
-
-// Criado pelo jetstream
-Route::middleware([
-'auth:sanctum',
-config('jetstream.auth_session'),
-'verified'
-])->group(function () {
-    Route::get('/dashboard', function () {
-    return view('dashboard');})->name('dashboard');
-});
+Route::post('/authenticate', [AdadController::class, "autorizar"])->name('authenticate');

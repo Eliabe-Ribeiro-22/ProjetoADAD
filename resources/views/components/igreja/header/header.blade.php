@@ -18,7 +18,7 @@
                     <li><a href="/">Institucional</a></li>
                     <li><a href="/">Contato</a></li>
                     <li><a href="/">Nossas Reuniões</a></li>
-                    <li><a href="/logar">Login</a></li>
+                    <li><a href="/auth/login">Login</a></li>
                 </ul>
             </div>
         </div>
