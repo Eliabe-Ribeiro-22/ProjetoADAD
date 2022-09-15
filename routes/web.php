@@ -14,10 +14,8 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AdadController;
 
-Route::get('/', function () {
-        return view('igreja.index');
-    }
-);
+// Página principal -> tirar do controler do ADAD
+Route::get('/', [AdadController::class, 'index'])->name('mainPage');
 
 // Rotas ADAD
 //  Login / Registrar (get)
@@ -26,6 +24,5 @@ Route::get('/auth/register', [AdadController::class, "register"])->name('registe
 Route::get('forgot-password', [AdadController::class, 'showForgetPasswordForm'])->name('showForgetPasswordForm');
 
 // Login / Registrar (post)
-Route::post('/validar', [AdadController::class, 'auth']);
 Route::post('/authenticate', [AdadController::class, "autorizar"])->name('authenticate');
 Route::post('/newuser', [AdadController::class, "store"])->name('newuser');

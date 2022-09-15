@@ -12,6 +12,11 @@ use Illuminate\Support\Facades\Hash;
 
 class AdadController extends Controller
 {
+
+    public function index()
+    {
+        return view('igreja/index');
+    }
     public function login()
     {
         try {
