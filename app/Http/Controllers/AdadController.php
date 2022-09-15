@@ -49,4 +49,39 @@ class AdadController extends Controller
             return back()->with("msg", "Erro de autenticação: Verifique seu email e a senha");
         }
     }
+
+    public function store()
+    {
+        // Validação de senha
+        $request->validate([
+            'email' => ['required', 'email'],
+            'password' => [
+                'required',           // REQUISITOS DE SENHA:
+                'min:8',              // No mínimo 8 caracteres
+                'regex:/[A-Z]/',      // Pelo menos uma letra maiúscula
+                'regex:/[@$!%*#?&]/', // Pelo menos um caractere especial
+            ],
+             'password_confirmation' => [
+                'required',           // REQUISITOS DE SENHA:
+                'min:8',              // No mínimo 8 caracteres
+                'regex:/[A-Z]/',      // Pelo menos uma letra maiúscula
+                'regex:/[@$!%*#?&]/', // Pelo menos um caractere especial
+                 'same:password',     // Ser idêntica a senha do campo anterior
+            ]
+        ]);
+
+        // Adicionar informações do usuário no banco
+        $user = new User();
+
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->phone_number = $request->phone_number;
+        $user->address = $request->address;
+        $user->password = Hash::make($request->password);
+
+        $user->save();
+
+        Auth::login($user); // Loga
+        return redirect()->intended('/');
+    }
 }
