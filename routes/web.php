@@ -20,7 +20,6 @@ Route::get('/', function () {
 );
 
 // Rotas ADAD
-
 //  Login / Registrar (get)
 Route::get('/auth/login', [AdadController::class, 'login'])->name('login');
 Route::get('/auth/register', [AdadController::class, "register"])->name('register');

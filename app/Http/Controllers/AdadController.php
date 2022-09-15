@@ -50,7 +50,7 @@ class AdadController extends Controller
         }
     }
 
-    public function store()
+    public function store(Resquest $request)
     {
         // Validação de senha
         $request->validate([
