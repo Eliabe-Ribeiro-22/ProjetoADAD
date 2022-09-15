@@ -16,6 +16,14 @@
 
 -----
 
+## Projeto Online
+
+<a name="projetoWeb"></a>
+
+[Projeto Web](https://adcbsul.herokuapp.com/)
+
+<p align="right">(<a href="#index">Voltar ao índice</a>)</p>
+
 ## Objetivo do Projeto
 
 <br />
@@ -142,14 +150,6 @@ Adicionadas validações tanto para login quanto para cadastro. (em teste)
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----
-
-## Projeto Online
-
-<a name="projetoWeb"></a>
-
-[Projeto Web](https://adcbsul.herokuapp.com/)
-
-<p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 ## The Developers
 
