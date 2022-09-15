@@ -133,6 +133,12 @@ Criado conteúdos da página inicial do site
 Criada página Institucional.<br>
 Criada página Nossas Reuniões.
 
+<h4>15/09 - Quinta-feira - Vinícius</h4>
+Sessão ADAD: <br/>
+Criada a página de login na branch "auth". (CSS ainda será aprimorado) <br/>
+Criada a página de cadastro na branch "auth". (CSS ainda será aprimorado) <br/>
+Adicionadas validações tanto para login quanto para cadastro. (em teste)
+
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----
