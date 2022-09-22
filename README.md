@@ -179,8 +179,4 @@ Vinícius Jung <br/>
 [Github](https://github.com/Vinnie-Jung) <br>
 [Outlook](mailto:viniciusjung@outlook.com) <br><br>
 
-<<<<<<< HEAD
-[Voltar ao índice](#summary)
-=======
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
->>>>>>> index
