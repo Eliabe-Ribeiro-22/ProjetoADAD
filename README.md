@@ -100,6 +100,15 @@ Realizado com sucesso o deploy do ProjetoADAD na plataforma Heroku, através da 
 Criada branch auth.
 Criado Formulário de Login do ADAD.
 
+<h4>21/09 - Quarta - Alessandro</h4>
+Criada branch alunos.<br>
+Criada migration alunos, que cria a tabela `alunos` no Banco de Dados MySQL.<br>
+Criadas rotas para INSERT, UPDATE, DELETE, SELECT dos alunos ADAD.<br>
+Criação do Model Aluno, que interage com a table alunos, do Banco de Dados.<br>
+Criação do formulário de Cadastro/Alteração de estudantes ADAD.<br>
+Estilização do referido formulário, com auxílio do arquivo alunos.css.<br>
+Criação de Rotas nomeadas para as rotas relativas a todas essas funcionalidade.<br>
+
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----
