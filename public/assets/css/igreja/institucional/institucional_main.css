@@ -1,0 +1,27 @@
+#square {
+    margin: 0 auto;
+
+    width: 900px;
+    height: 400px;
+
+    text-align: center;
+}
+
+#TextPosition {
+    top: 50%;
+    position: relative;
+    transform: translateY(-60%);
+}
+
+.text {
+    background: #333333;
+
+    font-family: "arial black";
+    font-size: 40px;
+    color: #cccccc;
+
+    border-radius: 10px;
+}
+.tInstitucional{
+    padding: 70px 60px;
+}

@@ -2,94 +2,96 @@
 
 namespace App\Http\Controllers;
 
-use Exception;
-use Illuminate\Console\View\Components\Alert;
+use App\Exception\HttpException;
+
+// Usado para salvar aluno(Request)
 use Illuminate\Http\Request;
-use App\Models\User;
-use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
+
+// usado Model Students
+use App\Models\Aluno;
 
 class AdadController extends Controller
 {
-
-    public function index()
+    public function index_adad()
     {
-        return view('igreja/index');
-    }
-    public function login()
-    {
-        try {
-            return view('auth.login');
-        } catch (Exception $e) {
-            return 'Ocorreu um erro no Login do ADAD<br/>' . $e->getMessage();
-        }
+        return view('adad.index');
     }
 
-    public function auth()
+    // Exibir Form Cadastro de Alunos
+    public function createAreaRestrita()
     {
         try {
-            // Autenticação com Sanctum
-            return 'OK, autenticação deu certo';
+            $alunos = Aluno::all();
+            # Form que cadastra alunos,
+            // por isso passamos o value false na var. alterar
+            return view('adad.area-restrita', ['alterar' => false, 'alunos' => $alunos]);
         } catch (Exception $e) {
-            return 'Ocorreu um erro ao fazer login<br/>' . $e->getMessage();
+            return $e->getMessage();
         }
     }
 
-    // Registra um novo usuário
-    public function register()
-    {
-        return response()->view('auth/register')->setStatusCode(200);
-    }
-
-    // Efetua a validação do login
-    public function autorizar(Request $request)
-    {
-        $credentials = $request->validate([
-            'email' => ['required', 'email'],
-            'password' => ['required'],
-        ]);
- 
-        if (Auth::attempt($credentials)) { 
-            return redirect()->intended();
-        }
-        else{
-            return back()->with("msg", "Erro de autenticação: Verifique seu email e a senha");
-        }
-    }
-
+    // salvar alunos
     public function store(Request $request)
     {
-        // Validação de senha
-        $request->validate([
-            'email' => ['required', 'email'],
-            'password' => [
-                'required',           // REQUISITOS DE SENHA:
-                'min:8',              // No mínimo 8 caracteres
-                'regex:/[A-Z]/',      // Pelo menos uma letra maiúscula
-                'regex:/[@$!%*#?&]/', // Pelo menos um caractere especial
-            ],
-             'password_confirmation' => [
-                'required',           // REQUISITOS DE SENHA:
-                'min:8',              // No mínimo 8 caracteres
-                'regex:/[A-Z]/',      // Pelo menos uma letra maiúscula
-                'regex:/[@$!%*#?&]/', // Pelo menos um caractere especial
-                 'same:password',     // Ser idêntica a senha do campo anterior
-            ]
-        ]);
+        try {
+            // salvar aluno
+            $aluno = new Aluno();
 
-        // Adicionar informações do usuário no banco
-        $user = new User();
+            $aluno->NOME = $request->nome;
+            $aluno->IDADE = $request->idade;
+            $aluno->nascimento = $request->nascimento;
+            $aluno->SERIE = $request->serie;
+            $aluno->CPF = $request->cpf;
+            $aluno->MAE = $request->mae;
+            $aluno->PAI = $request->pai;
+            $aluno->RUA = $request->rua;
+            $aluno->NUMERO = $request->numero;
+            $aluno->BAIRRO = $request->bairro;
+            $aluno->COMPLEMENTO = $request->complemento;
+            $aluno->CIDADE = $request->cidade;
+            $aluno->RELIGIAO = $request->religiao;
 
-        $user->name = $request->name;
-        $user->email = $request->email;
-        $user->phone_number = $request->phone_number;
-        $user->address = $request->address;
-        $user->password = Hash::make($request->password);
+            $aluno->save();
 
-        $user->save();
+            // deu certo o salvar
+            return redirect('/AreaRestrita');
+        } catch (Exception $e) {
+            return 'Ocorreu um erro ao cadastrar um aluno!<br/>' . $e->getMessage();
+        }
+    }
 
-        Auth::login($user); // Loga
-        return redirect()->intended('/');
+    // Exclusão de Alunos
+    public function destroy($id)
+    {
+        try {
+            // encontrar o id do aluno, para depois excluí-lo
+            Aluno::findOrFail($id)->delete();
+
+            return redirect('/AreaRestrita');
+        } catch (Exception $e) {
+            return 'Ocorreu um erro ao excluir um aluno!<br/>' . $e->getMessage();
+        }
+    }
+
+    // Exibir Form de Alteração de aluno
+    public function edit($id)
+    {
+        $aluno = Aluno::findOrFail($id);
+
+        // return view('adad.area-restrita', ['aluno' => $aluno, 'alterar' => true]);
+        return view('adad.area-restrita', ['aluno' => $aluno, 'alterar' => true]);
+    }
+
+    // Função para Alterar Aluno no DB
+    public function update(Request $request)
+    {
+        try {
+            $data = $request->all();
+
+            $c = Aluno::findOrFail($request->id)->update($data);
+            return redirect('/AreaRestrita');
+        } catch (Exception $e) {
+            return 'Ocorreu um erro ao alterar um aluno!<br/>' . $e->getMessage();
+        }
     }
 }
