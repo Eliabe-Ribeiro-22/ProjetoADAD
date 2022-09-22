@@ -1,0 +1,125 @@
+/* Form Contato */
+
+#h1 {
+    margin: 40px;
+
+    font-family: var(--font-family-form);
+    font-size: 50px;
+    color: #2b2a2a;
+    text-align: center;
+}
+
+/* form */
+form {
+    margin: 0 auto;
+    margin-bottom: 70px;
+    padding: 10px;
+
+    width: 50%;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    background: #575656;
+}
+
+#formTitle {
+    font-family: var(--font-family-form);
+    color: #cccccc;
+    text-align: center;
+}
+
+form div {
+    margin: 25px 10% 0 10%;
+
+    width: 80%;
+}
+
+label {
+    width: 100%;
+
+    display: block;
+
+    font-family: var(--font-family-form);
+    font-size: 30px;
+    color: #cccccc;
+    font-weight: bold;
+    text-align: left;
+}
+
+input,
+textarea {
+    margin-top: 10px;
+
+    padding: 5px;
+    padding-left: 20px;
+
+    width: 100%;
+
+    background: #fff;
+
+    font-family: "Arial";
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+
+    border: none;
+    border-radius: 6px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #a8a8a8;
+}
+
+textarea {
+    height: 100px;
+
+    border-radius: 10px;
+
+    vertical-align: top;
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #504f4f;
+}
+
+/* Button to Submit Form */
+#enviar {
+    margin: 25px 25% 10px 25%;
+    padding: 12px 38px;
+
+    width: 50%;
+
+    display: inline-block;
+
+    background: #e6e6e6;
+    background: linear-gradient(to bottom, #e6e6e6 5%, #5e6161 100%);
+
+    border: 1px solid #566963;
+    border-radius: 5px;
+
+    font-family: Arial;
+    font-size: 22px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+
+    text-shadow: 0px -1px 0px #c7c7c7;
+    box-shadow: inset 0px 1px 3px 0px #f5f5f5;
+
+    cursor: pointer;
+}
+
+#submit:hover {
+    background: #5e6161;
+    background: linear-gradient(to bottom, #5e6161 5%, #e6e6e6 100%);
+}
+
+#submit:active {
+    top: 1px;
+
+    position: relative;
+}

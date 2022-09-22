@@ -1,0 +1,45 @@
+/* Importando fonts para a aplicacao */
+
+/*  Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/*  Lato */
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
+
+/* Styles Componentizados */
+
+
+@import "header/header.css";
+@import "footer/footer.css";
+
+/* Form Contato */
+@import "formContato/form_main.css";
+
+/* Página Institucional */
+@import "institucional/institucional_main.css";
+
+/* Página nossas-reuniões */
+@import "nossas-reunioes/nossas-reunioes_main.css";
+
+/* styles globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background: #fff;
+}
+
+:root {
+    --color-primary: #fff;
+    --background-button: #cccccc;
+    --background-header: #666666;
+
+    /* Form de Contato */
+    --font-family-form: "arial black";
+}

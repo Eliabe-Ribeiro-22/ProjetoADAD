@@ -1,0 +1,35 @@
+#h1NossasR {
+    position: relative;
+    top: -39px;
+
+    font-family: var(--font-family-form);
+    font-size: 50px;
+    color: #2b2a2a;
+    text-align: center;
+}
+
+#divNossasR {
+    margin: 0 auto;
+    margin-bottom: 25px;
+
+    width: 900px;
+    height: 780px;
+
+    text-align: center;
+}
+
+#positionNossasR {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-bottom: 100px;
+}
+
+.NossasR {
+    padding: 70px 60px;
+}
+
+#h3,
+#pNossasR {
+    font-size: 36px;
+}

@@ -3,18 +3,26 @@
 <details open>
     <summary name="index">Sumário do Projeto</summary>
     <ol>
-        <li><a href="#projeto">Sobre o projeto</a></li>
-        <li><a href="#estrutura">Estrutura do projeto</a></li>
-        <li><a href="#backlog">Backlog do projeto</a></li>
-        <li><a href="#log">Log de eventos</a></li>
-        <li><a href="#tecnologias">Dependências e Tecnologias usadas</a></li>
-        <li><a href="#link">Projeto online</a></li>
+        <li><a href="#objetivo-do-projeto">Objetivo do projeto</a></li>
+        <li><a href="#backlog-do-produto">Backlog do projeto</a></li>
+        <li><a href="#log">Log de eventos</a></li>     
+        <li><a href="#projeto-online">Projeto online</a></li>
         <li><a href="#developers">Developers</a>
     </ol>
 
 </details>
+ <!-- li --><!-- a href="#estrutura">Estrutura do projeto</a --><!--/li -->
+ <!-- li><a href="#tecnologias">Dependências e Tecnologias usadas</a></li -->
 
 -----
+
+## Projeto Online
+
+<a name="projetoWeb"></a>
+
+[Projeto Web](https://adcbsul.herokuapp.com/)
+
+<p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 ## Objetivo do Projeto
 
@@ -71,48 +79,77 @@ Deve conter uma local para descrever os objetivos do ADAD, sendo eles:
 
 Queremos também uma área restrita, usando um login, onde acessaremos uma área para realizar o cadastro dos alunos ADAD. Os dados que queremos armazenar são como a foto em anexo.
 
-[Voltar ao índice](#summary)
-
------
-
-## Backlog do Produto<br /> <a name="backlog"></a>
-
-[Ver SCRUM](https://trello.com/b/Otut9SlE/projeto-adad-scrum)<br/>
-<a href="https://trello.com/b/rwOTsaWS/projeto-adad-kanban">Ver KANBAN - Alessandro</a><br />
-<a href="https://trello.com/b/txmJC7si/projeto-adad-kanban-eliabe">Ver KANBAN - Eliabe</a> <br />
-<a href="https://trello.com/b/BgMh5vRx/projeto-adad-kanban">Ver KANBAN - Vinícius</a><br />
-
-[Voltar ao índice](#summary)
-
-<h2 name="log">Log de eventos</h2>
-
-<br/>
-
-<h4>08/08 - Eliabe</h4>
-Criado repositório ProjetoADAD no meu Perfil da GitHub.<br/>
-Clonagem do repositório para minha máquina local.<br/>
-Realizada a instalação do Laravel em nossa aplicação<br/>
-Criação da branch Heroku, branch em que o projeto será deployado. <br/>
-Alteração no welcome.blade.php para testar se as atualizações do código-fonte estão sendo deployadas corretamente na WEB, através da Heroku<br/>
-Realizado com sucesso o deploy do ProjetoADAD na plataforma Heroku, através da URL: https://adcbsul.herokuapp.com/
-
-<h4> 01/09 - Vinícius </h4>
-Criada rota para a página "objetivos" do programa ADAD. <br />
-Criada rota para a página "contato" do programa ADAD. <br />
-Criada rota para a página "nossos encontros" do programa ADAD. <br />
-Criada rota restrita de login para o programa ADAD. (ainda não funcional) <br />
-
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----
 
-## Api
+## Backlog do Produto
 
-<a name="api"></a>
+[Ver SCRUM](https://trello.com/b/Otut9SlE/projeto-adad-scrum)<br/>
+<a href="https://trello.com/b/rwOTsaWS/projeto-adad-kanban">Ver KANBAN - Alessandro</a><br/>
+<a href="https://trello.com/b/txmJC7si/projeto-adad-kanban-eliabe">Ver KANBAN - Eliabe</a>
 
-[Api](https://adcbsul.herokuapp.com/)
+<p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
-[Voltar ao índice](#summary)
+<h2 name="log">Log de eventos</h2>
+<h4>08/08 - Segunda-feira - Eliabe</h4>
+Criado repositório ProjetoADAD no meu Perfil da GitHub.<br/>
+Clonagem do repositório para minha máquina local.<br/>
+Realizada a instalação do Laravel em nossa aplicação<br/>
+Criação da branch Heroku, branch em que o projeto será deployado.<br/>
+Alteração no welcome.blade.php para testar se as atualizações do código-fonte estão sendo deployadas corretamente na WEB, através da Heroku.<br/>
+Realizado com sucesso o deploy do ProjetoADAD na plataforma Heroku, através da URL: https://adcbsul.herokuapp.com/
+
+<h4>10/08 - Quarta-feira - Eliabe</h4>
+Criada a página de início da Igreja Evangélica Assembleia de Deus em Campo Belo do Sul <br/>
+Criada a rota que exibe a página citada anteriormente.
+
+<h4>29/08 - Segunda-feira - Eliabe</h4>
+Criada main do Igreja Campo Belo do Sul, destinada a exibir os conteúdos da página principal da Igreja.
+
+<h4>29/08 - Segunda-feira - Eliabe</h4>
+Criado Header e Footer da página AD Campo Belo do Sul.<br/>
+Realizada componentização do Head, Header e Footer da Igreja Evangélica de Campo Belo do Sul.
+
+<h4> 01/09 - Quinta-feira - Vinícius </h4>
+Criada rota para a página "objetivos" do programa ADAD. <br />
+Criada rota para a página "contato" do programa ADAD. <br />
+Criada rota para a página "nossos encontros" do programa ADAD. <br />
+Criada rota restrita de login para o programa ADAD. (ainda não funcional)
+
+<h4>05/09 - Segunda-feira - Eliabe </h4>
+Criado um formulário para o visitante possa entrar em contato com a IEAD Campo Belo do Sul.<br/>
+Ele foi criado na view <em>formIgreja</em>
+
+<h4>07/09 - Quarta-feira - Alessandro </h4>
+Criado função para envio do formulário de contato via email. <br/>
+Criado template de email.
+
+<h4> 10/09 - Sábado - Eliabe </h4>
+Criação do Controller IgrejaController, contendo as funções solicitadas nas Rotas da Igreja.
+Realizada componentização das páginas recém-criadas: Institucional, Nossas Reuniões e Projetos.
+
+<h4>10/09 - Sábado - Eliabe </h4>
+Realizada componentização do Formulário de Contato.
+Criado arquivo de estilização da Igreja, com as devidas componentizações.
+Estilização do header e footer do site IEAD Campo Belo.
+
+<h4>11/09 - Domingo - Eliabe </h4>
+Criado conteúdos da página inicial do site
+
+<h4>11/09 - Domingo - Alessandro </h4>
+Criada página Institucional.<br>
+Criada página Nossas Reuniões.
+
+<h4>15/09 - Quinta-feira - Vinícius</h4>
+Sessão ADAD: <br/>
+Criada a página de login na branch "auth". (CSS ainda será aprimorado) <br/>
+Criada a página de cadastro na branch "auth". (CSS ainda será aprimorado) <br/>
+Adicionadas validações tanto para login quanto para cadastro. (em teste)
+
+<p align="right">(<a href="#index">Voltar ao índice</a>)</p>
+
+-----
 
 ## The Developers
 
@@ -142,4 +179,8 @@ Vinícius Jung <br/>
 [Github](https://github.com/Vinnie-Jung) <br>
 [Outlook](mailto:viniciusjung@outlook.com) <br><br>
 
+<<<<<<< HEAD
 [Voltar ao índice](#summary)
+=======
+<p align="right">(<a href="#index">Voltar ao índice</a>)</p>
+>>>>>>> index
