@@ -19,8 +19,10 @@ use App\Http\Controllers\AdadController;
 // usando funções do "IgrejaController"
 use App\Http\Controllers\IgrejaController;
 
+// Funcionalidades das páginas da Igreja
 
-// Rotas da Igreja
+// Rotas que usam IgrejaController
+
 Route::get('/', [IgrejaController::class, 'index'])->name('index.page');
 
 Route::get('/institucional', [IgrejaController::class, 'institucional_create'])->name('institucional_create');
@@ -28,28 +30,29 @@ Route::get('/institucional', [IgrejaController::class, 'institucional_create'])-
 // Formulário de Contato
 Route::get('/createformIgreja', [IgrejaController::class, 'form_create'])->name('form_create');
 
+// Rota para enviar os dados preenchidos no Formulário de Contato por email
+Route::post('/sendForm', [IgrejaController::class, 'sendForm'])->name('form_send');
+
 // Nossos Projetos
 Route::get('/nossosProjetos', [IgrejaController::class, 'projetos_create'])->name('projetos_create');
 
 // Nossas Reuniões
-Route::get('/nossasReunioes', [IgrejaController::class, 'nossas.reunioes_create'])->name('nossas.reunioes_create');
-
+Route::get('/nossasReunioes', [IgrejaController::class, 'nossas_reunioes_create'])->name('nossas_reunioes_create');
 
 // Cadastro de Alunos ADAD
+//  Rotas que usam AdadController
 
-// Exibindo Form para cadastro
-Route::get('/AreaRestrita', [AdadController::class, 'createAreaRestrita'])->name('aluno_create');
+// Rota para exibir Formulário para cadastro de alunos
+Route::get('/AreaRestrita', [AdadController::class, 'aluno_create'])->name('aluno_create');
 
 // Rota para cadastrar alunos ADAD
-Route::post('/alunos', [AdadController::class, 'store'])->name('aluno_store');
+Route::post('/alunos', [AdadController::class, 'aluno_store'])->name('aluno_store');
 
-// Rota para deletar aluno ADAD
-Route::delete('/alunos/{id}', [AdadController::class, 'destroy'])->name('aluno_destroy');
+// Rota para deletar um aluno ADAD
+Route::delete('/alunos/{id}', [AdadController::class, 'aluno_destroy'])->name('aluno_destroy');
 
 // Rota para exibir formulário de alteração de Aluno
-Route::get('/alunos/edit/{id}', [AdadController::class, 'edit'])->name('aluno_edit');
+Route::get('/alunos/edit/{id}', [AdadController::class, 'aluno_edit'])->name('aluno_edit');
 
-// Rota para alterar alunos
-Route::put('/alunos/update/{id}', [AdadController::class, 'update'])->name('aluno_update');
-
-Route::post('/sendForm', [IgrejaController::class, 'sendForm'])->name('form_send');
+// Rota para alterar alunos ADAD
+Route::put('/alunos/update/{id}', [AdadController::class, 'aluno_update'])->name('aluno_update');

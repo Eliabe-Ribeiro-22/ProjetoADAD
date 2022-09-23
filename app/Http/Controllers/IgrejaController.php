@@ -51,7 +51,7 @@ class IgrejaController extends Controller
         }
     }
 
-    public function nossas.reunioes_create()
+    public function nossas_reunioes_create()
     {
         try {
             return view('igreja.nossas-reunioes');

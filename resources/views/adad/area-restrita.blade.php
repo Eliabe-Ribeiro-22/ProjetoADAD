@@ -26,9 +26,9 @@ $title = 'Alterar aluno';
         <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
             <form method="POST"
 			@if ($alterar) 
-				action="{{ route('AlunosUpdate', ['id' => $aluno->id]) }}" 
+				action="{{ route('aluno_update', ['id' => $aluno->id]) }}" 
 			@else 
-				action="{{ route('AlunoStore') }}" 
+				action="{{ route('aluno_store') }}" 
 			@endif
 			>
 
@@ -347,8 +347,8 @@ $title = 'Alterar aluno';
                             <br>
                             <label>Crença/Religião: {{ $aluno->RELIGIAO }}</label>
                             <br>
-                            <a href="/alunos/edit/{{ $aluno->id }}">Editar</a>
-                            <form action="{{ route('AlunosDestroy', ['id' => $aluno->id]) }}" method="POST">
+                            <a href="{{route('aluno_edit',  ['id'=> $aluno->id])}}">Editar</a>
+                            <form action="{{ route('aluno_destroy', ['id' => $aluno->id]) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
                                 <button>Excluir</button>

@@ -12,13 +12,8 @@ use App\Models\Aluno;
 
 class AdadController extends Controller
 {
-    public function index_adad()
-    {
-        return view('adad.index');
-    }
-
-    // Exibir Form Cadastro de Alunos
-    public function createAreaRestrita()
+    // Função para exibir Formulário para cadastro de alunos
+    public function aluno_create()
     {
         try {
             $alunos = Aluno::all();
@@ -30,8 +25,8 @@ class AdadController extends Controller
         }
     }
 
-    // salvar alunos
-    public function store(Request $request)
+    // Função para cadastrar alunos ADAD
+    public function aluno_store(Request $request)
     {
         try {
             // salvar aluno
@@ -60,8 +55,8 @@ class AdadController extends Controller
         }
     }
 
-    // Exclusão de Alunos
-    public function destroy($id)
+    // Função para deletar um aluno ADAD
+    public function aluno_destroy($id)
     {
         try {
             // encontrar o id do aluno, para depois excluí-lo
@@ -73,8 +68,8 @@ class AdadController extends Controller
         }
     }
 
-    // Exibir Form de Alteração de aluno
-    public function edit($id)
+    // Função para exibir formulário de alteração de Aluno
+    public function aluno_edit($id)
     {
         $aluno = Aluno::findOrFail($id);
 
@@ -82,8 +77,8 @@ class AdadController extends Controller
         return view('adad.area-restrita', ['aluno' => $aluno, 'alterar' => true]);
     }
 
-    // Função para Alterar Aluno no DB
-    public function update(Request $request)
+    // Função para alterar alunos ADAD
+    public function aluno_update(Request $request)
     {
         try {
             $data = $request->all();
