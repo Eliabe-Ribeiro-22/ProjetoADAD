@@ -10,13 +10,28 @@ class IgrejaController extends Controller
     public function index()
     {
 		try{
-			return view('igreja.index');
+            // API BIBLIA - Vou desativar, pois vou trabalhar com CSS
+        // Ela tem limite de requisicoes por hora
+        #$api = "https://www.abibliadigital.com.br/api/verses/nvi/sl/91/1";
+        #$dailyVerse = json_decode(file_get_contents($api), true);
+        $dailyVerse = ['a', 'b'];
+			return view('igreja.index', ['dailyVerse' => $dailyVerse]);
 		}catch(Exception $e){
 			echo $e->getMessage();
 		}
     }
 
-    public function createFormIgreja()
+    public function institucional_create()
+    {
+        try {
+            return view('igreja.institucional');
+        } catch (Exception $e) {
+            echo 'Ocorreu um erro ao exibir os nossos eventos!';
+            echo '</br>';
+        }
+    }
+    
+    public function form_create()
     {
         try {
             return view('igreja.form');
@@ -26,7 +41,7 @@ class IgrejaController extends Controller
         }
     }
 
-    public function createProjetos()
+    public function projetos_create()
     {
         try {
             return view('igreja.projetos');
@@ -36,16 +51,7 @@ class IgrejaController extends Controller
         }
     }
 
-    public function createInstitucional()
-    {
-        try {
-            return view('igreja.institucional');
-        } catch (Exception $e) {
-            echo 'Ocorreu um erro ao exibir os nossos eventos!';
-            echo '</br>';
-        }
-    }
-    public function createNossasReunioes()
+    public function nossas.reunioes_create()
     {
         try {
             return view('igreja.nossas-reunioes');
