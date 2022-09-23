@@ -22,7 +22,7 @@
                 <li class="li"><a href="/createformIgreja" class="btn">Contato</a></li>
                 <li class="li"><a href="/nossosProjetos" class="btn">Nossos Projetos</a></li>
                 <li class="li"><a href="/nossasReunioes" class="btn" id="btnReunioes">Nossas Reuniões</a></li>
-                <li class="li"><a href="#" class="btn">Login</a></li>
+                <li class="li"><a href="/auth/login" class="btn">Login</a></li>
             </ul>
         </div>
     </nav>
