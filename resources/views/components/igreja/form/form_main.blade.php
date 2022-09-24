@@ -1,7 +1,7 @@
 {{-- Main do Form - Formulário de Contato --}}
 <h1 id="h1">Entre em Contato Conosco!</h1>
 
-<form action="/sendForm" method="POST">
+<form action="{{ route('form_send') }}" method="POST">
     @csrf
     <h1 id="formTitle">Formulário de Contato</h1>
 

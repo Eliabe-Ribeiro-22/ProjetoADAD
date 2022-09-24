@@ -13,43 +13,46 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// using functions on Controllers "ChurchController"
-use App\Http\Controllers\ChurchController;
+// usando funções do "AdadController"
 use App\Http\Controllers\AdadController;
+
+// usando funções do "IgrejaController"
 use App\Http\Controllers\IgrejaController;
 
-Route::get('/', [IgrejaController::class, 'index']);
+// Funcionalidades das páginas da Igreja
 
-Route::get('/institucional', [IgrejaController::class, 'createInstitucional']);
+// Rotas que usam IgrejaController
 
+Route::get('/', [IgrejaController::class, 'index'])->name('index.page');
 
-// Church's routes
-Route::get('/', [ChurchController::class, 'index']);
+Route::get('/institucional', [IgrejaController::class, 'institucional_create'])->name('institucional_create');
 
-Route::get('/institucional', [ChurchController::class, 'createInstitucional']);
+// Formulário de Contato
+Route::get('/createformIgreja', [IgrejaController::class, 'form_create'])->name('form_create');
 
-// Contact's form
-Route::get('/createformIgreja', [ChurchController::class, 'createFormIgreja']);
+// Rota para enviar os dados preenchidos no Formulário de Contato por email
+Route::post('/sendForm', [IgrejaController::class, 'sendForm'])->name('form_send');
 
-// Projects
-Route::get('/nossosProjetos', [ChurchController::class, 'createProjetos']);
+// Nossos Projetos
+Route::get('/nossosProjetos', [IgrejaController::class, 'projetos_create'])->name('projetos_create');
 
-// Our Meetings
-Route::get('/nossasReunioes', [ChurchController::class, 'createNossasReunioes']);
+// Nossas Reuniões
+Route::get('/nossasReunioes', [IgrejaController::class, 'nossas_reunioes_create'])->name('nossas_reunioes_create');
 
+// Cadastro de Alunos ADAD
+//  Rotas que usam AdadController
 
-// Cadastro de Alunos
-// Exibindo Form para cadastro
-Route::get('/AreaRestrita', [AdadController::class, 'createAreaRestrita'])->name('AlunosCreate');
+// Rota para exibir Formulário para cadastro de alunos
+Route::get('/AreaRestrita', [AdadController::class, 'aluno_create'])->name('aluno_create');
 
-// route to register ADAD students
-Route::post('/alunos', [AdadController::class, 'store'])->name('AlunoStore');
+// Rota para cadastrar alunos ADAD
+Route::post('/alunos', [AdadController::class, 'aluno_store'])->name('aluno_store');
 
-// To delete
-Route::delete('/alunos/{id}', [AdadController::class, 'destroy'])->name('AlunosDestroy');
+// Rota para deletar um aluno ADAD
+Route::delete('/alunos/{id}', [AdadController::class, 'aluno_destroy'])->name('aluno_destroy');
 
-// Exibir Form de Atualizar cadastro
-Route::get('/alunos/edit/{id}', [AdadController::class, 'edit'])->name('AlunosEdit');
+// Rota para exibir formulário de alteração de Aluno
+Route::get('/alunos/edit/{id}', [AdadController::class, 'aluno_edit'])->name('aluno_edit');
 
-// To update
-Route::put('/alunos/update/{id}', [AdadController::class, 'update'])->name('AlunosUpdate');
+// Rota para alterar alunos ADAD
+Route::put('/alunos/update/{id}', [AdadController::class, 'aluno_update'])->name('aluno_update');
