@@ -11,14 +11,16 @@ $title = 'Alterar aluno';
 
 <head>
     <meta charset="utf-8" />
-	<link rel="stylesheet" href="/assets/css/adad/alunos.css">
-    <!-- link rel="stylesheet" type="text/css" href="assets/css/igreja/styles.css" -->
+	<link rel="stylesheet" href="/assets/css/tailwind.css">
+	<!-- link rel="stylesheet" href="/assets/css/adad/alunos.css"-->
+   	<!--link rel="stylesheet" type="text/css" href="assets/css/igreja/styles.css" -->
+	<!-- script src="https://cdn.tailwindcss.com"></script-->
     <title>{{$title}}</title>
 </head>
 <div class="font-sans text-gray-900 antialiased">
     <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
         <div>
-            <a href="/">
+            <a class="bg-gray-200" href="/">
                 <img src="https://videos.adventistas.org/pt/wp-content/themes/pa-theme-sedes/assets/sedes/pt/default.svg">
             </a>
         </div>
@@ -301,7 +303,7 @@ $title = 'Alterar aluno';
             @endif
         </form>
     </div>
-        <div style="background: rgb(118, 118, 235); margin: 0 auto;">
+        <div class="bg-red-700" style="margin: 0 auto;">
             <div>
 
                 @if ($alterar) {{-- Se o visitante estiver editando um aluno --}}
