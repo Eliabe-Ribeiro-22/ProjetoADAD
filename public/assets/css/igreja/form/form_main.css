@@ -113,12 +113,12 @@ textarea:focus {
     cursor: pointer;
 }
 
-#submit:hover {
+#enviar:hover {
     background: #5e6161;
     background: linear-gradient(to bottom, #5e6161 5%, #e6e6e6 100%);
 }
 
-#submit:active {
+#enviar:active {
     top: 1px;
 
     position: relative;

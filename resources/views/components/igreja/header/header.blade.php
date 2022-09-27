@@ -2,12 +2,9 @@
 <header>
     <nav>
         <div id="logo">
-            <div id="logoIgreja">
-                <!-- old -->
-                {{-- <img src="assets/img/igreja/logoIgreja.jpeg" alt="logo da Igreja" id="t"> --}}
+            {{-- <img src="assets/img/igreja/logoIgreja.jpeg" alt="logo da Igreja" id="t"> --}}
+            <img src="assets/img/igreja/logoIgreja.png" alt="logo da Igreja" id="logo-igreja">
 
-                <img src="assets/img/igreja/b.png" alt="logo da Igreja" id="t">
-            </div>
             <a id="nomeIgreja">
                 ASSEMBLEIA DE DEUS
                 <br />

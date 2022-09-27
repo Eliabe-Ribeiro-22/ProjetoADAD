@@ -294,7 +294,7 @@ $title = 'Alterar aluno';
             
 
             @if ($alterar)
-            {{-- Cancelar Alterações --}}
+            {{-- Cancelar Alterações --}}   
             <div class="flex items-center justify-end mt-4">
                 <a href="{{ route('aluno_create') }}" class="underline mx-auto text-sm transition" >
 				Cancelar Alterações
