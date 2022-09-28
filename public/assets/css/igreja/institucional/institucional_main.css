@@ -1,28 +1,53 @@
 #square {
     margin: 0 auto;
 
-    width: 900px;
+    width: 90vw;
     height: 400px;
 
-    text-align: center;
+    background-color: blue;
 }
 
 #TextPosition {
     top: 50%;
     position: relative;
     transform: translateY(-60%);
+    background-color: yellow;
 }
 
-.text {
-    background: #333333;
+/* Responsividade Galaxy Fold */
+@media only screen and (min-width: 576px) {
+    body {
+        background-color: red;
+    }
 
-    font-family: "arial black";
-    font-size: 40px;
-    color: #cccccc;
-
-    border-radius: 10px;
-}
-
-.tInstitucional{
-    padding: 70px 60px;
+    #square {
+        margin: 0 auto;
+    
+        /* width: 900px; */
+        width: 80vw;
+        height: 400px;
+    
+    
+        text-align: center;
+    }
+    
+    #TextPosition {
+        top: 50%;
+        position: relative;
+        transform: translateY(-60%);
+    }
+    
+    .text {
+        background: #333333;
+    
+        font-family: "arial black";
+        font-size: 40px;
+        color: #cccccc;
+    
+        border-radius: 10px;
+    }
+    
+    .tInstitucional {
+        padding: 70px 60px;
+    }
 }
