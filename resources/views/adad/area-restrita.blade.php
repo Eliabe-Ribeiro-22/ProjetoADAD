@@ -9,14 +9,8 @@ $title = 'Alterar aluno';
 }
 @endphp
 
-<head>
-    <meta charset="utf-8" />
-	<link rel="stylesheet" href="/assets/css/tailwind.css">
-	<!-- link rel="stylesheet" href="/assets/css/adad/alunos.css"-->
-   	<!--link rel="stylesheet" type="text/css" href="assets/css/igreja/styles.css" -->
-	<!-- script src="https://cdn.tailwindcss.com"></script-->
-    <title>{{$title}}</title>
-</head>
+<x-adad.head.head :title="$title" />
+
 <div class="font-sans text-gray-900 antialiased">
     <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
         <div>

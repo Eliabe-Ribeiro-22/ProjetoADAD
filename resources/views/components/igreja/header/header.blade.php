@@ -1,19 +1,18 @@
 {{-- nav_bar do templateIgreja --}}
 <nav>
     <div id="nav_logo">
-        <img src="/img/adad_logo.png" alt="logo-adad" id="logo-adad">
+        <a href="{{ route('aluno_create') }}" target="_blank">
+            <img src="/img/adad_logo.png" alt="logo-adad" id="logo-adad">
+        </a>
 
-        <img src="/assets/img/igreja/logoIgreja.png" alt="logo da Igreja" id="logo-igreja">
+        <a href="{{ route('index.page') }}">
+            <img src="/assets/img/igreja/logoIgreja.png" alt="logo da Igreja" id="logo-igreja">
+        </a>
+
     </div>
 
     <div id="nav_menu">
         <ul id="menu_button_ul">
-            <li class="menu_button_li">
-                <a href="{{ route('index.page') }}" class="menu_button_item">
-                    Início
-                </a>
-            </li>
-
             <li class="menu_button_li">
                 <a href="{{ route('institucional_create') }}" class="menu_button_item" id="btnInstitucional">
                     Institucional
@@ -35,12 +34,6 @@
             <li class="menu_button_li">
                 <a href="{{ route('nossas_reunioes_create') }}" class="menu_button_item" id="btnReunioes">
                     Nossas Reuniões
-                </a>
-            </li>
-
-            <li class="menu_button_li">
-                <a href="{{ route('aluno_create') }}" class="menu_button_item" id="btnAreaRestrita">
-                    Área Restrita
                 </a>
             </li>
         </ul>
