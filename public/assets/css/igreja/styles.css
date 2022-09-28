@@ -33,9 +33,9 @@ body {
 }
 
 :root {
-    --color-primary: #fff;
-    --background-button: #cccccc;
-    --background-header: #666666;
+    --color-primary: #ff6600;
+    /* --background-button: #7d7d7d; */
+    --background-header: #dedcdc;
 
     /* Form de Contato */
     --font-family-form: "arial black";

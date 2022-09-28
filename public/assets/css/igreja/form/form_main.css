@@ -1,6 +1,6 @@
 /* Form Contato */
 
-#h1 {
+.h1 {
     margin: 40px;
 
     font-family: var(--font-family-form);
