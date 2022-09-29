@@ -1,41 +1,40 @@
-{{-- Header do templateIgreja --}}
-<header>
-    <nav>
-        <div id="logo">
-            <div id="logoIgreja">
-                <!-- old -->
-                {{-- <img src="assets/img/igreja/logoIgreja.jpeg" alt="logo da Igreja" id="t"> --}}
+{{-- nav_bar do templateIgreja --}}
+<nav>
+    <div id="nav_logo">
+        <a href="{{ route('aluno_create') }}" target="_blank">
+            <img src="/img/adad_logo.png" alt="logo-adad" id="logo-adad">
+        </a>  
+        
+        <a href="{{ route('index.page') }}">
+            <img src="/assets/img/igreja/logoIgreja.png" alt="logo da Igreja" id="logo-igreja">
+        </a>  
+    </div>
 
-                <img src="assets/img/igreja/b.png" alt="logo da Igreja" id="t">
-            </div>
-            <a id="nomeIgreja">
-                ASSEMBLEIA DE DEUS
-                <br />
-                CAMPO BELO DO SUL
-            </a>
-        </div>
+    <div id="nav_menu">
+        <ul id="menu_button_ul">
+            <li class="menu_button_li">
+                <a href="{{ route('institucional_create') }}" class="menu_button_item" id="btnInstitucional">
+                    Institucional
+                </a>
+            </li>
 
-        <div id="menu">
-            <ul id="ul">
-                <li class="li"><a href="{{ route('index.page') }}" class="btn">Início</a></li>
+            <li class="menu_button_li">
+                <a href="{{ route('form_create') }}" class="menu_button_item">
+                    Contato
+                </a>
+            </li>
 
-                <li class="li">
-                    <a href="{{ route('institucional_create') }}" class="btn" id="btnInstitucional">
-                        Institucional
-                    </a>
-                </li>
+            <li class="menu_button_li">
+                <a href="{{ route('projetos_create') }}" class="menu_button_item" id="btnProjetos">
+                    Nossos Projetos
+                </a>
+            </li>
 
-                <li class="li"><a href="{{ route('form_create') }}" class="btn">Contato</a></li>
-                <li class="li"><a href="{{ route('projetos_create') }}" class="btn">Nossos Projetos</a></li>
-
-                <li class="li">
-                    <a href="{{ route('nossas_reunioes_create') }}" class="btn" id="btnReunioes">
-                        Nossas Reuniões
-                    </a>
-                </li>
-
-                <li class="li"><a href="{{ route('aluno_create') }}" class="btn">Área Restrita</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
+            <li class="menu_button_li">
+                <a href="{{ route('nossas_reunioes_create') }}" class="menu_button_item" id="btnReunioes">
+                    Nossas Reuniões
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

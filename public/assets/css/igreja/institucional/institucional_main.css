@@ -1,8 +1,13 @@
+#titleInstitucional{
+    position: relative;
+    top: -39px;
+}
+
 #square {
     margin: 0 auto;
 
-    width: 900px;
-    height: 400px;
+    width: 90vw;
+    height: 50vh;
 
     text-align: center;
 }
@@ -10,18 +15,56 @@
 #TextPosition {
     top: 50%;
     position: relative;
+
     transform: translateY(-60%);
 }
 
 .text {
-    background: #333333;
+    background: #212121;
+
+    padding: 9% 10px;
+
+    height: 100%;
 
     font-family: "arial black";
-    font-size: 40px;
-    color: #cccccc;
+    font-size: 30px;
+    color: #ff6600;
 
-    border-radius: 10px;
+    border-radius: 5px;
 }
-.tInstitucional{
-    padding: 70px 60px;
+
+/* Responsividade Galaxy Fold */
+@media screen and (min-width: 576px) {
+    body {
+        background-color: red;
+    }
+
+    #square {
+       
+        margin-top: 10px;
+        width: 80vw;
+        height: 90vh;
+
+        text-align: center;
+    }
+
+    #TextPosition {
+        top: 50%;
+        position: relative;
+        transform: translateY(-60%);
+    }
+
+    .text {
+        background: #333333;
+
+        font-family: "arial black";
+        font-size: 40px;
+        color: #cccccc;
+
+        border-radius: 10px;
+    }
+
+    .tInstitucional {
+        padding: 70px 60px;
+    }
 }

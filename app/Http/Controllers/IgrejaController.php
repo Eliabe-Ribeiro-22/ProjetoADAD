@@ -9,16 +9,28 @@ class IgrejaController extends Controller
 {
     public function index()
     {
-		try{
+        try {
             // API BIBLIA - Vou desativar, pois vou trabalhar com CSS
-        // Ela tem limite de requisicoes por hora
-        #$api = "https://www.abibliadigital.com.br/api/verses/nvi/sl/91/1";
-        #$dailyVerse = json_decode(file_get_contents($api), true);
-        $dailyVerse = ['a', 'b'];
-			return view('igreja.index', ['dailyVerse' => $dailyVerse]);
-		}catch(Exception $e){
-			echo $e->getMessage();
-		}
+            // Ela tem limite de requisicoes por hora
+            #$api = "https://www.abibliadigital.com.br/api/verses/nvi/sl/91/1";
+            #$dailyVerse = json_decode(file_get_contents($api), true);
+            // $dailyVerse = ['a', 'b'];
+            $dailyVerse = [
+                'book' => [
+                    'abbrev' => 'en',
+                    'name' => 'Salmos',
+                    'author' => 'David, Moisés, Salomão',
+                    'group' => 'Poéticos',
+                    'version' => 'nvi',
+                ],
+                'chapter' => 91,
+                'number' => 1,
+                'text' => 'Aquele que habita no abrigo do Altíssimo e descansa à sombra do Todo-poderoso',
+            ];
+            return view('igreja.index', ['dailyVerse' => $dailyVerse]);
+        } catch (Exception $e) {
+            echo $e->getMessage();
+        }
     }
 
     public function institucional_create()
@@ -30,7 +42,7 @@ class IgrejaController extends Controller
             echo '</br>';
         }
     }
-    
+
     public function form_create()
     {
         try {

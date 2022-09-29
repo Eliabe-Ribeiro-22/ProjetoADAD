@@ -4,5 +4,5 @@
 @section('titulo', 'Início')
 
 @section('corpo')
-    <x-igreja.index.index_main />
+    <x-igreja.index.index_main :dailyVerse="$dailyVerse"/>
 @endsection

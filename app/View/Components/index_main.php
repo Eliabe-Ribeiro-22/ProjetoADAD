@@ -12,9 +12,11 @@ class index_main extends Component
      * @return void
      */
 
-    public function __construct()
+    public $dailyVerse;
+    
+    public function __construct($dailyVerse)
     {
-       //
+        $this->dailyVerse = $dailyVerse;
     }
 
     /**

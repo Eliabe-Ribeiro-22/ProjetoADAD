@@ -7,18 +7,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
 
 /* Styles Componentizados */
-
-
 @import "header/header.css";
 @import "footer/footer.css";
 
-/* Form Contato */
-@import "formContato/form_main.css";
-
-/* Página Institucional */
+/*  Formulário Contato */
+/*  Página Institucional */
+/*  Página nossas-reuniões */
+@import "form/form_main.css";
 @import "institucional/institucional_main.css";
-
-/* Página nossas-reuniões */
 @import "nossas-reunioes/nossas-reunioes_main.css";
 
 /* styles globais */
@@ -36,10 +32,11 @@ body {
 }
 
 :root {
-    --color-primary: #fff;
-    --background-button: #cccccc;
-    --background-header: #666666;
+    --color-primary: #ff6600;
+    /* --background-button: #7d7d7d; */
+    --background-header: #dedcdc;
 
     /* Form de Contato */
     --font-family-form: "arial black";
 }
+
