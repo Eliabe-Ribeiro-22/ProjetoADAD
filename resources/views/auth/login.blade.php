@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <script src="resources/js/login/password.js"></script>
+    <script src="/resources/js/login/password.js"></script>
     
     <div class="font-sans text-gray-900 antialiased">
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
