@@ -57,9 +57,8 @@ nav {
 /* passar limpo */
 
 .menu_button_item {
-    padding: 0.625rem 0.6rem 6px 0.6rem;
-    /* padding: 10px 10px 6px 10px; */
-    
+    padding: 0.8rem 0.6rem 6px 0.6rem;
+   
     width: 100%;
 
     background-color: var(--background-header);
@@ -71,8 +70,6 @@ nav {
     color: var(--color-primary);
     text-decoration: none;
 
-    border-radius: 4px;
-
     transition-delay: 200ms;
 
     transition-timing-function: ease-in-out;
@@ -80,20 +77,4 @@ nav {
 
 .menu_button_item:hover {
     color: #ff4000;
-    border: none;
 }
-/* 
-#btnInstitucional {
-    padding-top: 10px;
-}
-
-#btnProjetos,
-#btnAreaRestrita,
-#btnReunioes {
-    padding: 2px 0 6px 0;
-}
-
-#btnReunioes {
-    padding: 2px 0 6px 0;
-    font-size: 20px;
-} */
