@@ -43,7 +43,10 @@ Route::get('/nossasReunioes', [IgrejaController::class, 'nossas_reunioes_create'
 //  Rotas que usam AdadController
 
 // Rota para exibir Formulário para cadastro de alunos
-Route::get('/AreaRestrita', [AdadController::class, 'aluno_create'])->name('aluno_create');
+
+Route::get('/AreaRestrita', [AdadController::class, 'aluno_create'])
+->name('aluno_create')
+->middleware('auth');
 
 // Rota para cadastrar alunos ADAD
 Route::post('/alunos', [AdadController::class, 'aluno_store'])->name('aluno_store');

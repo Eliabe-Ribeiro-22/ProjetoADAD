@@ -36,13 +36,6 @@
                     Nossas Reuniões
                 </a>
             </li>
-
-            <li class="menu_button_li">
-                <a href="{{ route('login') }}" class="menu_button_item">
-                   LOg
-                </a>
-            </li>
-
         </ul>
     </div>
 </nav>

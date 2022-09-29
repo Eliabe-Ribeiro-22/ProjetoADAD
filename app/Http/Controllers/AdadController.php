@@ -116,8 +116,7 @@ class AdadController extends Controller
         ]);
 
         if (Auth::attempt($credentials)) {
-            // return redirect()->intended();
-            return 'user logado';
+            return redirect()->intended();
         } else {
             return back()->with('msg', 'Erro de autenticação: Verifique seu email e a senha');
         }
@@ -154,8 +153,7 @@ class AdadController extends Controller
 
         $user->save();
 
-        Auth::login($user); // Loga
-        // return redirect()->intended('/');
-        return 'user logado';
+        Auth::login($user); // Loga com Sanctum
+        return redirect()->intended('/');
     }
 }
