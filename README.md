@@ -45,32 +45,29 @@ Campos para o formulário de contato:
 
 Também deve conter uma local para exibir os projetos sociais promovidos pela entidade, que são:
 
-- Roupas;
-- Calçados;
-- Alimentos;
+1) Projeto Prática de Fé;
+2) Projeto Social;
+3) Projeto Educacional (ADAD);
 
-Deve conter uma parte reservada à divulgação dos eventos do ADAD, bem como uma breve explicação acerca dele, e seus objetivos. O ADAD é a sigla para Adolescentes que Amam a Deus. É um grupo formado por pré-adolescentes e adolescentes de 6 a 21 anos, criado no dia 13 de março de 2001, com sede na cidade de São José - Santa Catarina.
+## Sessão ADAD
 
-O grupo ADAD prática atividades extra classes, no âmbito físico, social, cultural e espiritual, promovendo atividades criativas onde os adolescentes colocam os princípios éticos cristãos em prática no cotidiano e nas vivências diárias
+No projeto deve conter uma parte reservada à divulgação dos eventos do programa ADAD, bem como uma breve explicação acerca do projeto e de seus objetivos. Solicitada também uma área restrita, usando um login, onde administradores terão uma área para realizar o cadastro dos alunos. O nome do projeto é uma sigla para Adolescentes que Amam a Deus. É um grupo formado por pré-adolescentes e adolescentes de 6 a 21 anos, criado no dia 13 de março de 2001, com sede na cidade de São José - Santa Catarina.
 
-Algumas atividades que realizamos:
+O grupo ADAD pratica atividades extra classes, no âmbito físico, social, cultural e espiritual, promovendo atividades criativas onde os adolescentes colocam os princípios éticos cristãos em prática no cotidiano e nas vivências diárias.
+
+Algumas atividades que são realizadas:
 
 - Prática de acampamento.
-
 - Participação de desfile cívico.
-
 - Instrução de campo como rapel, tirolesa, cama de gato, rastejamento, pista noturna, bivaque, ponte de três cordas, nós e amarras, ou qualquer atividade recreativa.
-
 - Implementação de programas e ações integradas para garantir e defender a promoção dos direitos da criança e do adolescente.
 
-Deve conter uma local para descrever os objetivos do ADAD, sendo eles:
+### Objetivos ADAD:
 
 - Contribuir para que as crianças, adolescentes e jovens assumam seu próprio desenvolvimento do caráter, potencialidades físicas, intelectuais, sociais, afetivas, espirituais como cidadãos responsáveis, participantes e úteis em suas comunidades.
-- Incentivar o compromisso do adolescente quanto à frequência escolar, bem como ajudá-lo a entender sua vocação, mostrando caminhos para a escolha da carreira profissional.
+- Incentivar o compromisso do adolescente quanto a frequência escolar, bem como ajudá-lo a entender sua vocação, mostrando caminhos para a escolha da carreira profissional.
 - Prestar serviços de caráter social, cultural, educacional e esportivo, providenciando para isso cursos, palestras e afins, de sua escolha, obedecendo o regime de atendimento conforme o artigo 9º do Estatuto da Criança e Adolescentes (ECA).
 - Promoção da ética, da paz, da cidadania, dos direitos humanos, da democracia e de outros valores universais.
-
-Queremos também uma área restrita, usando um login, onde acessaremos uma área para realizar o cadastro dos alunos ADAD. Os dados que queremos armazenar são como a foto em anexo.
 
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
