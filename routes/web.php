@@ -56,3 +56,13 @@ Route::get('/alunos/edit/{id}', [AdadController::class, 'aluno_edit'])->name('al
 
 // Rota para alterar alunos ADAD
 Route::put('/alunos/update/{id}', [AdadController::class, 'aluno_update'])->name('aluno_update');
+
+
+//  Login / Registrar (get)
+Route::get('/auth/login', [AdadController::class, 'login'])->name('login');
+Route::get('/auth/register', [AdadController::class, "register"])->name('register');
+Route::get('forgot-password', [AdadController::class, 'showForgetPasswordForm'])->name('showForgetPasswordForm');
+
+// Login / Registrar (post)
+Route::post('/authenticate', [AdadController::class, "autorizar"])->name('authenticate');
+Route::post('/newuser', [AdadController::class, "store"])->name('newuser');
