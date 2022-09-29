@@ -2,32 +2,30 @@
 nav {
     top: 0;
     left: 0;
-    
+
     width: 100%;
     height: 87px;
 
-    display: flex;    
-    
+    display: flex;
+
     background-color: var(--background-header);
 }
 
-#nav_logo{
+#nav_logo {
     margin: 0;
-    padding: .19rem 0;
+    padding: 0.19rem 0;
     padding-left: 40px;
-    
+
     width: 35%;
 
     display: flex;
 }
 
-#logo-adad{
+#logo-adad {
     width: 80px;
     height: 80px;
-
-    cursor: pointer;
+    cursor: default;
 }
-
 
 #logo-igreja {
     padding: 0 15px;
@@ -43,7 +41,6 @@ nav {
 
 #menu_button_ul {
     display: flex;
-
     list-style: none;
 }
 
@@ -53,30 +50,22 @@ nav {
 
     width: 25%;
     height: 50px;
+
+    display: flex;
 }
 
 /* passar limpo */
-#nomeIgreja {
-    margin: 10px 13px;
-    padding-top: 1px;
-    width: 75%;
-
-    font-family: "Impact";
-    text-align: center;
-    color: #000000;
-    font-size: 27px;
-}
-
 
 .menu_button_item {
-    padding: 10px 10px 6px 10px;
+    padding: 0.625rem 0.6rem 6px 0.6rem;
+    /* padding: 10px 10px 6px 10px; */
     
     width: 100%;
 
     background-color: var(--background-header);
 
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     font-family: "Verdana";
     font-weight: bold;
     color: var(--color-primary);
@@ -84,27 +73,27 @@ nav {
 
     border-radius: 4px;
 
-    /* transicao ao passar o mouse por cima do 'botao' */
-    transition: background-color 0.9s;
-    transition-delay: 50ms;
+    transition-delay: 200ms;
 
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-in-out;
 }
 
- .menu_button_item:hover {
+.menu_button_item:hover {
     color: #ff4000;
     border: none;
 }
-
+/* 
 #btnInstitucional {
     padding-top: 10px;
 }
 
-#btnProjetos, #btnAreaRestrita, #btnReunioes{
+#btnProjetos,
+#btnAreaRestrita,
+#btnReunioes {
     padding: 2px 0 6px 0;
 }
 
 #btnReunioes {
     padding: 2px 0 6px 0;
     font-size: 20px;
-}
+} */
