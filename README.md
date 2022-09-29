@@ -51,9 +51,9 @@ Também deve conter uma local para exibir os projetos sociais promovidos pela en
 
 ## Sessão ADAD
 
-No projeto deve conter uma parte reservada à divulgação dos eventos do programa ADAD, bem como uma breve explicação acerca do projeto e de seus objetivos. Solicitada também uma área restrita, usando um login, onde administradores terão uma área para realizar o cadastro dos alunos. O nome do projeto é uma sigla para Adolescentes que Amam a Deus. É um grupo formado por pré-adolescentes e adolescentes de 6 a 21 anos, criado no dia 13 de março de 2001, com sede na cidade de São José - Santa Catarina.
+No projeto deve conter uma parte reservada à divulgação dos eventos do programa ADAD, bem como uma breve explicação acerca do projeto e de seus objetivos. Solicitada também uma área restrita usando um login, onde administradores terão uma área para realizar o cadastro dos alunos.
 
-O grupo ADAD pratica atividades extra classes, no âmbito físico, social, cultural e espiritual, promovendo atividades criativas onde os adolescentes colocam os princípios éticos cristãos em prática no cotidiano e nas vivências diárias.
+O nome do projeto é uma sigla para Adolescentes que Amam a Deus. É um grupo formado por pré-adolescentes e adolescentes de 6 a 21 anos, criado no dia 13 de março de 2001, com sede na cidade de São José, Santa Catarina. O grupo ADAD pratica atividades extra classes, no âmbito físico, social, cultural e espiritual, promovendo atividades criativas nas quais os adolescentes colocam os princípios éticos cristãos em prática no cotidiano e nas vivências diárias.
 
 Algumas atividades que são realizadas:
 
