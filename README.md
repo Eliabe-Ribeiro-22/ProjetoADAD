@@ -166,6 +166,7 @@ Eliabe Ribeiro Mota<br/>
 -----
 
 Vinícius Jung <br/>
+[Curriculum Vitae](https://github.com/Vinnie-Jung/Vinnie-Jung) <br>
 [Linkedin](https://www.linkedin.com/in/vinicius-jung) <br>
 [Github](https://github.com/Vinnie-Jung) <br>
 [Outlook](mailto:viniciusjung@outlook.com) <br><br>
