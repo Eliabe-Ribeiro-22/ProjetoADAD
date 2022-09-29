@@ -20,35 +20,28 @@
 
 <a name="projetoWeb"></a>
 
-[Projeto Web](https://adcbsul.herokuapp.com/)
+[Projeto Web - Igreja](https://adcbsul.herokuapp.com/)
 
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 ## Objetivo do Projeto
 
-<br />
-
 <a name="objetivo"></a>
 
-O cliente quer um site para Igreja Evangélica Assembleia de Deus em Campo Belo do Sul.  
+O cliente quer um site para Igreja Evangélica Assembleia de Deus em Campo Belo do Sul. O projeto deve conter uma página para descrever a entidade não-governamental, uma página inicial e um formulário para contato. O site também deve conter um rodapé com os seguintes elementos: 
 
-Ele deve conter uma página descrever a entidade não-governamental, uma página inicial e um formulário para contato.
-
-Ele também deve conter o endereço da igreja, que é "Rua Gerônimo Xavier de Oliveira, nº 230, Centro, Campo Belo do Sul, SC, Brasil".
- Telefone:  
-
-- 3249-1036
-- What's: +55 (049) 9 88477611
+- Endereço: "Rua Gerônimo Xavier de Oliveira, nº 230, Centro, Campo Belo do Sul, SC, Brasil".
+- Telefone: +55 (049) 3249-1036.
+- Whatsapp: +55 (049) 9 8847-7611.
 - e-mail: <adcbsul@gmail.com>
-- Campos para o formulário:
-- Nome
-- telefone
-- Mensagem que o visitante irá enviar
-  
-Também deve conter os dias de reuniões, que são:
+- Dias e horários das reuniões: Quinta-feira às 19:30 / Domingo às 19:00.
 
-- Quinta-feira às 19:30 hs
-- Domingo às 19:00
+**OBS:** É possível que o formulário para contato seja implementado diretamente no rodapé do site. Caso não seja, será colocado em uma página exclusiva.
+
+Campos para o formulário de contato:
+1) Nome.
+2) telefone.
+3) Mensagem que o visitante irá enviar.
 
 Também deve conter uma local para exibir os projetos sociais promovidos pela entidade, que são:
 
