@@ -195,7 +195,7 @@ class AdadController extends Controller
     public function showForgetPasswordForm()
     {
         return response()
-            ->view('auth.forgetPassword')
+            ->view('auth.forgot-password')
             ->setStatusCode(200);
     }
 
