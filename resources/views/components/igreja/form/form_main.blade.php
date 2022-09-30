@@ -1,7 +1,7 @@
 {{-- Main do Form - Formulário de Contato --}}
-<h1 id="h1">Entre em Contato Conosco!</h1>
+<h1 class="title" id="title-before-form">Entre em Contato Conosco!</h1>
 
-<form action="{{ route('form_send') }}" method="POST">
+<form action="{{ route('form_send') }}" method="POST" id="formulario-contato">
     @csrf
     <h1 id="formTitle">Formulário de Contato</h1>
 
