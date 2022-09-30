@@ -40,7 +40,7 @@
                             autocomplete="current-password">
                     </div>
                     
-                    <input type="checkbox" onclick="showPassword()" />
+                    <input type="checkbox" onclick="showPassgit word()" />
                     Exibir senha
 
                     <div class="flex items-center justify-between mt-4">
