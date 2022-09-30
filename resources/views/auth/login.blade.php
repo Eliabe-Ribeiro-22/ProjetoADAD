@@ -7,7 +7,8 @@
 </head>
 
 <body>
-    <script src="/resources/js/login/password.js"></script>
+    {{-- <script src="/resources/js/login/password.js"></script> --}}
+    <script type="text/javascript" src="/assets/js/password.js"></script>
     
     <div class="font-sans text-gray-900 antialiased">
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
@@ -39,7 +40,7 @@
                             autocomplete="current-password">
                     </div>
                     
-                    <input type="checkbox" onclick="exibir_senha()" />
+                    <input type="checkbox" onclick="showPassword()" />
                     Exibir senha
 
                     <div class="flex items-center justify-between mt-4">
