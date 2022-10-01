@@ -7,7 +7,6 @@
 </head>
 
 <body>
-    {{-- <script src="/resources/js/login/password.js"></script> --}}
     <script type="text/javascript" src="/assets/js/password.js"></script>
     
     <div class="font-sans text-gray-900 antialiased">
@@ -43,10 +42,7 @@
                     <input type="checkbox" onclick="showPassword()" />
                     Exibir senha
 
-                    <div class="flex items-center justify-between mt-4">
-                        <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('register') }}">
-                            Cadastrar novo usuário
-                        </a>
+
 
                         <a class="underline text-sm text-gray-600 hover:text-gray-900"
                             href="{{ route('showForgetPasswordForm') }}">
