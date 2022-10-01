@@ -539,10 +539,6 @@ select {
     --tw-backdrop-sepia: ;
 }
 
-.adad-logo {
-    max-width: 150px;
-    max-height: 150px;
-}
 .prose {
     color: var(--tw-prose-body);
     max-width: 65ch;
@@ -2347,4 +2343,9 @@ select {
         padding-left: 2rem;
         padding-right: 2rem;
     }
+}
+
+.adad-logo {
+    max-width: 150px;
+    max-height: 150px;
 }
