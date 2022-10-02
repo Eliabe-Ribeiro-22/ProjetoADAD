@@ -1,36 +1,39 @@
-#title-NossasR {
-    position: relative;
-    top: -39px;
+/* Galaxy Fold */
 
-    margin: 40px;
 
-    font-family: var(--font-family-form);
-    font-size: 50px;
-    /* text-align: center; */
-}
+@media screen and (min-width: 768px) {
+    #title-NossasR {
+        position: relative;
+        top: -39px;
 
-#div-NossasR {
-    margin: 0 auto;
-    margin-bottom: 25px;
+        margin: 40px;
 
-    width: 900px;
-    height: 780px;
+        font-size: 50px;
+    }
 
-    text-align: center;
-}
+    #div-NossasR {
+        margin: 0 auto;
+        margin-bottom: 25px;
 
-#positionNossasR {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-bottom: 100px;
-}
+        width: 900px;
+        height: 780px;
 
-#NossasR {
-    padding: 70px 60px;
-}
+        text-align: center;
+    }
 
-#h3,
-#pNossasR {
-    font-size: 36px;
+    #positionNossasR {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-bottom: 100px;
+    }
+
+    #NossasR {
+        padding: 70px 60px;
+    }
+
+    #h3,
+    #pNossasR {
+        font-size: 36px;
+    }
 }
