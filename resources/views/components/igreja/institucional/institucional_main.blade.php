@@ -1,5 +1,5 @@
 {{-- Main do institucional --}}
-<h1 class="h1" id="title-institucional">
+<h1 class="titlePage" id="title-institucional">
     Institucional
 </h1>
 <div id="square">
