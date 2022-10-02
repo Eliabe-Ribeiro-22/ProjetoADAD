@@ -1,4 +1,4 @@
-#titleInstitucional{
+#titleInstitucional {
     position: relative;
     top: -39px;
 }
@@ -20,27 +20,23 @@
 }
 
 .text {
-    background: #212121;
-
     padding: 9% 10px;
 
     height: 100%;
 
     font-family: "arial black";
     font-size: 30px;
-    color: #ff6600;
 
     border-radius: 5px;
 }
 
-/* Responsividade Galaxy Fold */
+/* Responsividade Galaxy Fold ! NO, no! error*/
 @media screen and (min-width: 576px) {
     body {
         background-color: red;
     }
 
     #square {
-       
         margin-top: 10px;
         width: 80vw;
         height: 90vh;
@@ -54,15 +50,6 @@
         transform: translateY(-60%);
     }
 
-    .text {
-        background: #333333;
-
-        font-family: "arial black";
-        font-size: 40px;
-        color: #cccccc;
-
-        border-radius: 10px;
-    }
 
     .tInstitucional {
         padding: 70px 60px;

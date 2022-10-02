@@ -4,7 +4,7 @@
     <x-igreja.head.head />
 </head>
 
-<body>
+<body class="bg-body">
     <header id="header">
         <x-igreja.header.header />
     </header>

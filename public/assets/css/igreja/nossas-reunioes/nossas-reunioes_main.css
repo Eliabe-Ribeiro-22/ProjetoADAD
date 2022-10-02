@@ -1,14 +1,13 @@
-#h1NossasR {
+#title-NossasR {
     position: relative;
     top: -39px;
 
     font-family: var(--font-family-form);
     font-size: 50px;
-    color: #2b2a2a;
     text-align: center;
 }
 
-#divNossasR {
+#div-NossasR {
     margin: 0 auto;
     margin-bottom: 25px;
 
@@ -25,7 +24,7 @@
     margin-bottom: 100px;
 }
 
-.NossasR {
+#NossasR {
     padding: 70px 60px;
 }
 

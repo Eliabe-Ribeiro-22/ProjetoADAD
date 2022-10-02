@@ -48,3 +48,26 @@ body {
     color: #2b2a2a;
     text-align: center;
 }
+
+.color-primary {
+    color: #ff6600;
+}
+
+.bg-body{
+    background: red;
+}
+
+.bg-div {
+    background: #212121;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.text {
+    font-family: "arial black";
+    font-size: 40px;
+
+    border-radius: 10px;
+}

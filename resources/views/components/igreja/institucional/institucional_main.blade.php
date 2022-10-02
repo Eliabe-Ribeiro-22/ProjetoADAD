@@ -4,7 +4,7 @@
 </h1>
 <div id="square">
     <div id="textPosition">
-        <div class="text tInstitucional">
+        <div class="text tInstitucional color-primary bg-div">
             Instituição religiosa sem fins lucrativos que visa o bem social e
             espiritual de toda a comunidade.
         </div>
