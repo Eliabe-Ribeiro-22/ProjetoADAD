@@ -1,39 +1,59 @@
-#titleInstitucional {
+/* Responsividade Galaxy Fold ! NO, no! error*/
+#title-institucional {
+    margin-top: 1vh;
+    margin-bottom: 10px;
+
     position: relative;
-    top: -39px;
+    background-color: red;
+
+    
+
+    text-align: center;
+    font-size: 1rem;
 }
 
 #square {
     margin: 0 auto;
 
-    width: 90vw;
-    height: 50vh;
+    /* width: 90vw;
+    height: 50vh; */
+}
+
+#textPosition {
+    /* top: 50%;
+    position: relative;
+
+    transform: translateY(-60%); */
+}
+
+.text {
+    padding: 5px 0;
+
+    font-family: "arial black";
+    color: rgb(0, 255, 204);
+    background: pink;
+    border-radius: 5px;
 
     text-align: center;
 }
 
-#TextPosition {
-    top: 50%;
-    position: relative;
-
-    transform: translateY(-60%);
+#text-institucional {
+    font-size: 10px;
 }
 
-.text {
-    padding: 9% 10px;
-
-    height: 100%;
-
-    font-family: "arial black";
-    font-size: 30px;
-
-    border-radius: 5px;
-}
-
-/* Responsividade Galaxy Fold ! NO, no! error*/
 @media screen and (min-width: 576px) {
     body {
-        background-color: red;
+        background-color: #15ff00;
+    }
+
+    #title-institucional {
+        background-color: #0000ff;
+        top: -39px;
+        margin: 40px;
+    }
+
+    #titleInstitucional {
+        font-size: 50px;
     }
 
     #square {
@@ -43,15 +63,10 @@
 
         text-align: center;
     }
-
-    #TextPosition {
-        top: 50%;
-        position: relative;
-        transform: translateY(-60%);
+    .text {
+        font-size: 30px;
     }
-
-
-    .tInstitucional {
+    #text-institucional {
         padding: 70px 60px;
     }
 }

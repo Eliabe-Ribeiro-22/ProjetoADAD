@@ -2,9 +2,11 @@
     position: relative;
     top: -39px;
 
+    margin: 40px;
+
     font-family: var(--font-family-form);
     font-size: 50px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 #div-NossasR {

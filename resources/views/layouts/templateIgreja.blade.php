@@ -4,13 +4,13 @@
     <x-igreja.head.head />
 </head>
 
-<body class="bg-body">
+<body>
     <header id="header">
         <x-igreja.header.header />
     </header>
 
-    <main>
-        @yield("corpo")
+    <main class="bg-main">
+        @yield('corpo')
     </main>
 
     <footer id="rodape">

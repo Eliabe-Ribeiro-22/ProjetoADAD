@@ -41,20 +41,17 @@ body {
 }
 
 .titlePage {
-    margin: 40px;
-
     font-family: var(--font-family-form);
-    font-size: 50px;
+   
     color: #2b2a2a;
-    text-align: center;
 }
 
 .color-primary {
     color: #ff6600;
 }
 
-.bg-body{
-    background: red;
+.bg-main{
+    background: #ffcc99;
 }
 
 .bg-div {
