@@ -5,9 +5,12 @@
 </head>
 
 <body>
-    <header id="header">
-        <x-igreja.header.header />
-    </header>
+    <div id="header">
+        <nav>
+            <x-igreja.nav.logo />
+            <x-igreja.nav.menu_nav />
+        </nav>
+    </div>
 
     <main class="bg-main">
         @yield('corpo')
