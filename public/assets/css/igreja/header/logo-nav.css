@@ -3,8 +3,8 @@
     padding: 0.19rem 0;
     padding-left: 40px;
 
-    width: 35%;
-
+    width: 60%;
+    height: 100%;
     display: flex;
 }
 
@@ -16,6 +16,5 @@
 
 #logo-igreja {
     background: red;
-    /* padding: 0 15px; */
     width: 3rem;
 }
