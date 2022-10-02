@@ -6,11 +6,11 @@
 
 <div class="square">
     <div>
-        <div>
+        <div id="padding-bottom-footer">
             <p class="text bg-div color-primary" id="text-institucional">
                 Instituição religiosa sem fins lucrativos que visa o bem social e
                 espiritual de toda a comunidade.
             </p>
         </div>
     </div>
-</div>    
+</div>

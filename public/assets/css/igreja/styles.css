@@ -30,6 +30,10 @@ body {
 
     background: #fff;
 }
+main {
+    margin: 0;
+    padding: 0;
+}
 
 :root {
     --color-primary: #ff6600;
@@ -42,7 +46,7 @@ body {
 
 .titlePage {
     font-family: var(--font-family-form);
-   
+
     color: #2b2a2a;
 }
 
@@ -50,7 +54,7 @@ body {
     color: #ff6600;
 }
 
-.bg-main{
+.bg-main {
     background: #ffcc99;
 }
 

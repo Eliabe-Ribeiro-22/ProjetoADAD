@@ -1,25 +1,27 @@
 /* Responsividade Grand Prime */
 #title-institucional {
-    margin-top: 1vh;
     margin-bottom: 10px;
+    padding-top: 2vh;
 
     position: relative;
-    background-color: red;
 
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 #square {
     margin: 0 auto;
 }
 
+#padding-bottom-footer {
+    padding-bottom: 15px;
+}
 .text {
     padding: 5px 0;
 
     font-family: "arial black";
     background: pink;
-    border-radius: 14px;
+    border-radius: 20px;
 
     text-align: center;
 }
