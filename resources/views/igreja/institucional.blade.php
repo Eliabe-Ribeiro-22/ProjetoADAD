@@ -4,5 +4,5 @@
 @section('titulo', 'Institucional')
 
 @section('corpo')
-    {{-- <x-igreja.institucional.institucional_main /> --}}
+    <x-igreja.institucional.institucional_main />
 @endsection

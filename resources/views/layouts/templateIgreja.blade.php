@@ -5,13 +5,14 @@
 </head>
 
 <body>
-    <nav>
+
+    {{--    <nav>
         <div id="header">
             <x-igreja.nav.logo />
             <x-igreja.nav.menu-nav />
             <x-igreja.nav.menu-mobile/>
         </div>
-    </nav>
+    </nav> --}}
 
     <main class="bg-main">
         @yield('corpo')
