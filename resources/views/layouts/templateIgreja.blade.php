@@ -16,7 +16,7 @@
         @yield('corpo')
     </main>
 
-    <footer id="rodape">
-        {{-- <x-igreja.footer.footer /> --}}
+    <footer>
+        <x-igreja.footer.footer />
     </footer>
 </body>
