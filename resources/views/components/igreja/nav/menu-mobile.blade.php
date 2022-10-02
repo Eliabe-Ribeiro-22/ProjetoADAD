@@ -1,7 +1,8 @@
-<div id="menu-mobile">
+
+<div id="menu-responsive">
     <img
         src="/assets/img/igreja/menu-hamburguer.png"
         alt="Menu Hamburguer responsivo"
-        style="cursor: pointer"
+        id="menu-hamburguer"
     />
 </div>
