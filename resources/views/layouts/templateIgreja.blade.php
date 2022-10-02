@@ -17,6 +17,6 @@
     </main>
 
     <footer id="rodape">
-        <x-igreja.footer.footer />
+        {{-- <x-igreja.footer.footer /> --}}
     </footer>
 </body>

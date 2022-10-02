@@ -1,7 +1,4 @@
 {{-- navbar do templateIgreja --}}
-
-
-
 <div id="nav_menu">
     <ul id="menu_button_ul">
         <li class="menu_button_li">

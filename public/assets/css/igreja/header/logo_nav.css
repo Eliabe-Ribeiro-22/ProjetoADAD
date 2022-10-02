@@ -1,4 +1,4 @@
-/* #nav_logo {
+#nav_logo {
     margin: 0;
     padding: 0.19rem 0;
     padding-left: 40px;
@@ -6,7 +6,7 @@
     width: 35%;
 
     display: flex;
-} */
+}
 
 #logo-adad {
     background: yellow;
