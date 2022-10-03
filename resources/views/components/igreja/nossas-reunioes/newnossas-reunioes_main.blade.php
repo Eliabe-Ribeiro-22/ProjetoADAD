@@ -8,13 +8,25 @@
     <div>
         <div id="pb-footer-nossas-reunioes">
             <p class="text bg-div color-primary" id="text-institucional">
-                <span style="color:white;">ok</span>
-                Domingos às 19:00 hs
-                <a href="a">ok</a>
+                <span class="color-white">Cultos</span>
                 <br>
-                Segundas-feiras às 19:00 hs
+
+                Noite da Vitória
                 <br>
                 Quintas-Feiras às 19:15 hs
+                <br>
+                <br>
+
+                <span>Noite da Família</span>
+                <br>
+                Domingos às 19:00 hs
+                <br>
+                <br>
+
+
+                <span class="color-white">Encontros ADAD</span>
+                <span>Aulas semanal</span>
+                Segundas-feiras às 19:00 hs
             </p>
         </div>
     </div>
