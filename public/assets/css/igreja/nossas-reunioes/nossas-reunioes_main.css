@@ -1,38 +1,58 @@
+/* Responsividade Grand Prime */
+#title-nossas-reunioes {
+    margin: 0;
+    padding: 0;
+
+    margin-bottom: 10px;
+    padding-top: 2vh;
+
+    position: relative;
+
+    text-align: center;
+}
+
+#square {
+    margin: 0 auto;
+}
+
+#pb-footer-nossas-reunioes {
+    padding-bottom: 15px;
+}
+
+.text {
+    padding: 5px 0;
+
+    font-family: "arial black";
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+#text-institucional {
+    font-size: 10px;
+}
 /* Galaxy Fold */
-
-@media screen and (min-width: 768px) {
-    #title-NossasR {
-        position: relative;
+@media screen and (min-width: 576px) {
+    #title-institucional {
         top: -39px;
-
         margin: 40px;
+    }
 
+    #titleInstitucional {
         font-size: 50px;
     }
 
-    #div-NossasR {
-        margin: 0 auto;
-        margin-bottom: 25px;
-
-        width: 900px;
-        height: 780px;
+    #square {
+        margin-top: 10px;
+        width: 80vw;
+        height: 90vh;
 
         text-align: center;
     }
-
-    #positionNossasR {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-bottom: 100px;
+    .text {
+        font-size: 30px;
     }
-
-    #NossasR {
+    #text-institucional {
         padding: 70px 60px;
-    }
-
-    #h3,
-    #pNossasR {
-        font-size: 36px;
     }
 }

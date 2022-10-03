@@ -7,9 +7,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
 
 /* nav & footer */
-/* @import "header/logo-nav.css";
+@import "header/logo-nav.css";
 @import "header/menu-nav.css";
-@import "header/menu-mobile.css"; */
+@import "header/menu-mobile.css";
 @import "footer/footer.css";
 
 /*  Formulário Contato */
@@ -101,6 +101,7 @@ background: var(--background);
 
     border-radius: 10px;
 }
+
 .px-auto{
     padding-left: auto;
     padding-right: auto;
