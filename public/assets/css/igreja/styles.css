@@ -101,3 +101,7 @@ background: var(--background);
 
     border-radius: 10px;
 }
+.px-auto{
+    padding-left: auto;
+    padding-right: auto;
+}

@@ -1,7 +1,7 @@
 {{-- Main do institucional --}}
-<h1 class="titlePage" id="title-nossas-reunioes">
+<h3 class="titlePage" id="title-nossas-reunioes">
     Nossas Reuniões
-</h1>
+</h3>
 
 
 <div class="square">
@@ -11,21 +11,15 @@
                 <span class="color-white">Cultos</span>
                 <br>
 
-                Noite da Vitória
-                <br>
-                Quintas-Feiras às 19:15 hs
-                <br>
-                <br>
+                <span class="subTitle">Noite da Vitória</span><br>
+                Quintas-Feiras às 19:15 hs<br><br>
 
-                <span>Noite da Família</span>
-                <br>
-                Domingos às 19:00 hs
-                <br>
-                <br>
+                <span class="subTitle">Noite da Família</span><br>
 
+                Domingos às 19:00 hs<br><br>
 
-                <span class="color-white">Encontros ADAD</span>
-                <span>Aulas semanal</span>
+                <span class="subTitle color-white">Encontros ADAD</span><br>
+                <span class="subTitle">Aulas semanais:</span><br>
                 Segundas-feiras às 19:00 hs
             </p>
         </div>
