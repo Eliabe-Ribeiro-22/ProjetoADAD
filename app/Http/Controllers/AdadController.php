@@ -101,11 +101,9 @@ class AdadController extends Controller
     // Auth e Cadastrar
     public function login()
     {
-        try {
-            return view('auth.login');
-        } catch (Exception $e) {
-            return 'Ocorreu um erro no Login do ADAD<br/>' . $e->getMessage();
-        }
+        return response()
+            ->view('auth.login')
+            ->setStatusCode(200);
     }
     // Registra um novo usuário
     public function register()
@@ -164,28 +162,7 @@ class AdadController extends Controller
         Auth::login($user); // Loga com Sanctum
         return redirect()->intended('/');
     }
-
-    // public function login()
-    // {
-    //     return response()
-    //         ->view('auth/login')
-    //         ->setStatusCode(200);
-    // }
-
-    // public function autorizar(Request $request)
-    // {
-    //     $credentials = $request->validate([
-    //         'email' => ['required', 'email'],
-    //         'password' => ['required'],
-    //     ]);
-
-    //     if (Auth::attempt($credentials)) {
-    //         return redirect()->intended();
-    //     } else {
-    //         return back()->with('msg', 'Erro de autenticação: Verifique seu email e a senha');
-    //     }
-    // }
-
+    
     public function logout()
     {
         Auth::logout();
@@ -278,28 +255,27 @@ class AdadController extends Controller
         return redirect('auth/login')->with('message', 'Sua senha foi alterada com sucesso');
     }
 
-
     //function than neeed?
     public function setnewPassword(Request $request)
     {
-        $request->validate([            
+        $request->validate([
             'password' => [
                 'required',
-                'min:8',              // must be at least 8 characters in length
+                'min:8', // must be at least 8 characters in length
                 //    'regex:/[a-z]/',       must contain at least one lowercase letter
-                'regex:/[A-Z]/',      // must contain at least one uppercase letter
+                'regex:/[A-Z]/', // must contain at least one uppercase letter
                 //    'regex:/[0-9]/',       must contain at least one digit
                 'regex:/[@$!%*#?&]/', // must contain a special character
             ],
             'newpassword' => [
                 'required',
-                'min:8',              // must be at least 8 characters in length
+                'min:8', // must be at least 8 characters in length
                 //    'regex:/[a-z]/',       must contain at least one lowercase letter
-                'regex:/[A-Z]/',      // must contain at least one uppercase letter
+                'regex:/[A-Z]/', // must contain at least one uppercase letter
                 //    'regex:/[0-9]/',       must contain at least one digit
                 'regex:/[@$!%*#?&]/', // must contain a special character
-                'same:password'
-            ]
+                'same:password',
+            ],
         ]);
 
         $user = User::find(Auth::user()->id);
@@ -308,8 +284,6 @@ class AdadController extends Controller
 
         $user->save();
 
-
-        return redirect(route('dashboard'))->with("msg", "Senha alterada com sucesso");
-    }    
-    
+        return redirect(route('dashboard'))->with('msg', 'Senha alterada com sucesso');
+    }
 }
