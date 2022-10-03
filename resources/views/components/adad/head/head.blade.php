@@ -14,5 +14,4 @@
 
     {{-- Favicon e título da página--}}
     <link rel="icon" type="image/x-icon" href="/adad.ico">
-    <title>{{ $title }}</title>
 </head>
