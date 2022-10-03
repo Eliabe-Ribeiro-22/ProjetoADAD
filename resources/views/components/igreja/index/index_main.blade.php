@@ -16,16 +16,17 @@
         </div>
     </section>
 
-    <!-- Seção do Versículo Diário -->
+    <!-- Seção do Momento de Reflexão -->
     <section>
-        <h1>Versículo diário</h1>
-
         <div class="square">
             <div>
                 <div id="padding-bottom-footer">
                     <p class="text bg-div color-primary" id="text-institucional">
+                        <span class="color-white" style="font-size: 1rem;">Momento de Reflexão</span>
+                        <br><br>
+
                         <?php
-                        echo $dailyVerse['text'], '.', '<br>';
+                        echo $dailyVerse['text'], '.', '<br><br>';
                         echo $dailyVerse['book']['name'], ' ', $dailyVerse['chapter'], '.', $dailyVerse['number'];
                         ?>
                     </p>
