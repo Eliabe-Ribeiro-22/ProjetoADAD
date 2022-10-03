@@ -1,16 +1,10 @@
 /* Form Contato */
-
-.h1 {
+#title-before-form{
     margin: 40px;
-
-    font-family: var(--font-family-form);
-    font-size: 50px;
-    color: #2b2a2a;
-    text-align: center;
 }
 
 /* form */
-form {
+#formulario-contato {
     margin: 0 auto;
     margin-bottom: 70px;
     padding: 10px;

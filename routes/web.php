@@ -69,3 +69,23 @@ Route::get('forgot-password', [AdadController::class, 'showForgetPasswordForm'])
 // Login / Registrar (post)
 Route::post('/authenticate', [AdadController::class, "autorizar"])->name('authenticate');
 Route::post('/newuser', [AdadController::class, "store"])->name('newuser');
+
+//Autenticação
+// Route::get('/auth/login', [UsersController::class, 'login'])->name('login');
+
+// Route::post('/autenticar', [UsersController::class, 'autorizar'])->name('autenticar');
+
+Route::post('/logout', [UsersController::class, 'logout'])->name('logout');
+
+// Route::get('/register', [UsersController::class, 'register'])->name('register');
+
+// Route::post('/newuser', [UsersController::class, 'store'])->name('newuser');
+
+// Route::get('forget_password', [UsersController::class, 'showForgetPasswordForm'])->name('showForgetPasswordForm');
+
+Route::post('forget_password', [UsersController::class, 'submitForgetPasswordForm'])->name('submitForgetPasswordForm');
+
+Route::get('reset_password/{token}', [UsersController::class, 'showResetPasswordForm'])->name('resetPassword');
+
+Route::post('reset_password', [UsersController::class, 'submitResetPasswordForm'])->name('submitPassword');
+
