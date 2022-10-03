@@ -1,21 +1,19 @@
 /* Responsividade Grand Prime */
-#title-nossas-reunioes {
-    margin: 0;
-    padding: 0;
-
+#title-institucional {
     margin-bottom: 10px;
     padding-top: 2vh;
 
     position: relative;
 
     text-align: center;
+    font-size: 1.5rem;
 }
 
 #square {
     margin: 0 auto;
 }
 
-#pb-footer-nossas-reunioes {
+#padding-bottom-footer {
     padding-bottom: 15px;
 }
 

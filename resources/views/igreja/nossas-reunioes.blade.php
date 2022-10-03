@@ -4,5 +4,5 @@
 @section('titulo', 'Nossas Reuniões')
 
 @section('corpo')
-    <x-igreja.nossas-reunioes.newnossas-reunioes_main />
+    <x-igreja.nossas-reunioes.nossas-reunioes_main />
 @endsection
