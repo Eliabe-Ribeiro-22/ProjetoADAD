@@ -53,13 +53,6 @@ body {
     /* background-color: var(--background); */
 }
 
-<<<<<<< HEAD
-.title {
-    font-family: var(--font-family-form);
-    font-size: 50px;
-    color: #2b2a2a;
-    text-align: center;
-=======
 /* main do site */
 main {
     margin: 0;
@@ -112,5 +105,4 @@ background: var(--background);
 .px-auto{
     padding-left: auto;
     padding-right: auto;
->>>>>>> responsividade
 }
