@@ -2,18 +2,21 @@
 
 <head>
     <link rel="icon" type="image/x-icon" href="/adad.ico">
-    <link rel="stylesheet" href="/assets/css/adad/login.css">
+    {{-- <link rel="stylesheet" href="/assets/css/adad/login.css">  --}}
+    {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
+    <link rel="stylesheet" href="/assets/css/tailwind.css">
     <title>Login</title>
 </head>
 
 <body>
     <script type="text/javascript" src="/assets/js/password.js"></script>
-    
+
     <div class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
+        <div
+            class="h-screen center mx-auto lg:min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
             <div>
                 <a href="/">
-                    <img class="adad-logo" src="/img/adad_logo.png" href="/">
+                    <img class="adad-logo" src="/ssets/img/igreja/adad_logo.png" href="/">
                 </a>
             </div>
 
@@ -38,25 +41,26 @@
                             id="password" type="password" name="password" required="required"
                             autocomplete="current-password">
                     </div>
-                    
+
                     <input type="checkbox" onclick="showPassword()" />
-                    Exibir senha
+                    <a class="text-sm text-gray-600 hover:text-gray-900">
+                        Exibir senha
+                    </a>
 
+                    <br>
+                    <a class="underline text-sm text-gray-600 hover:text-gray-900"
+                        href="{{ route('showForgetPasswordForm') }}">
+                        Esqueceu a senha?
+                    </a>
 
-
-                        <a class="underline text-sm text-gray-600 hover:text-gray-900"
-                            href="{{ route('showForgetPasswordForm') }}">
-                            Esqueceu a senha?
-                        </a>
-
-                        <button type="submit"
-                            class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition ml-4">
-                            Entrar
-                        </button>
-                    </div>
-                </form>
+                    <button type="submit"
+                        class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition ml-4">
+                        Entrar
+                    </button>
             </div>
+            </form>
         </div>
+    </div>
     </div>
 
 
