@@ -6,11 +6,10 @@
 }
 
 #form-contato {
-    margin: 0 auto;
+    margin: 0rem 5%;
 
     width: 90%;
 
-    border: 1px solid #ccc;
     border-radius: 10px;
 }
 
