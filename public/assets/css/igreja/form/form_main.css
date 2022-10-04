@@ -1,4 +1,5 @@
 /* Form Contato */
+
 #title-form-contato {
     font-size: 1rem;
     text-align: center;
@@ -13,6 +14,39 @@
     border-radius: 10px;
 }
 
+#formContato-title {
+    font-family: "arial black";
+    color: #cccccc;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#formContato-input,
+#formContato-txtarea {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+
+    background: #fff;
+
+    font-family: "Arial";
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+
+    border: none;
+    border-radius: 2px;
+}
+
+#formContato-input:focus,
+#formContato-txtarea:focus {
+    border-color: #504f4f;
+}
+
+#formContato-txtarea {
+    vertical-align: top;
+    resize: none;
+}
 @media screen and (min-width: 576px) {
     #form-contato {
         margin: 0 auto;
@@ -28,7 +62,7 @@
     }
 
     #formContato-title {
-        font-family: var(--font-family-form);
+        font-family: "arial black";
         color: #cccccc;
         text-align: center;
     }

@@ -17,7 +17,7 @@
 
     <div id="formContato-div">
         <label class="color-primary" id="formContato-lbl">Sua mensagem:</label>
-        <textarea name="mensagem" id="formContato-input" rows="5" cols="33" placeholder="Digite sua mensagem"
+        <textarea name="mensagem" id="formContato-txtarea" rows="5" cols="33" placeholder="Digite sua mensagem"
             required></textarea>
     </div>
 
