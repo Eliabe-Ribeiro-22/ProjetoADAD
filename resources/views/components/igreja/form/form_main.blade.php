@@ -3,7 +3,7 @@
 
 <form action="{{ route('form_send') }}" method="POST" class="bg-div" id="form-contato">
     @csrf
-    <h1 id="formContato-title">Formulário de Contato</h1>
+    <h1 class="color-white" id="formContato-title">Formulário de Contato</h1>
 
     <div id="formContato-div">
         <label class="color-primary" id="formContato-lbl">Seu nome:</label>

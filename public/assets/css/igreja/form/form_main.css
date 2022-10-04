@@ -16,7 +16,6 @@
 
 #formContato-title {
     font-family: "arial black";
-    color: #cccccc;
     text-align: center;
     font-size: 0.9rem;
 }
@@ -29,7 +28,7 @@
 
     font-family: var(--font-family-form);
     font-size: 1rem;
-    
+
     font-weight: bold;
     text-align: left;
 }
@@ -63,7 +62,6 @@
 
 #formContato-enviar {
     margin: 1.5rem 25% 1rem 25%;
-    /* padding: 12px 38px; */
 
     width: 50%;
 
@@ -98,6 +96,10 @@
 }
 
 @media screen and (min-width: 576px) {
+    #title-form-contato {
+        font-size: 4rem;
+    }
+
     #form-contato {
         margin: 0 auto;
         margin-bottom: 70px;
@@ -108,13 +110,12 @@
         border: 1px solid #ccc;
         border-radius: 10px;
 
-        background: #575656;
     }
 
     #formContato-title {
         font-family: "arial black";
-        color: #cccccc;
         text-align: center;
+        font-size: 2.5rem;
     }
 
     #formContato-div {
@@ -124,19 +125,20 @@
     }
 
     #formContato-lbl {
+        margin: 0;
         width: 100%;
 
         display: block;
 
         font-family: var(--font-family-form);
         font-size: 30px;
-        color: #cccccc;
         font-weight: bold;
         text-align: left;
     }
 
     #formContato-input,
     #formContato-txtarea {
+        margin: 0;
         margin-top: 10px;
 
         padding: 5px;
