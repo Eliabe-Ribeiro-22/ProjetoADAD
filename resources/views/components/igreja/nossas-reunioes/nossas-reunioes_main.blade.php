@@ -1,6 +1,6 @@
 {{-- Main do institucional --}}
 <h3 class="titlePage" id="title-nossas-reunioes" 
-style="justify-content: center; font-size: 1rem;">
+style="">
     Nossas Reuniões
 </h3>
 

@@ -1,123 +1,129 @@
 /* Form Contato */
-<<<<<<< HEAD
-#title-before-form{
-    margin: 40px;
-}
-
-/* form */
-#formulario-contato {
-=======
-/* form */
-#formContato {
->>>>>>> responsividade
-    margin: 0 auto;
-    margin-bottom: 70px;
-    padding: 10px;
-
-    width: 50%;
-
-    border: 1px solid #ccc;
-    border-radius: 10px;
-
-    background: #575656;
-}
-
-#formContato-title {
-    font-family: var(--font-family-form);
-    color: #cccccc;
+#title-form-contato {
+    font-size: 1rem;
     text-align: center;
 }
 
-#formContato-div {
-    margin: 25px 10% 0 10%;
+#form-contato {
+    margin: 0 auto;
 
-    width: 80%;
-}
+    width: 90%;
 
-#formContato-lbl {
-    width: 100%;
-
-    display: block;
-
-    font-family: var(--font-family-form);
-    font-size: 30px;
-    color: #cccccc;
-    font-weight: bold;
-    text-align: left;
-}
-
-#formContato-input,
-#formContato-txtarea{
-    margin-top: 10px;
-
-    padding: 5px;
-    padding-left: 20px;
-
-    width: 100%;
-
-    background: #fff;
-
-    font-family: "Arial";
-    font-size: 25px;
-    font-weight: bold;
-    color: black;
-
-    border: none;
-    border-radius: 6px;
-}
-
-#formContato-input::placeholder,
-#formContato-txtarea::placeholder {
-    color: #a8a8a8;
-}
-
-#formContato-txtarea{
-    height: 100px;
-
+    border: 1px solid #ccc;
     border-radius: 10px;
-
-    vertical-align: top;
-    resize: none;
 }
 
-#formContato-input:focus,
-#formContato-txtarea:focus {
-    border-color: #504f4f;
-}
+@media screen and (min-width: 576px) {
+    #form-contato {
+        margin: 0 auto;
+        margin-bottom: 70px;
+        padding: 10px;
 
-#formContato-enviar {
-    margin: 25px 25% 10px 25%;
-    padding: 12px 38px;
+        width: 50%;
 
-    width: 50%;
+        border: 1px solid #ccc;
+        border-radius: 10px;
 
-    display: inline-block;
+        background: #575656;
+    }
 
-    background: #e6e6e6;
-    background: linear-gradient(to bottom, #e6e6e6 5%, #5e6161 100%);
+    #formContato-title {
+        font-family: var(--font-family-form);
+        color: #cccccc;
+        text-align: center;
+    }
 
-    border: 1px solid #566963;
-    border-radius: 5px;
+    #formContato-div {
+        margin: 25px 10% 0 10%;
 
-    font-family: Arial;
-    font-size: 22px;
-    color: #000000;
-    font-weight: bold;
-    text-decoration: none;
+        width: 80%;
+    }
 
-    text-shadow: 0px -1px 0px #c7c7c7;
-    box-shadow: inset 0px 1px 3px 0px #f5f5f5;
+    #formContato-lbl {
+        width: 100%;
 
-    cursor: pointer;
-}
+        display: block;
 
-#formContato-enviar:hover {
-    background: #5e6161;
-    background: linear-gradient(to bottom, #5e6161 5%, #e6e6e6 100%);
-}
+        font-family: var(--font-family-form);
+        font-size: 30px;
+        color: #cccccc;
+        font-weight: bold;
+        text-align: left;
+    }
 
-#formContato-enviar:active {
-    top: 1px;
+    #formContato-input,
+    #formContato-txtarea {
+        margin-top: 10px;
 
-    position: relative;
+        padding: 5px;
+        padding-left: 20px;
+
+        width: 100%;
+
+        background: #fff;
+
+        font-family: "Arial";
+        font-size: 25px;
+        font-weight: bold;
+        color: black;
+
+        border: none;
+        border-radius: 6px;
+    }
+
+    #formContato-input::placeholder,
+    #formContato-txtarea::placeholder {
+        color: #a8a8a8;
+    }
+
+    #formContato-txtarea {
+        height: 100px;
+
+        border-radius: 10px;
+
+        vertical-align: top;
+        resize: none;
+    }
+
+    #formContato-input:focus,
+    #formContato-txtarea:focus {
+        border-color: #504f4f;
+    }
+
+    #formContato-enviar {
+        margin: 25px 25% 10px 25%;
+        padding: 12px 38px;
+
+        width: 50%;
+
+        display: inline-block;
+
+        background: #e6e6e6;
+        background: linear-gradient(to bottom, #e6e6e6 5%, #5e6161 100%);
+
+        border: 1px solid #566963;
+        border-radius: 5px;
+
+        font-family: Arial;
+        font-size: 22px;
+        color: #000000;
+        font-weight: bold;
+        text-decoration: none;
+
+        text-shadow: 0px -1px 0px #c7c7c7;
+        box-shadow: inset 0px 1px 3px 0px #f5f5f5;
+
+        cursor: pointer;
+    }
+
+    #formContato-enviar:hover {
+        background: #5e6161;
+        background: linear-gradient(to bottom, #5e6161 5%, #e6e6e6 100%);
+    }
+
+    #formContato-enviar:active {
+        top: 1px;
+
+        position: relative;
+    }
 }
