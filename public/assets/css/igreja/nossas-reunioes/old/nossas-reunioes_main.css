@@ -1,0 +1,38 @@
+/* Galaxy Fold */
+
+@media screen and (min-width: 768px) {
+    #title-NossasR {
+        position: relative;
+        top: -39px;
+
+        margin: 40px;
+
+        font-size: 50px;
+    }
+
+    #div-NossasR {
+        margin: 0 auto;
+        margin-bottom: 25px;
+
+        width: 900px;
+        height: 780px;
+
+        text-align: center;
+    }
+
+    #positionNossasR {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-bottom: 100px;
+    }
+
+    #NossasR {
+        padding: 70px 60px;
+    }
+
+    #h3,
+    #pNossasR {
+        font-size: 36px;
+    }
+}

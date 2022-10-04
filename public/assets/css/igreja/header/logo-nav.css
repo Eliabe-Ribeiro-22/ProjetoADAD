@@ -1,0 +1,21 @@
+#nav_logo {
+    margin: 0;
+    padding: 0.19rem 0;
+    padding-left: 40px;
+
+    width: 60%;
+    height: 100%;
+    display: flex;
+    background: red;
+}
+
+#logo-adad {
+    background: yellow;
+    width: 3rem;
+    cursor: default;
+}
+
+#logo-igreja {
+    background: red;
+    width: 3rem;
+}

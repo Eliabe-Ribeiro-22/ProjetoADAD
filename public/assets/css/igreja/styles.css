@@ -6,15 +6,19 @@
 /*  Lato */
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
 
-/* Styles Componentizados */
-@import "header/header.css";
+/* nav & footer */
+@import "header/logo-nav.css";
+@import "header/menu-nav.css";
+@import "header/menu-mobile.css";
 @import "footer/footer.css";
 
 /*  Formulário Contato */
-/*  Página Institucional */
-/*  Página nossas-reuniões */
 @import "form/form_main.css";
+
+/*  Página Institucional */
 @import "institucional/institucional_main.css";
+
+/*  Página nossas-reuniões */
 @import "nossas-reunioes/nossas-reunioes_main.css";
 
 /* styles globais */
@@ -24,25 +28,89 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-primary: #ff6600;
+    --background: #dedcdc;
+}
+
 body {
     margin: 0;
     padding: 0;
-
-    background: #fff;
+    background: black;
 }
 
-:root {
-    --color-primary: #ff6600;
-    /* --background-button: #7d7d7d; */
-    --background-header: #dedcdc;
+/* div que contem a nav*/
+#header {
+    top: 0;
+    left: 0;
 
-    /* Form de Contato */
-    --font-family-form: "arial black";
+    width: 100%;
+    height: 4.5rem;
+
+    float: left;
+    display: flex;
+
+    /* background-color: var(--background); */
 }
 
+<<<<<<< HEAD
 .title {
     font-family: var(--font-family-form);
     font-size: 50px;
     color: #2b2a2a;
     text-align: center;
+=======
+/* main do site */
+main {
+    margin: 0;
+    padding: 0;
+}
+
+/*footer do site */
+footer {
+    margin: 0;
+    height: 6rem;
+
+    display: flex;
+
+    background: var(--background);
+}
+
+.titlePage {
+    font-family: "arial black";
+
+    color: #2b2a2a;
+}
+
+.color-primary {
+    color: #ff6600;
+}
+
+.bg-body{
+background: var(--background);
+}
+
+.bg-main {
+    background: #ffcc99;
+}
+
+.bg-div {
+    background: #212121;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.text {
+    font-family: "arial black";
+    font-size: 40px;
+
+    border-radius: 10px;
+}
+
+.px-auto{
+    padding-left: auto;
+    padding-right: auto;
+>>>>>>> responsividade
 }

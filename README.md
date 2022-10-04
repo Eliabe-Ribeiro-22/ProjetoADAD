@@ -5,7 +5,7 @@
     <ol>
         <li><a href="#objetivo-do-projeto">Objetivo do projeto</a></li>
         <li><a href="#backlog-do-produto">Backlog do projeto</a></li>
-        <li><a href="#log">Log de eventos</a></li>     
+        <li><a href="#log">Log de eventos</a></li>
         <li><a href="#projeto-online">Projeto online</a></li>
         <li><a href="#developers">Developers</a>
     </ol>
@@ -137,6 +137,10 @@ Sessão ADAD: <br/>
 Criada a página de login na branch "auth". (CSS ainda será aprimorado) <br/>
 Criada a página de cadastro na branch "auth". (CSS ainda será aprimorado) <br/>
 Adicionadas validações tanto para login quanto para cadastro. (em teste)
+
+<h4> 01/10 - Sábado - Eliabe </h4>
+Responsividade Mobile First para a página Institucional
+Iniciado responsividade Mobile First para navbar
 
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 

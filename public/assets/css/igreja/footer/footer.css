@@ -1,59 +1,51 @@
 /* Footer Igreja */
-footer{
-    background: linear-gradient(to left top, #474747, #555151);
-}
-#pai {
+#footer-menu {
     display: flex;
-    
+
     font-family: "Broadway", "Calibri", "Verdana", "Roboto", "sans-serif";
 }
 
-#filho1 {
-    width: 35%;
-    height: 80px;
+    #filho1 {
+        width: 35%;
+        height: 80px;
 
-    font-size: 30px;
-    text-align: center;
-    font-family: "Impact", "Verdana", "Roboto", "sans-serif";
-}
+        font-size: 30px;
+        text-align: center;
+        font-family: "Impact", "Verdana", "Roboto", "sans-serif";
+    }
 
-#filho2 {
-    width: 35%;
-    height: 80px;
+    #filho2 {
+        width: 35%;
+        height: 80px;
 
-    align-items: center;
+        align-items: center;
 
-    text-align: center;
-    font-size: 30px;
-    font-family: "Impact", "Verdana", "Roboto", "sans-serif";
-}
+        text-align: center;
+        font-size: 30px;
+        font-family: "Impact", "Verdana", "Roboto", "sans-serif";
+    }
 
-#filho3 {
-    margin-left: 20%;
+    #filho3 {
+        margin-left: 20%;
 
-    width: 30%;
-    height: 80px;
+        width: 30%;
+        height: 80px;
 
-    display: flex;
-}
+        display: flex;
+    }
 
-.imagens {
-    width: 50px;
-    height: 50px;
-    background: #ffa500;
-    margin: 5px auto;
-}
+    .imagens {
+        width: 50px;
+        height: 50px;
+        background: #ffa500;
+        margin: 5px auto;
+    }
 
-#endereco {
-    margin: 0;
-    padding: 0;
+    #endereco {
+        margin: 0;
+        padding: 0;
 
-    text-align: center;
-    font-size: 33px;
-    font-family: "Impact", "Verdana", "Roboto", "sans-serif";
-}
-
-#pai p {
-    color: #000000;
-
-}
+        text-align: center;
+        font-size: 33px;
+        font-family: "Impact", "Verdana", "Roboto", "sans-serif";
+    }
