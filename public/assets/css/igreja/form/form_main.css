@@ -21,6 +21,18 @@
     font-size: 0.9rem;
 }
 
+#formContato-lbl {
+    width: 100%;
+
+    display: block;
+
+    font-family: var(--font-family-form);
+    font-size: 1rem;
+    
+    font-weight: bold;
+    text-align: left;
+}
+
 #formContato-input,
 #formContato-txtarea {
     margin-left: 5%;
@@ -47,6 +59,43 @@
     vertical-align: top;
     resize: none;
 }
+
+#formContato-enviar {
+    margin: 1.5rem 25% 1rem 25%;
+    /* padding: 12px 38px; */
+
+    width: 50%;
+
+    display: inline-block;
+
+    background: #e6e6e6;
+    background: linear-gradient(to bottom, #e6e6e6 5%, #5e6161 100%);
+
+    border: 1px solid #566963;
+    border-radius: 2px;
+
+    font-family: Arial;
+    font-size: 1rem;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+
+    text-shadow: 0px -1px 0px #c7c7c7;
+    box-shadow: inset 0px 1px 3px 0px #f5f5f5;
+
+    cursor: pointer;
+}
+
+#formContato-enviar:hover {
+    background: #5e6161;
+    background: linear-gradient(to bottom, #5e6161 5%, #e6e6e6 100%);
+}
+
+#formContato-enviar:active {
+    top: 1px;
+    position: relative;
+}
+
 @media screen and (min-width: 576px) {
     #form-contato {
         margin: 0 auto;
