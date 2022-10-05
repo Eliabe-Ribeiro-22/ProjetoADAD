@@ -5,13 +5,15 @@
     border-radius: 15px;
 }
 
-
-.line{
-justify-content: space-around;
+.line {
+    justify-content: space-around;
 }
 
-.th {
+.celula-tabela {
     color: #fff;
     margin-left: 3rem;
     font-family: "Roboto", "sans-serif", "Calibri", Helvetica, "Helvetica Neue";
+}
+#cabecalho-table {
+    font-weight: bold;
 }
