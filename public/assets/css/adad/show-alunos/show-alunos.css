@@ -5,6 +5,11 @@
     border-radius: 15px;
 }
 
+
+.line{
+justify-content: space-around;
+}
+
 .th {
     color: #fff;
     margin-left: 3rem;
