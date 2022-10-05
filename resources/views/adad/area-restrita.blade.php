@@ -356,19 +356,20 @@ $title = 'Alterar aluno';
                             <td class="celula-tabela">{{ $aluno->SERIE }}</td>
                             <td class="celula-tabela">{{ $aluno->CIDADE }}</td>
                             <td class="celula-tabela">{{ $aluno->RELIGIAO }}</td>
-                            <td class="celula-tabela btnEditDel">
+                            <td class="celula-tabela btn-edit-del">
                                 <a href="{{ route('aluno_edit', ['id' => $aluno->id]) }}">
                                     &#128393;
                                 </a>
                             </td>
-                            <td class="celula-tabela btnEditDel">
+                            <td class="celula-tabela btn-edit-del">
                                 <form 
                                     action="{{ route('aluno_destroy', ['id' => $aluno->id]) }}" 
                                     method="POST"
+                                    id="btn-form-del"
                                 >
                                     @csrf
                                     @method('DELETE')
-                                    <button>aa</button>
+                                    <button>&#128465;</button>
                                 </form>
                             </td>
                         </tr>

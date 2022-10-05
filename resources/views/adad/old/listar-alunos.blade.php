@@ -50,8 +50,6 @@
                         @method('DELETE')
                         <button>Excluir</button>
                     </form>
-                    <br>
-                    <br>
                 @endforeach
             @endif
         @endif

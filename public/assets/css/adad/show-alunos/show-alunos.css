@@ -1,8 +1,13 @@
+/* Table de Exibição de Alunos Cadastrados */
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
 
 /* width de 100% */
 .w-1\1 {
     width: 100%;
+}
+
+.color-white {
+    color: #fff;
 }
 
 table {
@@ -12,30 +17,31 @@ table {
     border-collapse: collapse;
 }
 
+#cabecalho-table {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 td,
 th {
     margin: 10px 6rem;
     padding: 8px;
 
     font-family: "Roboto", "sans-serif", "Calibri", Helvetica, "Helvetica Neue";
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
-    text-align: left;
+    text-align: center;
 }
 
 td {
     color: #bfbfbf;
 }
 
-.btnEditDel {
+.btn-edit-del {
+    align-items: flex-end;
     cursor: pointer;
 }
 
-#cabecalho-table {
-    font-size: 4rem;
-    font-weight: bold;
-}
-
-.color-white{
-    color: #fff;
+#btn-form-del{
+    margin: auto 0;
 }

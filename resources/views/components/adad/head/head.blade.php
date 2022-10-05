@@ -2,6 +2,6 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="/assets/css/adad/alunos.css">
     <link rel="icon" type="image/x-icon" href="/adad.ico">
-    <link rel="stylesheet" href="/assets/css/adad/show-alunos/show-alunos.css">
+    <link rel="stylesheet" href="/assets/css/adad/alunos.css">
     <title>@yield("titulo")</title>
 </head>
