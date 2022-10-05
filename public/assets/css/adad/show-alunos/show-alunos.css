@@ -1,19 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
 
-#show-alunos {
-    background: #1f2937;
-    border-radius: 15px;
+table {
+    width: 100%;
+
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
 }
 
 .line {
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
 }
 
-.celula-tabela {
-    color: #fff;
-    margin-left: 3rem;
-    font-family: "Roboto", "sans-serif", "Calibri", Helvetica, "Helvetica Neue";
+#a {
+    background: gold;
 }
+
+#b {
+    background: red;
+}
+
+td,
+th {
+    margin: 10px 6rem;
+    padding: 8px;
+
+    color: #fff;
+    font-family: "Roboto", "sans-serif", "Calibri", Helvetica, "Helvetica Neue";
+    text-align: left;
+}
+
 #cabecalho-table {
     font-weight: bold;
 }
