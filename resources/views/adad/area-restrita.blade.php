@@ -73,7 +73,7 @@ $title = 'Alterar aluno';
                 } else {
                 // Senão, é porque o form será exibido para realizar cadastro 
 				// de alunos as vars mantêm setadas com null.
-                echo "<h1>Cadastro de Alunos ADAD</h1>";
+                echo "<h1 class='CentralizaText' id='title-cad-alunos'>Cadastro de Alunos ADAD</h1>";
                 }
                 @endphp
 
@@ -335,7 +335,10 @@ $title = 'Alterar aluno';
                     Ainda não há alunos Cadastrados.
                 </p>
                 <a href="/AreaRestrita"><strong>Cadastre um agora mesmo!</strong></a>
-            @else    
+            @else
+                {{-- Senão, é porque existem alunos cadastrados, então exiba-os com FOREACH --}}
+                <h3 class="CentralizaText color-white" id="title-cad-alunos"><b>ADAD - Alunos Cadastrados:</b></h3>   
+                
                 <table class="w-1\1">
                     <tr class="w-1\1" style="border-bottom: 4px solid #bfbfbf;">
                         <th class="celula-tabela" id="cabecalho-table">Nome</th>
@@ -355,11 +358,19 @@ $title = 'Alterar aluno';
                             <td class="celula-tabela">{{ $aluno->RELIGIAO }}</td>
                             <td class="celula-tabela btnEditDel">
                                 <a href="{{ route('aluno_edit', ['id' => $aluno->id]) }}">
-                                    Editar
+                                    &#128393;
                                 </a>
                             </td>
-                            <td class="celula-tabela btnEditDel">&#128393;</td>
-                            <td class="celula-tabela btnEditDel">&#128465;</td>
+                            <td class="celula-tabela btnEditDel">
+                                <form 
+                                    action="{{ route('aluno_destroy', ['id' => $aluno->id]) }}" 
+                                    method="POST"
+                                >
+                                    @csrf
+                                    @method('DELETE')
+                                    <button>aa</button>
+                                </form>
+                            </td>
                         </tr>
                     @endforeach
                 </table>

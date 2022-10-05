@@ -2349,6 +2349,10 @@ select {
     font-size: 27px;
 }
 
+#title-cad-alunos{
+    font-size: 2.5rem;
+}
+
 .exibirAlunos {
     background-color: red;
     display: grid;
