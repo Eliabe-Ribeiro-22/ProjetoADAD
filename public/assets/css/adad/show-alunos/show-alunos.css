@@ -7,11 +7,6 @@ table {
     border-collapse: collapse;
 }
 
-.line {
-    display: flex;
-    justify-content: center;
-}
-
 #a {
     background: gold;
 }

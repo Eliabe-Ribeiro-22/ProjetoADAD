@@ -310,20 +310,22 @@ $title = 'Alterar aluno';
     <div class="flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
         <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-gray-800 shadow-md overflow-hidden sm:rounded-lg">
             <table id="exibir-alunos">
-                <tr id="a" class="line" style="width: 100%">
+                <tr id="a" style="width: 100%">
                     <th class="celula-tabela" id="cabecalho-table">Nome</th>
                     <th class="celula-tabela" id="cabecalho-table">Idade</th>
                     <th class="celula-tabela" id="cabecalho-table">Série</th>
                     <th class="celula-tabela" id="cabecalho-table">Cidade</th>
                     <th class="celula-tabela" id="cabecalho-table">Religião</th>
                 </tr>  
-                <tr class="line" id="b" style="width: 100%">
-                    <td class="celula-tabela">Eliabe</td>
-                    <td class="celula-tabela">16</td>
-                    <td class="celula-tabela">2ª Série 2</td>
-                    <td class="celula-tabela">Blumenau</td>
-                    <td class="celula-tabela">Religião</td>
+                @foreach ($alunos as $aluno)
+                <tr id="b" style="width: 100%">
+                    <td class="celula-tabela">{{ $aluno->NOME }}</td>
+                    <td class="celula-tabela">{{ $aluno->IDADE }}</td>
+                    <td class="celula-tabela">{{ $aluno->SERIE }}</td>
+                    <td class="celula-tabela">{{ $aluno->CIDADE }}</td>
+                    <td class="celula-tabela">{{ $aluno->RELIGIAO }}</td>
                 </tr>
+                @endforeach
             </table>
         </div>
     </div>
