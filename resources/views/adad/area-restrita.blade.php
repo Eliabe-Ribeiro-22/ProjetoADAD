@@ -327,6 +327,13 @@ $title = 'Alterar aluno';
                     <td class="celula-tabela">{{ $aluno->SERIE }}</td>
                     <td class="celula-tabela">{{ $aluno->CIDADE }}</td>
                     <td class="celula-tabela">{{ $aluno->RELIGIAO }}</td>
+                    <td class="celula-tabela btnEditDel">
+                        <a href="{{ route('aluno_edit', ['id' => $aluno->id]) }}">
+                            Editar
+                        </a>
+                    </td>
+                    <td class="celula-tabela btnEditDel">&#128393;</td>
+                    <td class="celula-tabela btnEditDel">&#128465;</td>
                 </tr>
                 @endforeach
             </table>

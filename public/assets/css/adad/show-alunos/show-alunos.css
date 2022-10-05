@@ -12,7 +12,6 @@ table {
     border-collapse: collapse;
 }
 
-
 td,
 th {
     margin: 10px 6rem;
@@ -24,8 +23,12 @@ th {
     text-align: left;
 }
 
-td{
+td {
     color: #bfbfbf;
+}
+
+.btnEditDel {
+    cursor: pointer;
 }
 
 #cabecalho-table {
