@@ -311,21 +311,21 @@ $title = 'Alterar aluno';
         <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-gray-800 shadow-md overflow-hidden sm:rounded-lg"
         style="border-radius: 1rem;">
         @if ($alterar) {{-- Se o visitante estiver editando um aluno --}}
-            <h3><b>Dados do Alunos a ser Alterado:</b></h3>
-            <label>Nome: {{ $aluno->NOME }}</label>
+            <h3 class="CentralizaText color-white"><b>Dados do Alunos a ser Alterado:</b></h3>
+            <label class="CentralizaText color-white">Nome: {{ $aluno->NOME }}</label>
             <br />
-            <label>Idade: {{ $aluno->IDADE }}</label>
+            <label class="CentralizaText color-white">Idade: {{ $aluno->IDADE }}</label>
             <br>
-            <label>Data de Nascimento: {{ $aluno->nascimento }}</label>
+            <label class="CentralizaText color-white">Data de Nascimento: {{ $aluno->nascimento }}</label>
             <br>
-            <label>Série escolar: {{ $aluno->SERIE }}.</label>
+            <label class="CentralizaText color-white">Série escolar: {{ $aluno->SERIE }}.</label>
             <br>
-            <label>
+            <label class="CentralizaText color-white">
                 {{ $aluno->RUA }}, nº {{ $aluno->NUMERO }}, bairro {{ $aluno->BAIRRO }},
                 {{ $aluno->CIDADE }}.
             </label>
             <br>
-            <label>Crença/Religião: {{ $aluno->RELIGIAO }}</label>
+            <label class="CentralizaText color-white">Crença/Religião: {{ $aluno->RELIGIAO }}</label>
             <br>
             <br>
         @else
