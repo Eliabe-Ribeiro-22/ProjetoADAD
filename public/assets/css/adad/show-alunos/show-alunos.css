@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
 
+/* width de 100% */
+.w-1\1 {
+    width: 100%;
+}
+
 table {
     width: 100%;
 
@@ -7,24 +12,23 @@ table {
     border-collapse: collapse;
 }
 
-#a {
-    background: gold;
-}
-
-#b {
-    background: red;
-}
 
 td,
 th {
     margin: 10px 6rem;
     padding: 8px;
 
-    color: #fff;
     font-family: "Roboto", "sans-serif", "Calibri", Helvetica, "Helvetica Neue";
+    font-size: 2rem;
+    color: #fff;
     text-align: left;
 }
 
+td{
+    color: #bfbfbf;
+}
+
 #cabecalho-table {
+    font-size: 4rem;
     font-weight: bold;
 }
