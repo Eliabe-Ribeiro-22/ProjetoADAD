@@ -10,13 +10,14 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
-// P. EVA
+// not utilized?
 use App\Models\Permission;
 use App\Models\Warning;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
 
 date_default_timezone_set('America/Sao_Paulo');
+//end
 
 class AdadController extends Controller
 {

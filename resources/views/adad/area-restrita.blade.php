@@ -302,7 +302,12 @@ $title = 'Alterar aluno';
             <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('register') }}">
                 Cadastrar novo usuário
             </a>
+        </div>
     </div>
 </div>
-<div id="show-alunos"></div>
-    
+
+<div class="font-sans text-gray-900 antialiased">
+    <div class="flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
+      ok 
+    </div>
+</div>
