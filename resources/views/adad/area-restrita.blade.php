@@ -310,33 +310,61 @@ $title = 'Alterar aluno';
     <div class="flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
         <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-gray-800 shadow-md overflow-hidden sm:rounded-lg"
         style="border-radius: 1rem;">
-            <table class="w-1\1">
-                <tr class="w-1\1" style="border-bottom: 4px solid #bfbfbf;">
-                    <th class="celula-tabela" id="cabecalho-table">Nome</th>
-                    <th class="celula-tabela" id="cabecalho-table">Idade</th>
-                    <th class="celula-tabela" id="cabecalho-table">Série</th>
-                    <th class="celula-tabela" id="cabecalho-table">Cidade</th>
-                    <th class="celula-tabela" id="cabecalho-table">Religião</th>
-                    <th class="celula-tabela" id="cabecalho-table">Editar</th>
-                    <th class="celula-tabela" id="cabecalho-table">Excluir</th>
-                </tr>  
-                @foreach ($alunos as $aluno)
-                <tr class="w-1\1" style="border-bottom: 1px solid #bfbfbf;">
-                    <td class="celula-tabela">{{ $aluno->NOME }}</td>
-                    <td class="celula-tabela">{{ $aluno->IDADE }}</td>
-                    <td class="celula-tabela">{{ $aluno->SERIE }}</td>
-                    <td class="celula-tabela">{{ $aluno->CIDADE }}</td>
-                    <td class="celula-tabela">{{ $aluno->RELIGIAO }}</td>
-                    <td class="celula-tabela btnEditDel">
-                        <a href="{{ route('aluno_edit', ['id' => $aluno->id]) }}">
-                            Editar
-                        </a>
-                    </td>
-                    <td class="celula-tabela btnEditDel">&#128393;</td>
-                    <td class="celula-tabela btnEditDel">&#128465;</td>
-                </tr>
-                @endforeach
-            </table>
+        @if ($alterar) {{-- Se o visitante estiver editando um aluno --}}
+            <h3><b>Dados do Alunos a ser Alterado:</b></h3>
+            <label>Nome: {{ $aluno->NOME }}</label>
+            <br />
+            <label>Idade: {{ $aluno->IDADE }}</label>
+            <br>
+            <label>Data de Nascimento: {{ $aluno->nascimento }}</label>
+            <br>
+            <label>Série escolar: {{ $aluno->SERIE }}.</label>
+            <br>
+            <label>
+                {{ $aluno->RUA }}, nº {{ $aluno->NUMERO }}, bairro {{ $aluno->BAIRRO }},
+                {{ $aluno->CIDADE }}.
+            </label>
+            <br>
+            <label>Crença/Religião: {{ $aluno->RELIGIAO }}</label>
+            <br>
+            <br>
+        @else
+            {{-- Se não, é porque ele está cadastrando um aluno --}}
+            @if (count($alunos) == 0) {{-- Se não existir alunos cadastrados --}}
+                <p>
+                    Ainda não há alunos Cadastrados.
+                </p>
+                <a href="/AreaRestrita"><strong>Cadastre um agora mesmo!</strong></a>
+            @else    
+                <table class="w-1\1">
+                    <tr class="w-1\1" style="border-bottom: 4px solid #bfbfbf;">
+                        <th class="celula-tabela" id="cabecalho-table">Nome</th>
+                        <th class="celula-tabela" id="cabecalho-table">Idade</th>
+                        <th class="celula-tabela" id="cabecalho-table">Série</th>
+                        <th class="celula-tabela" id="cabecalho-table">Cidade</th>
+                        <th class="celula-tabela" id="cabecalho-table">Religião</th>
+                        <th class="celula-tabela" id="cabecalho-table">Editar</th>
+                        <th class="celula-tabela" id="cabecalho-table">Excluir</th>
+                    </tr>  
+                    @foreach ($alunos as $aluno)
+                        <tr class="w-1\1" style="border-bottom: 1px solid #bfbfbf;">
+                            <td class="celula-tabela">{{ $aluno->NOME }}</td>
+                            <td class="celula-tabela">{{ $aluno->IDADE }}</td>
+                            <td class="celula-tabela">{{ $aluno->SERIE }}</td>
+                            <td class="celula-tabela">{{ $aluno->CIDADE }}</td>
+                            <td class="celula-tabela">{{ $aluno->RELIGIAO }}</td>
+                            <td class="celula-tabela btnEditDel">
+                                <a href="{{ route('aluno_edit', ['id' => $aluno->id]) }}">
+                                    Editar
+                                </a>
+                            </td>
+                            <td class="celula-tabela btnEditDel">&#128393;</td>
+                            <td class="celula-tabela btnEditDel">&#128465;</td>
+                        </tr>
+                    @endforeach
+                </table>
+            @endif
+        @endif
         </div>
     </div>
 </div>
