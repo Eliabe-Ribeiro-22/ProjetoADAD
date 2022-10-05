@@ -158,7 +158,7 @@ Alessandro Geras <br>
 
 Eliabe Ribeiro Mota<br/>
 [Curriculum Vitae](https://github.com/Eliabe-Ribeiro-22/Eliabe-Ribeiro-22/blob/main/README.md) <br/>
-[Linkedin](https://www.linkedin.com/in/eliabe-ribeiro-mota-b9a1b7233/) <br/>
+[Linkedin](https://www.linkedin.com/in/eliabemota) <br/>
 [Github](https://github.com/Eliabe-Ribeiro-22) <br/>
 [Outlook](mailto:eliaberibeiro06@hotmail.com) <br/>
 [Gmail](mailto:developer.eliabe06@gmail.com) <br/>
