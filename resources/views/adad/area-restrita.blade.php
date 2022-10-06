@@ -16,8 +16,8 @@ $title = 'Alterar aluno';
 <div class="font-sans text-gray-900 antialiased">
     <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
         <div>
-            <a class="bg-gray-200" href="/">
-                <img src="https://videos.adventistas.org/pt/wp-content/themes/pa-theme-sedes/assets/sedes/pt/default.svg">
+            <a href="/">
+                <img class="adad-logo" src="/assets/img/igreja/adad_logo.png">
             </a>
         </div>
 

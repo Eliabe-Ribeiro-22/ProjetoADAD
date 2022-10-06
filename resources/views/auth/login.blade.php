@@ -16,7 +16,7 @@
             class="h-screen center mx-auto lg:min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
             <div>
                 <a href="/">
-                    <img class="adad-logo" src="/assets/img/igreja/adad_logo.png" href="/">
+                    <img class="adad-logo" src="/assets/img/igreja/adad_logo.png">
                 </a>
             </div>
 
