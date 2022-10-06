@@ -7,7 +7,7 @@
 <div class="square">
     <div>
         <div id="padding-bottom-footer">
-            <p class="text bg-div color-primary" id="text-institucional">
+            <p class="text bg-div color-primary md-text-institucional" id="text-institucional">
                 Instituição religiosa sem fins lucrativos que visa o bem social e
                 espiritual de toda a comunidade.
             </p>

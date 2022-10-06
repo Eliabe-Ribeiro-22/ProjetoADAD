@@ -21,6 +21,9 @@
 /*  Página nossas-reuniões */
 @import "nossas-reunioes/nossas-reunioes_main.css";
 
+/* Página Projetos */
+@import "projetos/projetos_main.css";
+
 /* styles globais */
 * {
     margin: 0;
@@ -101,6 +104,7 @@ background: var(--background);
     font-size: 40px;
 
     border-radius: 10px;
+    text-align: center;
 }
 
 .px-auto{

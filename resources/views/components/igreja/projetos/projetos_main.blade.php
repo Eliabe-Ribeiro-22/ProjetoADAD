@@ -1,5 +1,5 @@
 {{-- Main do projetos --}}
-<h1>Nossos Projetos</h1>
+<h1 class="titlePage" id="title-projetos">Nossos Projetos</h1>
 <h2>Projeto de Prática de fé</h2>
 <ul>
     <li>Realização de cultos com ministração de louvores e palavra.</li>
