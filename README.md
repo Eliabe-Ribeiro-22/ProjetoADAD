@@ -138,6 +138,10 @@ Criada a página de login na branch "auth". (CSS ainda será aprimorado) <br/>
 Criada a página de cadastro na branch "auth". (CSS ainda será aprimorado) <br/>
 Adicionadas validações tanto para login quanto para cadastro. (em teste)
 
+<h4>03/10 - Segunda-feira - Vinícius</h4>
+Implementado o Toastr para estilização. <br>
+Ajustes no código para seguir as práticas de clean code. <br>
+
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----
