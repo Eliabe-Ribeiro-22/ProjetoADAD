@@ -9,7 +9,9 @@ $title = 'Alterar aluno';
 }
 @endphp
 
-<x-adad.head.head :title="$title" />
+<head>
+    <x-adad.head.head :title="$title" />
+</head>
 
 <div class="font-sans text-gray-900 antialiased">
     <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
