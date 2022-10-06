@@ -82,3 +82,7 @@ Route::get('reset_password/{token}', [AdadController::class, 'showResetPasswordF
 
 Route::post('reset_password', [AdadController::class, 'submitResetPasswordForm'])->name('submitPassword');
 
+
+
+
+Route::get('/rest/error_404', [IgrejaController::class, 'rest'])->name('error404');

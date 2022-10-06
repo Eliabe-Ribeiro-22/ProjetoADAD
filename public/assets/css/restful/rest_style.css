@@ -1,0 +1,49 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.full-size-pg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: linear-gradient(135deg, #ff928b,#ffac81);
+}
+
+.church-logo {
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -50px;
+    justify-content: center;
+}
+
+#img-logo-chur {
+    /* Tamanho original: 256px x 193px*/
+    height: 128px;
+    width: 130px;
+} 
+.main-box {
+    color: #f0754c;
+    background-color: rgb(240, 239, 239);
+    font-size: 24px;
+    padding: 10px;
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -300px;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.pos-ul-li {
+    padding-bottom: 10px;
+}
