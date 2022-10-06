@@ -4,7 +4,7 @@
 </h1>
 
 
-<div class="square">
+<div id="square">
     <div>
         <div id="padding-bottom-footer">
             <p class="text bg-div color-primary md-text-institucional" id="text-institucional">
