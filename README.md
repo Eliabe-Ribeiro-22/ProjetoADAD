@@ -142,7 +142,7 @@ Adicionadas validações tanto para login quanto para cadastro. (em teste)
 Implementado o Toastr para estilização. <br>
 Ajustes no código para seguir as práticas de clean code.
 
-<h4>06/10/ - Quinta-feira - Vinícius</h4>
+<h4>06/10 - Quinta-feira - Vinícius</h4>
 Criada a página 404 para URLs não existentes. <br>
 Adicionado o estilo da página <br>
 Adicionada a rota da página.
