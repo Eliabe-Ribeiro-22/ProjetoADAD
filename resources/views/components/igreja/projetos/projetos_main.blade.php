@@ -6,7 +6,6 @@
         <div id="Pratica-fe pb-footer-projetos">
             <div style="background: red;">
                 <h2>Projeto de Prática de fé</h2>
-
                 <ul>
                     <li>Realização de cultos com ministração de louvores e palavra.</li>
                     <li>Realização de cultos com ensino da Palavra de Deus</li>
