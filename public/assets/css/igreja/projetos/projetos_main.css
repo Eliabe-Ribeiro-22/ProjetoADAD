@@ -8,6 +8,30 @@
     font-size: 1.4rem;
 }
 
-#pb-footer-projetos{
+#pb-footer-projetos {
     padding-bottom: 15px;
+}
+
+#pratica-fe {
+    margin: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+#subtitle-projetos {
+    padding: 0.5rem;
+    padding-bottom: 0.01rem;
+    
+    font-size: 0.9rem;
+    text-align: center;
+    color: pink;
+}
+
+#ul-pratica-fe {
+    padding: 0.3rem;
+
+    list-style-type: square;
+    list-style-position: inside;
+
+    font-size: 0.8rem;
+    color: skyblue;
 }

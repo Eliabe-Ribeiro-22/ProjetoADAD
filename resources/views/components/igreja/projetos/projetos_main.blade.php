@@ -3,26 +3,26 @@
 
 <div id="square" style="background: blue">
     <div>
-        <div id="Pratica-fe pb-footer-projetos">
-            <div style="background: red;">
-                <h2>Projeto de Prática de fé</h2>
-                <ul>
-                    <li>Realização de cultos com ministração de louvores e palavra.</li>
+        <div id="pb-footer-projetos">
+            <div style="background: red;" id="pratica-fe">
+                <h2 id="subtitle-projetos">Projeto de Prática de fé</h2>
+                <ul id="ul-pratica-fe">
+                    <li>Realização de cultos com ministração de louvores e palavra</li>
                     <li>Realização de cultos com ensino da Palavra de Deus</li>
-                    <li>Realização de cultos evangelísticos com distribuição de literaturas.</li>
+                    <li>Realização de cultos evangelísticos com distribuição de literatura</li>
+                    <li>Realização de orações da fé por necessidades de cada família</li>
                 </ul>
             </div>
-            <div id="adad" style="background: green">
+
+            <div style="background: green" id="educacional">
                 <h2>Projeto Educacional</h2>
                 <ul>
+                    ADAD = Adolescentes que Amam a Deus
                     <li>
-                        ADAD - Atividades desenvolvidas com crianças, adolescentes e jovens. Visando fortalecer o
-                        Caráter de
-                        Cristo,
-                        valores e princípios morais e éticos, patriotismo, recreação, acampamentos, prática de
-                        escotismo,
-                        integração
-                        em busca de uma formação educacional por princípios.
+                        Desenvolvem atividades com crianças, adolescentes e jovens visando
+                        fortalecer o Caráter de Cristo, valores, princípios morais e éticos, patriotismo, recreação,
+                        acampamentos, prática de escotismo e integração em busca de uma formação educacional
+                        por princípios.
                     </li>
                     <li>Realização de Palestras educativas de socialização para todas as faixas etárias.</li>
                 </ul>
