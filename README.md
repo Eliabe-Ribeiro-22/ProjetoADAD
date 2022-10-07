@@ -139,17 +139,17 @@ Criada a página de cadastro na branch "auth". (CSS ainda será aprimorado) <br/
 Adicionadas validações tanto para login quanto para cadastro. (em teste)
 
 <h4>02/10 - Domingo - Eliabe</h4>
-Responsividade Página Nossas Reuniões
+Realizada responsividade Página Nossas Reuniões
 
 <h4>03/10 - Segunda-feira - Vinícius</h4>
 Implementado o Toastr para estilização. <br>
 Ajustes no código para seguir as práticas de clean code.
 
 <h4>04/10 - Terça-feira - Eliabe</h4>
-Responsividade da Página Formulário de Contato
+Realizada responsividade da Página Formulário de Contato
 
 <h4>05/10 - Quarta-feira - Eliabe</h4>
-Responsividade e refatoração da Página Login
+Realizada responsividade e refatoração da Página Login
 Estilização da tabela da página Área Restrita, sendo que sua função é exibir os alunos cadastrados
 
 <h4>06/10 - Quinta-feira - Vinícius</h4>
@@ -158,7 +158,7 @@ Adicionado o estilo da página <br>
 Adicionada a rota da página.
 
 <h4>06/10 - Quinta-feira - Eliabe</h4>
-Responsividade da página Projetos
+Realizada responsividade da página Projetos
 
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
