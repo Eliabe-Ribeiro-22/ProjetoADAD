@@ -160,6 +160,10 @@ Adicionada a rota da página.
 <h4>06/10 - Quinta-feira - Eliabe</h4>
 Realizada responsividade da página Projetos
 
+<h4>07/10 - Sexta-feira - Vinícius</h4>
+Terminada a estilização da página 404. <br>
+Configurada a chamada automática da página em casos de URLs inexistentes.
+
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----
