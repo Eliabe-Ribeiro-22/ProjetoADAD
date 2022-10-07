@@ -7037,3 +7037,7 @@
 #53 E:\\Users\\Acer\\Desktop\\hub\\ProjetoADAD\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('E:\\\\Users\\\\Acer\\\\D...')
 #54 {main}
 "} 
+[2022-10-07 16:48:20] local.ERROR: Maximum execution time of 60 seconds exceeded {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Maximum execution time of 60 seconds exceeded at E:\\Users\\Acer\\Desktop\\hub\\ProjetoADAD\\vendor\\spatie\\laravel-ignition\\src\\Http\\Controllers\\ExecuteSolutionController.php:11)
+[stacktrace]
+#0 {main}
+"} 

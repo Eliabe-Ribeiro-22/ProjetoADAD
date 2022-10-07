@@ -1,4 +1,4 @@
-<!-- Template Igreja -->
+{{-- Template Igreja --}}
 
 <head>
     <x-igreja.head.head />
