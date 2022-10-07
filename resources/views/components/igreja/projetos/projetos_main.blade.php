@@ -4,9 +4,9 @@
 <div id="square" style="background: blue">
     <div>
         <div id="pb-footer-projetos">
-            <div class="projeto" id="pratica-fe" style="background: red;">
-                <h2 id="subtitle-projetos">Projeto de Prática de fé</h2>
-                <ul id="ul-pratica-fe">
+            <div class="projeto" id="div-pratica-fe" style="background: red;">
+                <h2 class="subtitle-projeto">Projeto de Prática de fé</h2>
+                <ul class="ul-projeto">
                     <li>Realização de cultos com ministração de louvores e palavra</li>
                     <li>Realização de cultos com ensino da Palavra de Deus</li>
                     <li>Realização de cultos evangelísticos com distribuição de literatura</li>
@@ -14,9 +14,10 @@
                 </ul>
             </div>
 
-            <div class="projeto" id="educacional"style="background: green">
-                <h2>Projeto Educacional</h2>
-                <ul>
+            <div class="projeto" id="div-educacional" style="background: green">
+                <h2 class="subtitle-projeto">Projeto Educacional</h2>
+                <img src="/assets/img/igreja/adad_logo.png" id="image-adad">
+                <ul class="ul-projeto">
                     ADAD = Adolescentes que Amam a Deus
                     <li>
                         Desenvolvem atividades com crianças, adolescentes e jovens visando
@@ -27,7 +28,8 @@
                     <li>Realização de Palestras educativas de socialização para todas as faixas etárias.</li>
                 </ul>
             </div>
-            <div class="projeto" id="social" style="background: yellow">
+
+            <div class="projeto" id="div-social" style="background: yellow">
                 <h2>Projeto Social</h2>
                 <ul>
                     <li>
@@ -45,8 +47,3 @@
         </div>
     </div>
 </div>
-
-
-{{-- 
-
- --}}
