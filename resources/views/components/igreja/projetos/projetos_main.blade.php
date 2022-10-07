@@ -1,10 +1,10 @@
 {{-- Main do projetos --}}
 <h1 class="titlePage" id="title-projetos">Nossos Projetos</h1>
 
-<div id="square" style="background: blue">
+<div id="square">
     <div>
         <div id="pb-footer-projetos">
-            <div class="projeto" id="div-pratica-fe" style="background: red;">
+            <div class="projeto">
                 <h2 class="subtitle-projeto">Projeto de Prática de fé</h2>
                 <ul class="ul-projeto">
                     <li>Realização de cultos com ministração de louvores e palavra</li>
@@ -14,11 +14,11 @@
                 </ul>
             </div>
 
-            <div class="projeto" id="div-educacional" style="background: green">
+            <div class="projeto">
                 <h2 class="subtitle-projeto">Projeto Educacional</h2>
                 <img src="/assets/img/igreja/adad_logo.png" id="image-adad">
                 <ul class="ul-projeto">
-                    ADAD = Adolescentes que Amam a Deus
+                    <h3 id="ul-sigla-adad">ADAD = Adolescentes que Amam a Deus</h3>
                     <li>
                         Desenvolvem atividades com crianças, adolescentes e jovens visando
                         fortalecer o Caráter de Cristo, valores, princípios morais e éticos, patriotismo, recreação,
@@ -29,9 +29,9 @@
                 </ul>
             </div>
 
-            <div class="projeto" id="div-social" style="background: yellow">
-                <h2>Projeto Social</h2>
-                <ul>
+            <div class="projeto">
+                <h2 class="subtitle-projeto">Projeto Social</h2>
+                <ul class="ul-projeto">
                     <li>
                         Distribuimos roupas usadas para pessoas carentes de nossa cidade e também nas localidades do
                         interior do

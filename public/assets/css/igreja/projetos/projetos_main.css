@@ -15,6 +15,7 @@
 .projeto {
     margin: 0.8rem;
     margin-bottom: 0.5rem;
+    background: #929191;
 }
 
 .subtitle-projeto {
@@ -26,7 +27,7 @@
     color: pink;
 }
 
-.ul-projeto{
+.ul-projeto {
     padding: 0.3rem;
 
     list-style-type: square;
@@ -34,11 +35,17 @@
 
     font-size: 0.8rem;
     color: skyblue;
+    text-align: left;
+}
+
+#ul-sigla-adad {
+    text-align: center;
 }
 
 #image-adad {
-    padding: 0.5rem 0;
     margin: 0 auto;
+    padding: 0.5rem 0;
+
     display: flex;
     width: 100px;
 }
