@@ -5,7 +5,7 @@
     <ol>
         <li><a href="#objetivo-do-projeto">Objetivo do projeto</a></li>
         <li><a href="#backlog-do-produto">Backlog do projeto</a></li>
-        <li><a href="#log">Log de eventos</a></li>     
+        <li><a href="#log">Log de eventos</a></li>
         <li><a href="#projeto-online">Projeto online</a></li>
         <li><a href="#developers">Developers</a>
     </ol>
@@ -28,7 +28,7 @@
 
 <a name="objetivo"></a>
 
-O cliente quer um site para Igreja Evangélica Assembleia de Deus em Campo Belo do Sul. O projeto deve conter uma página para descrever a entidade não-governamental, uma página inicial e um formulário para contato. O site também deve conter um rodapé com os seguintes elementos: 
+O cliente quer um site para Igreja Evangélica Assembleia de Deus em Campo Belo do Sul. O projeto deve conter uma página para descrever a entidade não-governamental, uma página inicial e um formulário para contato. O site também deve conter um rodapé com os seguintes elementos:
 
 - Endereço: "Rua Gerônimo Xavier de Oliveira, nº 230, Centro, Campo Belo do Sul, SC, Brasil".
 - Telefone: +55 (049) 3249-1036.
@@ -39,6 +39,7 @@ O cliente quer um site para Igreja Evangélica Assembleia de Deus em Campo Belo 
 **OBS:** É possível que o formulário para contato seja implementado diretamente no rodapé do site. Caso não seja, será colocado em uma página exclusiva.
 
 Campos para o formulário de contato:
+
 1) Nome.
 2) telefone.
 3) Mensagem que o visitante irá enviar.
@@ -62,7 +63,7 @@ Algumas atividades que são realizadas:
 - Instrução de campo como rapel, tirolesa, cama de gato, rastejamento, pista noturna, bivaque, ponte de três cordas, nós e amarras, ou qualquer atividade recreativa.
 - Implementação de programas e ações integradas para garantir e defender a promoção dos direitos da criança e do adolescente.
 
-### Objetivos ADAD:
+### Objetivos ADAD
 
 - Contribuir para que as crianças, adolescentes e jovens assumam seu próprio desenvolvimento do caráter, potencialidades físicas, intelectuais, sociais, afetivas, espirituais como cidadãos responsáveis, participantes e úteis em suas comunidades.
 - Incentivar o compromisso do adolescente quanto a frequência escolar, bem como ajudá-lo a entender sua vocação, mostrando caminhos para a escolha da carreira profissional.
@@ -163,6 +164,18 @@ Realizada responsividade da página Projetos
 <h4>07/10 - Sexta-feira - Vinícius</h4>
 Terminada a estilização da página 404. <br>
 Configurada a chamada automática da página em casos de URLs inexistentes.
+
+<h4>07/10 - Sexta-feira - Eliabe</h4>
+Finalizada <b>responsividade</b> das  páginas:<br>
+<em>Institucional</em><br>
+<em>Nossas Reuniões</em><br>
+<em>Projetos</em><br><br>
+
+<b>Breakpoints:</b>
+<em>Mobile First</em><br>
+<em>Middle</em><br>
+<em>Hub/Next Hub</em><br>
+<em>Desktop</em><br>
 
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
