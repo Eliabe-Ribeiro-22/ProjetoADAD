@@ -1,10 +1,7 @@
 {{-- Main do institucional --}}
-<h3 class="titlePage" id="title-nossas-reunioes" 
-style="">
+<h3 class="titlePage" id="title-nossas-reunioes" style="">
     Nossas Reuniões
 </h3>
-
-
 <div id="square">
     <div>
         <div id="pb-footer-nossas-reunioes">

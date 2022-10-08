@@ -50,12 +50,16 @@
     padding: 0.5rem 0;
 
     display: flex;
-    width: 100px;
+    width: 80px;
 }
 
 @media screen and (min-width: 280px) {
     #title-projetos {
         font-size: clamp(1.4rem, 1.8rem, 5rem);
+    }
+    
+    #image-adad{
+        width: 100px;
     }
 
     .subtitle-projeto {
@@ -64,5 +68,23 @@
 
     .ul-projeto {
         font-size: clamp(1rem, 1.4rem, 4rem);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #title-projetos {
+        font-size: clamp(4.5rem, 4.5rem, 9rem);
+    }
+    
+    #image-adad{
+        width: 200px;
+    }
+
+    .subtitle-projeto {
+        font-size: clamp(3.6rem, 3.6rem, 7rem);
+    }
+
+    .ul-projeto{
+        font-size: clamp(3.5rem, 3.5rem, 4rem);
     }
 }
