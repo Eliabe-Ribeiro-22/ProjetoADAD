@@ -142,6 +142,32 @@ Adicionadas validações tanto para login quanto para cadastro. (em teste)
 Responsividade Mobile First para a página Institucional
 Iniciado responsividade Mobile First para navbar
 
+<h4>02/10 - Domingo - Eliabe</h4>
+Realizada responsividade Página Nossas Reuniões
+
+<h4>03/10 - Segunda-feira - Vinícius</h4>
+Implementado o Toastr para estilização. <br>
+Ajustes no código para seguir as práticas de clean code.
+
+<h4>04/10 - Terça-feira - Eliabe</h4>
+Realizada responsividade da Página Formulário de Contato
+
+<h4>05/10 - Quarta-feira - Eliabe</h4>
+Realizada responsividade e refatoração da Página Login
+Estilização da tabela da página Área Restrita, sendo que sua função é exibir os alunos cadastrados
+
+<h4>06/10 - Quinta-feira - Vinícius</h4>
+Criada a página 404 para URLs não existentes. <br>
+Adicionado o estilo da página <br>
+Adicionada a rota da página.
+
+<h4>06/10 - Quinta-feira - Eliabe</h4>
+Realizada responsividade da página Projetos
+
+<h4>07/10 - Sexta-feira - Vinícius</h4>
+Terminada a estilização da página 404. <br>
+Configurada a chamada automática da página em casos de URLs inexistentes.
+
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----
@@ -162,7 +188,7 @@ Alessandro Geras <br>
 
 Eliabe Ribeiro Mota<br/>
 [Curriculum Vitae](https://github.com/Eliabe-Ribeiro-22/Eliabe-Ribeiro-22/blob/main/README.md) <br/>
-[Linkedin](https://www.linkedin.com/in/eliabe-ribeiro-mota-b9a1b7233/) <br/>
+[Linkedin](https://www.linkedin.com/in/eliabemota) <br/>
 [Github](https://github.com/Eliabe-Ribeiro-22) <br/>
 [Outlook](mailto:eliaberibeiro06@hotmail.com) <br/>
 [Gmail](mailto:developer.eliabe06@gmail.com) <br/>
