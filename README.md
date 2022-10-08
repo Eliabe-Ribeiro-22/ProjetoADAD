@@ -20,7 +20,7 @@
 
 <a name="projetoWeb"></a>
 
-[Projeto Web - Igreja](https://adcbsul.herokuapp.com/)
+[Projeto Web - Igreja](https://adad-site.herokuapp.com/)
 
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
