@@ -22,6 +22,11 @@
 
 #text-nossas-reunioes {
     padding: 5px 0;
-    font-size: clamp(0.8rem, 1.4rem, 4rem, 8rem);
+    font-size: 0.8rem;
 }
 
+@media screen and (min-width: 280px) {
+    #text-nossas-reunioes {
+        font-size: clamp(1.0rem, 1.4rem, 4rem);
+    }
+}
