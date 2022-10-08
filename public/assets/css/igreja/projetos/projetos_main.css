@@ -5,29 +5,24 @@
     position: relative;
 
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 #pb-footer-projetos {
     padding-bottom: 15px;
 }
 
-#ok{
-    font-weight: bold;
-}
-
 .projeto {
     margin: 0.8rem;
     margin-bottom: 0.5rem;
     background: #ffffcc;
-	 
 }
 
 .subtitle-projeto {
     padding: 0.5rem;
     padding-bottom: 0.01rem;
 
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-align: center;
     color: #000000;
     font-family: "arial black";
@@ -56,4 +51,18 @@
 
     display: flex;
     width: 100px;
+}
+
+@media screen and (min-width: 280px) {
+    #title-projetos {
+        font-size: clamp(1.4rem, 1.8rem, 5rem);
+    }
+
+    .subtitle-projeto {
+        font-size: clamp(1.2rem, 1.5rem, 4.5rem);
+    }
+
+    .ul-projeto {
+        font-size: clamp(1rem, 1.4rem, 4rem);
+    }
 }
