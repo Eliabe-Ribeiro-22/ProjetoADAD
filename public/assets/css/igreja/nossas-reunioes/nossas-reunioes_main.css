@@ -23,7 +23,12 @@
 #text-nossas-reunioes {
     padding: 5px 0;
 
-    font-size: 10px;
+    font-size: 0.8rem;
 }
 
 /* Galaxy Fold */
+@media screen and (min-width: 768px) {
+    #text-nossas-reunioes {
+        font-size: clamp(2.4rem, 2.4rem, 2.8rem);
+    }
+}

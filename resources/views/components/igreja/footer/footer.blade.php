@@ -34,3 +34,10 @@
         Rua Gerônimo Xavier de Oliveira, nº 230, Centro, Campo Belo do Sul/SC, Brasil
     </p>
 </div>
+
+<!-- Estilizar section de devs -->
+<div id="developers">
+    <a href="#" target="_blank">Alessandro Geras</a>
+    <a href="https://www.linkedin.com/in/eliabemota/" target="_blank">Eliabe Mota</a>
+    <a href="#" target="_blank">Vinicíus Jung</a>
+</div>
