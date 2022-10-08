@@ -4,20 +4,39 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    background-color: #535353;
-    background-image: radial-gradient(circle, #f96a38, #f28257, #e89775, #dcab96, #cbbdb7);
+
+    background-image: radial-gradient(
+        circle,
+        #f96a38,
+        #f28257,
+        #e89775,
+        #dcab96,
+        #cbbdb7
+    );
 }
 
 .church-logo {
-    width: 125px;
-    height: 125px;
-    position: absolute;
     top: 50%;
     left: 50%;
+  
     margin-top: -300px;
     margin-left: -50px;
+  
+    width: 125px;
+    height: 125px;
+  
+    position: absolute;
+   
     justify-content: center;
-    background-image: radial-gradient(circle, #f8d8cc, #f7c5b3, #f4b39a, #f0a181, #eb8e69);
+    background-image: radial-gradient(
+        circle,
+        #f8d8cc,
+        #f7c5b3,
+        #f4b39a,
+        #f0a181,
+        #eb8e69
+    );
+
     border-radius: 50%;
 }
 
@@ -25,27 +44,23 @@
     /* Tamanho original: 256px x 193px*/
     height: 128px;
     width: 130px;
-} 
+}
 .main-box {
-    color: #e4e1e1;
-    /*background-color: #cacaca; */
-    font-size: 28px;
+    margin: 0px auto;
     padding: 3px;
+
     width: 600px;
-    height: 300px; /*
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -150px;
-    margin-left: -300px;
-    */
+    height: 300px;
+
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    margin: 0px auto;
+
+    font-size: 1.75rem;
+    color: #e4e1e1;
+    text-align: center;
 
     border-radius: 5%;
-    text-align: center;
 }
 
 .p-404-pg {
@@ -56,4 +71,3 @@
     border: 2px solid #d6d6d6;
     border-radius: 3%;
 }
-
