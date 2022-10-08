@@ -18,7 +18,6 @@ $title = 'Alterar aluno';
         <div
             class="h-screen center mx-auto lg:min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100"
         >
-        
         <div>
             <a href="/">
                 <img class="adad-logo" src="/assets/img/igreja/adad_logo.png">
@@ -79,7 +78,7 @@ $title = 'Alterar aluno';
                 } else {
                 // Senão, é porque o form será exibido para realizar cadastro 
 				// de alunos as vars mantêm setadas com null.
-                echo "<h1 class='CentralizaText' id='title-cad-alunos'>Cadastro de Alunos ADAD</h1>";
+                echo "<h1 class='CentralizaText title-cad-alunos'>Cadastro de Alunos ADAD</h1>";
                 }
                 @endphp
 
@@ -337,37 +336,43 @@ $title = 'Alterar aluno';
         @else
             {{-- Se não, é porque ele está cadastrando um aluno --}}
             @if (count($alunos) == 0) {{-- Se não existir alunos cadastrados --}}
-                <p>
-                    Ainda não há alunos Cadastrados.
-                </p>
-                <a href="/AreaRestrita"><strong>Cadastre um agora mesmo!</strong></a>
+                <div class="flex">
+                    <h3 class="color-white font-bold" class="title-cad-alunos" id="title-sem-alunos">
+                        Ainda não há alunos Cadastrados.
+                    </h3>    
+                </div>        
+            
+                <div class="flex">
+                    <a href="/AreaRestrita" class="color-white" id="text-sem-alunos" style="text-decoration: none;">Cadastre um agora mesmo!</a>        
+                </div>
+                    
             @else
                 {{-- Senão, é porque existem alunos cadastrados, então exiba-os com FOREACH --}}
-                <h3 class="CentralizaText color-white" id="title-cad-alunos"><b>ADAD - Alunos Cadastrados:</b></h3>   
+                <h3 class="CentralizaText color-white" class="title-cad-alunos"><b>ADAD - Alunos Cadastrados:</b></h3>   
                 
                 <table class="w-1\1">
                     <tr class="w-1\1" style="border-bottom: 4px solid #bfbfbf;">
-                        <th class="celula-tabela" id="cabecalho-table">Nome</th>
-                        <th class="celula-tabela" id="cabecalho-table">Idade</th>
-                        <th class="celula-tabela" id="cabecalho-table">Série</th>
-                        <th class="celula-tabela" id="cabecalho-table">Cidade</th>
-                        <th class="celula-tabela" id="cabecalho-table">Religião</th>
-                        <th class="celula-tabela" id="cabecalho-table">Editar</th>
-                        <th class="celula-tabela" id="cabecalho-table">Excluir</th>
+                        <th id="cabecalho-table">Nome</th>
+                        <th id="cabecalho-table">Idade</th>
+                        <th id="cabecalho-table">Série</th>
+                        <th id="cabecalho-table">Cidade</th>
+                        <th id="cabecalho-table">Religião</th>
+                        <th id="cabecalho-table">Editar</th>
+                        <th id="cabecalho-table">Excluir</th>
                     </tr>  
                     @foreach ($alunos as $aluno)
                         <tr class="w-1\1" style="border-bottom: 1px solid #bfbfbf;">
-                            <td class="celula-tabela">{{ $aluno->NOME }}</td>
-                            <td class="celula-tabela">{{ $aluno->IDADE }}</td>
-                            <td class="celula-tabela">{{ $aluno->SERIE }}</td>
-                            <td class="celula-tabela">{{ $aluno->CIDADE }}</td>
-                            <td class="celula-tabela">{{ $aluno->RELIGIAO }}</td>
-                            <td class="celula-tabela btn-edit-del">
+                            <td>{{ $aluno->NOME }}</td>
+                            <td>{{ $aluno->IDADE }}</td>
+                            <td>{{ $aluno->SERIE }}</td>
+                            <td >{{ $aluno->CIDADE }}</td>
+                            <td >{{ $aluno->RELIGIAO }}</td>
+                            <td class="btn-edit-del">
                                 <a href="{{ route('aluno_edit', ['id' => $aluno->id]) }}">
                                     &#128393;
                                 </a>
                             </td>
-                            <td class="celula-tabela btn-edit-del">
+                            <td class="btn-edit-del">
                                 <form 
                                     action="{{ route('aluno_destroy', ['id' => $aluno->id]) }}" 
                                     method="POST"
