@@ -26,6 +26,10 @@
 }
 
 @media screen and (min-width: 280px) {
+    #title-nossas-reunioes {
+        font-size: clamp(1.4rem, 2rem, 5rem);
+    }
+
     #text-nossas-reunioes {
         font-size: clamp(1.0rem, 1.4rem, 4rem);
     }
