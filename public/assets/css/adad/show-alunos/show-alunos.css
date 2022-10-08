@@ -1,6 +1,8 @@
 /* Table de Exibição de Alunos Cadastrados */
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
 
+@import 'responsive/show-alunos.css';
+
 /* width de 100% */
 .w-1\1 {
     width: 100%;
@@ -55,9 +57,11 @@ td {
 
 #title-sem-alunos{
     margin: 0 auto;
-    font-size: 2.5rem;
+    text-align: center;
 }
 
 #text-sem-alunos {
     margin: 0 auto;
+    text-align: justify;
+    text-decoration: underline;
 }

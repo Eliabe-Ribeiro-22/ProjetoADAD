@@ -343,7 +343,7 @@ $title = 'Alterar aluno';
                 </div>        
             
                 <div class="flex">
-                    <a href="/AreaRestrita" class="color-white" id="text-sem-alunos" style="text-decoration: none;">Cadastre um agora mesmo!</a>        
+                    <a href="/AreaRestrita" class="color-white" id="text-sem-alunos">Cadastre um agora mesmo!</a>        
                 </div>
                     
             @else
