@@ -17,15 +17,24 @@
     padding-bottom: 15px;
 }
 
-
 #text-institucional {
-    font-size: 10px;
     padding: 5px 0;
 
     font-family: "arial black";
+    font-size: 0.8rem;
 }
 
 /* Galaxy Fold */
+@media screen and (min-width: 280px) {
+    #title-institucional {
+        font-size: clamp(1.4rem, 2rem, 5rem);
+    }
+
+    #text-institucional {
+        font-size: clamp(1rem, 1.4rem, 4rem);
+    }
+}
+
 @media screen and (min-width: 576px) {
     #title-institucional {
         top: -39px;
