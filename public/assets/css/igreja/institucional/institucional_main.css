@@ -50,8 +50,9 @@
 }
 
 @media screen and (min-width: 1024px){
+
     #title-institucional {
-        font-size: clamp(4.5rem, 4.5rem, 7rem, 9rem);
+        font-size: clamp(4.5rem, 4.5rem, 9rem);
     }
 
     #text-institucional {
