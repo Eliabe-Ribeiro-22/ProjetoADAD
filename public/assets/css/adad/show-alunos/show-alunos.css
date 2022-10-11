@@ -19,8 +19,14 @@ table {
     border-collapse: collapse;
 }
 
+#title-show-alunos {
+    font-size: 0.7rem;
+    text-align: center;
+    margin: 0;
+}
+
 .cabecalho-table {
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     font-weight: bold;
 }
 
@@ -29,7 +35,7 @@ th {
     padding-right: 8px;
 
     font-family: "Roboto", "sans-serif", "Calibri", Helvetica, "Helvetica Neue";
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     color: #fff;
     text-align: center;
 }

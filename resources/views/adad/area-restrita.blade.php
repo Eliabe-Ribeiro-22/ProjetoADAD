@@ -78,7 +78,7 @@ $title = 'Alterar aluno';
                 } else {
                 // Senão, é porque o form será exibido para realizar cadastro 
 				// de alunos as vars mantêm setadas com null.
-                echo "<h1 class='CentralizaText title-cad-alunos'>Cadastro de Alunos ADAD</h1>";
+                echo "<h1 class='CentralizaText' id='title-show-alunos'>Cadastro de Alunos ADAD</h1>";
                 }
                 @endphp
 
@@ -348,7 +348,7 @@ $title = 'Alterar aluno';
                     
             @else
                 {{-- Senão, é porque existem alunos cadastrados, então exiba-os com FOREACH --}}
-                <h3 class="CentralizaText color-white" class="title-cad-alunos"><b>ADAD - Alunos Cadastrados:</b></h3>   
+                <h3 class="color-white" id="title-show-alunos"><b>ADAD - Alunos Cadastrados:</b></h3>   
                 
                 <table class="w-1\1">
                     <tr class="w-1\1" style="border-bottom: 4px solid #bfbfbf;">
