@@ -20,7 +20,7 @@ $title = 'Alterar aluno';
         >
         <div>
             <a href="/">
-                <img class="adad-logo" src="/assets/img/igreja/adad_logo.png">
+                <img src="/assets/img/igreja/adad_logo.png" class="adad-logo">
             </a>
         </div>
 

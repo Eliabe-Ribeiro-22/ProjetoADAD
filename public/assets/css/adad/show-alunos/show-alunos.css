@@ -1,7 +1,7 @@
 /* Table de Exibição de Alunos Cadastrados */
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
 
-/* @import 'responsive/show-alunos.css'; */
+@import "responsive/responsive_show-alunos.css";
 
 /* width de 100% */
 .w-1\1 {
@@ -10,6 +10,10 @@
 
 .color-white {
     color: #fff;
+}
+
+.adad-logo {
+    width: 3.75rem;
 }
 
 table {
