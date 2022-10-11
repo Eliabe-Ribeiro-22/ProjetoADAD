@@ -26,7 +26,6 @@ table {
 
 td,
 th {
-    /* margin: 10px 6rem; */
     padding-right: 8px;
 
     font-family: "Roboto", "sans-serif", "Calibri", Helvetica, "Helvetica Neue";
@@ -71,6 +70,6 @@ td {
     display: none;
 }
 
-#delete{
+#delete {
     padding: 0;
 }

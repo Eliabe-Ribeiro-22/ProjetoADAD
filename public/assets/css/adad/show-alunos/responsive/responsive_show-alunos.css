@@ -27,11 +27,12 @@
         padding: 8px;
     }
 
-    #cabecalho-table {
+    .cabecalho-table {
         font-size: 2rem;
     }
+
     .display {
         /* what is the display default ??? */
-        display: inline-block;
+        display: inline;
     }
 }
