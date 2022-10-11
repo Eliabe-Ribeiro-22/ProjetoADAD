@@ -347,8 +347,10 @@ $title = 'Alterar aluno';
                 </div>
                     
             @else
-                {{-- Senão, é porque existem alunos cadastrados, então exiba-os com FOREACH --}}
-                <h3 class="color-white title-show-alunos" id="a"><b>ADAD - Alunos Cadastrados:</b></h3>   
+                {{-- Senão, é porque existem alunos cadastrados, então exiba-os com foreach --}}
+                <div class="">
+                    <h3 class="color-white title-show-alunos" id="a"><b>ADAD - Alunos Cadastrados:</b></h3>   
+                </div>
                 
                 <table class="w-1\1">
                     <tr class="w-1\1" style="border-bottom: 4px solid #bfbfbf;">

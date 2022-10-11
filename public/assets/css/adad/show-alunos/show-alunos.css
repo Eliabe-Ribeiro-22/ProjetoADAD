@@ -3,8 +3,15 @@
 
 @import "responsive/responsive_show-alunos.css";
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 /* width de 100% */
-.w-1\1 {}
+.w-1\1 {
+    width: 100%;
+}
 
 .color-white {
     color: #fff;
@@ -16,7 +23,6 @@
 
 .overflow_scroll{
     overflow-x: scroll;
-    background: yellow;
 }
 
 table {
@@ -26,13 +32,17 @@ table {
     border-collapse: collapse;
 }
 
-.table{
 
+
+.div-titulo{
+	width: 70%;
+	background: red;
 }
+
+
 .title-show-alunos {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     text-align: center;
-    margin: 0;
 }
 
 .cabecalho-table {
@@ -51,7 +61,7 @@ th {
 }
 
 td {
-    color: #bfbfbf;
+    /* color: #bfbfbf; */
 }
 
 .btn-edit-del {

@@ -1,6 +1,5 @@
 @media screen and (min-width: 280px) {
     #a {
-        color:red;
         font-size: clamp(0.9rem, 1.0rem, 1.4rem, 1.6rem);
     }
 

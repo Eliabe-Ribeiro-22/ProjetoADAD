@@ -28,7 +28,7 @@ class AdadController extends Controller
             $alunos = Aluno::all();
             # Form que cadastra alunos,
             // por isso passamos o value false na var. alterar
-            return view('adad.area-restrita', ['alterar' => false, 'alunos' => $alunos]);
+            return view('adad.new-show-alunos', ['alterar' => false, 'alunos' => $alunos]);
         } catch (Exception $e) {
             return $e->getMessage();
         }
