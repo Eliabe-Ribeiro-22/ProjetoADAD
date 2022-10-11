@@ -8,11 +8,9 @@ if ($alterar) {
 $title = 'Alterar aluno';
 }
 @endphp
-
 <head>
     <x-adad.head.head :title="$title" />
 </head>
-
 <div class="font-sans text-gray-900 antialiased">
     {{-- <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100"> --}}
         <div
@@ -23,7 +21,6 @@ $title = 'Alterar aluno';
                 <img src="/assets/img/igreja/adad_logo.png" class="adad-logo">
             </a>
         </div>
-
         <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
             <form method="POST"
 			@if ($alterar) 
@@ -32,9 +29,7 @@ $title = 'Alterar aluno';
 				action="{{ route('aluno_store') }}" 
 			@endif
 			>
-
                 @csrf
-
                 {{-- Variáveis settadas com valor, que por padrão são para exibir o form de cadastro de alunos --}}
                 @php
                 $nome = '';
@@ -54,12 +49,9 @@ $title = 'Alterar aluno';
                 // Se o form for exibido para realizar alteração de aluno
                 if ($alterar) {
                 @endphp
-
                 @method('PUT')
-
                 @php
                 echo "<h1>Editando: " . $aluno->NOME . "</h1>";
-
                 // As variáveis recebem os valores vindos do aluno cadastrado 
 				//  no Banco de Dados
                 $nome = $aluno->NOME;
@@ -81,12 +73,10 @@ $title = 'Alterar aluno';
                 echo "<h1 class='CentralizaText' id='title-show-alunos'>Cadastro de Alunos ADAD</h1>";
                 }
                 @endphp
-
                 <h3 class="CentralizaText"> Dados Pessoais</h3>
                 
                 {{-- Grupo: Nome + Idade + Data de Nascimento + Série Escolar + CPF --}}
                 <div style="display: table;">
-
                     <!-- Input Nome -->
                     <div style="display: table-cell; vertical-align: middle; width:30%;">
                         <label class="block font-medium text-sm text-gray-700" for="name">
@@ -97,7 +87,6 @@ $title = 'Alterar aluno';
                          id="name" type="text" required="required" autofocus="autofocus" autocomplete="name"
                          name="nome" value="{{ $nome }}">
                     </div>
-
                     <!-- Input Idade -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle;">
                         <label class="block font-medium text-sm text-gray-700" for="email">
@@ -107,7 +96,6 @@ $title = 'Alterar aluno';
                         focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" 
                         id="email" type="number" name="idade" value="{{ $idade }}" required="required">
                     </div>
-
                     <!-- Input Data de Nascimento -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle;">
                         <label class="block font-medium text-sm text-gray-700">
@@ -120,7 +108,6 @@ $title = 'Alterar aluno';
                          required="required"
                         >
                     </div>
-
                     <!-- Input Série Escolar -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle;">
                         <label class="block font-medium text-sm text-gray-700">
@@ -130,7 +117,6 @@ $title = 'Alterar aluno';
                          focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" 
                          type="text"  name="serie" value="{{ $serie }}" required="required" autofocus="autofocus">
                     </div>
-
                     <!-- Input CPF -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle;">
                         <label class="block font-medium text-sm text-gray-700">
@@ -141,7 +127,6 @@ $title = 'Alterar aluno';
                         type="text" name="cpf" value="{{ $cpf }}" required="required" autofocus="autofocus">
                     </div>
                 </div>
-
                 <!-- Input Mãe -->
                 <div class="mt-4">
                     <label class="block font-medium text-sm text-gray-700" for="password">
@@ -151,7 +136,6 @@ $title = 'Alterar aluno';
                      focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" id="password" type="text" 
                       name="mae" value="{{ $mae }}" required="required" autocomplete="new-password">
                 </div>
-
                 <!-- Input Pai -->
                 <div class="mt-4">
                     <label class="block font-medium text-sm text-gray-700" for="password_confirmation">
@@ -161,12 +145,10 @@ $title = 'Alterar aluno';
                     focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" id="password_confirmation" 
                     type="text" name="pai" value="{{ $pai }}"autocomplete="new-password">
                 </div>
-
                 <br>
                 <h3 class="CentralizaText">Endereço</h3>
                 {{-- Grupo: Rua + Número da Casa + Bairro + Complemento --}}
                 <div style="display: table;  width: 96%; margin-right: 0; padding-right: 0;">
-
                     <!-- Input Rua -->
                     <div style="display: table-cell; vertical-align: middle; width:25%;">
                         <label class="block font-medium text-sm text-gray-700" for="name">
@@ -183,7 +165,6 @@ $title = 'Alterar aluno';
                          autocomplete="name"
                         >
                     </div>
-
                     <!-- Input Número da Casa/Apartamento -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle; width:15%;">
                         <label class="block font-medium text-sm text-gray-700" for="email">
@@ -197,7 +178,6 @@ $title = 'Alterar aluno';
                          value="{{ $numero }}"
                          required="required">
                     </div>
-
                     <!-- Input Bairro -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle; width:16%;">
                         <label class="block font-medium text-sm text-gray-700">
@@ -212,7 +192,6 @@ $title = 'Alterar aluno';
                          autofocus="autofocus"
                         >
                     </div>
-
                     <!-- Input Complemento -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle; width:10%;">
                         <label class="block font-medium text-sm text-gray-700">
@@ -226,7 +205,6 @@ $title = 'Alterar aluno';
                          autofocus="autofocus"
                         >
                     </div>
-
                     <!-- Input Cidade -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle;width:15%;">
                         <label class="block font-medium text-sm text-gray-700">
@@ -241,13 +219,10 @@ $title = 'Alterar aluno';
                          autofocus="autofocus">
                     </div>
                 </div>
-
                 <br>
                 <h3 class="CentralizaText"> Dados Eclesiásticos</h3>
-
                 {{-- Grupo: Religiao --}}
                 <div style="display: table;">
-
                     <!-- Input Rua -->
                     <div style="display: table-cell; vertical-align: middle;">
                         <label class="block font-medium text-sm text-gray-700" for="name">
@@ -293,7 +268,6 @@ $title = 'Alterar aluno';
                     @endif
                 </div>
             
-
             @if ($alterar)
             {{-- Cancelar Alterações --}}   
             <div class="flex items-center justify-end mt-4">
@@ -345,13 +319,11 @@ $title = 'Alterar aluno';
                 <div class="flex">
                     <a href="/AreaRestrita" class="color-white" id="text-sem-alunos">Cadastre um agora mesmo!</a>        
                 </div>
-                    
+
             @else
-                {{-- Senão, é porque existem alunos cadastrados, então exiba-os com foreach --}}
-                <div class="">
-                    <h3 class="color-white title-show-alunos" id="a"><b>ADAD - Alunos Cadastrados:</b></h3>   
-                </div>
-                
+                {{-- Senão, é porque existem alunos cadastrados, então exiba-os com FOREACH --}}
+                <h3 class="color-white title-show-alunos" id="a"><b>ADAD - Alunos Cadastrados:</b></h3>   
+
                 <table class="w-1\1">
                     <tr class="w-1\1" style="border-bottom: 4px solid #bfbfbf;">
                         <th class="cabecalho-table">Nome</th>
@@ -393,4 +365,3 @@ $title = 'Alterar aluno';
         </div>
     </div>
 </div>
-

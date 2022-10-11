@@ -1,28 +1,20 @@
 /* Table de Exibição de Alunos Cadastrados */
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
-
 @import "responsive/responsive_show-alunos.css";
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
 /* width de 100% */
-.w-1\1 {
-    width: 100%;
-}
+.w-1\1 {}
 
 .color-white {
     color: #fff;
 }
-
 .adad-logo {
     width: 3.75rem;
 }
 
 .overflow_scroll{
     overflow-x: scroll;
+    background: yellow;
 }
 
 table {
@@ -32,47 +24,36 @@ table {
     border-collapse: collapse;
 }
 
+.table{
 
-
-.div-titulo{
-	width: 70%;
-	background: red;
 }
-
-
 .title-show-alunos {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     text-align: center;
+    margin: 0;
 }
-
 .cabecalho-table {
     font-size: 0.65rem;
     font-weight: bold;
 }
-
 td,
 th {
     padding-right: 8px;
-
     font-family: "Roboto", "sans-serif", "Calibri", Helvetica, "Helvetica Neue";
     font-size: 0.6rem;
     color: #fff;
     text-align: center;
 }
-
 td {
-    /* color: #bfbfbf; */
+    color: #bfbfbf;
 }
-
 .btn-edit-del {
     align-items: flex-end;
     cursor: pointer;
 }
-
 #btn-form-del {
     margin: auto 0;
 }
-
 /* form de alterar aluno */
 #info-editar {
     font-family: "Roboto", "sans-serif", "Calibri", Helvetica, "Helvetica Neue";
@@ -80,12 +61,10 @@ td {
     color: #fff;
     text-align: center;
 }
-
 #title-sem-alunos {
     margin: 0 auto;
     text-align: center;
 }
-
 #text-sem-alunos {
     margin: 0 auto;
     text-align: justify;
