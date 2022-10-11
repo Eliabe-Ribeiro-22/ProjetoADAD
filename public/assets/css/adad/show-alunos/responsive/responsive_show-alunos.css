@@ -1,4 +1,5 @@
 @media screen and (min-width: 280px) {
+    /* form de alterar aluno */
     #title-sem-alunos {
         font-size: clamp(1.4rem, 1.8rem, 5rem);
     }
@@ -9,11 +10,28 @@
 }
 
 @media screen and (min-width: 1024px) {
+    /* form de alterar aluno */
     #title-sem-alunos {
         font-size: clamp(4rem, 4rem, 9rem);
     }
 
     #text-sem-alunos {
         font-size: clamp(3.5rem, 3.5rem, 4rem);
+    }
+
+    /* valores default for desktop */
+    td,
+    th {
+        font-size: 1.5rem;
+        margin: 10px 6rem;
+        padding: 8px;
+    }
+
+    #cabecalho-table {
+        font-size: 2rem;
+    }
+    .display {
+        /* what is the display default ??? */
+        display: inline-block;
     }
 }

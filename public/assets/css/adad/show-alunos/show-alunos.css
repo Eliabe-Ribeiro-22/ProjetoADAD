@@ -19,21 +19,18 @@ table {
     border-collapse: collapse;
 }
 
-#cabecalho-table {
-    /* font-size: 2rem; */
+.cabecalho-table {
     font-size: 0.8rem;
-    font-size: 11px;
     font-weight: bold;
 }
 
 td,
 th {
-    margin: 10px 6rem;
-    padding: 8px;
+    /* margin: 10px 6rem; */
+    padding-right: 8px;
 
     font-family: "Roboto", "sans-serif", "Calibri", Helvetica, "Helvetica Neue";
-    /* font-size: 1.5rem; */
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     color: #fff;
     text-align: center;
 }
@@ -51,14 +48,15 @@ td {
     margin: auto 0;
 }
 
+/* form de alterar aluno */
 #info-editar {
     font-family: "Roboto", "sans-serif", "Calibri", Helvetica, "Helvetica Neue";
-    font-size: 1.5rem;    
+    font-size: 1.5rem;
     color: #fff;
     text-align: center;
 }
 
-#title-sem-alunos{
+#title-sem-alunos {
     margin: 0 auto;
     text-align: center;
 }
@@ -69,6 +67,10 @@ td {
     text-decoration: underline;
 }
 
-.visiblity{
+.display {
     display: none;
+}
+
+#delete{
+    padding: 0;
 }

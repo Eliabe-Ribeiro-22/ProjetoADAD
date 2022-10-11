@@ -352,21 +352,21 @@ $title = 'Alterar aluno';
                 
                 <table class="w-1\1">
                     <tr class="w-1\1" style="border-bottom: 4px solid #bfbfbf;">
-                        <th id="cabecalho-table">Nome</th>
-                        <th id="cabecalho-table">Idade</th>
-                        <th class="visiblity" id="cabecalho-table">Série</th>
-                        <th class="visiblity" id="cabecalho-table">Cidade</th>
-                        <th class="visiblity" id="cabecalho-table">Religião</th>
-                        <th id="cabecalho-table">Editar</th>
-                        <th id="cabecalho-table">Excluir</th>
+                        <th class="cabecalho-table">Nome</th>
+                        <th class="cabecalho-table">Idade</th>
+                        <th class="display cabecalho-table">Série</th>
+                        <th class="display cabecalho-table">Cidade</th>
+                        <th class="display cabecalho-table">Religião</th>
+                        <th class="cabecalho-table">Editar</th>
+                        <th class="cabecalho-table" id="delete">Excluir</th>
                     </tr>  
                     @foreach ($alunos as $aluno)
                         <tr class="w-1\1" style="border-bottom: 1px solid #bfbfbf;">
                             <td>{{ $aluno->NOME }}</td>
                             <td>{{ $aluno->IDADE }}</td>
-                            <td class="visiblity">{{ $aluno->SERIE }}</td>
-                            <td class="visiblity">{{ $aluno->CIDADE }}</td>
-                            <td class="visiblity">{{ $aluno->RELIGIAO }}</td>
+                            <td class="display">{{ $aluno->SERIE }}</td>
+                            <td class="display">{{ $aluno->CIDADE }}</td>
+                            <td class="display">{{ $aluno->RELIGIAO }}</td>
                             <td class="btn-edit-del">
                                 <a href="{{ route('aluno_edit', ['id' => $aluno->id]) }}">
                                     &#128393;
