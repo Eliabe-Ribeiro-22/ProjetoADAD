@@ -20,7 +20,9 @@ table {
 }
 
 #cabecalho-table {
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: 0.8rem;
+    font-size: 11px;
     font-weight: bold;
 }
 
@@ -30,7 +32,8 @@ th {
     padding: 8px;
 
     font-family: "Roboto", "sans-serif", "Calibri", Helvetica, "Helvetica Neue";
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    font-size: 0.6rem;
     color: #fff;
     text-align: center;
 }
@@ -50,8 +53,7 @@ td {
 
 #info-editar {
     font-family: "Roboto", "sans-serif", "Calibri", Helvetica, "Helvetica Neue";
-    /* font-size: 1.5rem; */
-    font-size: 5px;
+    font-size: 1.5rem;    
     color: #fff;
     text-align: center;
 }
@@ -65,4 +67,8 @@ td {
     margin: 0 auto;
     text-align: justify;
     text-decoration: underline;
+}
+
+.visiblity{
+    display: none;
 }
