@@ -3,7 +3,9 @@
 @import "responsive/responsive_show-alunos.css";
 
 /* width de 100% */
-.w-1\1 {}
+.w-1\1 {
+    width: 100%;
+}
 
 .color-white {
     color: #fff;
@@ -12,7 +14,7 @@
     width: 3.75rem;
 }
 
-.overflow_scroll{
+.overflow_scroll {
     overflow-x: scroll;
     background: yellow;
 }
@@ -24,18 +26,29 @@ table {
     border-collapse: collapse;
 }
 
-.table{
-
+.show-alunos {
+    border-radius: 1rem;
 }
+
 .title-show-alunos {
     font-size: 0.7rem;
     text-align: center;
     margin: 0;
 }
+
 .cabecalho-table {
     font-size: 0.65rem;
     font-weight: bold;
 }
+
+.line-header-alunos {
+    border-bottom: 1.5px solid #bfbfbf;
+}
+
+.line-body-alunos {
+    border-bottom: 1px solid #bfbfbf;
+}
+
 td,
 th {
     padding-right: 8px;
@@ -61,16 +74,17 @@ td {
     color: #fff;
     text-align: center;
 }
+
 #title-sem-alunos {
     margin: 0 auto;
     text-align: center;
 }
+
 #text-sem-alunos {
     margin: 0 auto;
     text-align: justify;
     text-decoration: underline;
 }
-
 
 #delete {
     padding: 0;

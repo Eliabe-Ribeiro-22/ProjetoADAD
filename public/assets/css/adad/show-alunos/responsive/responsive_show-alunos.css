@@ -1,8 +1,5 @@
 @media screen and (min-width: 280px) {
-    #a {
-        font-size: clamp(0.9rem, 1.0rem, 1.4rem, 1.6rem);
-    }
-
+    
     /* form de alterar aluno */
     #title-sem-alunos {
         font-size: clamp(1.4rem, 1.8rem, 5rem);
@@ -14,9 +11,11 @@
 }
 
 @media screen and (min-width: 1024px) {
+    
     .adad-logo {
         max-width: 150px;
     }
+    
 
     /* form de alterar aluno */
     #title-sem-alunos {
