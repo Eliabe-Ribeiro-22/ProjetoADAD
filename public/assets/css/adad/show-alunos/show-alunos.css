@@ -4,9 +4,7 @@
 @import "responsive/responsive_show-alunos.css";
 
 /* width de 100% */
-.w-1\1 {
-    width: 100%;
-}
+.w-1\1 {}
 
 .color-white {
     color: #fff;
@@ -16,6 +14,11 @@
     width: 3.75rem;
 }
 
+.overflow_scroll{
+    overflow-x: scroll;
+    background: yellow;
+}
+
 table {
     width: 100%;
 
@@ -23,7 +26,10 @@ table {
     border-collapse: collapse;
 }
 
-#title-show-alunos {
+.table{
+
+}
+.title-show-alunos {
     font-size: 0.7rem;
     text-align: center;
     margin: 0;
@@ -76,9 +82,6 @@ td {
     text-decoration: underline;
 }
 
-.display {
-    display: none;
-}
 
 #delete {
     padding: 0;
