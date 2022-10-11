@@ -1,7 +1,7 @@
 /* Table de Exibição de Alunos Cadastrados */
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
 
-@import 'responsive/show-alunos.css';
+/* @import 'responsive/show-alunos.css'; */
 
 /* width de 100% */
 .w-1\1 {
@@ -50,7 +50,8 @@ td {
 
 #info-editar {
     font-family: "Roboto", "sans-serif", "Calibri", Helvetica, "Helvetica Neue";
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    font-size: 5px;
     color: #fff;
     text-align: center;
 }
