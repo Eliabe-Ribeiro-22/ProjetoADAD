@@ -6,18 +6,18 @@
 
 <body class="bg-body">
     {{-- <nav>
-    <div id="header">
+        <div id="header">
             <x-igreja.nav.logo />
             <x-igreja.nav.menu-nav />
             <x-igreja.nav.menu-mobile />
-        </div> 
+        </div>
     </nav> --}}
 
-    <main class="bg-main">
+    {{-- <main class="bg-main">
         @yield('corpo')
-    </main>
+    </main> --}}
 
-    {{-- <footer>
-        <x-igreja.footer.footer />
-    </footer> --}}
+    <footer>
+        <x-igreja.footer.new-footer />
+    </footer>
 </body>
