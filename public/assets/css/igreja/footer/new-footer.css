@@ -7,7 +7,7 @@
 }
 
 .text-font-footer {
-    font-family: "Impact", "Verdana", "Roboto", "sans-serif";
+    font-family: "Impact", "Verdana", "Roboto", "Arial", "sans-serif", "Calibri";
 }
 
 .w-img {
@@ -36,4 +36,21 @@
 
 #text-endereco {
     text-align: center;
+}
+
+/* Responsividade */
+@media screen and (min-width: 280px) {
+    .size-footer {
+        font-size: clamp(1rem, 1.4rem, 4rem);
+    }
+
+    .w-img {
+        width: 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .size-footer {
+        font-size: clamp(3.5rem, 3.5rem, 4rem);
+    }
 }
