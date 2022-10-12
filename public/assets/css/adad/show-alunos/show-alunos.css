@@ -30,10 +30,23 @@ table {
     border-radius: 1rem;
 }
 
-.title-show-alunos {
+.title-alunos {
     font-size: 0.7rem;
-    text-align: center;
+}
+
+#title-form-alunos {
     margin: 0;
+    text-align: center;
+}
+
+#b {
+    font-size: 0.8rem;
+    font-family: "Arial";
+    color: #fff;
+}
+
+#c {
+    margin-bottom: 0.3rem;
 }
 
 .cabecalho-table {
@@ -67,6 +80,7 @@ td {
 #btn-form-del {
     margin: auto 0;
 }
+
 /* form de alterar aluno */
 #info-editar {
     font-family: "Roboto", "sans-serif", "Calibri", Helvetica, "Helvetica Neue";

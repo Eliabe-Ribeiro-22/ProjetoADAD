@@ -51,7 +51,7 @@ $title = 'Alterar aluno';
                 @endphp
                 @method('PUT')
                 @php
-                echo "<h1>Editando: " . $aluno->NOME . "</h1>";
+                echo "<h1 id='title-form-alunos'>Editando: " . $aluno->NOME . "</h1>";
                 // As variáveis recebem os valores vindos do aluno cadastrado 
 				//  no Banco de Dados
                 $nome = $aluno->NOME;
@@ -70,7 +70,7 @@ $title = 'Alterar aluno';
                 } else {
                 // Senão, é porque o form será exibido para realizar cadastro 
 				// de alunos as vars mantêm setadas com null.
-                echo "<h1 class='CentralizaText' id='title-show-alunos'>Cadastro de Alunos ADAD</h1>";
+                echo "<h1 class='CentralizaText title-alunos' id='title-form-alunos'>Cadastro de Alunos ADAD</h1>";
                 }
                 @endphp
                 <h3 class="CentralizaText"> Dados Pessoais</h3>
@@ -321,9 +321,12 @@ $title = 'Alterar aluno';
 
             @else
                 {{-- Senão, é porque existem alunos cadastrados, então exiba-os com FOREACH --}}
-                <h3 class="color-white title-show-alunos" id="a"><b>ADAD - Alunos Cadastrados:</b></h3>   
+                {{-- <h3 class="color-white title-show-alunos" id="a"><b></b></h3>    --}}
 
                 <table class="w-1\1">
+                    <tr id="c">
+                        <th colspan="7" id="b">ADAD - Alunos Cadastrados:</th>
+                    </tr>
                     <tr class="w-1\1 line-header-alunos">
                         <th class="cabecalho-table">Nome</th>
                         <th class="cabecalho-table">Idade</th>
