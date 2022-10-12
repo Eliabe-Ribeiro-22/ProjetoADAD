@@ -330,9 +330,9 @@ $title = 'Alterar aluno';
                     <tr class="w-1\1 line-header-alunos">
                         <th class="cabecalho-table">Nome</th>
                         <th class="cabecalho-table">Idade</th>
-                        <th class="display cabecalho-table">Série</th>
-                        <th class="display cabecalho-table">Cidade</th>
-                        <th class="display cabecalho-table">Religião</th>
+                        <th class="cabecalho-table">Série</th>
+                        <th class="cabecalho-table">Cidade</th>
+                        <th class="cabecalho-table">Religião</th>
                         <th class="cabecalho-table">Editar</th>
                         <th class="cabecalho-table" id="delete">Excluir</th>
                     </tr>  
@@ -340,9 +340,9 @@ $title = 'Alterar aluno';
                         <tr class="w-1\1 line-body-alunos">
                             <td>{{ $aluno->NOME }}</td>
                             <td>{{ $aluno->IDADE }}</td>
-                            <td class="display">{{ $aluno->SERIE }}</td>
-                            <td class="display">{{ $aluno->CIDADE }}</td>
-                            <td class="display">{{ $aluno->RELIGIAO }}</td>
+                            <td>{{ $aluno->SERIE }}</td>
+                            <td>{{ $aluno->CIDADE }}</td>
+                            <td>{{ $aluno->RELIGIAO }}</td>
                             <td class="btn-edit-del">
                                 <a href="{{ route('aluno_edit', ['id' => $aluno->id]) }}">
                                     &#128393;

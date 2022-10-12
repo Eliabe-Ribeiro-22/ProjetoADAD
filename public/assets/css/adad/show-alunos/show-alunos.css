@@ -16,7 +16,6 @@
 
 .overflow_scroll {
     overflow-x: scroll;
-    background: yellow;
 }
 
 table {
@@ -51,6 +50,7 @@ table {
 
 .cabecalho-table {
     font-size: 0.65rem;
+    font-family: "Arial";
     font-weight: bold;
 }
 
