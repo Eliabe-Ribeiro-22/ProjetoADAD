@@ -108,7 +108,7 @@ td {
 @media screen and (min-width: 1024px) {
     
     #title-table-alunos {
-        font-size: clamp(2rem, 9rem);
+        font-size: 2rem;
     }
 
     .adad-logo {
