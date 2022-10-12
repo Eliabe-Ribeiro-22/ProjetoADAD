@@ -12,12 +12,17 @@
     </div>
 
     <div id="rede-social">
-        <a class="div-img" href="https://www.facebook.com/deusprovera.campobelodosul" target="_blank">
-            <img class="w-img" src="assets/img/igreja/logoFace.png" alt="Logo Facebook" />
+        <a href="https://www.facebook.com/deusprovera.campobelodosul" target="_blank">
+            <div id="div-facebook">
+                <img class="w-img" src="assets/img/igreja/logoFace.png" alt="Logo Facebook" />
+            </div>
         </a>
 
         <a href="mailto:adcbsul@gmail.com" target="_blank">
-            <img class="w-img" src="assets/img/igreja/logoGmail.png" alt="Logo Gmail" />
+            <div id="div-gmail">
+                <img class="w-img" src="assets/img/igreja/logoGmail.png" alt="Logo Gmail" />
+            </div>
+
         </a>
     </div>
 </div>

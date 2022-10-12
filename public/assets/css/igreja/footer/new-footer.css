@@ -10,6 +10,27 @@
     font-family: "Impact", "Verdana", "Roboto", "Arial", "sans-serif", "Calibri";
 }
 
+
+#rede-social {
+    margin: 0.4rem 0rem 0rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#div-facebook {
+    padding: 0.1rem;
+    justify-content: center;
+    background-color: #fff;
+}
+
+#div-gmail{
+    padding: 0.2rem;
+    justify-content: center;
+    background-color: #fff;
+}
+
 .w-img {
     width: 1.5rem;
 }
@@ -22,12 +43,6 @@
 
 #tel-whats-div {
     margin-right: 0.2rem;
-}
-
-#rede-social {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
 }
 
 #endereco {
