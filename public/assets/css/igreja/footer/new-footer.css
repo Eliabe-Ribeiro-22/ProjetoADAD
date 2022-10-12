@@ -2,9 +2,14 @@
     text-align: center;
 }
 
+.size-footer {
+    font-size: 1.2rem;
+}
+
 .text-font-footer {
     font-family: "Impact", "Verdana", "Roboto", "sans-serif";
 }
+
 .w-img {
     width: 1.5rem;
 }
