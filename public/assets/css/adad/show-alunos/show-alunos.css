@@ -1,6 +1,5 @@
 /* Table de Exibição de Alunos Cadastrados */
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
-@import "responsive/responsive_show-alunos.css";
 
 /* width de 100% */
 .w-1\1 {
@@ -24,10 +23,6 @@ table {
     font-family: arial, sans-serif;
 }
 
-.show-alunos {
-    
-}
-
 .title-alunos {
     font-family: "Arial";
     font-size: 0.8rem;
@@ -40,10 +35,6 @@ table {
 
 #title-table-alunos {
     color: #fff;
-}
-
-#c {
-    margin-bottom: 0.3rem;
 }
 
 .cabecalho-table {
@@ -100,4 +91,48 @@ td {
 
 #delete {
     padding: 0;
+}
+
+/* Responsividade */
+@media screen and (min-width: 280px) {
+    /* form de alterar aluno */
+    #title-sem-alunos {
+        font-size: clamp(1.4rem, 1.8rem, 5rem);
+    }
+
+    #text-sem-alunos {
+        font-size: clamp(1rem, 1.6rem, 4rem);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    #title-table-alunos {
+        font-size: clamp(2rem, 9rem);
+    }
+
+    .adad-logo {
+        max-width: 150px;
+    }
+
+    /* form de alterar aluno */
+    #title-sem-alunos {
+        font-size: clamp(4rem, 4rem, 9rem);
+    }
+
+    #text-sem-alunos {
+        font-size: clamp(3.5rem, 3.5rem, 4rem);
+    }
+
+    /* valores default for desktop */
+    td,
+    th {
+        font-size: 1.5rem;
+        margin: 10px 6rem;
+        padding: 8px;
+    }
+
+    .cabecalho-table {
+        font-size: 2rem;
+    }
 }

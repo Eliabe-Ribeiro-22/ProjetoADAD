@@ -287,7 +287,7 @@ $title = 'Alterar aluno';
 
 <div class="font-sans text-gray-900 antialiased">
     <div class="flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
-        <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-gray-800 shadow-md overflow_scroll sm:rounded-lg show-alunos">
+        <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-gray-800 shadow-md overflow_scroll sm:rounded-lg">
         @if ($alterar) {{-- Se o visitante estiver editando um aluno --}}
             <h3 class="CentralizaText color-white"><b>Dados do Alunos a ser Alterado:</b></h3>
             <label class="CentralizaText color-white">Nome: {{ $aluno->NOME }}</label>
@@ -321,8 +321,6 @@ $title = 'Alterar aluno';
 
             @else
                 {{-- Senão, é porque existem alunos cadastrados, então exiba-os com FOREACH --}}
-                {{-- <h3 class="color-white title-show-alunos" id="a"><b></b></h3>    --}}
-
                 <table class="w-1\1">
                     <tr id="table-title">
                         <th colspan="7" class="title-alunos" id="title-table-alunos">ADAD - Alunos Cadastrados:</th>

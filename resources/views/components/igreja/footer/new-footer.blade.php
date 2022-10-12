@@ -11,14 +11,14 @@
         <p class="text-center text-font-footer olor-white">+55 (049) 9 8847-7611</p>
     </div>
 
-    <div id="redes-sociais">
+    <div>
         <div href="https://www.facebook.com/deusprovera.campobelodosul">
             <a href="https://www.facebook.com/deusprovera.campobelodosul" target="_blank">
-                <img class="w-img" src="assets/img/igreja/logoFace.png" alt="Logo Facebook" />
+                <img class="" src="assets/img/igreja/logoFace.png" alt="Logo Facebook" />
             </a>
         </div>
 
-        <div>
+        <div id="z">
             <a href="mailto:adcbsul@gmail.com" target="_blank">
                 <img class="w-img" src="assets/img/igreja/logoGmail.png" alt="Logo Gmail" />
             </a>
