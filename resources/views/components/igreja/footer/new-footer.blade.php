@@ -1,37 +1,34 @@
 {{-- Footer do templateIgreja --}}
-
-{{-- Pai --}}
 <div>
-    {{-- Filho --}}
     <div>
-        <div>Telefones:</div>
-        <div> (049) 3249-1036</div>
+        <p class="text-center">Telefones:</p>
+        <p class="text-center"> (049) 3249-1036</p>
     </div>
-    <div>
-        <div>
-            <img class="w-img" src="assets/img/igreja/whats.png" alt="Logo What's App" id="imgW" />
+    <div id="telefone-whats">
+        <div id="tel-whats-div">
+            <img class="w-img" src="assets/img/igreja/whats.png" alt="Logo What's App" />
         </div>
-        <div>+55 (049) 9 8847-7611</div>
+        <p class="text-center">+55 (049) 9 8847-7611</p>
     </div>
 
     <div id="redes-sociais">
-        <div href="https://www.facebook.com/deusprovera.campobelodosul" class="imagens">
+        <div href="https://www.facebook.com/deusprovera.campobelodosul">
             <a href="https://www.facebook.com/deusprovera.campobelodosul" target="_blank">
-                <img class="w-img" src="assets/img/igreja/logoFace.png" alt="Logo Facebook" id="img" />
+                <img class="w-img" src="assets/img/igreja/logoFace.png" alt="Logo Facebook" />
             </a>
         </div>
 
-        <div class="imagens">
+        <div>
             <a href="mailto:adcbsul@gmail.com" target="_blank">
-                <img class="w-img" src="assets/img/igreja/logoGmail.png" alt="Logo Gmail" id="img" />
+                <img class="w-img" src="assets/img/igreja/logoGmail.png" alt="Logo Gmail" />
             </a>
         </div>
     </div>
 </div>
 
 {{-- Endereco --}}
-<div>
-    <p>
+<div id="endereco">
+    <p id="text-endereco">
         Rua Gerônimo Xavier de Oliveira, nº 230, Centro, Campo Belo do Sul/SC, Brasil
     </p>
 </div>

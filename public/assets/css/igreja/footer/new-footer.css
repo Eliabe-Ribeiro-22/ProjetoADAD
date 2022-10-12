@@ -1,3 +1,40 @@
+.text-center {
+    text-align: center;
+    background: green;
+}
+
 .w-img {
-    width: 10px;
+    width: 1.5rem;
+}
+
+#telefone-whats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: blue;
+}
+
+#tel-whats-div{
+margin-right: 0.2rem;
+}
+
+#redes-sociais {
+    display: flex;
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+#endereco {
+    margin-top: 0.6rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    background: red;
+}
+
+#text-endereco {
+    text-align: justify;
 }
