@@ -19,19 +19,14 @@
     margin-right: 0.2rem;
 }
 
-#redes-sociais {
-    /* display: flex;
-    justify-content: center; */
-}
-
-.align-center {
+#rede-social {
+    display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 #endereco {
-    margin-top: 0.6rem;
-    margin-left: 0.3rem;
-    margin-right: 0.3rem;
+    margin: 0.6rem 0.3rem 0rem;
 }
 
 #text-endereco {
