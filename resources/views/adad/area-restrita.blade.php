@@ -219,7 +219,7 @@ $title = 'Alterar aluno';
                          autofocus="autofocus">
                     </div>
                 </div>
-                <br>
+                <br> 
                 <h3 class="CentralizaText"> Dados Eclesiásticos</h3>
                 {{-- Grupo: Religiao --}}
                 <div style="display: table;">
@@ -324,8 +324,8 @@ $title = 'Alterar aluno';
                 {{-- <h3 class="color-white title-show-alunos" id="a"><b></b></h3>    --}}
 
                 <table class="w-1\1">
-                    <tr id="c">
-                        <th colspan="7" id="b">ADAD - Alunos Cadastrados:</th>
+                    <tr id="table-title">
+                        <th colspan="7" class="title-alunos" id="title-table-alunos">ADAD - Alunos Cadastrados:</th>
                     </tr>
                     <tr class="w-1\1 line-header-alunos">
                         <th class="cabecalho-table">Nome</th>

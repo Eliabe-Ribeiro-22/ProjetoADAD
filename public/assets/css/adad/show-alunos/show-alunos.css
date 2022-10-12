@@ -22,15 +22,15 @@ table {
     width: 100%;
 
     font-family: arial, sans-serif;
-    border-collapse: collapse;
 }
 
 .show-alunos {
-    border-radius: 1rem;
+    
 }
 
 .title-alunos {
-    font-size: 0.7rem;
+    font-family: "Arial";
+    font-size: 0.8rem;
 }
 
 #title-form-alunos {
@@ -38,9 +38,7 @@ table {
     text-align: center;
 }
 
-#b {
-    font-size: 0.8rem;
-    font-family: "Arial";
+#title-table-alunos {
     color: #fff;
 }
 
