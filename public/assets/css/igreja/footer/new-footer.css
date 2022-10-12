@@ -1,8 +1,10 @@
 .text-center {
     text-align: center;
-    background: green;
 }
 
+.text-font-footer {
+    font-family: "Impact", "Verdana", "Roboto", "sans-serif";
+}
 .w-img {
     width: 1.5rem;
 }
@@ -11,12 +13,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background: blue;
 }
 
-#tel-whats-div{
-margin-right: 0.2rem;
+#tel-whats-div {
+    margin-right: 0.2rem;
 }
 
 #redes-sociais {
@@ -32,9 +32,8 @@ margin-right: 0.2rem;
     margin-top: 0.6rem;
     margin-left: 0.3rem;
     margin-right: 0.3rem;
-    background: red;
 }
 
 #text-endereco {
-    text-align: justify;
+    text-align: center;
 }

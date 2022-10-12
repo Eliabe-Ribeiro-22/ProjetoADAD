@@ -13,9 +13,9 @@
         </div>
     </nav> --}}
 
-    {{-- <main class="bg-main">
+    <main class="bg-main">
         @yield('corpo')
-    </main> --}}
+    </main>
 
     <footer>
         <x-igreja.footer.new-footer />
