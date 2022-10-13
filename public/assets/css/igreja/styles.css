@@ -8,7 +8,7 @@
 
 /* nav & footer */
 @import "nav/nav.css";
-@import "footer/new-footer.css";
+@import "footer/footer.css";
 
 /*  Formulário Contato */
 @import "form/form_main.css";

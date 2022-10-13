@@ -6,16 +6,13 @@
     width: 60%;
     height: 100%;
     display: flex;
-    background: red;
 }
 
 #logo-adad {
-    background: yellow;
     width: 3rem;
     cursor: default;
 }
 
 #logo-igreja {
-    background: red;
     width: 3rem;
 }

@@ -5,19 +5,19 @@
 </head>
 
 <body class="bg-body">
-    {{-- <nav>
+    <nav>
         <div id="header">
             <x-igreja.nav.logo />
             <x-igreja.nav.menu-nav />
             <x-igreja.nav.menu-mobile />
         </div>
-    </nav> --}}
+    </nav>
 
     {{-- <main class="bg-main">
         @yield('corpo')
     </main> --}}
 
     <footer>
-        <x-igreja.footer.new-footer />
+        <x-igreja.footer.footer />
     </footer>
 </body>
