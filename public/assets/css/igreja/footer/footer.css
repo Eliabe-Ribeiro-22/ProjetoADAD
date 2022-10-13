@@ -71,10 +71,10 @@
 
 @media screen and (min-width: 1024px) {
     .size-footer {
-        font-size: clamp(3.5rem, 3.5rem, 4rem);
+        font-size: clamp(2rem, 2rem, 4rem);
     }
 
     .w-img {
-        width: 7rem;
+        width: 2rem;
     }
 }
