@@ -1,51 +1,80 @@
-/* Footer Igreja */
-#footer-menu {
-    display: flex;
-
-    font-family: "Broadway", "Calibri", "Verdana", "Roboto", "sans-serif";
+.text-center {
+    text-align: center;
 }
 
-    #filho1 {
-        width: 35%;
-        height: 80px;
+.size-footer {
+    font-size: 1.2rem;
+}
 
-        font-size: 30px;
-        text-align: center;
-        font-family: "Impact", "Verdana", "Roboto", "sans-serif";
+.text-font-footer {
+    font-family: "Impact", "Verdana", "Roboto", "Arial", "sans-serif", "Calibri";
+}
+
+#rede-social {
+    margin: 0.4rem 0rem 0rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#div-facebook {
+    padding: 0.1rem;
+    justify-content: center;
+    background-color: #fff;
+}
+
+#div-gmail {
+    padding: 0.2rem;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.w-img {
+    width: 1.5rem;
+}
+
+#telefone-whats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tel-whats-div {
+    margin-right: 0.2rem;
+}
+
+#endereco {
+    margin: 0.6rem 0.3rem 0rem;
+}
+
+#text-endereco {
+    text-align: center;
+}
+
+/* Responsividade */
+@media screen and (min-width: 280px) {
+    .size-footer {
+        font-size: clamp(1rem, 1.4rem, 4rem);
     }
 
-    #filho2 {
-        width: 35%;
-        height: 80px;
+    .w-img {
+        width: 3rem;
+    }
+}
 
-        align-items: center;
+@media screen and (min-width: 640px) {
+    .w-img {
+        width: 5rem;
+    }
+}
 
-        text-align: center;
-        font-size: 30px;
-        font-family: "Impact", "Verdana", "Roboto", "sans-serif";
+@media screen and (min-width: 1024px) {
+    .size-footer {
+        font-size: clamp(3.5rem, 3.5rem, 4rem);
     }
 
-    #filho3 {
-        margin-left: 20%;
-
-        width: 30%;
-        height: 80px;
-
-        display: flex;
+    .w-img {
+        width: 7rem;
     }
-
-    .imagens {
-        width: 50px;
-        height: 50px;
-        background: #ffa500;
-        margin: 5px auto;
-    }
-
-    #endereco {
-        margin: 0;
-        padding: 0;
-
-        text-align: center;
-        font-size: 33px;
-        font-family: "Impact", "Verdana", "Roboto", "sans-serif";
-    }
+}

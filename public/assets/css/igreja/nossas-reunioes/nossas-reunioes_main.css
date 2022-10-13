@@ -1,4 +1,3 @@
-/* Responsividade Grand Prime */
 #title-nossas-reunioes {
     margin: 0;
     padding: 0;
@@ -9,7 +8,7 @@
     position: relative;
     justify-content: center;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 #square {
@@ -20,17 +19,28 @@
     padding-bottom: 15px;
 }
 
-.text {
+#text-nossas-reunioes {
     padding: 5px 0;
-
-    font-family: "arial black";
-    border-radius: 20px;
-
-    text-align: center;
+    font-size: 0.8rem;
 }
 
-#text-institucional {
-    font-size: 10px;
+@media screen and (min-width: 280px) {
+    #title-nossas-reunioes {
+        font-size: clamp(1.4rem, 2rem, 5rem);
+    }
+
+    #text-nossas-reunioes {
+        font-size: clamp(1rem, 1.4rem, 4rem);
+    }
 }
 
-/* Galaxy Fold */
+
+@media screen and (min-width: 1024px) {
+    #title-nossas-reunioes {
+        font-size: clamp(4.5rem, 4.5rem, 9rem);
+    }
+
+    #text-nossas-reunioes {
+        font-size: clamp(3.5rem, 3.5rem, 4rem);
+    }
+}

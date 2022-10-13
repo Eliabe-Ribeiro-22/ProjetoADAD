@@ -4,13 +4,7 @@
     <section>
         <div class="boas-vindas">
             <!-- To Vini: Criar aqui "Carrossel" -->
-            <img src="#" alt="Imagem de Boas-Vindas">
-
-            <!-- Video para ser colocado como fundo -->
-            <video controls loop muted>
-                <source src="assets/videos/video.mp4" type="video/mp4">
-                Seu navegador não tem suporte para esse vídeo
-            </video>
+            <img src="#" alt="Imagem de Boas-Vindas" >
 
             <h1>Bem-vindo a IEAD Campo Belo do Sul</h1>
         </div>

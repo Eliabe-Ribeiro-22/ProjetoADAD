@@ -2,6 +2,7 @@
 
 /* Fonte Nunito usada na página Login */
 @import url("https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&amp;display=swap");
+@import 'table-alunos.css';
 
 *,
 :before,
@@ -537,11 +538,6 @@ select {
     --tw-backdrop-opacity: ;
     --tw-backdrop-saturate: ;
     --tw-backdrop-sepia: ;
-}
-
-.adad-logo {
-    max-width: 150px;
-    max-height: 150px;
 }
 .prose {
     color: var(--tw-prose-body);
@@ -1247,7 +1243,7 @@ select {
     width: 4rem;
 }
 .w-full {
-    width: 100%;
+    width: 95%;
 }
 .w-0 {
     width: 0px;
@@ -2209,7 +2205,7 @@ select {
         width: 100%;
     }
     .sm\:max-w-md {
-        max-width: 28rem;
+        /* max-width: 28rem; */
     }
     .sm\:max-w-sm {
         max-width: 24rem;
@@ -2347,4 +2343,17 @@ select {
         padding-left: 2rem;
         padding-right: 2rem;
     }
+}
+
+.CentralizaText {
+    text-align: center;
+    font-size: 27px;
+}
+
+.title-cad-alunos{
+    font-size: 2.5rem;
+} 
+
+.font-bold{
+    font-weight: bold;
 }

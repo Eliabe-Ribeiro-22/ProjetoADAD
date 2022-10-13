@@ -1,10 +1,10 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
     <link rel="icon" type="image/x-icon" href="/adad.ico">
-    {{-- <link rel="stylesheet" href="/assets/css/adad/login.css">  --}}
-    {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
-    <link rel="stylesheet" href="/assets/css/tailwind.css">
+    <link rel="stylesheet" href="/assets/css/adad/login.css">
     <title>Login</title>
 </head>
 
@@ -16,7 +16,7 @@
             class="h-screen center mx-auto lg:min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
             <div>
                 <a href="/">
-                    <img class="adad-logo" src="/ssets/img/igreja/adad_logo.png" href="/">
+                    <img class="adad-logo" src="/assets/img/igreja/adad_logo.png">
                 </a>
             </div>
 

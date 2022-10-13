@@ -8,17 +8,19 @@ if ($alterar) {
 $title = 'Alterar aluno';
 }
 @endphp
-
-<x-adad.head.head :title="$title" />
-
+<head>
+    <x-adad.head.head :title="$title" />
+</head>
 <div class="font-sans text-gray-900 antialiased">
-    <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
+    {{-- <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100"> --}}
+        <div
+            class="h-screen center mx-auto lg:min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100"
+        >
         <div>
-            <a class="bg-gray-200" href="/">
-                <img src="https://videos.adventistas.org/pt/wp-content/themes/pa-theme-sedes/assets/sedes/pt/default.svg">
+            <a href="/">
+                <img src="/assets/img/igreja/adad_logo.png" class="adad-logo">
             </a>
         </div>
-
         <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
             <form method="POST"
 			@if ($alterar) 
@@ -27,9 +29,7 @@ $title = 'Alterar aluno';
 				action="{{ route('aluno_store') }}" 
 			@endif
 			>
-
                 @csrf
-
                 {{-- Variáveis settadas com valor, que por padrão são para exibir o form de cadastro de alunos --}}
                 @php
                 $nome = '';
@@ -49,12 +49,9 @@ $title = 'Alterar aluno';
                 // Se o form for exibido para realizar alteração de aluno
                 if ($alterar) {
                 @endphp
-
                 @method('PUT')
-
                 @php
-                echo "<h1>Editando: " . $aluno->NOME . "</h1>";
-
+                echo "<h1 id='title-form-alunos'>Editando: " . $aluno->NOME . "</h1>";
                 // As variáveis recebem os valores vindos do aluno cadastrado 
 				//  no Banco de Dados
                 $nome = $aluno->NOME;
@@ -73,15 +70,13 @@ $title = 'Alterar aluno';
                 } else {
                 // Senão, é porque o form será exibido para realizar cadastro 
 				// de alunos as vars mantêm setadas com null.
-                echo "<h1>Cadastro de Alunos ADAD</h1>";
+                echo "<h1 class='CentralizaText title-alunos' id='title-form-alunos'>Cadastro de Alunos ADAD</h1>";
                 }
                 @endphp
-
                 <h3 class="CentralizaText"> Dados Pessoais</h3>
                 
                 {{-- Grupo: Nome + Idade + Data de Nascimento + Série Escolar + CPF --}}
                 <div style="display: table;">
-
                     <!-- Input Nome -->
                     <div style="display: table-cell; vertical-align: middle; width:30%;">
                         <label class="block font-medium text-sm text-gray-700" for="name">
@@ -92,7 +87,6 @@ $title = 'Alterar aluno';
                          id="name" type="text" required="required" autofocus="autofocus" autocomplete="name"
                          name="nome" value="{{ $nome }}">
                     </div>
-
                     <!-- Input Idade -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle;">
                         <label class="block font-medium text-sm text-gray-700" for="email">
@@ -102,7 +96,6 @@ $title = 'Alterar aluno';
                         focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" 
                         id="email" type="number" name="idade" value="{{ $idade }}" required="required">
                     </div>
-
                     <!-- Input Data de Nascimento -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle;">
                         <label class="block font-medium text-sm text-gray-700">
@@ -115,7 +108,6 @@ $title = 'Alterar aluno';
                          required="required"
                         >
                     </div>
-
                     <!-- Input Série Escolar -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle;">
                         <label class="block font-medium text-sm text-gray-700">
@@ -125,7 +117,6 @@ $title = 'Alterar aluno';
                          focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" 
                          type="text"  name="serie" value="{{ $serie }}" required="required" autofocus="autofocus">
                     </div>
-
                     <!-- Input CPF -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle;">
                         <label class="block font-medium text-sm text-gray-700">
@@ -136,7 +127,6 @@ $title = 'Alterar aluno';
                         type="text" name="cpf" value="{{ $cpf }}" required="required" autofocus="autofocus">
                     </div>
                 </div>
-
                 <!-- Input Mãe -->
                 <div class="mt-4">
                     <label class="block font-medium text-sm text-gray-700" for="password">
@@ -146,7 +136,6 @@ $title = 'Alterar aluno';
                      focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" id="password" type="text" 
                       name="mae" value="{{ $mae }}" required="required" autocomplete="new-password">
                 </div>
-
                 <!-- Input Pai -->
                 <div class="mt-4">
                     <label class="block font-medium text-sm text-gray-700" for="password_confirmation">
@@ -156,12 +145,10 @@ $title = 'Alterar aluno';
                     focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" id="password_confirmation" 
                     type="text" name="pai" value="{{ $pai }}"autocomplete="new-password">
                 </div>
-
                 <br>
                 <h3 class="CentralizaText">Endereço</h3>
                 {{-- Grupo: Rua + Número da Casa + Bairro + Complemento --}}
                 <div style="display: table;  width: 96%; margin-right: 0; padding-right: 0;">
-
                     <!-- Input Rua -->
                     <div style="display: table-cell; vertical-align: middle; width:25%;">
                         <label class="block font-medium text-sm text-gray-700" for="name">
@@ -178,7 +165,6 @@ $title = 'Alterar aluno';
                          autocomplete="name"
                         >
                     </div>
-
                     <!-- Input Número da Casa/Apartamento -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle; width:15%;">
                         <label class="block font-medium text-sm text-gray-700" for="email">
@@ -192,7 +178,6 @@ $title = 'Alterar aluno';
                          value="{{ $numero }}"
                          required="required">
                     </div>
-
                     <!-- Input Bairro -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle; width:16%;">
                         <label class="block font-medium text-sm text-gray-700">
@@ -207,7 +192,6 @@ $title = 'Alterar aluno';
                          autofocus="autofocus"
                         >
                     </div>
-
                     <!-- Input Complemento -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle; width:10%;">
                         <label class="block font-medium text-sm text-gray-700">
@@ -221,7 +205,6 @@ $title = 'Alterar aluno';
                          autofocus="autofocus"
                         >
                     </div>
-
                     <!-- Input Cidade -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle;width:15%;">
                         <label class="block font-medium text-sm text-gray-700">
@@ -236,13 +219,10 @@ $title = 'Alterar aluno';
                          autofocus="autofocus">
                     </div>
                 </div>
-
-                <br>
+                <br> 
                 <h3 class="CentralizaText"> Dados Eclesiásticos</h3>
-
                 {{-- Grupo: Religiao --}}
                 <div style="display: table;">
-
                     <!-- Input Rua -->
                     <div style="display: table-cell; vertical-align: middle;">
                         <label class="block font-medium text-sm text-gray-700" for="name">
@@ -288,7 +268,6 @@ $title = 'Alterar aluno';
                     @endif
                 </div>
             
-
             @if ($alterar)
             {{-- Cancelar Alterações --}}   
             <div class="flex items-center justify-end mt-4">
@@ -302,66 +281,87 @@ $title = 'Alterar aluno';
             <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('register') }}">
                 Cadastrar novo usuário
             </a>
-    </div>
-        <div class="bg-red-700" style="margin: 0 auto;">
-            <div>
-
-                @if ($alterar) {{-- Se o visitante estiver editando um aluno --}}
-                    <h3><b>Dados do Alunos a ser Alterado:</b></h3>    
-                    <label>Nome: {{ $aluno->NOME }}</label>
-                    <br />
-                    <label>Idade: {{ $aluno->IDADE }}</label>
-                    <br>
-                    <label>Data de Nascimento: {{ $aluno->nascimento }}</label>
-                    <br>
-                    <label>Série escolar: {{ $aluno->SERIE }}.</label>
-                    <br>
-                    <label>
-                        {{ $aluno->RUA }}, nº {{ $aluno->NUMERO }}, bairro {{ $aluno->BAIRRO }},
-                        {{ $aluno->CIDADE }}.
-                    </label>
-                    <br>
-                    <label>Crença/Religião: {{ $aluno->RELIGIAO }}</label>
-                    <br>
-                    <br>
-                @else
-                    {{-- Se não, é porque ele está cadastrando um aluno --}}
-                    @if (count($alunos) == 0) {{-- Se não existir alunos cadastrados --}}
-                        <p>
-                            Ainda não há alunos Cadastrados.
-                        </p>
-                        <a href="/AreaRestrita"><strong>Cadastre um agora mesmo!</strong></a>
-                    @else
-                        {{-- Senão, é porque existem alunos cadastrados, então exiba-os com FOREACH --}}
-                        <h3><b>ADAD - Alunos Cadastrados:</b></h3>
-                        @foreach ($alunos as $aluno)
-                            <label>Nome do Aluno: {{ $aluno->NOME }}.</label>
-                            <label>Idade: {{ $aluno->IDADE }}</label>
-                            <br>
-                            <label>Data de Nascimento: {{ $aluno->nascimento->format('d-m-Y') }}</label>
-                            <br>
-                            <label>Série escolar: {{ $aluno->SERIE }}.</label>
-                            <br>
-                            <label>
-                                Rua {{ $aluno->RUA }}, nº {{ $aluno->NUMERO }}, bairro {{ $aluno->BAIRRO }},
-                                {{ $aluno->CIDADE }}.
-                            </label>
-                            <br>
-                            <label>Crença/Religião: {{ $aluno->RELIGIAO }}</label>
-                            <br>
-                            <a href="{{route('aluno_edit',  ['id'=> $aluno->id])}}">Editar</a>
-                            <form action="{{ route('aluno_destroy', ['id' => $aluno->id]) }}" method="POST">
-                                @csrf
-                                @method('DELETE')
-                                <button>Excluir</button>
-                            </form>
-                            <br>
-                            <br>
-                        @endforeach
-                    @endif
-                @endif
-            </div>
-        </div>           
+        </div>
     </div>
 </div>
-    
+
+<div class="font-sans text-gray-900 antialiased">
+    <div class="flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
+        <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-gray-800 shadow-md overflow_scroll sm:rounded-lg">
+        @if ($alterar) {{-- Se o visitante estiver editando um aluno --}}
+            <h3 class="CentralizaText color-white"><b>Dados do Alunos a ser Alterado:</b></h3>
+            <label class="CentralizaText color-white">Nome: {{ $aluno->NOME }}</label>
+            <br />
+            <label class="CentralizaText color-white">Idade: {{ $aluno->IDADE }}</label>
+            <br>
+            <label class="CentralizaText color-white">Data de Nascimento: {{ $aluno->nascimento }}</label>
+            <br>
+            <label class="CentralizaText color-white">Série escolar: {{ $aluno->SERIE }}.</label>
+            <br>
+            <label class="CentralizaText color-white">
+                {{ $aluno->RUA }}, nº {{ $aluno->NUMERO }}, bairro {{ $aluno->BAIRRO }},
+                {{ $aluno->CIDADE }}.
+            </label>
+            <br>
+            <label class="CentralizaText color-white">Crença/Religião: {{ $aluno->RELIGIAO }}</label>
+            <br>
+            <br>
+        @else
+            {{-- Se não, é porque ele está cadastrando um aluno --}}
+            @if (count($alunos) == 0) {{-- Se não existir alunos cadastrados --}}
+                <div class="flex">
+                    <h3 class="color-white font-bold" class="title-cad-alunos" id="title-sem-alunos">
+                        Ainda não há alunos Cadastrados.
+                    </h3>    
+                </div>        
+            
+                <div class="flex">
+                    <a href="/AreaRestrita" class="color-white" id="text-sem-alunos">Cadastre um agora mesmo!</a>        
+                </div>
+
+            @else
+                {{-- Senão, é porque existem alunos cadastrados, então exiba-os com FOREACH --}}
+                <table class="w-1\1">
+                    <tr id="table-title">
+                        <th colspan="7" class="title-alunos" id="title-table-alunos">ADAD - Alunos Cadastrados:</th>
+                    </tr>
+                    <tr class="w-1\1 line-header-alunos">
+                        <th class="cabecalho-table">Nome</th>
+                        <th class="cabecalho-table">Idade</th>
+                        <th class="cabecalho-table">Série</th>
+                        <th class="cabecalho-table">Cidade</th>
+                        <th class="cabecalho-table">Religião</th>
+                        <th class="cabecalho-table">Editar</th>
+                        <th class="cabecalho-table" id="delete">Excluir</th>
+                    </tr>  
+                    @foreach ($alunos as $aluno)
+                        <tr class="w-1\1 line-body-alunos">
+                            <td>{{ $aluno->NOME }}</td>
+                            <td>{{ $aluno->IDADE }}</td>
+                            <td>{{ $aluno->SERIE }}</td>
+                            <td>{{ $aluno->CIDADE }}</td>
+                            <td>{{ $aluno->RELIGIAO }}</td>
+                            <td class="btn-edit-del">
+                                <a href="{{ route('aluno_edit', ['id' => $aluno->id]) }}">
+                                    &#128393;
+                                </a>
+                            </td>
+                            <td class="btn-edit-del">
+                                <form 
+                                    action="{{ route('aluno_destroy', ['id' => $aluno->id]) }}" 
+                                    method="POST"
+                                    id="btn-form-del"
+                                >
+                                    @csrf
+                                    @method('DELETE')
+                                    <button>&#128465;</button>
+                                </form>
+                            </td>
+                        </tr>
+                    @endforeach
+                </table>
+            @endif
+        @endif
+        </div>
+    </div>
+</div>

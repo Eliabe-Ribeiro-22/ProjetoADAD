@@ -6,11 +6,10 @@
 }
 
 #form-contato {
-    margin: 0 auto;
+    margin: 0rem 5%;
 
     width: 90%;
 
-    border: 1px solid #ccc;
     border-radius: 10px;
 }
 
@@ -62,6 +61,8 @@
 
 #formContato-enviar {
     margin: 1.5rem 25% 1rem 25%;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
 
     width: 50%;
 
@@ -71,7 +72,7 @@
     background: linear-gradient(to bottom, #e6e6e6 5%, #5e6161 100%);
 
     border: 1px solid #566963;
-    border-radius: 2px;
+    border-radius: 4px;
 
     font-family: Arial;
     font-size: 1rem;
@@ -109,7 +110,6 @@
 
         border: 1px solid #ccc;
         border-radius: 10px;
-
     }
 
     #formContato-title {
