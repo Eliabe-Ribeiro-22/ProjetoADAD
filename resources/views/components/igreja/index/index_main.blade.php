@@ -16,7 +16,7 @@
             <div>
                 <div id="padding-bottom-footer">
                     <p class="bg-div color-primary">
-                        <span class="color-white" id="title-momento-reflexao">Momento de Reflexão</span>
+                        <span class="color-white text title-momento-reflexao" id="text-institucional">Momento de Reflexão</span>
                         <br><br>
 
                         <?php
