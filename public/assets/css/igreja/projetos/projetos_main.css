@@ -18,17 +18,16 @@
 }
 
 .subtitle-projeto {
-    /*    
     padding: 0.5rem;
     padding-bottom: 0.01rem;
-*/
+
     font-size: 0.8rem;
     text-align: center;
     color: #000000;
     font-family: "arial black";
     font-weight: bold;
 }
-/*
+
 .ul-projeto {
     padding: 0.3rem;
 
@@ -52,7 +51,7 @@
     display: flex;
     width: 80px;
 }
-
+/* 
 @media screen and (min-width: 280px) {
     #title-projetos {
         font-size: clamp(1.4rem, 1.8rem, 5rem);
@@ -87,4 +86,4 @@
     .ul-projeto {
         font-size: clamp(3.5rem, 3.5rem, 4rem);
     }
-}
+} */

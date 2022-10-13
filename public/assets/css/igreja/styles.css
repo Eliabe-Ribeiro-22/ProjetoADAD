@@ -8,7 +8,6 @@
 
 /* nav & footer */
 @import "header/header.css";
-@import "footer/footer.css";
 
 /*  Formulário Contato */
 @import "form/form_main.css";
@@ -24,6 +23,8 @@
 
 /* Sectão Momento de Reflexão */
 @import "index/momento-reflexao.css";
+
+@import "footer/footer.css";
 
 /* styles globais */
 * {
@@ -41,6 +42,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .bg-body {
     background: var(--background);
 }
@@ -48,6 +50,7 @@ body {
 main {
     margin: 0;
     padding: 0;
+    max-height: 900px;
 }
 
 .bg-main {
