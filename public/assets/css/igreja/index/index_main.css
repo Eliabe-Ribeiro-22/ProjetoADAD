@@ -31,27 +31,3 @@
 }
 
 /* Galaxy Fold */
-@media screen and (min-width: 576px) {
-    #title-institucional {
-        top: -39px;
-        margin: 40px;
-    }
-
-    #titleInstitucional {
-        font-size: 50px;
-    }
-
-    #square {
-        margin-top: 10px;
-        width: 80vw;
-        height: 90vh;
-
-        text-align: center;
-    }
-    .text {
-        font-size: 30px;
-    }
-    #text-institucional {
-        padding: 70px 60px;
-    }
-}

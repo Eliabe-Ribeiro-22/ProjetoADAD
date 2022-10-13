@@ -5,7 +5,7 @@
     <ol>
         <li><a href="#objetivo-do-projeto">Objetivo do projeto</a></li>
         <li><a href="#backlog-do-produto">Backlog do projeto</a></li>
-        <li><a href="#log">Log de eventos</a></li>     
+        <li><a href="#log">Log de eventos</a></li>
         <li><a href="#projeto-online">Projeto online</a></li>
         <li><a href="#developers">Developers</a>
     </ol>
@@ -20,64 +20,55 @@
 
 <a name="projetoWeb"></a>
 
-[Projeto Web](https://adcbsul.herokuapp.com/)
+[Projeto Web - Igreja](https://adad-site.herokuapp.com/)
 
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 ## Objetivo do Projeto
 
-<br />
-
 <a name="objetivo"></a>
 
-O cliente quer um site para Igreja Evangélica Assembleia de Deus em Campo Belo do Sul.  
+O cliente quer um site para Igreja Evangélica Assembleia de Deus em Campo Belo do Sul. O projeto deve conter uma página para descrever a entidade não-governamental, uma página inicial e um formulário para contato. O site também deve conter um rodapé com os seguintes elementos:
 
-Ele deve conter uma página descrever a entidade não-governamental, uma página inicial e um formulário para contato.
-
-Ele também deve conter o endereço da igreja, que é "Rua Gerônimo Xavier de Oliveira, nº 230, Centro, Campo Belo do Sul, SC, Brasil".
- Telefone:  
-
-- 3249-1036
-- What's: +55 (049) 9 88477611
+- Endereço: "Rua Gerônimo Xavier de Oliveira, nº 230, Centro, Campo Belo do Sul, SC, Brasil".
+- Telefone: +55 (049) 3249-1036.
+- Whatsapp: +55 (049) 9 8847-7611.
 - e-mail: <adcbsul@gmail.com>
-- Campos para o formulário:
-- Nome
-- telefone
-- Mensagem que o visitante irá enviar
-  
-Também deve conter os dias de reuniões, que são:
+- Dias e horários das reuniões: Quinta-feira às 19:30 / Domingo às 19:00.
 
-- Quinta-feira às 19:30 hs
-- Domingo às 19:00
+**OBS:** É possível que o formulário para contato seja implementado diretamente no rodapé do site. Caso não seja, será colocado em uma página exclusiva.
+
+Campos para o formulário de contato:
+
+1) Nome.
+2) telefone.
+3) Mensagem que o visitante irá enviar.
 
 Também deve conter uma local para exibir os projetos sociais promovidos pela entidade, que são:
 
-- Roupas;
-- Calçados;
-- Alimentos;
+1) Projeto Prática de Fé;
+2) Projeto Social;
+3) Projeto Educacional (ADAD);
 
-Deve conter uma parte reservada à divulgação dos eventos do ADAD, bem como uma breve explicação acerca dele, e seus objetivos. O ADAD é a sigla para Adolescentes que Amam a Deus. É um grupo formado por pré-adolescentes e adolescentes de 6 a 21 anos, criado no dia 13 de março de 2001, com sede na cidade de São José - Santa Catarina.
+## Sessão ADAD
 
-O grupo ADAD prática atividades extra classes, no âmbito físico, social, cultural e espiritual, promovendo atividades criativas onde os adolescentes colocam os princípios éticos cristãos em prática no cotidiano e nas vivências diárias
+No projeto deve conter uma parte reservada à divulgação dos eventos do programa ADAD, bem como uma breve explicação acerca do projeto e de seus objetivos. Solicitada também uma área restrita usando um login, onde administradores terão uma área para realizar o cadastro dos alunos.
 
-Algumas atividades que realizamos:
+O nome do projeto é uma sigla para Adolescentes que Amam a Deus. É um grupo formado por pré-adolescentes e adolescentes de 6 a 21 anos, criado no dia 13 de março de 2001, com sede na cidade de São José, Santa Catarina. O grupo ADAD pratica atividades extra classes, no âmbito físico, social, cultural e espiritual, promovendo atividades criativas nas quais os adolescentes colocam os princípios éticos cristãos em prática no cotidiano e nas vivências diárias.
+
+Algumas atividades que são realizadas:
 
 - Prática de acampamento.
-
 - Participação de desfile cívico.
-
 - Instrução de campo como rapel, tirolesa, cama de gato, rastejamento, pista noturna, bivaque, ponte de três cordas, nós e amarras, ou qualquer atividade recreativa.
-
 - Implementação de programas e ações integradas para garantir e defender a promoção dos direitos da criança e do adolescente.
 
-Deve conter uma local para descrever os objetivos do ADAD, sendo eles:
+### Objetivos ADAD
 
 - Contribuir para que as crianças, adolescentes e jovens assumam seu próprio desenvolvimento do caráter, potencialidades físicas, intelectuais, sociais, afetivas, espirituais como cidadãos responsáveis, participantes e úteis em suas comunidades.
-- Incentivar o compromisso do adolescente quanto à frequência escolar, bem como ajudá-lo a entender sua vocação, mostrando caminhos para a escolha da carreira profissional.
+- Incentivar o compromisso do adolescente quanto a frequência escolar, bem como ajudá-lo a entender sua vocação, mostrando caminhos para a escolha da carreira profissional.
 - Prestar serviços de caráter social, cultural, educacional e esportivo, providenciando para isso cursos, palestras e afins, de sua escolha, obedecendo o regime de atendimento conforme o artigo 9º do Estatuto da Criança e Adolescentes (ECA).
 - Promoção da ética, da paz, da cidadania, dos direitos humanos, da democracia e de outros valores universais.
-
-Queremos também uma área restrita, usando um login, onde acessaremos uma área para realizar o cadastro dos alunos ADAD. Os dados que queremos armazenar são como a foto em anexo.
 
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
@@ -148,6 +139,48 @@ Criada a página de login na branch "auth". (CSS ainda será aprimorado) <br/>
 Criada a página de cadastro na branch "auth". (CSS ainda será aprimorado) <br/>
 Adicionadas validações tanto para login quanto para cadastro. (em teste)
 
+<h4> 01/10 - Sábado - Eliabe </h4>
+Responsividade Mobile First para a página Institucional
+Iniciado responsividade Mobile First para navbar
+
+<h4>02/10 - Domingo - Eliabe</h4>
+Realizada responsividade Página Nossas Reuniões
+
+<h4>03/10 - Segunda-feira - Vinícius</h4>
+Implementado o Toastr para estilização. <br>
+Ajustes no código para seguir as práticas de clean code.
+
+<h4>04/10 - Terça-feira - Eliabe</h4>
+Realizada responsividade da Página Formulário de Contato
+
+<h4>05/10 - Quarta-feira - Eliabe</h4>
+Realizada responsividade e refatoração da Página Login
+Estilização da tabela da página Área Restrita, sendo que sua função é exibir os alunos cadastrados
+
+<h4>06/10 - Quinta-feira - Vinícius</h4>
+Criada a página 404 para URLs não existentes. <br>
+Adicionado o estilo da página <br>
+Adicionada a rota da página.
+
+<h4>06/10 - Quinta-feira - Eliabe</h4>
+Realizada responsividade da página Projetos
+
+<h4>07/10 - Sexta-feira - Vinícius</h4>
+Terminada a estilização da página 404. <br>
+Configurada a chamada automática da página em casos de URLs inexistentes.
+
+<h4>07/10 - Sexta-feira - Eliabe</h4>
+Finalizada <b>responsividade</b> das  páginas:<br>
+<em>Institucional</em><br>
+<em>Nossas Reuniões</em><br>
+<em>Projetos</em><br><br>
+
+<b>Breakpoints:</b>
+<em>Mobile First</em><br>
+<em>Middle</em><br>
+<em>Hub/Next Hub</em><br>
+<em>Desktop</em><br>
+
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----
@@ -168,7 +201,7 @@ Alessandro Geras <br>
 
 Eliabe Ribeiro Mota<br/>
 [Curriculum Vitae](https://github.com/Eliabe-Ribeiro-22/Eliabe-Ribeiro-22/blob/main/README.md) <br/>
-[Linkedin](https://www.linkedin.com/in/eliabe-ribeiro-mota-b9a1b7233/) <br/>
+[Linkedin](https://www.linkedin.com/in/eliabemota) <br/>
 [Github](https://github.com/Eliabe-Ribeiro-22) <br/>
 [Outlook](mailto:eliaberibeiro06@hotmail.com) <br/>
 [Gmail](mailto:developer.eliabe06@gmail.com) <br/>
@@ -176,6 +209,7 @@ Eliabe Ribeiro Mota<br/>
 -----
 
 Vinícius Jung <br/>
+[Curriculum Vitae](https://github.com/Vinnie-Jung/Vinnie-Jung) <br>
 [Linkedin](https://www.linkedin.com/in/vinicius-jung) <br>
 [Github](https://github.com/Vinnie-Jung) <br>
 [Outlook](mailto:viniciusjung@outlook.com) <br><br>

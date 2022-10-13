@@ -85,7 +85,7 @@ $title = 'Alterar aluno';
                     <!-- Input Nome -->
                     <div style="display: table-cell; vertical-align: middle; width:30%;">
                         <label class="block font-medium text-sm text-gray-700" for="name">
-                            Nome
+                            Nome*
                         </label>
                         <input class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200
                          focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
@@ -96,7 +96,7 @@ $title = 'Alterar aluno';
                     <!-- Input Idade -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle;">
                         <label class="block font-medium text-sm text-gray-700" for="email">
-                            Idade
+                            Idade*
                         </label>
                         <input class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 
                         focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" 
@@ -106,11 +106,14 @@ $title = 'Alterar aluno';
                     <!-- Input Data de Nascimento -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle;">
                         <label class="block font-medium text-sm text-gray-700">
-                            Data de Nascimento
+                            Data de Nascimento*
                         </label>
                         <input class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 
                         focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" 
-                         autofocus="autofocus" type="date" name="nascimento" value="{{ $nascimento }}" required="required">
+                         autofocus="autofocus" type="date" 
+                         name="nascimento" value="{{ $nascimento }}" 
+                         required="required"
+                        >
                     </div>
 
                     <!-- Input Série Escolar -->
@@ -126,7 +129,7 @@ $title = 'Alterar aluno';
                     <!-- Input CPF -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle;">
                         <label class="block font-medium text-sm text-gray-700">
-                            CPF
+                            CPF*
                         </label>
                         <input class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 
                         focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" 
@@ -137,7 +140,7 @@ $title = 'Alterar aluno';
                 <!-- Input Mãe -->
                 <div class="mt-4">
                     <label class="block font-medium text-sm text-gray-700" for="password">
-                        Mãe do aluno
+                        Mãe do aluno*
                     </label>
                     <input class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200
                      focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" id="password" type="text" 
@@ -151,7 +154,7 @@ $title = 'Alterar aluno';
                     </label>
                     <input class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 
                     focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" id="password_confirmation" 
-                    type="text" name="pai" value="{{ $pai }}" required="required" autocomplete="new-password">
+                    type="text" name="pai" value="{{ $pai }}"autocomplete="new-password">
                 </div>
 
                 <br>
@@ -162,7 +165,7 @@ $title = 'Alterar aluno';
                     <!-- Input Rua -->
                     <div style="display: table-cell; vertical-align: middle; width:25%;">
                         <label class="block font-medium text-sm text-gray-700" for="name">
-                            Rua
+                            Rua*
                         </label>
                         <input class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 
                         focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
@@ -179,11 +182,11 @@ $title = 'Alterar aluno';
                     <!-- Input Número da Casa/Apartamento -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle; width:15%;">
                         <label class="block font-medium text-sm text-gray-700" for="email">
-                            Número
+                            Número*
                         </label>
                         <input class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200
                          focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" 
-                         id="email" 
+                         
                          type="number" 
                          name="numero" 
                          value="{{ $numero }}"
@@ -193,7 +196,7 @@ $title = 'Alterar aluno';
                     <!-- Input Bairro -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle; width:16%;">
                         <label class="block font-medium text-sm text-gray-700">
-                            Bairro
+                            Bairro*
                         </label>
                         <input class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 
                          focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" 
@@ -215,7 +218,6 @@ $title = 'Alterar aluno';
                          type="text" 
                          name="complemento" 
                          value="{{ $complemento }}" 
-                         required="required"
                          autofocus="autofocus"
                         >
                     </div>
@@ -223,7 +225,7 @@ $title = 'Alterar aluno';
                     <!-- Input Cidade -->
                     <div class="mt-4" style="display: table-cell; vertical-align: middle;width:15%;">
                         <label class="block font-medium text-sm text-gray-700">
-                            Cidade
+                            Cidade*
                         </label>
                         <input class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200
                          focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
@@ -244,7 +246,7 @@ $title = 'Alterar aluno';
                     <!-- Input Rua -->
                     <div style="display: table-cell; vertical-align: middle;">
                         <label class="block font-medium text-sm text-gray-700" for="name">
-                            Religião/Crença
+                            Religião/Crença*
                         </label>
                         <input class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200
                          focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" 
@@ -296,6 +298,10 @@ $title = 'Alterar aluno';
             </div>
             @endif
         </form>
+        <div class="flex items-center justify-between mt-4">
+            <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('register') }}">
+                Cadastrar novo usuário
+            </a>
     </div>
         <div class="bg-red-700" style="margin: 0 auto;">
             <div>

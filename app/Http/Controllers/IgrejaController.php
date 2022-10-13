@@ -109,4 +109,8 @@ class IgrejaController extends Controller
             return $e->getMessage();
         }
     }
+
+    public function rest() {
+        return view('rest.error_404');
+    }
 }

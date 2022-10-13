@@ -38,9 +38,21 @@ Route::put('/alunos/update/{id}', [AdadController::class, 'aluno_update'])->name
 
 //  Login / Registrar (get)
 Route::get('/auth/login', [AdadController::class, 'login'])->name('login');
+
 Route::get('/auth/register', [AdadController::class, "register"])->name('register');
+
 Route::get('forgot-password', [AdadController::class, 'showForgetPasswordForm'])->name('showForgetPasswordForm');
 
 // Login / Registrar (post)
 Route::post('/authenticate', [AdadController::class, "autorizar"])->name('authenticate');
+
 Route::post('/newuser', [AdadController::class, "store"])->name('newuser');
+
+//Autenticação
+Route::get('/logout', [AdadController::class, 'logout'])->name('logout');
+
+Route::post('forget_password', [AdadController::class, 'submitForgetPasswordForm'])->name('submitForgetPasswordForm');
+
+Route::get('reset_password/{token}', [AdadController::class, 'showResetPasswordForm'])->name('resetPassword');
+
+Route::post('reset_password', [AdadController::class, 'submitResetPasswordForm'])->name('submitPassword');

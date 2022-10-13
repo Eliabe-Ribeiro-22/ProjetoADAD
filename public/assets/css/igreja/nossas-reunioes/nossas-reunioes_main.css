@@ -1,35 +1,36 @@
-#h1NossasR {
-    position: relative;
-    top: -39px;
+/* Responsividade Grand Prime */
+#title-nossas-reunioes {
+    margin: 0;
+    padding: 0;
 
-    font-family: var(--font-family-form);
-    font-size: 50px;
-    color: #2b2a2a;
+    margin-bottom: 10px;
+    padding-top: 2vh;
+
+    position: relative;
+    justify-content: center;
     text-align: center;
+    font-size: 1rem;
 }
 
-#divNossasR {
+#square {
     margin: 0 auto;
-    margin-bottom: 25px;
+}
 
-    width: 900px;
-    height: 780px;
+#pb-footer-nossas-reunioes {
+    padding-bottom: 15px;
+}
+
+.text {
+    padding: 5px 0;
+
+    font-family: "arial black";
+    border-radius: 20px;
 
     text-align: center;
 }
 
-#positionNossasR {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-bottom: 100px;
+#text-institucional {
+    font-size: 10px;
 }
 
-.NossasR {
-    padding: 70px 60px;
-}
-
-#h3,
-#pNossasR {
-    font-size: 36px;
-}
+/* Galaxy Fold */
