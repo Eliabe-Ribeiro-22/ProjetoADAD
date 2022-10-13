@@ -5,6 +5,7 @@
         <div class="boas-vindas">
             <!-- To Vini: Criar aqui "Carrossel" -->
             <img src="#" alt="Imagem de Boas-Vindas">
+            <x-igreja.carrossel.carousel />
 
             <!-- Video para ser colocado como fundo -->
             <video controls loop muted>
