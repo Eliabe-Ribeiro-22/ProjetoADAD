@@ -7,7 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
 
 /* nav & footer */
-@import "nav/nav.css";
+@import "header/header.css";
 @import "footer/footer.css";
 
 /*  Formulário Contato */

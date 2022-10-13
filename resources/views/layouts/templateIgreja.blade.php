@@ -4,20 +4,16 @@
     <x-igreja.head.head />
 </head>
 
-<body class="bg-body">
-    <nav>
-        <div id="header">
-            <x-igreja.nav.logo />
-            <x-igreja.nav.menu-nav />
-            <x-igreja.nav.menu-mobile />
-        </div>
-    </nav>
+<body>
+    <header id="header">
+        <x-igreja.header.header />
+    </header>
 
-    {{-- <main class="bg-main">
+    <main class="bg-main">
         @yield('corpo')
-    </main> --}}
+    </main>
 
-    <footer>
+    <footer class="bg-body">
         <x-igreja.footer.footer />
     </footer>
 </body>
