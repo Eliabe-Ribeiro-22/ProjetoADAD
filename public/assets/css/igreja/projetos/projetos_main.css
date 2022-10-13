@@ -7,7 +7,7 @@
     text-align: center;
     font-size: 1.3rem;
 }
-
+/*
 #pb-footer-projetos {
     padding-bottom: 15px;
 }
@@ -44,7 +44,7 @@
 #ul-sigla-adad {
     text-align: center;
 }
-
+*/
 #image-adad {
     margin: 0 auto;
     padding: 0.5rem 0;
@@ -57,34 +57,33 @@
     #title-projetos {
         font-size: clamp(1.4rem, 1.8rem, 5rem);
     }
-    
-    #image-adad{
+    #image-adad {
         width: 100px;
     }
 
-    .subtitle-projeto {
+    /* .subtitle-projeto {
         font-size: clamp(1.2rem, 1.5rem, 4.5rem);
     }
 
     .ul-projeto {
         font-size: clamp(1rem, 1.4rem, 4rem);
-    }
+    } */
 }
 
 @media screen and (min-width: 1024px) {
-    #title-projetos {
+    /* #title-projetos {
         font-size: clamp(4.5rem, 4.5rem, 9rem);
     }
-    
-    #image-adad{
+     */
+    #image-adad {
         width: 200px;
     }
-
+    /* 
     .subtitle-projeto {
         font-size: clamp(3.6rem, 3.6rem, 7rem);
     }
 
     .ul-projeto{
         font-size: clamp(3.5rem, 3.5rem, 4rem);
-    }
+    } */
 }

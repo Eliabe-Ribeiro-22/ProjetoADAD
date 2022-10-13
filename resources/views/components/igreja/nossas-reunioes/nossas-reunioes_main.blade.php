@@ -15,10 +15,6 @@
                 <span class="subTitle">Noite da Família</span><br>
 
                 Domingos às 19:00 hs<br><br>
-
-                <span class="subTitle color-white">Encontros ADAD</span><br>
-                <span class="subTitle">Aulas semanais:</span><br>
-                Segundas-feiras às 19:00 hs
             </p>
         </div>
     </div>

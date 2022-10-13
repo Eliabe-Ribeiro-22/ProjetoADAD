@@ -43,9 +43,6 @@ body {
 }
 .bg-body {
     background: var(--background);
-    /* somente se estiver na pagina inicial */
-    /* aplique esse margins */
-    margin-top: 125rem;
 }
 
 main {
