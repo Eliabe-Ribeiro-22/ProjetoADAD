@@ -11,8 +11,8 @@
     <script src="assets/js/carousel.js"></script>
     
     <div class="container">
-        <button class="arrow-left control" aria-label="Previous image"><</button>
-        <button class="arrow-right control" aria-label="Next image">></button>
+        <button class="arrow-left control" aria-label="Previous image">&#8592;</button>
+        <button class="arrow-right control" aria-label="Next image">&#8594;</button>
         <div class="gallery-wrapper">
             <div class="gallery">
                 <img class="item" src="/assets/img/pc1.jpg" alt="Alunos fazendo um mosaico de 'Jesus te ama'.">
