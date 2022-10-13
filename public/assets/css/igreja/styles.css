@@ -43,7 +43,6 @@ body {
     background: var(--background);
 }
 
-
 main {
     margin: 0;
     padding: 0;
@@ -83,4 +82,26 @@ main {
 .px-auto {
     padding-left: auto;
     padding-right: auto;
+}
+
+/* momento de reflexao */
+#title-momento-reflexao {
+    margin: 0 auto;
+
+    font-size: 1rem;
+    text-align: center;
+    font-family: "arial black";
+    font-weight: bold;
+}
+
+@media screen and (min-width: 280px) {
+    #title-momento-reflexao {
+        font-size: clamp(1.2rem, 1.3rem, 4.5rem);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #title-momento-reflexao {
+        font-size: clamp(3.6rem, 3.6rem, 7rem);
+    }
 }

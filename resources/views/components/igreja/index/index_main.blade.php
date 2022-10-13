@@ -15,8 +15,8 @@
         <div class="square">
             <div>
                 <div id="padding-bottom-footer">
-                    <p class="text bg-div color-primary" id="text-institucional">
-                        <span class="color-white" style="font-size: 1rem;">Momento de Reflexão</span>
+                    <p class="bg-div color-primary">
+                        <span class="color-white" id="title-momento-reflexao">Momento de Reflexão</span>
                         <br><br>
 
                         <?php
