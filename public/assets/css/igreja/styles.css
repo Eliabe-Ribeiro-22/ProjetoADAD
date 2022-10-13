@@ -41,12 +41,11 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .bg-body {
     background: var(--background);
-    /* position: absolute; */
-    /* position: relative;
-    transform: translateY(10%); */
+    /* somente se estiver na pagina inicial */
+    /* aplique esse margins */
+    margin-top: 125rem;
 }
 
 main {
