@@ -10,7 +10,6 @@
     font-family: "Impact", "Verdana", "Roboto", "Arial", "sans-serif", "Calibri";
 }
 
-
 #rede-social {
     margin: 0.4rem 0rem 0rem;
 
@@ -25,7 +24,7 @@
     background-color: #fff;
 }
 
-#div-gmail{
+#div-gmail {
     padding: 0.2rem;
     justify-content: center;
     background-color: #fff;
@@ -64,8 +63,18 @@
     }
 }
 
+@media screen and (min-width: 640px) {
+    .w-img {
+        width: 5rem;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .size-footer {
         font-size: clamp(3.5rem, 3.5rem, 4rem);
+    }
+
+    .w-img {
+        width: 7rem;
     }
 }
