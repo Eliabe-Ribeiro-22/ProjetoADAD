@@ -10,13 +10,14 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
-// P. EVA
+// not utilized?
 use App\Models\Permission;
 use App\Models\Warning;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
 
 date_default_timezone_set('America/Sao_Paulo');
+//end
 
 class AdadController extends Controller
 {
@@ -27,7 +28,7 @@ class AdadController extends Controller
             $alunos = Aluno::all();
             # Form que cadastra alunos,
             // por isso passamos o value false na var. alterar
-            return view('adad.area-restrita', ['alterar' => false, 'alunos' => $alunos]);
+            return view('adad.area-restrita', [ 'alterar' => false, 'alunos' => $alunos]);
         } catch (Exception $e) {
             return $e->getMessage();
         }

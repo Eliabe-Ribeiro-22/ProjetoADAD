@@ -7,9 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
 
 /* nav & footer */
-@import "header/logo-nav.css";
-@import "header/menu-nav.css";
-@import "header/menu-mobile.css";
+@import "header/header.css";
 @import "footer/footer.css";
 
 /*  Formulário Contato */
@@ -20,6 +18,9 @@
 
 /*  Página nossas-reuniões */
 @import "nossas-reunioes/nossas-reunioes_main.css";
+
+/* Página Projetos */
+@import "projetos/projetos_main.css";
 
 /* styles globais */
 * {
@@ -36,37 +37,24 @@
 body {
     margin: 0;
     padding: 0;
-    background: black;
 }
 
-/* div que contem a nav*/
-#header {
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 4.5rem;
-
-    float: left;
-    display: flex;
-
-    /* background-color: var(--background); */
+.bg-body {
+    background: var(--background);
 }
 
-/* main do site */
+
 main {
     margin: 0;
     padding: 0;
 }
 
-/*footer do site */
-footer {
-    margin: 0;
-    height: 6rem;
+.bg-main {
+    background: #ffcc99;
+}
 
-    display: flex;
-
-    background: var(--background);
+.bg-div {
+    background: #212121;
 }
 
 .titlePage {
@@ -79,20 +67,9 @@ footer {
     color: #ff6600;
 }
 
-.bg-body{
-background: var(--background);
-}
-
-.bg-main {
-    background: #ffcc99;
-}
-
-.bg-div {
-    background: #212121;
-}
-
 .color-white {
     color: #fff;
+    font-weight: bold;
 }
 
 .text {
@@ -100,9 +77,10 @@ background: var(--background);
     font-size: 40px;
 
     border-radius: 10px;
+    text-align: center;
 }
 
-.px-auto{
+.px-auto {
     padding-left: auto;
     padding-right: auto;
 }

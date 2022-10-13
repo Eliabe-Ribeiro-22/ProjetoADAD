@@ -64,7 +64,7 @@ Route::put('/alunos/update/{id}', [AdadController::class, 'aluno_update'])->name
 //  Login / Registrar (get)
 Route::get('/auth/login', [AdadController::class, 'login'])->name('login');
 
-Route::get('/auth/register', [AdadController::class, "register"])->name('register');
+Route::get('/auth/register', [AdadController::class, "register"])->name('register')->middleware('auth');
 
 Route::get('forgot-password', [AdadController::class, 'showForgetPasswordForm'])->name('showForgetPasswordForm');
 

@@ -1,14 +1,11 @@
 {{-- Main do institucional --}}
-<h3 class="titlePage" id="title-nossas-reunioes" 
-style="">
+<h3 class="titlePage" id="title-nossas-reunioes" style="">
     Nossas Reuniões
 </h3>
-
-
-<div class="square">
+<div id="square">
     <div>
         <div id="pb-footer-nossas-reunioes">
-            <p class="text bg-div color-primary" id="text-institucional">
+            <p class="text bg-div color-primary" id="text-nossas-reunioes">
                 <span class="color-white">Cultos</span>
                 <br>
 
