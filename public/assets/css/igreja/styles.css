@@ -7,7 +7,10 @@
 
 @import 'nav/nav.css';
 @import 'form-contato/form-contato_main.css';
-
+@import 'nossas-reunioes/nossas-reunioes_main.css';
+@import 'projetos/projetos_main.css';
+@import 'index/momento-reflexao.css';
+@import 'footer/footer.css';
 /* styles globais */
 * {
     margin: 0;
