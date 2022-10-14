@@ -5,12 +5,10 @@
 </head>
 
 <body>
-    {{-- 
-        <header id="header">
-            <x-igreja.header.header />
-        </header> 
-    --}}
-
+    <header id="header">
+        <x-igreja.header.header />
+    </header> 
+    
     <main class="bg-main">
         @yield('corpo')
     </main>

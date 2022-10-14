@@ -1,30 +1,12 @@
-/* Importando fonts para a aplicacao */
-
+/* Importando fonts para o Projeto ADAD*/
 /*  Roboto */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 /*  Lato */
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
 
-/* nav & footer */
-@import "header/header.css";
-
-/*  Formulário Contato */
-@import "form/form_main.css";
-
-/*  Página Institucional */
-@import "institucional/institucional_main.css";
-
-/*  Página nossas-reuniões */
-@import "nossas-reunioes/nossas-reunioes_main.css";
-
-/* Página Projetos */
-@import "projetos/projetos_main.css";
-
-/* Sectão Momento de Reflexão */
-@import "index/momento-reflexao.css";
-
-@import "footer/footer.css";
+@import 'nav/nav.css';
+@import 'form-contato/form-contato_main.css';
 
 /* styles globais */
 * {
@@ -50,7 +32,14 @@ body {
 main {
     margin: 0;
     padding: 0;
-    max-height: 900px;
+
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 280) {
+    main {
+        max-height: 900px;
+    }
 }
 
 .bg-main {
