@@ -1,8 +1,8 @@
 
-<div id="menu-responsive">
+<div {{--id="nav-menu-responsive" --}}>
     <img
         src="/assets/img/igreja/menu-hamburguer.png"
         alt="Menu Hamburguer responsivo"
-        id="menu-hamburguer"
+        {{-- id="menu-hamburguer" --}}
     />
 </div>

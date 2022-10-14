@@ -1,4 +1,9 @@
 /* Navbar do Projeto ADAD */
+/* nav {
+    position: sticky;
+    top: 100vh;
+} */
+
 @media screen and (min-width: 1024px) {
     nav {
         top: 0;

@@ -30,7 +30,7 @@
         </div>
 
 
-    </section> --}}
+    </section>
 
     {{-- Section Projetos --}}
     <section>
