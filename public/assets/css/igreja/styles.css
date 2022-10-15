@@ -32,17 +32,9 @@
     box-sizing: border-box;
 }
 
-:root {
-    /* --background: #fff; */
-}
-
 body {
     margin: 0;
     padding: 0;
-}
-
-.bg-body {
-    background: #dedcdc;
 }
 
 main {
@@ -92,4 +84,4 @@ main {
 .px-auto {
     padding-left: auto;
     padding-right: auto;
-}
+} 

@@ -4,18 +4,17 @@
     <x-igreja.head.head />
 </head>
 
-<body>
-    <nav id="menu-site">
-        <x-igreja.nav.menu-logo />
-        <x-igreja.nav.menu-buttons />
-        <x-igreja.nav.menu-mobile />
-    </nav>
 
-    <main class="bg-main">
-        @yield('corpo')
-    </main>
+<nav id="menu-site">
+    <x-igreja.nav.menu-logo />
+    <x-igreja.nav.menu-buttons />
+    <x-igreja.nav.menu-mobile />
+</nav>
 
-    <footer class="bg-body">
-        <x-igreja.footer.footer />
-    </footer>
-</body>
+<main class="bg-main">
+    @yield('corpo')
+</main>
+
+<footer>
+    <x-igreja.footer.footer />
+</footer>
