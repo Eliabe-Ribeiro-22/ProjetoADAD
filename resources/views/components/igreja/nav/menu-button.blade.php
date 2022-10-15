@@ -1,5 +1,5 @@
 {{-- navbar do templateIgreja --}}
-<div id="nav_menu">
+<div id="menu_button">
     <ul id="menu_button_ul">
         <li class="menu_button_li">
             <a href="{{ route('institucional_create') }}" class="menu_button_item" id="btnInstitucional">

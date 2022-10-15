@@ -2,19 +2,35 @@
 #menu-site {
     width: 100%;
     height: 12vh;
-    background-color: red;
+
+    display: flex;
+    background: red;
 }
 
-#a {
+#nav-logos {
     background: yellow;
-    width: 70%;
+    /* width: 70%; */
+    height: 100%;
 }
 
-.nav-logo-link {
-    /* background-color: blue; */
-    /* float: left; */
+/*
+#nav-logo-link-adad {
+    background: blue;
 }
 
+#nav-logo-link-igreja {
+    background: green;
+}
+
+#nav-logos-div {
+    width: 50%;
+    height: 100%;
+
+    float: right;
+
+    background: pink;
+}
+*/
 #logo-adad {
     width: 1.5rem;
     cursor: default;
@@ -25,12 +41,19 @@
     height: 1.5rem;
 }
 
-#nav_menu {
+#menu_button {
     opacity: 0;
 }
 
 #nav-menu-responsive {
+    /* width: 30%; */
+    height: 100%;
+
+    /* display: inline;
+    float: right;
+     */
     opacity: 1;
+    background: skyblue;
 }
 
 /*
@@ -53,7 +76,7 @@
 
         display: flex;
 
-        background-color: var(--background-header);
+        background: var(--background-header);
     }
 
     #nav_logo {
@@ -78,7 +101,7 @@
         height: 80px;
     }
 
-    #nav_menu {
+    #menu_button {
         opacity: 1;
         margin: 0;
 
@@ -110,7 +133,7 @@
 
         width: 100%;
 
-        background-color: var(--background-header);
+        background: var(--background-header);
 
         text-align: center;
         font-size: 16px;
