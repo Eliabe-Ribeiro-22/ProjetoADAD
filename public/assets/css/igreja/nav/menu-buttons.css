@@ -1,12 +1,53 @@
 #menu_button {
-    display: none;
+    /* display: none; */
+
+    background-color: blue;
 }
 
+/* Code by Analysys */
+#menu_button_ul {
+    margin: 0;
+    padding: 0;
+
+    width: 50vw;
+    height: 88vh;
+
+    top: 12vh;
+    right: 0px;
+
+    /* display: flex; */
+    display: inline-flex;
+
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+
+    background-color: red;
+
+    list-style: none;
+}
+
+#menu_button_ul>li {
+    margin-bottom: 10px;
+}
+/* End Code by Analysys */
+
+.menu_button_item {
+    font-size: 12px;
+    font-family: "Verdana";
+    font-weight: bold;
+    color: #ff6600;
+    text-decoration: none;
+
+    transition-delay: 200ms;
+
+    transition-timing-function: ease-in-out;
+}
 
 @media screen and (min-width: 1024px) {
-
     #menu_button {
-        display: initial; 
+        display: initial;
         margin: 0;
 
         width: 65%;
@@ -23,18 +64,13 @@
         list-style: none;
     }
 
+    #menu_button_ul>li {
+        margin: 0;
+    }
+
     .menu_button_item {
-        
-        text-align: center;
         font-size: 1rem;
-        font-family: "Verdana";
-        font-weight: bold;
-        color: #ff6600;
-        text-decoration: none;
-
-        transition-delay: 200ms;
-
-        transition-timing-function: ease-in-out;
+        text-align: center;
     }
 
     .menu_button_item:hover {

@@ -1,4 +1,8 @@
 #nav-mobile {
+    /* teste dev */
+    display: none;
+
+
     width: 30%;
     height: 100%;
 
@@ -11,6 +15,10 @@
 }
 
 .mobile-open {
+    /* Teste dev */
+    display: none;
+
+    
     text-decoration: none;
     color: black;
 }
