@@ -5,12 +5,26 @@
 /*  Lato */
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
 
+/* Menu do Site */
 @import 'nav/nav.css';
+
+
+/* Formulário de Contato */
 @import 'form-contato/form-contato_main.css';
+
+/* Nossas Reuniões */
 @import 'nossas-reunioes/nossas-reunioes_main.css';
+
+/* Página Projetos */
 @import 'projetos/projetos_main.css';
+
+/* Seção Momento de Reflexão */
 @import 'index/momento-reflexao.css';
+
+
+/* Rodapé do Site */
 @import 'footer/footer.css';
+
 /* styles globais */
 * {
     margin: 0;
@@ -19,8 +33,7 @@
 }
 
 :root {
-    --color-primary: #ff6600;
-    --background: #dedcdc;
+    /* --background: #fff; */
 }
 
 body {
@@ -29,7 +42,7 @@ body {
 }
 
 .bg-body {
-    background: var(--background);
+    background: #dedcdc;
 }
 
 main {

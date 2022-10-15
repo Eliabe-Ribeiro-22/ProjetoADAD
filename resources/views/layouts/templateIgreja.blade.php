@@ -5,10 +5,10 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="menu-site">
         <x-igreja.nav.logo />
         <x-igreja.nav.menu-nav />
-        {{-- <x-igreja.nav.menu-mobile /> --}}
+        <x-igreja.nav.menu-mobile />
     </nav>
 
     <main class="bg-main">

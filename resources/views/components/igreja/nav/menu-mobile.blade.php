@@ -1,8 +1,3 @@
-
-<div {{--id="nav-menu-responsive" --}}>
-    <img
-        src="/assets/img/igreja/menu-hamburguer.png"
-        alt="Menu Hamburguer responsivo"
-        {{-- id="menu-hamburguer" --}}
-    />
+<div id="nav-menu-responsive">
+    &#9776;
 </div>
