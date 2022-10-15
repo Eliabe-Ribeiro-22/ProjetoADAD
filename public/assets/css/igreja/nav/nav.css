@@ -90,7 +90,6 @@
     }
 
     #logo-adad {
-
         width: 2.7rem;
     }
 
@@ -105,14 +104,29 @@
 }
 
 @media screen and (min-width: 640px) {
-    #menu-site {}
+    #menu-site {
+        height: 9vh;
+    }
 
-    #logo-adad {}
-
-    #logo-igreja {}
-
-    #nav-menu-responsive {}
+    #nav-menu-responsive {
+        font-size: 2.5rem;
+    }
 }
+
+@media screen and (min-width: 768px){
+    #menu-site {
+        height: 7vh;
+    }
+
+    #logo-adad {
+        width: 3rem;
+    }
+
+    #logo-igreja {
+        width: 3.5rem;
+        height: 3rem;
+    }
+    }
 
 @media screen and (min-width: 1024px) {
     nav {
