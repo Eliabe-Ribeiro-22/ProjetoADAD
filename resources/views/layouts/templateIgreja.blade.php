@@ -6,8 +6,8 @@
 
 <body>
     <nav id="menu-site">
-        <x-igreja.nav.logo />
-        <x-igreja.nav.menu-button />
+        <x-igreja.nav.menu-logo />
+        <x-igreja.nav.menu-buttons />
         <x-igreja.nav.menu-mobile />
     </nav>
 

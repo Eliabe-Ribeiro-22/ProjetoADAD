@@ -1,0 +1,70 @@
+#nav-logos {
+    width: 70%;
+    height: 100%;
+}
+
+#nav-logos-div {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    float: right;
+}
+
+.nav-logo-link {
+    margin: 0;
+    padding: 0;
+}
+
+#nav-logo-link-adad {
+    margin-right: 0.3rem;
+}
+
+#logo-adad {
+    margin-top: 1px;
+    width: 1.65rem;
+    cursor: default;
+}
+
+#logo-igreja {
+    margin-top: 1px;
+    width: 1.8rem;
+    height: 1.6rem;
+}
+
+@media screen and (min-width: 280px) {
+    #logo-adad {
+        width: 2.5rem;
+    }
+
+    #logo-igreja {
+        width: 3rem;
+        height: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 409px) {
+    #logo-adad {
+        width: 2.7rem;
+    }
+
+    #logo-igreja {
+        width: 3rem;
+        height: 2.6rem;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    #logo-adad {
+        width: 3rem;
+    }
+
+    #logo-igreja {
+        width: 3.5rem;
+        height: 3rem;
+    }
+}

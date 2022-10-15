@@ -1,4 +1,11 @@
-/* Navbar do Projeto ADAD */
+/* Menu do Projeto ADAD */
+
+
+/* Componentes do Menu: Logos, Botões de Menu e Menu Hambúrguer (Mobile) */
+@import 'menu-logo.css';
+@import 'menu-buttons.css';
+@import 'menu-mobile.css';
+
 #menu-site {
     margin: 0;
     padding: 0;
@@ -9,74 +16,9 @@
     display: flex;
 }
 
-#nav-logos {
-    width: 70%;
-    height: 100%;
-}
-
-#nav-logos-div {
-    width: 50%;
-    height: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    float: right;
-}
-
-.nav-logo-link {
-    margin: 0;
-    padding: 0;
-}
-
-#nav-logo-link-adad {
-    margin-right: 0.3rem;
-}
-
-#logo-adad {
-    margin-top: 1px;
-
-    width: 1.65rem;
-    cursor: default;
-}
-
-#logo-igreja {
-    margin-top: 1px;
-
-    width: 1.8rem;
-    height: 1.6rem;
-}
-
-#menu_button {
-    display: none;
-}
-
-#nav-menu-responsive {
-    width: 30%;
-    height: 100%;
-
-    opacity: 1;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 1.2rem;
-}
-
 @media screen and (min-width: 280px) {
     #menu-site {
         height: 6vh;
-    }
-
-    #logo-adad {
-        width: 2.5rem;
-    }
-
-    #logo-igreja {
-
-        width: 3rem;
-        height: 2.5rem;
     }
 
     #nav-menu-responsive {
@@ -87,15 +29,6 @@
 @media screen and (min-width: 409px) {
     #menu-site {
         height: 12vh;
-    }
-
-    #logo-adad {
-        width: 2.7rem;
-    }
-
-    #logo-igreja {
-        width: 3rem;
-        height: 2.6rem;
     }
 
     #nav-menu-responsive {
@@ -113,20 +46,11 @@
     }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     #menu-site {
         height: 7vh;
     }
-
-    #logo-adad {
-        width: 3rem;
-    }
-
-    #logo-igreja {
-        width: 3.5rem;
-        height: 3rem;
-    }
-    }
+}
 
 @media screen and (min-width: 1024px) {
     nav {
@@ -209,5 +133,10 @@
 
     .menu_button_item:hover {
         color: #ff4000;
+    }
+
+    .menu-mobile-open
+    .menu_mobile-close {
+        display: none;
     }
 }
