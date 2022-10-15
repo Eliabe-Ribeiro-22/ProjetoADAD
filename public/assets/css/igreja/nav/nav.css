@@ -40,7 +40,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-    nav {
+    #menu-site {
         top: 0;
         left: 0;
 
