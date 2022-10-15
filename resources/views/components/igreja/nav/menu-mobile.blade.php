@@ -1,9 +1,9 @@
 <div id="nav-mobile">
-    <a class="menu-mobile-open" href="#" style="text-decoration: none; color: black;">
+    <a class="nav-mobile-item mobile-open" href="#">
         &#9776;
     </a>
 
-    <a href="#" class="menu-mobile-close"> &#x2715;</a>
+    <a href="#" class="menu-mobile-item mobile-close"> &#x2715;</a>
 </div>
 
 {{-- <li><a class="menu_open lg:hidden dark:text-gray-300" id="menu_open" href="#" onclick="menu_click(this.id)">

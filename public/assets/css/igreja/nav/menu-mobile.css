@@ -10,6 +10,17 @@
     font-size: 1.2rem;
 }
 
+.mobile-open {
+    text-decoration: none;
+    color: black;
+}
+
+.mobile-close {
+    display: none;
+    text-decoration: none;
+    color: black;
+}
+
 @media screen and (min-width: 280px) {
     #nav-mobile {
         font-size: 1.5rem;
@@ -33,7 +44,7 @@
         display: none;
     }
 
-    .menu-mobile-open .menu_mobile-close {
+    .nav-mobile-item {
         display: none;
     }
 }
