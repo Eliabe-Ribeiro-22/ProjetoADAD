@@ -20,6 +20,8 @@
 
     display: flex;
     justify-content: center;
+    align-items: center;
+
     float: right;
 }
 
@@ -34,7 +36,7 @@
 
 #logo-adad {
     margin-top: 1px;
-    
+
     width: 1.65rem;
     cursor: default;
 }
@@ -62,17 +64,56 @@
     font-size: 1.2rem;
 }
 
-/*
-#oh{
-    #logo-adad {
-    width: 3.7rem;
+@media screen and (min-width: 280px) {
+    #menu-site {
+        height: 6vh;
     }
-    #logo-igreja{
-    width: 5rem;
-    height: 3.7rem;
+
+    #logo-adad {
+        width: 2.5rem;
+    }
+
+    #logo-igreja {
+
+        width: 3rem;
+        height: 2.5rem;
+    }
+
+    #nav-menu-responsive {
+        font-size: 1.5rem;
     }
 }
-*/
+
+@media screen and (min-width: 409px) {
+    #menu-site {
+        height: 12vh;
+    }
+
+    #logo-adad {
+
+        width: 2.7rem;
+    }
+
+    #logo-igreja {
+        width: 3rem;
+        height: 2.6rem;
+    }
+
+    #nav-menu-responsive {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    #menu-site {}
+
+    #logo-adad {}
+
+    #logo-igreja {}
+
+    #nav-menu-responsive {}
+}
+
 @media screen and (min-width: 1024px) {
     nav {
         top: 0;
@@ -82,8 +123,6 @@
         height: 87px;
 
         display: flex;
-
-        background: var(--background-header);
     }
 
     #nav-logos {
@@ -110,7 +149,7 @@
 
     #menu_button {
         opacity: 1;
-
+        /* display: inline-block; */
         margin: 0;
 
         width: 65%;
@@ -140,7 +179,7 @@
 
         width: 100%;
 
-        background: var(--background-header);
+        background: #fff;
 
         text-align: center;
         font-size: 1rem;
