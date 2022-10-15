@@ -37,14 +37,61 @@
     height: 1.6rem;
 }
 
-@media screen and (min-width: 280px) {}
+@media screen and (min-width: 280px) {
+    #logo-adad {
+        width: 2.5rem;
+    }
 
-@media screen and (min-width: 409px) {}
-@media screen and (min-width: 640px) {}
+    #logo-igreja {
+        width: 3rem;
+        height: 2.5rem;
+    }
+}
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 409px) {
+    #logo-adad {
+        width: 2.7rem;
+    }
+
+    #logo-igreja {
+        width: 3rem;
+        height: 2.6rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #logo-adad {
+        width: 3rem;
+    }
+
+    #logo-igreja {
+        width: 3.5rem;
+        height: 3rem;
+    }
+}
 
 /* doing */
 @media screen and (min-width: 1024px) {
-    /* display: initial; */
+    #nav-logos {
+        margin: 0;
+        padding: 0.19rem 0;
+        padding-left: 40px;
+
+        width: 35%;
+
+        display: flex;
+    }
+
+    #logo-adad {
+        width: 80px;
+        height: 80px;
+        cursor: default;
+    }
+
+    #logo-igreja {
+        padding: 0 15px;
+        width: 128px;
+        height: 80px;
+    }
+
 }
