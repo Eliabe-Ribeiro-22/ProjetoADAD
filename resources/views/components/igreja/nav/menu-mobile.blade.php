@@ -1,5 +1,5 @@
 <div id="nav-mobile">
-    <a class="nav-mobile-item mobile-open" href="#">
+    <a class="nav-mobile-item mobile-open" href="#" onclick="abre_menu()">
         &#9776;
     </a>
 

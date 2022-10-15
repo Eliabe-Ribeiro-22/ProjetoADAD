@@ -2,6 +2,7 @@
     display: none;
 }
 
+
 @media screen and (min-width: 1024px) {
 
     #menu_button {
@@ -19,21 +20,9 @@
         align-items: center;
         justify-content: space-around;
 
-        /* float: right; */
         list-style: none;
     }
 
-    /*
-    .menu_button_li {
-        margin: 0 10px;
-        margin-top: 17px
-
-        width: 25%;
-        height: 50px;
-
-        display: flex;
-    }
-*/
     .menu_button_item {
         
         text-align: center;
