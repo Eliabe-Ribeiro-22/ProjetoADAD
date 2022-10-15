@@ -1,13 +1,11 @@
-/* #menu_button {
+#menu_button {
     display: none;
-} */
+}
 
 @media screen and (min-width: 1024px) {
 
-    /* display: initial; */
     #menu_button {
-        opacity: 1;
-
+        display: initial; 
         margin: 0;
 
         width: 65%;
