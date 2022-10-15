@@ -9,5 +9,4 @@
             <img src="/assets/img/igreja/logoIgreja.png" alt="logo da Igreja" id="logo-igreja" />
         </a>
     </div>
-    
 </div>
