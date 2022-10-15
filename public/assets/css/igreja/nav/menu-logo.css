@@ -1,0 +1,50 @@
+#nav-logos {
+    width: 70%;
+    height: 100%;
+}
+
+#nav-logos-div {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    float: right;
+}
+
+.nav-logo-link {
+    margin: 0;
+    padding: 0;
+}
+
+#nav-logo-link-adad {
+    margin-right: 0.3rem;
+}
+
+#logo-adad {
+    margin-top: 1px;
+
+    width: 1.65rem;
+    cursor: default;
+}
+
+#logo-igreja {
+    margin-top: 1px;
+
+    width: 1.8rem;
+    height: 1.6rem;
+}
+
+@media screen and (min-width: 280px) {}
+
+@media screen and (min-width: 409px) {}
+@media screen and (min-width: 640px) {}
+
+@media screen and (min-width: 768px) {}
+
+/* doing */
+@media screen and (min-width: 1024px) {
+    /* display: initial; */
+}
