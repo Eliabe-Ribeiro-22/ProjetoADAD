@@ -14,42 +14,36 @@
 
 
 /* btn de mobile */
-/* Posição Inicial: Hamburguer aberto e X fechado */
-.menu-mobile-item {
+
+/* Posição Inicial: Hamburguer aberto e icon-x fechado */
+
+/* Styles para os 2 */
+.btn-mobile-item {
     text-decoration: none;
     color: black;
 }
 
-nav #menu-mobile-close {
+/* hamgurgao */
+nav #btn-mobile-open{
+    /* display: block; */
+}
+
+/* icon-x */
+nav #btn-mobile-close {
     display: none;
 }
 
-/* Se for exibido os btns de menu: Hamburguer aberto e X fechado */
+/* Apertou no hamburgão, ele se fecha e exibe o icon-X */ 
 
-.teste#menu-mobile-close {
+/* hamgurgao */
+.none#btn-mobile-open {
+    display: none;
+}
+
+/* icon-x */
+.show#btn-mobile-close {
     display: block;
 }
-
-.teste#menu-mobile-open {
-    display: none;
-}
-
-/* nav a.mobile-open {
-
-}
-*/
-
-/* nav.show a.mobile-open {
-    display: none;
-}  */
-/* btn de fechar */
-/* nav a.mobile-close {
-    display: none;
-}
-
-nav.show a.mobile-close { */
-/* display: initial; */
-/* display: none; }*/
 
 @media screen and (min-width: 280px) {
     #nav-mobile {
