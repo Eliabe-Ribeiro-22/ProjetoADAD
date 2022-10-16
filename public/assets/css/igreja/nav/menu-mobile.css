@@ -1,9 +1,9 @@
 #nav-mobile {
     width: 30%;
-    /* in Analisy */  
+    /* in Analisy */
     height: 100%;
     /* end */
-    
+
     opacity: 1;
 
     display: flex;
@@ -12,16 +12,32 @@
     font-size: 1.2rem;
 }
 
-.mobile-open {
+
+/* btn de mobile */
+.menu-mobile-item{
     text-decoration: none;
     color: black;
 }
-
-.mobile-close {
+/* btn Hamburguer */
+nav a.mobile-open {
+    text-decoration: none;
+    color: black;
+}
+/* 
+nav.show a.mobile-open {
+    display: none;
+}  */
+/* btn de fechar */
+/* nav a.mobile-close {
     display: none;
     text-decoration: none;
     color: black;
 }
+
+nav.show a.mobile-close {
+    display: initial;
+    display: none;
+} */
 
 @media screen and (min-width: 280px) {
     #nav-mobile {

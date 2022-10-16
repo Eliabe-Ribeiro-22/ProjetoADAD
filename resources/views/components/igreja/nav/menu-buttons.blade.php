@@ -1,5 +1,6 @@
 {{-- navbar do templateIgreja --}}
-<div id="menu_button">
+{{-- Aqui precisa de classe show?--}}
+<div class="display-none" id="menu_button">
     <ul id="menu_button_ul">
         <li>
             <a href="{{ route('institucional_create') }}" class="menu_button_item" id="btnInstitucional">
