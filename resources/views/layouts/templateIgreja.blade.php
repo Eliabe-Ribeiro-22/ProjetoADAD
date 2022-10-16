@@ -4,7 +4,6 @@
     <x-igreja.head.head />
 </head>
 
-{{-- Aqui precisa de classe show?--}}
 <nav id="menu-site">
     <x-igreja.nav.menu-logo />
     <x-igreja.nav.menu-buttons />

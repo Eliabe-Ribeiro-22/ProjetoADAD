@@ -13,34 +13,29 @@
 }
 
 
-/* btn de mobile */
+/* Botões para Nav Mobile */
 
-/* Posição Inicial: Hamburguer aberto e icon-x fechado */
+/* Posição Inicial: btn-hamburguer exibe, btn-close oculta */
 
-/* Styles para os 2 */
 .btn-mobile-item {
     text-decoration: none;
     color: black;
 }
 
-/* hamgurgao */
-nav #btn-mobile-open{
-    /* display: block; */
+nav #btn-mobile-open {
+    display: block;
 }
 
-/* icon-x */
 nav #btn-mobile-close {
     display: none;
 }
 
-/* Apertou no hamburgão, ele se fecha e exibe o icon-X */ 
+/* Quando clicar no btn-hamburguer: btn-hamburguer oculta, btn-close exibe*/
 
-/* hamgurgao */
 .none#btn-mobile-open {
     display: none;
 }
 
-/* icon-x */
 .show#btn-mobile-close {
     display: block;
 }
