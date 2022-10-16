@@ -12,15 +12,13 @@ $title = 'Alterar aluno';
     <x-adad.head.head :title="$title" />
 </head>
 <div class="font-sans text-gray-900 antialiased">
-    {{-- <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100"> --}}
-        <div
-            class="h-screen center mx-auto lg:min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100"
-        >
+    <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">    
         <div>
             <a href="/">
                 <img src="/assets/img/igreja/adad_logo.png" class="adad-logo">
             </a>
         </div>
+        
         <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
             <form method="POST"
 			@if ($alterar) 
@@ -76,7 +74,6 @@ $title = 'Alterar aluno';
                 <h3 class="CentralizaText"> Dados Pessoais</h3>
                 
                 {{-- Grupo: Nome + Idade + Data de Nascimento + Série Escolar + CPF --}}
-                <div style="display: table;">
                     <!-- Input Nome -->
                     <div style="display: table-cell; vertical-align: middle; width:30%;">
                         <label class="block font-medium text-sm text-gray-700" for="name">
@@ -126,7 +123,6 @@ $title = 'Alterar aluno';
                         focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" 
                         type="text" name="cpf" value="{{ $cpf }}" required="required" autofocus="autofocus">
                     </div>
-                </div>
                 <!-- Input Mãe -->
                 <div class="mt-4">
                     <label class="block font-medium text-sm text-gray-700" for="password">
@@ -148,7 +144,6 @@ $title = 'Alterar aluno';
                 <br>
                 <h3 class="CentralizaText">Endereço</h3>
                 {{-- Grupo: Rua + Número da Casa + Bairro + Complemento --}}
-                <div style="display: table;  width: 96%; margin-right: 0; padding-right: 0;">
                     <!-- Input Rua -->
                     <div style="display: table-cell; vertical-align: middle; width:25%;">
                         <label class="block font-medium text-sm text-gray-700" for="name">
@@ -218,11 +213,9 @@ $title = 'Alterar aluno';
                          required="required" 
                          autofocus="autofocus">
                     </div>
-                </div>
                 <br> 
                 <h3 class="CentralizaText"> Dados Eclesiásticos</h3>
                 {{-- Grupo: Religiao --}}
-                <div style="display: table;">
                     <!-- Input Rua -->
                     <div style="display: table-cell; vertical-align: middle;">
                         <label class="block font-medium text-sm text-gray-700" for="name">
@@ -239,7 +232,7 @@ $title = 'Alterar aluno';
                          autocomplete="name"
                         >
                     </div>
-                </div>
+                
             
                 {{-- Grupo: Cadastrar Aluno --}}
                 <div class="flex items-center justify-end mt-4">

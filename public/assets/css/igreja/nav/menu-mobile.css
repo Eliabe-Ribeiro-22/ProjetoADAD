@@ -20,12 +20,19 @@
     color: black;
 }
 
-nav a.mobile-close {
+nav #menu-mobile-close {
     display: none;
 }
 
 /* Se for exibido os btns de menu: Hamburguer aberto e X fechado */
 
+.teste#menu-mobile-close {
+    display: block;
+}
+
+.teste#menu-mobile-open {
+    display: none;
+}
 
 /* nav a.mobile-open {
 
@@ -41,8 +48,8 @@ nav a.mobile-close {
 }
 
 nav.show a.mobile-close { */
-    /* display: initial; */
-    /* display: none; }*/
+/* display: initial; */
+/* display: none; }*/
 
 @media screen and (min-width: 280px) {
     #nav-mobile {

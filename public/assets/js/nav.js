@@ -5,5 +5,18 @@ const abre_menu = () => {
     //  nossas Reuniões, Projetos
     let menu_button = document.getElementById("menu_button");
     // menu_button.className = "exibir-menu-button";
-    alert('a Função abre_menu foi executada!');
+
+    let btn_burguer = document.getElementById("menu-mobile-open");
+    btn_burguer.className = "menu-mobile-item teste";
+    
+    let btn_close = document.getElementById("menu-mobile-close");
+    btn_close.className = "menu-mobile-item teste";
+};
+
+const fecha_menu = () => {
+    let btn_burguer = document.getElementById("menu-mobile-open");
+    btn_burguer.className = "menu-mobile-item";
+    
+    let btn_close = document.getElementById("menu-mobile-close");
+    btn_close.className = "menu-mobile-item";
 };
