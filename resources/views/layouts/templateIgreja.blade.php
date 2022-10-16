@@ -8,13 +8,13 @@
 <nav id="menu-site">
     <x-igreja.nav.menu-logo />
     <x-igreja.nav.menu-buttons />
-    <x-igreja.nav.menu-mobile />
+    {{-- <x-igreja.nav.menu-mobile /> --}}
 </nav>
 
-<main class="bg-main">
+{{-- <main class="bg-main">
     @yield('corpo')
-</main>
+</main> --}}
 
-<footer>
+{{-- <footer>
     <x-igreja.footer.footer />
-</footer>
+</footer> --}}

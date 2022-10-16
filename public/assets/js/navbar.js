@@ -1,7 +1,4 @@
 // Animações para abertura e fechamento do menu mobile
-
-
-
 /* Funcao abre-ou-fecha-menu, com id-> btn-hamburguer OU X */
 const menu_click = (clicked_id) => {
 

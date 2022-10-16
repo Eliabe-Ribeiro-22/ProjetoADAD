@@ -1,7 +1,14 @@
 #menu_button {
     /* display: none; */
-
     background-color: blue;
+
+
+    top: 12vh;
+    right: 0px;
+
+    width: 50vw;
+    height: 88vh;
+
 }
 
 /* Code by Analysys */
@@ -9,21 +16,16 @@
     margin: 0;
     padding: 0;
 
-    width: 50vw;
-    height: 88vh;
-
-    top: 12vh;
-    right: 0px;
-
-    /* display: flex; */
-    display: inline-flex;
-
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: space-around; */
 
     background-color: red;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+    justify-items: center;
 
     list-style: none;
 }
@@ -31,6 +33,8 @@
 #menu_button_ul>li {
     margin-bottom: 10px;
 }
+
+
 /* End Code by Analysys */
 
 .menu_button_item {
