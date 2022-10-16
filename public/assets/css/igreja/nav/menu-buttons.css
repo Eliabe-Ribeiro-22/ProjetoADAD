@@ -3,19 +3,16 @@
 }
 
 .menu-button-open#menu_button {
-    
     width: 100vw;
     height: 88vh;
 
     display: initial;
 
-    /* in Analisy */
     position: relative;
     top: 50%;
     transform: translateY(7%);
-    /* colocar menu na lateral da página */
+
     left: 15vw;
-    /* end */
 }
 
 .menu-button-open>#menu_button_ul {
@@ -51,10 +48,18 @@
         width: 65%;
         height: initial;
 
+        /* Bug: tem propriedades do mobile que atrapalham o
+        menu no desktop!
+            Como resetar as 3 propriedades?
+            
+            position: relative;
+            top: 50%;
+            transform: translateY(7%);
+        */
         position: initial;
-        top: initial;
+        top: 0;
         left: initial;
-        transition: initial;
+        transform: initial;
     }
 
     #menu_button_ul {
