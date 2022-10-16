@@ -8,6 +8,8 @@
 /* Menu do Site */
 @import 'nav/nav.css';
 
+/* Página Institucional */
+@import 'institucional/institucional_main.css';
 
 /* Formulário de Contato */
 @import 'form-contato/form-contato_main.css';

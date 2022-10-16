@@ -1,7 +1,9 @@
 #nav-mobile {
     width: 30%;
+    /* in Analisy */  
     height: 100%;
-
+    /* end */
+    
     opacity: 1;
 
     display: flex;

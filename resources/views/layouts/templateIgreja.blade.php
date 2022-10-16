@@ -8,7 +8,7 @@
 <nav id="menu-site">
     <x-igreja.nav.menu-logo />
     <x-igreja.nav.menu-buttons />
-    {{-- <x-igreja.nav.menu-mobile /> --}}
+    <x-igreja.nav.menu-mobile />
 </nav>
 
 {{-- <main class="bg-main">

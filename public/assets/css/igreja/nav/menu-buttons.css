@@ -3,8 +3,13 @@
     width: 100vw;
     height: 88vh;
 
-    top: 12vh;
-    right: 0px;
+    /* in Analisy */
+    position: relative;
+    top: 50%;
+    transform: translateY(7%);
+    /* colocar menu na lateral da página */
+    left: 15vw;
+    /* end */
 }
 
 #menu_button_ul {
