@@ -1,41 +1,25 @@
 #menu_button {
     /* display: none; */
-    background-color: blue;
-
+    width: 100vw;
+    height: 88vh;
 
     top: 12vh;
     right: 0px;
-
-    width: 50vw;
-    height: 88vh;
-
 }
 
-/* Code by Analysys */
 #menu_button_ul {
     margin: 0;
     padding: 0;
 
-
-    background-color: red;
+    background: #f0f0f0;
 
     display: flex;
     flex-direction: column;
-
     align-items: center;
-
-    justify-content: center;
-    justify-items: center;
-
+    justify-items: normal;
     list-style: none;
 }
 
-#menu_button_ul>li {
-    margin-bottom: 10px;
-}
-
-
-/* End Code by Analysys */
 
 .menu_button_item {
     font-size: 12px;
@@ -55,21 +39,25 @@
         margin: 0;
 
         width: 65%;
+        height: initial;
+
     }
 
     #menu_button_ul {
         height: 100%;
         width: 100%;
 
+        top: initial;
+        right: initial;
+
+        background: initial;
+
         display: flex;
+        flex-direction: initial;
         align-items: center;
         justify-content: space-around;
-
+        justify-items: initial;
         list-style: none;
-    }
-
-    #menu_button_ul>li {
-        margin: 0;
     }
 
     .menu_button_item {
