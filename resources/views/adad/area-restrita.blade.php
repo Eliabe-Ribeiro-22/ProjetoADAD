@@ -1,25 +1,83 @@
-<html>
+{{-- Frase que irá no title da página: [`Cadastrar`] ou [`Alterar`] aluno --}}
+@php
+    // Por padrão é Cadastro de Alunos
+    $title = 'Cadastrar Aluno';
+    // Se o usuário estiver alterando
+    if ($alterar) {
+        // o title será de Alteração
+        $title = 'Alterar aluno';
+    }
+@endphp
 
 <head>
-    <link rel="stylesheet" href="/assets/css/adad/area-restrita/alunos.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar</title>
+    <x-adad.head.head :title="$title" />
 </head>
 
 <body>
     <div class="font-sans text-gray-900 antialiased">
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
-            <div id="form_logos">
-                <img id="eva" src="/assets/img/site/eva.png">
-                <img id="adra" src="/assets/img/site/adra.png">
+            <div>
+                <a href="/">
+                    <img src="/assets/img/igreja/adad_logo.png" class="adad-logo">
+                </a>
             </div>
 
             <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
-                <form method="POST" action="{{ route('newuser') }}">
+                <form method="POST"
+                    @if ($alterar) 
+                        action="{{ route('aluno_update', ['id' => $aluno->id]) }}" 
+                    @else 
+                        action="{{ route('aluno_store') }}" 
+                    @endif
+                >
                     @csrf
+                    {{-- Variáveis settadas com valor, que por padrão são para exibir o form de cadastro de alunos --}}
+                @php
+                $nome = '';
+                $idade = '';
+                $nascimento = '';
+                $serie = '';
+                $cpf = '';
+                $mae = '';
+                $pai = '';
+                $rua = '';
+                $numero = '';
+                $bairro = '';
+                $complemento = '';
+                $cidade = '';
+                $religiao = '';
+                
+                // Se o form for exibido para realizar alteração de aluno
+                if ($alterar) {
+                @endphp
+                @method('PUT')
+                @php
+                echo "<h1 id='title-form-alunos'>Editando: " . $aluno->NOME . "</h1>";
+                // As variáveis recebem os valores vindos do aluno cadastrado 
+				//  no Banco de Dados
+                $nome = $aluno->NOME;
+                $idade = $aluno->IDADE;
+                $serie = $aluno->SERIE;
+                $nascimento = $aluno->nascimento->format('Y-m-d');
+                $cpf = $aluno->CPF;
+                $mae = $aluno->MAE;
+                $pai = $aluno->PAI;
+                $rua = $aluno->RUA;
+                $numero = $aluno->NUMERO;
+                $bairro = $aluno->BAIRRO;
+                $complemento = $aluno->COMPLEMENTO;
+                $cidade = $aluno->CIDADE;
+                $religiao = $aluno->RELIGIAO;
+                } else {
+                // Senão, é porque o form será exibido para realizar cadastro 
+				// de alunos as vars mantêm setadas com null.
+                echo "<h1 class='CentralizaText title-alunos' id='title-form-alunos'>Cadastro de Alunos ADAD</h1>";
+                }
+                @endphp
+                <h3 class="CentralizaText"> Dados Pessoais</h3>
                     <div>
                         <label class="block font-medium text-sm text-gray-700" for="name">
-                            Nome Completo
+                            Nome Completo *
                         </label>
                         <input
                             class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
@@ -170,6 +228,4 @@
             </div>
         </div>
     </div>
-
-
 </body>
