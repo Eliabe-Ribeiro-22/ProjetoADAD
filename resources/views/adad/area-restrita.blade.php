@@ -75,6 +75,7 @@
                 }
                 @endphp
                 <h3 class="CentralizaText"> Dados Pessoais</h3>
+                    {{-- Input Nome --}} 
                     <div>
                         <label class="block font-medium text-sm text-gray-700" for="name">
                             Nome Completo *
@@ -82,25 +83,47 @@
                         <input
                             class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
                             id="name" type="text" name="name" required="required" autofocus="autofocus"
-                            autocomplete="name">
+                            autocomplete="name" value="{{ $nome }}">
                     </div>
-
+                    
+                    {{-- Input Idade --}}
                     <div class="mt-4">
                         <label class="block font-medium text-sm text-gray-700" for="email">
-                            Email
+                            Idade *
                         </label>
                         <input
                             class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-                            id="email" type="email" name="email" required="required">
+                            id="email" type="number" name="idade" value="{{ $idade }}" required="required">
                     </div>
-
+                
+                    {{-- Input Data de Nascimento --}}
                     <div>
                         <label class="block font-medium text-sm text-gray-700">
-                            DDD + Telefone
+                            Data de Nascimento *
                         </label>
                         <input
                             class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-                            type="text" name="phone_number" required="required" autofocus="autofocus">
+                            type="date" 
+                            name="nascimento" value="{{ $nascimento }}"  required="required" autofocus="autofocus">
+                    </div>
+                
+                    {{-- Input Série Escolar --}}
+                    <div>
+                        <label class="block font-medium text-sm text-gray-700">
+                            Série Escolar
+                        </label>
+                        <input
+                            class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
+                            type="text" name="serie" value="{{ $serie }}" required="required" autofocus="autofocus">
+                    </div>
+                    
+                    <div>
+                        <label class="block font-medium text-sm text-gray-700">
+                            Endereço Completo
+                        </label>
+                        <input
+                            class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
+                            type="text" name="address" required="required" autofocus="autofocus">
                     </div>
 
                     <div>
@@ -111,28 +134,6 @@
                             class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
                             type="text" name="address" required="required" autofocus="autofocus">
                     </div>
-
-                    <div class="mt-4">
-                        <label class="block font-medium text-sm text-gray-700" for="password">
-                            Senha<br>
-                            Minimo: Oito Caracteres - Uma Maiscula - Um Caracter Especial
-                        </label>
-                        <input
-                            class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-                            id="password" type="password" name="password" required="required"
-                            autocomplete="new-password">
-                    </div>
-
-                    <div class="mt-4">
-                        <label class="block font-medium text-sm text-gray-700" for="password_confirmation">
-                            Confirmar Senha
-                        </label>
-                        <input
-                            class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-                            id="password_confirmation" type="password" name="password_confirmation" required="required"
-                            autocomplete="new-password">
-                    </div>
-
 
                     <div class="flex items-center justify-end mt-4">
                         <a class="underline text-sm text-gray-600 mx-auto hover:text-gray-900"
