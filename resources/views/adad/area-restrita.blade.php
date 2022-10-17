@@ -82,8 +82,13 @@
                         </label>
                         <input
                             class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-                            id="name" type="text" name="name" required="required" autofocus="autofocus"
-                            autocomplete="name" value="{{ $nome }}">
+                            id="name" 
+                            type="text" 
+                            name="nome" 
+                            value="{{ $nome }}"
+                            required="required" 
+                            autofocus="autofocus"
+                            autocomplete="name">
                     </div>
                     
                     {{-- Input Idade --}}
@@ -187,15 +192,50 @@
                             required="required" autofocus="autofocus">
                     </div>
 
+                    {{-- Input Complemento --}}
                     <div class="mt-4">
                         <label class="block font-medium text-sm text-gray-700">
-                            CPF *
+                            Complemento
                         </label>
                         <input
                             class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-                            type="text" name="cpf" value="{{ $cpf }}" required="required" autofocus="autofocus">
+                            type="text" 
+                            name="complemento" 
+                            value="{{ $complemento }}"    
+                            autofocus="autofocus">
                     </div>
 
+                    {{-- Input Cidade --}}
+                    <div class="mt-4">
+                        <label class="block font-medium text-sm text-gray-700">
+                            Cidade *
+                        </label>
+                        <input
+                            class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
+                            type="text" 
+                            name="cidade" 
+                            value="{{ $cidade }}"    
+                            required="required" autofocus="autofocus">
+                    </div><br> 
+                    
+                    <h3 class="CentralizaText"> Dados Eclesiásticos</h3>
+                    
+                    {{-- Religião/Crença --}}
+                    <div class="mt-4" style="display: table-cell; vertical-align: middle;width:15%;">
+                        <label class="block font-medium text-sm text-gray-700">
+                            Religião/Crença *
+                        </label>
+                        <input 
+                            class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200
+                                focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
+                            type="text" 
+                            name="religiao" 
+                            value="{{ $religiao }}"                         
+                            required="required" 
+                            autofocus="autofocus">
+                    </div>
+
+                    
                     <div class="flex items-center justify-end mt-4">
                         <a class="underline text-sm text-gray-600 mx-auto hover:text-gray-900"
                             href="{{ route('login') }}">

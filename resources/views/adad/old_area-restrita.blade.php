@@ -217,7 +217,7 @@ $title = 'Alterar aluno';
                 <br> 
                 <h3 class="CentralizaText"> Dados Eclesiásticos</h3>
                 {{-- Grupo: Religiao --}}
-                    <!-- Input Rua -->
+                    <!-- Input Religiao -->
                     <div style="display: table-cell; vertical-align: middle;">
                         <label class="block font-medium text-sm text-gray-700" for="name">
                             Religião/Crença*
