@@ -97,7 +97,7 @@
                     </div>
                 
                     {{-- Input Data de Nascimento --}}
-                    <div>
+                    <div class="mt-4">
                         <label class="block font-medium text-sm text-gray-700">
                             Data de Nascimento *
                         </label>
@@ -108,7 +108,7 @@
                     </div>
                 
                     {{-- Input Série Escolar --}}
-                    <div>
+                    <div class="mt-4">
                         <label class="block font-medium text-sm text-gray-700">
                             Série Escolar
                         </label>
@@ -117,22 +117,83 @@
                             type="text" name="serie" value="{{ $serie }}" required="required" autofocus="autofocus">
                     </div>
                     
-                    <div>
+                    {{-- Input CPF --}}
+                    <div class="mt-4">
                         <label class="block font-medium text-sm text-gray-700">
-                            Endereço Completo
+                            CPF *
                         </label>
                         <input
                             class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-                            type="text" name="address" required="required" autofocus="autofocus">
+                            type="text" name="cpf" value="{{ $cpf }}" required="required" autofocus="autofocus">
+                    </div>
+                    
+                    {{-- Input Mãe --}}
+                    <div class="mt-4">
+                        <label class="block font-medium text-sm text-gray-700">
+                            Mãe do aluno *
+                        </label>
+                        <input
+                            class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
+                            type="text" name="mae" value="{{ $mae }}" 
+                            required="required" autofocus="autofocus">
                     </div>
 
-                    <div>
+                    {{-- Input Pai --}}
+                    <div class="mt-4">
                         <label class="block font-medium text-sm text-gray-700">
-                            Endereço Completo
+                            Pai do aluno
                         </label>
                         <input
                             class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-                            type="text" name="address" required="required" autofocus="autofocus">
+                            type="text" name="pai" value="{{ $pai }}"
+                            autofocus="autofocus"
+                        >
+                    </div><br>
+                    
+                    <h3 class="CentralizaText">Endereço</h3>
+                    
+                    {{-- Input Rua --}}
+                    <div>
+                        <label class="block font-medium text-sm text-gray-700">
+                            Rua *
+                        </label>
+                        <input
+                            class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
+                            type="text" name="rua" value="{{ $rua }}"   
+                            autofocus="autofocus"
+                        >
+                    </div>
+                    
+                    {{-- Input Número da Casa/Apartamento  --}}
+                    <div class="mt-4">
+                        <label class="block font-medium text-sm text-gray-700">
+                            Número *
+                        </label>
+                        <input
+                            class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
+                            type="number" name="numero" value="{{ $numero }}" required="required" autofocus="autofocus">
+                    </div>
+                    
+                    {{-- Input Bairro --}}
+                    <div class="mt-4">
+                        <label class="block font-medium text-sm text-gray-700">
+                            Bairro *
+                        </label>
+                        <input
+                            class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
+                            type="text"
+                            name="bairro"
+                            value="{{ $bairro }}"   
+                            required="required" autofocus="autofocus">
+                    </div>
+
+                    <div class="mt-4">
+                        <label class="block font-medium text-sm text-gray-700">
+                            CPF *
+                        </label>
+                        <input
+                            class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
+                            type="text" name="cpf" value="{{ $cpf }}" required="required" autofocus="autofocus">
                     </div>
 
                     <div class="flex items-center justify-end mt-4">

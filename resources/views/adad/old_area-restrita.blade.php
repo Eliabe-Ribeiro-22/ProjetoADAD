@@ -132,6 +132,7 @@ $title = 'Alterar aluno';
                      focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" id="password" type="text" 
                       name="mae" value="{{ $mae }}" required="required" autocomplete="new-password">
                 </div>
+                
                 <!-- Input Pai -->
                 <div class="mt-4">
                     <label class="block font-medium text-sm text-gray-700" for="password_confirmation">
@@ -139,7 +140,7 @@ $title = 'Alterar aluno';
                     </label>
                     <input class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 
                     focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" id="password_confirmation" 
-                    type="text" name="pai" value="{{ $pai }}"autocomplete="new-password">
+                    type="text" name="pai" value="{{ $pai }}" autocomplete="new-password">
                 </div>
                 <br>
                 <h3 class="CentralizaText">Endereço</h3>
