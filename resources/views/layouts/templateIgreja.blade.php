@@ -14,6 +14,6 @@
     @yield('corpo')
 </main>
 
-{{-- <footer>
+<footer>
     <x-igreja.footer.footer />
-</footer> --}}
+</footer>   

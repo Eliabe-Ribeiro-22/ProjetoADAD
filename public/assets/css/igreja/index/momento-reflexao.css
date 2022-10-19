@@ -1,5 +1,5 @@
 /* Seção momento de reflexão */
-.title-momento-reflexao {
+/* .title-momento-reflexao {
     margin: 0 auto;
 
     font-size: 1rem;
@@ -18,4 +18,10 @@
     .title-momento-reflexao {
         font-size: clamp(3.6rem, 3.6rem, 7rem);
     }
+} */
+
+#sect-momento-reflexao {
+    /* margin: 0 5%; */
+    margin: 0 auto;
+    background: green;
 }

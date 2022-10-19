@@ -12,12 +12,11 @@
 
     {{-- Seção do Momento de Reflexão --}}
     <section>
-
-        <div class="square">
+        <div id="sect-momento-reflexao">
             <div>
-                <div id="padding-bottom-footer">
-                    <p class="bg-div color-primary">
-                        <span class="color-white text title-momento-reflexao" id="text-institucional">Momento de
+                <div id="">
+                    <p class="">
+                        <span class="" id="">Momento de
                             Reflexão</span>
                         <br><br>
 
@@ -29,8 +28,6 @@
                 </div>
             </div>
         </div>
-
-
     </section>
 
     {{-- Section Projetos --}}
@@ -40,6 +37,26 @@
 
     {{-- Section Nossas Reuniões --}}
     <section>
-        <x-igreja.nossas-reunioes.nossas-reunioes_main />
+
+        <h3 class="titlePage" id="title-nossas-reunioes" style="">
+            Nossas Reuniões
+        </h3>
+        <div id="square">
+            <div>
+                <div id="pb-footer-nossas-reunioes">
+                    <p class="text bg-div color-primary" id="text-nossas-reunioes">
+                        <span class="color-white">Cultos</span>
+                        <br><br>
+
+                        <span class="subTitle">Noite da Vitória</span><br>
+                        Quintas-Feiras às 19:15 hs<br><br>
+
+                        <span class="subTitle">Noite da Família</span><br>
+
+                        Domingos às 19:00 hs
+                    </p>
+                </div>
+            </div>
+
     </section>
 @endsection
