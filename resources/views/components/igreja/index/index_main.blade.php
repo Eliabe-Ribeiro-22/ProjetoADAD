@@ -14,9 +14,9 @@
     <section>
         <div id="sect-momento-reflexao">
             <div>
-                <div id="">
-                    <p class="">
-                        <span class="" id="">Momento de
+                <div>
+                    <p class="bg-div color-primary" id="div-momento-reflexao">
+                        <span id="title-momento-reflexao">Momento de
                             Reflexão</span>
                         <br><br>
 
