@@ -1,22 +1,16 @@
 {{-- Main do Index --}}
 @section('corpo')
-    <!-- Section Boas-vindas ao Site -->
-    <section>
-        <div class="boas-vindas">
-            <!-- To Vini: Criar aqui "Carrossel" -->
-            <img src="#" alt="Imagem de Boas-Vindas" >
-
-            <h1>Bem-vindo a IEAD Campo Belo do Sul</h1>
-        </div>
-    </section>
-
     <!-- Seção do Momento de Reflexão -->
     <section>
         <div class="square">
             <div>
                 <div id="padding-bottom-footer">
-                    <p class="text bg-div color-primary" id="text-institucional">
-                        <span class="color-white" style="font-size: 1rem;">Momento de Reflexão</span>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p class="text bg-div color-primary" style="margin: 0 150px;">
+                        <span class="color-white" style="font-size: 2rem;">Momento de Reflexão</span>
                         <br><br>
 
                         <?php
