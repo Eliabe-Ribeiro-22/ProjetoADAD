@@ -1,19 +1,18 @@
 # Projeto de site para o cliente Igreja Evangélica Assembleia de Deus em Campo Belo do Sul
 
 <details open>
-    <summary name="index">Sumário do Projeto</summary>
+    <summary name="index">Sobre o Projeto</summary>
     <ol>
         <li><a href="#objetivo-do-projeto">Objetivo do projeto</a></li>
         <li><a href="#backlog-do-produto">Backlog do projeto</a></li>
         <li><a href="#log">Log de eventos</a></li>
         <li><a href="#projeto-online">Projeto online</a></li>
+        <li><a href="tecnologias">Tecnologias e Recursos</a>
         <li><a href="#developers">Developers</a>
     </ol>
 
 </details>
  <!-- li --><!-- a href="#estrutura">Estrutura do projeto</a --><!--/li -->
- <!-- li><a href="#tecnologias">Dependências e Tecnologias usadas</a></li -->
-
 -----
 
 ## Projeto Online
@@ -46,9 +45,9 @@ Campos para o formulário de contato:
 
 Também deve conter uma local para exibir os projetos sociais promovidos pela entidade, que são:
 
-1) Projeto Prática de Fé;
-2) Projeto Social;
-3) Projeto Educacional (ADAD);
+1) Projeto Educacional (ADAD);
+2) Projeto Prática de Fé;
+3) Projeto Social;
 
 ## Sessão ADAD
 
