@@ -106,8 +106,8 @@ Criada rota para a página "nossos encontros" do programa ADAD. <br />
 Criada rota restrita de login para o programa ADAD. (ainda não funcional)
 
 <h4>05/09 - Segunda-feira - Eliabe </h4>
-Criado um formulário para o visitante possa entrar em contato com a IEAD Campo Belo do Sul.<br>
-Ele foi criado na view <em>formIgreja</em>
+Criado a página "contato", na view: formulário igreja.
+Criado um formulário para o visitante entrar em contato com a igreja.
 
 <h4>07/09 - Quarta-feira - Alessandro </h4>
 Criado função para envio do formulário de contato via email. <br>
