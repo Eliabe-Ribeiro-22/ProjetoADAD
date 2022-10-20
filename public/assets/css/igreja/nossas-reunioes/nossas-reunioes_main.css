@@ -10,7 +10,7 @@
     position: relative;
     justify-content: center;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 #square {
@@ -18,7 +18,7 @@
 }
 
 #text-nossas-reunioes {
-    height: 90vh;
+    /* height: 30vh; */
     padding: 5px 0;
     font-size: 0.8rem;
 }
@@ -35,10 +35,10 @@
 
 @media screen and (min-width: 1024px) {
     #title-nossas-reunioes {
-        font-size: clamp(4.5rem, 4.5rem, 9rem);
+        font-size: 1.5rem;
     }
 
     #text-nossas-reunioes {
-        font-size: clamp(3.5rem, 3.5rem, 4rem);
+        font-size: 1rem;
     }
 }

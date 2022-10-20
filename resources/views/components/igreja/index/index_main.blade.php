@@ -13,19 +13,18 @@
     {{-- Seção do Momento de Reflexão --}}
     <section>
         <div id="sect-momento-reflexao">
-            <div>
-                <div>
-                    <p class="bg-div color-primary" id="div-momento-reflexao">
-                        <span id="title-momento-reflexao">Momento de
-                            Reflexão</span>
-                        <br><br>
+            <div id="div-momento-reflexao">
+                <br>
+                <p class="bg-div color-primary" id="div-p-momento-reflexao">
+                    <span id="title-momento-reflexao">Momento de
+                        Reflexão</span>
+                    <br><br>
 
-                        <?php
-                        echo $dailyVerse['text'], '.', '<br><br>';
-                        echo $dailyVerse['book']['name'], ' ', $dailyVerse['chapter'], '.', $dailyVerse['number'];
-                        ?>
-                    </p>
-                </div>
+                    <?php
+                    echo $dailyVerse['text'], '.', '<br><br>';
+                    echo $dailyVerse['book']['name'], ' ', $dailyVerse['chapter'], '.', $dailyVerse['number'];
+                    ?>
+                </p>
             </div>
         </div>
     </section>

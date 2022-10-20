@@ -6,12 +6,11 @@
     <div>
         <div id="pb-footer-nossas-reunioes">
             <p class="text bg-div color-primary" id="text-nossas-reunioes">
-                <br>
                 <span class="color-white">Cultos</span>
                 <br><br>
 
                 <span class="subTitle">Noite da Vitória</span><br>
-                Quintas-Feiras às 19:15 hs<br><br>
+                Quintas-Feiras às 19:15 hs<br>
 
                 <span class="subTitle">Noite da Família</span><br>
 

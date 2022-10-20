@@ -6,7 +6,7 @@
     position: relative;
 
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .projeto {
@@ -77,10 +77,10 @@
     }
 
     .subtitle-projeto {
-        font-size: clamp(3.6rem, 3.6rem, 7rem);
+        font-size: 1.2rem;
     }
 
     .ul-projeto {
-        font-size: clamp(3.5rem, 3.5rem, 4rem);
+        font-size: 1rem;
     }
 }
