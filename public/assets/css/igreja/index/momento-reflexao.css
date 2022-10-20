@@ -4,11 +4,13 @@
 */
 
 #sect-momento-reflexao {
-    /* margin: 0 5%; */
-    margin: 0 auto;
+    margin: 10px auto 0px;
+    width: 80vw;
 }
 
 #div-momento-reflexao {
+    width: 100%;
+
     display: flex;
     justify-content: center;
     text-align: center;

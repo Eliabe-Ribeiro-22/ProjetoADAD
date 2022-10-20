@@ -51,24 +51,25 @@
 
 @media screen and (min-width: 280px) {
     #title-projetos {
-        font-size: clamp(1.4rem, 1.8rem, 5rem);
+        font-size: 0.9rem;
     }
 
     #image-adad {
         width: 100px;
     }
 
+
     .subtitle-projeto {
-        font-size: clamp(1.2rem, 1.5rem, 4.5rem);
+        font-size: 0.8rem;
     }
 
     .ul-projeto {
-        font-size: clamp(1rem, 1.4rem, 4rem);
+        font-size: 0.7rem;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    #title-projetos {
+    /*  #title-projetos {
         font-size: clamp(4.5rem, 4.5rem, 9rem);
     }
 
@@ -82,5 +83,5 @@
 
     .ul-projeto {
         font-size: 1rem;
-    }
+    } */
 }
