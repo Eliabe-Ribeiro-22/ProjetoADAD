@@ -90,7 +90,7 @@ class AdadController extends Controller
         try {
             $data = $request->all();
 
-            $c = Aluno::findOrFail($request->id)->update($data);
+            Aluno::findOrFail($request->id)->update($data);
             return redirect('/AreaRestrita');
         } catch (Exception $e) {
             return 'Ocorreu um erro ao alterar um aluno!<br/>' . $e->getMessage();

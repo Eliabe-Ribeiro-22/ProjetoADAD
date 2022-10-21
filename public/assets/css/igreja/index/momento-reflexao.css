@@ -1,0 +1,45 @@
+/* Seção momento de reflexão */
+/*
+
+*/
+
+#sect-momento-reflexao {
+    margin: 10px auto 0px;
+    width: 80vw;
+}
+
+#div-momento-reflexao {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#title-momento-reflexao {
+    font-family: "arial black";
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+#div-p-momento-reflexao {
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 280px) {
+    #title-momento-reflexao {
+        font-size: clamp(1.4rem, 2rem, 5rem);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #title-momento-reflexao {
+        font-size: 1.5rem;
+    }
+
+    #div-p-momento-reflexao {
+        font-size: 1rem;
+    }
+}

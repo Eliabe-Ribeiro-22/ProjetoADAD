@@ -1,26 +1,31 @@
-/* Importando fonts para a aplicacao */
-
+/* Importando fonts para o Projeto ADAD*/
 /*  Roboto */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 /*  Lato */
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
 
-/* nav & footer */
-@import "header/header.css";
-@import "footer/footer.css";
+/* Menu do Site */
+@import 'nav/nav.css';
 
-/*  Formulário Contato */
-@import "form/form_main.css";
+/* Página Institucional */
+@import 'institucional/institucional_main.css';
 
-/*  Página Institucional */
-@import "institucional/institucional_main.css";
+/* Formulário de Contato */
+@import 'form-contato/form-contato_main.css';
 
-/*  Página nossas-reuniões */
-@import "nossas-reunioes/nossas-reunioes_main.css";
+/* Nossas Reuniões */
+@import 'nossas-reunioes/nossas-reunioes_main.css';
 
 /* Página Projetos */
-@import "projetos/projetos_main.css";
+@import 'projetos/projetos_main.css';
+
+/* Seção Momento de Reflexão */
+@import 'index/momento-reflexao.css';
+
+
+/* Rodapé do Site */
+@import 'footer/footer.css';
 
 /* Reset */
 * {
@@ -29,24 +34,23 @@
     box-sizing: border-box;
 }
 
-:root {
-    --color-primary: #ff6600;
-    --background: #dedcdc;
-}
-
 body {
     margin: 0;
     padding: 0;
 }
 
-.bg-body {
-    background: var(--background);
-}
-
-
 main {
     margin: 0;
     padding: 0;
+
+    margin-bottom: 10px;
+
+}
+
+@media screen and (min-width: 280px) {
+    main {
+        max-height: 900px;
+    }
 }
 
 .bg-main {
