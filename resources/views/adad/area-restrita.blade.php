@@ -1,15 +1,17 @@
-{{-- Frase que irá no title da página: [`Cadastrar`] ou [`Alterar`] aluno --}}
-@php
-// Por padrão é Cadastro de Alunos
-$title = 'Cadastrar Aluno';
-// Se o usuário estiver alterando
-if ($alterar) {
-// o title será de Alteração
-$title = 'Alterar aluno';
-}
-@endphp
 <head>
-    <x-adad.head.head :title="$title" />
+    <x-adad.head.head/>
+    <link rel="stylesheet" href="/assets/css/adad/area-restrita/alunos.css">
+
+    @php
+    // Frase que irá no title da página: Cadastrar/Alterar aluno
+    $titulo = 'Cadastrar Aluno';
+    
+    if ($alterar) {
+        $titulo = 'Alterar aluno';
+    }
+    @endphp
+    
+    <title><?php echo $titulo; ?></title>
 </head>
 <div class="font-sans text-gray-900 antialiased">
     {{-- <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100"> --}}

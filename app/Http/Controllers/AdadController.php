@@ -9,8 +9,6 @@ use Illuminate\Console\View\Components\Alert;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-
-// not utilized?
 use App\Models\Permission;
 use App\Models\Warning;
 use Illuminate\Support\Str;
@@ -256,7 +254,6 @@ class AdadController extends Controller
         return redirect('auth/login')->with('message', 'Sua senha foi alterada com sucesso');
     }
 
-    //function than neeed?
     public function setnewPassword(Request $request)
     {
         $request->validate([
