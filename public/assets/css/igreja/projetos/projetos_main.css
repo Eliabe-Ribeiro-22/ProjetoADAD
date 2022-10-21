@@ -69,8 +69,9 @@
 }
 
 @media screen and (min-width: 1024px) {
-    /*  #title-projetos {
-        font-size: clamp(4.5rem, 4.5rem, 9rem);
+     /* Em análise: -> esses códigos estão quebrando a página inicial do site
+     #title-projetos {
+        font-size: 1.5rem;
     }
 
     #image-adad {
