@@ -1,31 +1,21 @@
 # Projeto de site para o cliente Igreja Evangélica Assembleia de Deus em Campo Belo do Sul
 
 <details open>
-    <summary name="index">Sobre o Projeto</summary>
+    <summary name="index">Sumário</summary>
     <ol>
         <li><a href="#objetivo-do-projeto">Objetivo do projeto</a></li>
         <li><a href="#backlog-do-produto">Backlog do projeto</a></li>
         <li><a href="#log">Log de eventos</a></li>
         <li><a href="#projeto-online">Projeto online</a></li>
-        <li><a href="tecnologias">Tecnologias e Recursos</a>
+        <li><a href="#tecnologias">Tecnologias e Recursos</a>
         <li><a href="#developers">Developers</a>
     </ol>
 
 </details>
- <!-- li --><!-- a href="#estrutura">Estrutura do projeto</a --><!--/li -->
------
-
-## Projeto Online
-
-<a name="projetoWeb"></a>
-
-[Projeto Web - Igreja](https://adad-site.herokuapp.com/)
-
-<p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 ## Objetivo do Projeto
 
-<a name="objetivo"></a>
+<a name="objetivo-do-projeto"></a>
 
 O cliente quer um site para Igreja Evangélica Assembleia de Deus em Campo Belo do Sul. O projeto deve conter uma página para descrever a entidade não-governamental, uma página inicial e um formulário para contato. O site também deve conter um rodapé com os seguintes elementos:
 
@@ -180,6 +170,19 @@ Adicionadas as imagens do cliente ao carrossel.
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----
+## Tecnologias e Recursos
+
+<a name="tecnologias"></a>
+
+
+## Projeto Online
+
+<a name="projeto-online"></a>
+
+[Projeto Web - Igreja](https://adad-site.herokuapp.com/)
+
+<p align="right">(<a href="#index">Voltar ao índice</a>)</p>
+
 
 ## The Developers
 
