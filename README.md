@@ -117,12 +117,12 @@ Criada branch auth.<br>
 Criado Formulário de Login do ADAD.
 
 <h4> 10/09 - Sábado - Eliabe </h4>
-Criação do Controller IgrejaController, contendo as funções solicitadas nas Rotas da Igreja.
+Criação do Controller IgrejaController, contendo as funções solicitadas nas Rotas da Igreja.<br>
 Realizada componentização das páginas recém-criadas: Institucional, Nossas Reuniões e Projetos.
 
 <h4>10/09 - Sábado - Eliabe </h4>
-Realizada componentização do Formulário de Contato.
-Criado arquivo de estilização da Igreja, com as devidas componentizações.
+Realizada componentização do Formulário de Contato.<br>
+Criado arquivo de estilização da Igreja, com as devidas componentizações.<br>
 Estilização do header e footer do site IEAD Campo Belo.
 
 <h4>11/09 - Domingo - Eliabe </h4>
@@ -149,7 +149,7 @@ Ajustes no código para seguir as práticas de clean code.
 Realizada responsividade da Página Formulário de Contato
 
 <h4>05/10 - Quarta-feira - Eliabe</h4>
-Realizada responsividade e refatoração da Página Login
+Realizada responsividade e refatoração da Página Login.<br>
 Estilização da tabela da página Área Restrita, sendo que sua função é exibir os alunos cadastrados
 
 <h4>06/10 - Quinta-feira - Vinícius</h4>
