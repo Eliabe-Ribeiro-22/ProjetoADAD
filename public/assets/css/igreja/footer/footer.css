@@ -1,3 +1,10 @@
+/* Footer do Projeto ADAD */
+footer {
+    position: sticky;
+    top: 100vh;
+    margin-top: 10px;
+}
+
 .text-center {
     text-align: center;
 }
@@ -21,13 +28,13 @@
 #div-facebook {
     padding: 0.1rem;
     justify-content: center;
-    background-color: #fff;
+    background: #fff;
 }
 
 #div-gmail {
     padding: 0.2rem;
     justify-content: center;
-    background-color: #fff;
+    background: #fff;
 }
 
 .w-img {
@@ -65,16 +72,24 @@
 
 @media screen and (min-width: 640px) {
     .w-img {
-        width: 5rem;
+        width: 2.5rem;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .size-footer {
+<<<<<<< HEAD
         font-size: clamp(2rem, 2rem, 4rem);
     }
 
     .w-img {
         width: 2rem;
+=======
+        font-size: clamp(1.5rem, 2rem, 4rem);
+    }
+
+    .w-img {
+        width: 3rem;
+>>>>>>> dev
     }
 }

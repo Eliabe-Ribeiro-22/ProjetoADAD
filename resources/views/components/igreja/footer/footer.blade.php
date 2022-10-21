@@ -1,14 +1,20 @@
 {{-- Footer do templateIgreja --}}
 <div>
     <div>
-        <p class="text-center text-font-footer size-footer color-primary">Telefones:</p>
-        <p class="text-center text-font-footer size-footer color-primary"> (049) 3249-1036</p>
+        <p class="text-center text-font-footer size-footer color-primary">
+            Telefones:
+        </p>
+        <p class="text-center text-font-footer size-footer color-primary">
+            (049) 3249-1036
+        </p>
     </div>
     <div id="telefone-whats">
         <div id="tel-whats-div">
             <img class="w-img" src="assets/img/igreja/whats.png" alt="Logo What's App" />
         </div>
-        <p class="text-center text-font-footer size-footer color-primary">+55 (049) 9 8847-7611</p>
+        <p class="text-center text-font-footer size-footer color-primary">
+            +55 (049) 9 8847-7611
+        </p>
     </div>
 
     <div id="rede-social">
@@ -22,7 +28,6 @@
             <div id="div-gmail">
                 <img class="w-img" src="assets/img/igreja/logoGmail.png" alt="Logo Gmail" />
             </div>
-
         </a>
     </div>
 </div>
@@ -30,7 +35,8 @@
 {{-- Endereco --}}
 <div id="endereco">
     <p class="text-font-footer size-footer color-primary" id="text-endereco">
-        Rua Gerônimo Xavier de Oliveira, nº 230, Centro, Campo Belo do Sul/SC, Brasil
+        Rua Gerônimo Xavier de Oliveira, nº 230, Centro, Campo Belo do Sul/SC,
+        Brasil
     </p>
 </div>
 

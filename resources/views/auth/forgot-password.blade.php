@@ -1,11 +1,12 @@
+<head>
+    <title>Recuperar senha</title>
+</head>
+
 {{-- Logo --}}
-{{-- // Texto de Esqueceu senha --}}
-
-{{-- message em caso de erro: status --}}
-
-
-{{-- // Form de Esqueceu a Senha --}}
-<form method="POST" action="">
+<form method="POST" action="{{ route('index.page') }}">
     @csrf
-    ok
+    Senha enviada com sucesso!
+    <br>
+    Verfique seu email
 </form>
+<a href="{{ route('index.page') }}">Voltar ao início do site</a>

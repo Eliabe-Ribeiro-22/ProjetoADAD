@@ -6,7 +6,7 @@
     position: relative;
 
     text-align: center;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
 }
 
 #square {
@@ -27,7 +27,8 @@
 }
 
 #text-institucional {
-    font-size: 10px;
+    font-size: 1px;
+	color: white;
 }
 
 /* Galaxy Fold */

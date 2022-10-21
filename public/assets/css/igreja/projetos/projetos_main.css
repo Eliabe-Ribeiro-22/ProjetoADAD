@@ -1,3 +1,4 @@
+/* Página Projetos */
 #title-projetos {
     margin-bottom: 10px;
     padding-top: 2vh;
@@ -5,16 +6,11 @@
     position: relative;
 
     text-align: center;
-    font-size: 1.3rem;
-}
-
-#pb-footer-projetos {
-    padding-bottom: 15px;
+    font-size: 1.5rem;
 }
 
 .projeto {
-    margin: 0.8rem;
-    margin-bottom: 0.5rem;
+    margin: 0.8rem 0.8rem 0.5rem;
     background: #ffffcc;
 }
 
@@ -35,7 +31,7 @@
     list-style-type: square;
     list-style-position: inside;
 
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #333333;
     text-align: left;
     font-family: "arial black";
@@ -55,36 +51,46 @@
 
 @media screen and (min-width: 280px) {
     #title-projetos {
-        font-size: clamp(1.4rem, 1.8rem, 5rem);
+        font-size: 0.9rem;
     }
-    
-    #image-adad{
+
+    #image-adad {
         width: 100px;
     }
 
+
     .subtitle-projeto {
-        font-size: clamp(1.2rem, 1.5rem, 4.5rem);
+        font-size: 0.8rem;
     }
 
     .ul-projeto {
-        font-size: clamp(1rem, 1.4rem, 4rem);
+        font-size: 0.7rem;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    #title-projetos {
-        font-size: clamp(4.5rem, 4.5rem, 9rem);
+     /* Em análise: -> esses códigos estão quebrando a página inicial do site
+     #title-projetos {
+        font-size: 1.5rem;
     }
-    
-    #image-adad{
+
+    #image-adad {
         width: 200px;
     }
 
     .subtitle-projeto {
-        font-size: clamp(3.6rem, 3.6rem, 7rem);
+<<<<<<< HEAD
+        font-size: 1.5rem;
+=======
+        font-size: 1.2rem;
+>>>>>>> responsividade
     }
 
-    .ul-projeto{
-        font-size: clamp(3.5rem, 3.5rem, 4rem);
+    .ul-projeto {
+        font-size: 1rem;
+<<<<<<< HEAD
     }
+=======
+    } */
+>>>>>>> responsividade
 }
