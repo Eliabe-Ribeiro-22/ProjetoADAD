@@ -1,32 +1,21 @@
 # Projeto de site para o cliente Igreja Evangélica Assembleia de Deus em Campo Belo do Sul
 
 <details open>
-    <summary name="index">Sumário do Projeto</summary>
+    <summary name="index">Sumário</summary>
     <ol>
         <li><a href="#objetivo-do-projeto">Objetivo do projeto</a></li>
         <li><a href="#backlog-do-produto">Backlog do projeto</a></li>
         <li><a href="#log">Log de eventos</a></li>
         <li><a href="#projeto-online">Projeto online</a></li>
+        <li><a href="#tecnologias">Tecnologias e Recursos</a>
         <li><a href="#developers">Developers</a>
     </ol>
 
 </details>
- <!-- li --><!-- a href="#estrutura">Estrutura do projeto</a --><!--/li -->
- <!-- li><a href="#tecnologias">Dependências e Tecnologias usadas</a></li -->
-
------
-
-## Projeto Online
-
-<a name="projetoWeb"></a>
-
-[Projeto Web - Igreja](https://adad-site.herokuapp.com/)
-
-<p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 ## Objetivo do Projeto
 
-<a name="objetivo"></a>
+<a name="objetivo-do-projeto"></a>
 
 O cliente quer um site para Igreja Evangélica Assembleia de Deus em Campo Belo do Sul. O projeto deve conter uma página para descrever a entidade não-governamental, uma página inicial e um formulário para contato. O site também deve conter um rodapé com os seguintes elementos:
 
@@ -46,9 +35,9 @@ Campos para o formulário de contato:
 
 Também deve conter uma local para exibir os projetos sociais promovidos pela entidade, que são:
 
-1) Projeto Prática de Fé;
-2) Projeto Social;
-3) Projeto Educacional (ADAD);
+1) Projeto Educacional (ADAD);
+2) Projeto Prática de Fé;
+3) Projeto Social;
 
 ## Sessão ADAD
 
@@ -93,7 +82,7 @@ Alteração no welcome.blade.php para testar se as atualizações do código-fon
 Realizado com sucesso o deploy do ProjetoADAD na plataforma Heroku, através da URL: https://adcbsul.herokuapp.com/
 
 <h4>29/08 - Segunda-feira - Eliabe</h4>
-Criada main do Igreja Campo Belo do Sul, destinada a exibir os conteúdos da página principal da Igreja.
+Criada página inicial da Igreja Campo Belo do Sul.
 
 <h4>29/08 - Segunda-feira - Eliabe</h4>
 Criado Header e Footer da página AD Campo Belo do Sul.<br/>
@@ -106,8 +95,8 @@ Criada rota para a página "nossos encontros" do programa ADAD. <br />
 Criada rota restrita de login para o programa ADAD. (ainda não funcional)
 
 <h4>05/09 - Segunda-feira - Eliabe </h4>
-Criado um formulário para o visitante possa entrar em contato com a IEAD Campo Belo do Sul.<br>
-Ele foi criado na view <em>formIgreja</em>
+Criado a página "contato", na view: formulário igreja.
+Criado um formulário para o visitante entrar em contato com a igreja.
 
 <h4>07/09 - Quarta-feira - Alessandro </h4>
 Criado função para envio do formulário de contato via email. <br>
@@ -118,12 +107,12 @@ Criada branch auth.<br>
 Criado Formulário de Login do ADAD.
 
 <h4> 10/09 - Sábado - Eliabe </h4>
-Criação do Controller IgrejaController, contendo as funções solicitadas nas Rotas da Igreja.
+Criação do Controller IgrejaController, contendo as funções solicitadas nas Rotas da Igreja.<br>
 Realizada componentização das páginas recém-criadas: Institucional, Nossas Reuniões e Projetos.
 
 <h4>10/09 - Sábado - Eliabe </h4>
-Realizada componentização do Formulário de Contato.
-Criado arquivo de estilização da Igreja, com as devidas componentizações.
+Realizada componentização do Formulário de Contato.<br>
+Criado arquivo de estilização da Igreja, com as devidas componentizações.<br>
 Estilização do header e footer do site IEAD Campo Belo.
 
 <h4>11/09 - Domingo - Eliabe </h4>
@@ -150,7 +139,7 @@ Ajustes no código para seguir as práticas de clean code.
 Realizada responsividade da Página Formulário de Contato
 
 <h4>05/10 - Quarta-feira - Eliabe</h4>
-Realizada responsividade e refatoração da Página Login
+Realizada responsividade e refatoração da Página Login.<br>
 Estilização da tabela da página Área Restrita, sendo que sua função é exibir os alunos cadastrados
 
 <h4>06/10 - Quinta-feira - Vinícius</h4>
@@ -189,6 +178,19 @@ Refatoração da página Área Restrita.
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----
+## Tecnologias e Recursos
+
+<a name="tecnologias"></a>
+
+
+## Projeto Online
+
+<a name="projeto-online"></a>
+
+[Projeto Web - Igreja](https://adad-site.herokuapp.com/)
+
+<p align="right">(<a href="#index">Voltar ao índice</a>)</p>
+
 
 ## The Developers
 
