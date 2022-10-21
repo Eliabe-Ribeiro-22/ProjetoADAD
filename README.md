@@ -92,7 +92,7 @@ Alteração no welcome.blade.php para testar se as atualizações do código-fon
 Realizado com sucesso o deploy do ProjetoADAD na plataforma Heroku, através da URL: https://adcbsul.herokuapp.com/
 
 <h4>29/08 - Segunda-feira - Eliabe</h4>
-Criada main do Igreja Campo Belo do Sul, destinada a exibir os conteúdos da página principal da Igreja.
+Criada página inicial da Igreja Campo Belo do Sul.
 
 <h4>29/08 - Segunda-feira - Eliabe</h4>
 Criado Header e Footer da página AD Campo Belo do Sul.<br/>
