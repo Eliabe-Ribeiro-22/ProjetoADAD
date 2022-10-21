@@ -1,6 +1,13 @@
 {{-- Main do Index --}}
 @section('corpo')
-    <!-- Seção do Momento de Reflexão -->
+    {{-- Section Boas-vindas ao Site --}}
+    <section>
+        <div class="boas-vindas">
+            <x-igreja.carrossel.carrossel />
+        </div>
+    </section>
+
+    {{-- Seção do Momento de Reflexão --}}
     <section>
         <div class="square">
             <div>
@@ -21,16 +28,14 @@
                 </div>
             </div>
         </div>
-
-
     </section>
 
-    <!-- Section Projetos -->
+    {{-- Section Projetos --}}
     <section>
         <x-igreja.projetos.projetos_main />
     </section>
 
-    <!-- Section Nossas Reuniões -->
+    {{-- Section Nossas Reuniões --}}
     <section>
         <x-igreja.nossas-reunioes.nossas-reunioes_main />
     </section>
