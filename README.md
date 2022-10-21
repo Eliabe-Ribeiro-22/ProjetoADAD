@@ -169,13 +169,7 @@ Configurada a chamada automática da página em casos de URLs inexistentes.
 Finalizada <b>responsividade</b> das  páginas:<br>
 <em>Institucional</em><br>
 <em>Nossas Reuniões</em><br>
-<em>Projetos</em> <br><br>
-
-<b>Breakpoints:</b><br>
-<em>Mobile First</em><br>
-<em>Middle</em><br>
-<em>Hub/Next Hub</em><br>
-<em>Desktop</em><br>
+<em>Nossos Projetos</em>
 
 <h4>12/10 - Quarta-feira - Vinícius</h4>
 Criada branch carrossel. <br>
@@ -183,6 +177,14 @@ Criado um carrossel de imagens para a página principal do site. (Componentizado
 Adicionado o CSS do carrossel. <br>
 Desenvolvido um script para a alternação das imagens do carrossel. <br>
 Adicionadas as imagens do cliente ao carrossel.
+
+<h4>17/10 - Segunda-feira - Eliabe </h4>
+Realizada responsividade da página de cadastro de alunos, chamada Área Restrita.
+
+<h4>19/10 - Quarta-feira - ELiabe</h4>
+Refatoração do footer do site.<br>
+Refatoração da página Área Restrita.
+
 
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
