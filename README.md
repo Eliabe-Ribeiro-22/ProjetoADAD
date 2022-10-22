@@ -106,7 +106,7 @@ Criado template de email.
 Criada branch auth.<br>
 Criado Formulário de Login do ADAD.
 
-<h4> 10/09 - Sábado - Eliabe </h4>
+<h4>10/09 - Sábado - Eliabe </h4>
 Criação do Controller IgrejaController, contendo as funções solicitadas nas Rotas da Igreja.<br>
 Realizada componentização das páginas recém-criadas: Institucional, Nossas Reuniões e Projetos.
 
@@ -129,7 +129,7 @@ Criada a página de cadastro na branch "auth". (CSS ainda será aprimorado) <br/
 Adicionadas validações tanto para login quanto para cadastro. (em teste)
 
 <h4> 01/10 - Sábado - Eliabe </h4>
-Responsividade Mobile First para a página Institucional
+Responsividade Mobile First para a página Institucional<br>
 Iniciado responsividade Mobile First para navbar
 
 <h4>02/10 - Domingo - Eliabe</h4>
