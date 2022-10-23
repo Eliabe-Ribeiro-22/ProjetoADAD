@@ -190,10 +190,35 @@ Refatoração da página Área Restrita.
 <h4>22/10 - Sábado - Eliabe</h4>
 Refatoração da navbar do site
 
+<p align="right">(<a href="#index">Voltar ao índice</a>)</p>
+
+-----
+
+## The Developers
+<a name="developers"></a>
+
+-----
+
+Alessandro Geras <br/>
+[Curriculum Vitae](https://alessandrogeras.github.io/Curriculum) <br>
+[Linkedin](https://www.linkedin.com/in/alessandrogeras) <br>
+[Github](https://github.com/AlessandroGeras) <br>
+[Outlook](mailto:alessandrogeras@gmail.com) <br><br>
+<p align="right">(<a href="#index">Voltar ao índice</a>)</p>
+
+-----
+
+Eliabe Ribeiro<br/>
+[Curriculum Vitae](https://github.com/Eliabe-Ribeiro-22/Eliabe-Ribeiro-22/blob/main/README.md) <br>
+[Linkedin](https://www.linkedin.com/in/eliabemota) <br>
+[Github](https://github.com/Vinnie-Jung) <br>
+[Gmail](mailto:developer.eliabe@gmail.com) <br><br>
+
+-----
+
 Vinícius Jung <br/>
 [Curriculum Vitae](https://github.com/Vinnie-Jung/Vinnie-Jung) <br>
 [Linkedin](https://www.linkedin.com/in/vinicius-jung) <br>
 [Github](https://github.com/Vinnie-Jung) <br>
 [Outlook](mailto:viniciusjung@outlook.com) <br><br>
-
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
