@@ -106,7 +106,7 @@ Criado template de email.
 Criada branch auth.<br>
 Criado Formulário de Login do ADAD.
 
-<h4> 10/09 - Sábado - Eliabe </h4>
+<h4>10/09 - Sábado - Eliabe </h4>
 Criação do Controller IgrejaController, contendo as funções solicitadas nas Rotas da Igreja.<br>
 Realizada componentização das páginas recém-criadas: Institucional, Nossas Reuniões e Projetos.
 
@@ -129,7 +129,7 @@ Criada a página de cadastro na branch "auth". (CSS ainda será aprimorado) <br/
 Adicionadas validações tanto para login quanto para cadastro. (em teste)
 
 <h4> 01/10 - Sábado - Eliabe </h4>
-Responsividade Mobile First para a página Institucional
+Responsividade Mobile First para a página Institucional<br>
 Iniciado responsividade Mobile First para navbar
 
 <h4>02/10 - Domingo - Eliabe</h4>
@@ -178,46 +178,9 @@ Realizada responsividade da página de cadastro de alunos, chamada Área Restrit
 Refatoração do footer do site.<br>
 Refatoração da página Área Restrita.
 
-<h4>21/10 - Sexta-feira - Eliabe</h4>
-<p align="right">(<a href="#index">Voltar ao índice</a>)</p>
-
------
-## Tecnologias e Recursos
-
-<a name="tecnologias"></a>
-
-
-## Projeto Online
-
-<a name="projeto-online"></a>
-
-[Projeto Web - Igreja](https://adad-site.herokuapp.com/)
-
-<p align="right">(<a href="#index">Voltar ao índice</a>)</p>
-
-
-## The Developers
-
-<a name="developers"></a>
-
------
-
-Alessandro Geras <br>
-[Curriculum Vitae](https://alessandrogeras.github.io/Curriculum) <br>
-[Linkedin](https://www.linkedin.com/in/alessandrogeras) <br>
-[Github](https://github.com/AlessandroGeras) <br>
-[Gmail](mailto:alessandrogeras@gmail.com) <br>
-
------
-
-Eliabe Ribeiro Mota<br/>
-[Curriculum Vitae](https://github.com/Eliabe-Ribeiro-22/Eliabe-Ribeiro-22/blob/main/README.md) <br/>
-[Linkedin](https://www.linkedin.com/in/eliabemota) <br/>
-[Github](https://github.com/Eliabe-Ribeiro-22) <br/>
-[Outlook](mailto:eliaberibeiro06@hotmail.com) <br/>
-[Gmail](mailto:developer.eliabe06@gmail.com) <br/>
-
------
+<h4>22/10 - Sábado - Eliabe</h4>
+Refatoração da navbar do site
+R
 
 Vinícius Jung <br/>
 [Curriculum Vitae](https://github.com/Vinnie-Jung/Vinnie-Jung) <br>
