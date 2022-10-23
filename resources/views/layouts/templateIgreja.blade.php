@@ -4,10 +4,8 @@
     <x-igreja.head.head />
 </head>
 
-<nav id="menu-site">
-    <x-igreja.nav.menu-logo />
-    <x-igreja.nav.menu-buttons />
-    <x-igreja.nav.menu-mobile />
+<nav class="nav-bar">
+    <x-igreja.nav.navbar />
 </nav>
 
 <main class="bg-main">
@@ -16,4 +14,4 @@
 
 <footer>
     <x-igreja.footer.footer />
-</footer>   
+</footer>
