@@ -128,6 +128,15 @@ Criada a página de login na branch "auth". (CSS ainda será aprimorado) <br/>
 Criada a página de cadastro na branch "auth". (CSS ainda será aprimorado) <br/>
 Adicionadas validações tanto para login quanto para cadastro. (em teste)
 
+<h4>21/09 - Quarta - Alessandro</h4>
+Criada branch alunos.<br>
+Criada migration alunos, que cria a tabela `alunos` no Banco de Dados MySQL.<br>
+Criadas rotas para INSERT, UPDATE, DELETE, SELECT dos alunos ADAD.<br>
+Criação do Model Aluno, que interage com a table alunos, do Banco de Dados.<br>
+Criação do formulário de Cadastro/Alteração de estudantes ADAD.<br>
+Estilização do referido formulário, com auxílio do arquivo alunos.css.<br>
+Criação de Rotas nomeadas para as rotas relativas a todas essas funcionalidade.<br>
+
 <h4> 01/10 - Sábado - Eliabe </h4>
 Responsividade Mobile First para a página Institucional<br>
 Iniciado responsividade Mobile First para navbar
@@ -180,7 +189,6 @@ Refatoração da página Área Restrita.
 
 <h4>22/10 - Sábado - Eliabe</h4>
 Refatoração da navbar do site
-R
 
 Vinícius Jung <br/>
 [Curriculum Vitae](https://github.com/Vinnie-Jung/Vinnie-Jung) <br>
