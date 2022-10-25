@@ -7,6 +7,26 @@ use Illuminate\Support\Facades\Mail;
 
 class IgrejaController extends Controller
 {
+    public function mainPg() {
+        return view('novo-design.inicio');
+    }
+
+    public function institutionalPg () {
+        return view('novo-design.institucional');
+    }
+
+    public function contactPg () {
+        return view('novo-design.contato');
+    }
+
+    public function projectsPg () {
+        return view('novo-design.projetos');
+    }
+
+    public function reunionsPg () {
+        return view('novo-design.reunioes');
+    }
+
     public function index()
     {
         try {
