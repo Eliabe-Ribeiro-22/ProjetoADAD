@@ -106,7 +106,7 @@ Criado template de email.
 Criada branch auth.<br>
 Criado Formulário de Login do ADAD.
 
-<h4> 10/09 - Sábado - Eliabe </h4>
+<h4>10/09 - Sábado - Eliabe </h4>
 Criação do Controller IgrejaController, contendo as funções solicitadas nas Rotas da Igreja.<br>
 Realizada componentização das páginas recém-criadas: Institucional, Nossas Reuniões e Projetos.
 
@@ -128,8 +128,17 @@ Criada a página de login na branch "auth". (CSS ainda será aprimorado) <br/>
 Criada a página de cadastro na branch "auth". (CSS ainda será aprimorado) <br/>
 Adicionadas validações tanto para login quanto para cadastro. (em teste)
 
+<h4>21/09 - Quarta - Alessandro</h4>
+Criada branch alunos.<br>
+Criada migration alunos, que cria a tabela `alunos` no Banco de Dados MySQL.<br>
+Criadas rotas para INSERT, UPDATE, DELETE, SELECT dos alunos ADAD.<br>
+Criação do Model Aluno, que interage com a table alunos, do Banco de Dados.<br>
+Criação do formulário de Cadastro/Alteração de estudantes ADAD.<br>
+Estilização do referido formulário, com auxílio do arquivo alunos.css.<br>
+Criação de Rotas nomeadas para as rotas relativas a todas essas funcionalidades.<br>
+
 <h4> 01/10 - Sábado - Eliabe </h4>
-Responsividade Mobile First para a página Institucional
+Responsividade Mobile First para a página Institucional<br>
 Iniciado responsividade Mobile First para navbar
 
 <h4>02/10 - Domingo - Eliabe</h4>
@@ -181,40 +190,26 @@ Refatoração da página Área Restrita.
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----
-## Tecnologias e Recursos
-
-<a name="tecnologias"></a>
-
-
-## Projeto Online
-
-<a name="projeto-online"></a>
-
-[Projeto Web - Igreja](https://adad-site.herokuapp.com/)
-
-<p align="right">(<a href="#index">Voltar ao índice</a>)</p>
-
 
 ## The Developers
-
 <a name="developers"></a>
 
 -----
 
-Alessandro Geras <br>
+Alessandro Geras <br/>
 [Curriculum Vitae](https://alessandrogeras.github.io/Curriculum) <br>
 [Linkedin](https://www.linkedin.com/in/alessandrogeras) <br>
 [Github](https://github.com/AlessandroGeras) <br>
-[Gmail](mailto:alessandrogeras@gmail.com) <br>
+[Outlook](mailto:alessandrogeras@gmail.com) <br><br>
+<p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----
 
-Eliabe Ribeiro Mota<br/>
-[Curriculum Vitae](https://github.com/Eliabe-Ribeiro-22/Eliabe-Ribeiro-22/blob/main/README.md) <br/>
-[Linkedin](https://www.linkedin.com/in/eliabemota) <br/>
-[Github](https://github.com/Eliabe-Ribeiro-22) <br/>
-[Outlook](mailto:eliaberibeiro06@hotmail.com) <br/>
-[Gmail](mailto:developer.eliabe06@gmail.com) <br/>
+Eliabe Ribeiro<br/>
+[Curriculum Vitae](https://github.com/Eliabe-Ribeiro-22/Eliabe-Ribeiro-22/blob/main/README.md) <br>
+[Linkedin](https://www.linkedin.com/in/eliabemota) <br>
+[Github](https://github.com/Vinnie-Jung) <br>
+[Gmail](mailto:developer.eliabe@gmail.com) <br><br>
 
 -----
 
@@ -223,5 +218,4 @@ Vinícius Jung <br/>
 [Linkedin](https://www.linkedin.com/in/vinicius-jung) <br>
 [Github](https://github.com/Vinnie-Jung) <br>
 [Outlook](mailto:viniciusjung@outlook.com) <br><br>
-
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>

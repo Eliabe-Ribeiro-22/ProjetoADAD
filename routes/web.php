@@ -6,6 +6,16 @@ use App\Http\Controllers\AdadController;
 use App\Http\Controllers\IgrejaController;
 
 
+// ### Rotas do novo design ###
+
+// Rotas da barra de navegação
+Route::get('/', [IgrejaController::class, 'mainPg'])->name('main.page');
+Route::get('/institucional', [IgrejaController::class, 'institutionalPg'])->name('institutional.page');
+Route::get('/contato', [IgrejaController::class, 'contactPg'])->name('contact.page');
+Route::get('/projetos', [IgrejaController::class, 'projectsPg'])->name('projects.page');
+Route::get('/reunioes', [IgrejaController::class, 'reunionsPg'])->name('reunions.page');
+
+/*
 // IgrejaController
 Route::get('/', [IgrejaController::class, 'index'])->name('index.page');
 
@@ -21,6 +31,7 @@ Route::get('/nossasReunioes', [IgrejaController::class, 'nossas_reunioes_create'
 
 
 // Rota para exibir Formulário para cadastro de alunos
+
 
 Route::get('/AreaRestrita', [AdadController::class, 'aluno_create'])
 ->name('aluno_create')
@@ -55,4 +66,4 @@ Route::post('forget_password', [AdadController::class, 'submitForgetPasswordForm
 
 Route::get('reset_password/{token}', [AdadController::class, 'showResetPasswordForm'])->name('resetPassword');
 
-Route::post('reset_password', [AdadController::class, 'submitResetPasswordForm'])->name('submitPassword');
+Route::post('reset_password', [AdadController::class, 'submitResetPasswordForm'])->name('submitPassword');*/

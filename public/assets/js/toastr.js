@@ -25,3 +25,17 @@ const error = (mensagem) => {
     };
     toastr["error"](mensagem);
 };
+
+
+/*
+
+Modelo de lógica para chamar as funções na página
+<script>
+    loading();
+    @if (true)
+        success();
+    @else
+        error();
+    @endif
+</script>
+*/
