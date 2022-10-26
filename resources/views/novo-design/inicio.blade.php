@@ -59,7 +59,7 @@
         <div class="api-versiculo">
             <h2>Momentos de Reflexão</h2>
             <br><br>
-            <p class="api-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci quasi expedita pariatur nesciunt nisi, modi officia perferendis ut dignissimos qui, beatae repudiandae vero aperiam nihil distinctio ab laborum, tempora voluptate!</p>
+            <p class="api-p">Aquele que habita no esconderijo do Altíssimo, à sombra do Onipotente descansará. <br><br>Salmos 91.1</p>
         </div>
 
         <div class="projetos-igreja">
