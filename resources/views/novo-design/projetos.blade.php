@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="/assets/css/novo-design/footer_style.css">
 
     <title>Nossos Projetos</title>
+    
+    {{-- Icon --}}
+    <link rel="icon" type="image/x-icon" href="/igreja.ico">
 </head>
 <body>
     <nav>
