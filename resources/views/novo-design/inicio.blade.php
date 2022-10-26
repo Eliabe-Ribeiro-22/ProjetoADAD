@@ -20,7 +20,7 @@
     <nav>
         <div>
             <a href="{{ route('main.page') }}">
-                <img id="logo-igreja" src="/assets/img/logoIgreja.png" alt="Logo da Igreja">
+                <img id="logo-igreja" src="/assets/img/igreja/logoIgreja.png" alt="Logo da Igreja">
             </a>
         </div>
         <div class="nav-logo">
@@ -124,9 +124,9 @@
         <div class="boxs">
             <h2>Redes sociais</h2>
             <ul>
-                <li><a href="#" target="_blank"><img src="" alt="Facebook"></a></li>
-                <li><a href="mailto:adcbsul@gmail.com" target="_blank"><img src="" alt="Gmail"></a></li>
-                <li><a href="#" target="_blank"><img src="" alt="WhatsApp"></a></li>
+                <li><a href="#" target="_blank">Facebook</a></li>
+                <li><a href="mailto:adcbsul@gmail.com" target="_blank">Gmail</a></li>
+                <li><a href="#" target="_blank">WhatsApp</a></li>
             </ul>
         </div>
 
