@@ -19,4 +19,9 @@
     <link rel="icon" type="image/x-icon" href="/igreja.ico">
 </head>
 
-<h1>Contato</h1>
+<body>
+    <div class="projetos-igreja">
+        <hr>
+        <h1>Contato</h1>
+    </div>
+</body>
