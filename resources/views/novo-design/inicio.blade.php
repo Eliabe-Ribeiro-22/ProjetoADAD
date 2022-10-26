@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
@@ -63,8 +62,8 @@
         </div>
 
         <div class="projetos-igreja">
-            <h2>Nossos Projetos</h2>
             <hr>
+            <h2>Nossos Projetos</h2>
             <h3>Projeto Prática de Fé</h3>
             <ul class="projeto-lista">
                 <li>Realização de cultos com ministração de louvores e palavra.</li>
