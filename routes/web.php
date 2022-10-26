@@ -11,7 +11,8 @@ use App\Http\Controllers\IgrejaController;
 // Rotas da barra de navegação
 Route::get('/', [IgrejaController::class, 'mainPg'])->name('main.page');
 Route::get('/institucional', [IgrejaController::class, 'institutionalPg'])->name('institutional.page');
-Route::get('/contato', [IgrejaController::class, 'contactPg'])->name('contact.page');
+// Route::get('/contato', [IgrejaController::class, 'contactPg'])->name('contact.page');
+Route::get('/contato', [IgrejaController::class, 'form_create'])->name('contact.page');
 Route::get('/projetos', [IgrejaController::class, 'projectsPg'])->name('projects.page');
 Route::get('/reunioes', [IgrejaController::class, 'reunionsPg'])->name('reunions.page');
 
