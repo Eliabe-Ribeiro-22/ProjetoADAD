@@ -17,7 +17,7 @@
     <nav>
         <div>
             <a href="{{ route('main.page') }}">
-                <img id="logo-igreja" src="/assets/img/igreja.png" alt="Logo da Igreja">
+               <img id="logo-igreja" src="/assets/img/logoIgreja.png" alt="Logo da Igreja">
             </a>
         </div>
         <div class="nav-logo">
