@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="https:;;fonts.googleapis.com/css?family=Poppins">
 
     <title>Início</title>
+    
+    {{-- Icon --}}
+    <link rel="icon" type="image/x-icon" href="/igreja.ico">
 </head>
 <body>
     <nav>
