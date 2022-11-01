@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,15 +13,16 @@
     <link rel="stylesheet" href="/assets/css/novo-design/footer_style.css">
 
     <title>Nossos Projetos</title>
-    
+
     {{-- Icon --}}
     <link rel="icon" type="image/x-icon" href="/igreja.ico">
 </head>
+
 <body>
     <nav>
         <div>
             <a href="{{ route('main.page') }}">
-                 <img id="logo-igreja" src="/assets/img/logoIgreja.png" alt="Logo da Igreja">
+                <img id="logo-igreja" src="/assets/img/logoIgreja.png" alt="Logo da Igreja">
             </a>
         </div>
         <div class="nav-logo">
@@ -46,7 +48,11 @@
     <main>
         <div class="projetos-igreja">
             <h2>Nossos Projetos</h2>
-            <hr>
+        
+        </div>
+        <hr>
+        <div class="projetos-igreja">
+        
             <h3>Projeto Prática de Fé</h3>
             <ul class="projeto-lista">
                 <li>Realização de cultos com ministração de louvores e palavra.</li>
@@ -58,8 +64,15 @@
 
         <div class="projetos-igreja">
             <h3>Projeto Educacional</h3>
+
+            <a href="{{ route('aluno_create') }}" id="imagem-logo-adad">
+                <img src="/ssets/img/igreja/adad_logo.png" alt="logo do projeto ADAD">
+            </a>
+
             <ul class="projeto-lista">
-                <p>Desenvolvem atividades com crianças, adolescentes e jovens visando fortalecer o Caráter de Cristo, valores, princípios morais e éticos, patriotismo, recreação, acampamentos, prática de escotismo e integração em busca de uma formação educacional por princípios. </p>
+                <p>Desenvolvem atividades com crianças, adolescentes e jovens visando fortalecer o Caráter de Cristo,
+                    valores, princípios morais e éticos, patriotismo, recreação, acampamentos, prática de escotismo e
+                    integração em busca de uma formação educacional por princípios. </p>
                 <br><br>
                 <li>Realização de Palestras educativas de socialização para todas as faixas etárias.</li>
             </ul>
@@ -68,8 +81,10 @@
         <div class="projetos-igreja">
             <h3>Projeto Social</h3>
             <ul class="projeto-lista">
-                <li>Distribuimos roupas usadas para pessoas carentes de nossa cidade e também nas localidades do interior do município. </li>
-                <li>Distribuimos cestas básicas de alimento para famílias carentes de nossa cidade e também nas localidades do interior.</li>
+                <li>Distribuimos roupas usadas para pessoas carentes de nossa cidade e também nas localidades do
+                    interior do município. </li>
+                <li>Distribuimos cestas básicas de alimento para famílias carentes de nossa cidade e também nas
+                    localidades do interior.</li>
             </ul>
         </div>
         <hr>
@@ -79,18 +94,30 @@
         <div class="boxs">
             <h2>Contatos</h2>
             <ul>
-                <li><p>WhatsApp: (49) 9 8847-7611</p></li>
-                <li><p>Fixo: (49) 3249-1036</p></li>
-                <li><p>E-mail (<a href="mailto:adcbsul@gmail.com">adcbsul@gmail.com</a>)</p></li>
+                <li>
+                    <p>WhatsApp: (49) 9 8847-7611</p>
+                </li>
+                <li>
+                    <p>Fixo: (49) 3249-1036</p>
+                </li>
+                <li>
+                    <p>E-mail (<a href="mailto:adcbsul@gmail.com">adcbsul@gmail.com</a>)</p>
+                </li>
             </ul>
         </div>
 
         <div class="boxs">
             <h2>Endereço</h2>
             <ul>
-                <li><p>Rua: Gerônimo Xavier de Oliveira.</p></li>
-                <li><p>Número: 230</p></li>
-                <li><p>Cidade: Campo Belo do Sul, Santa Catarina.</p></li>
+                <li>
+                    <p>Rua: Gerônimo Xavier de Oliveira.</p>
+                </li>
+                <li>
+                    <p>Número: 230</p>
+                </li>
+                <li>
+                    <p>Cidade: Campo Belo do Sul, Santa Catarina.</p>
+                </li>
             </ul>
         </div>
 
@@ -115,4 +142,5 @@
         </div>
     </footer>
 </body>
+
 </html>

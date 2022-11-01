@@ -17,7 +17,7 @@ main {
     object-fit: cover;
 }
 
-.slogan-inicio h1{
+.slogan-inicio h1 {
     color: #e77e41;
     text-align: center;
     font-size: 56px;
@@ -29,13 +29,21 @@ main {
 }
 
 hr {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    width: 100vw;
+    
     border: 2px solid #e77e41;
-    width: 1000%;
+    
     margin-top: 10px;
-    margin-left: -1000px;
+    /*
+    margin-left: -1000px; */
 }
 
-h2, h3{
+h2,
+h3 {
     padding-top: 30px;
 }
 
@@ -70,7 +78,8 @@ h3 {
     margin-left: 15%;
 }
 
-.projeto-lista p, li {
+.projeto-lista p,
+li {
     font-size: 18px;
 }
 
@@ -158,4 +167,11 @@ h3 {
     width: 50%;
     margin: 0 auto;
     padding-bottom: 20px;
+}
+
+
+#imagem-logo-adad {
+    background: red;
+    cursor: default;
+    width: 100px;
 }
