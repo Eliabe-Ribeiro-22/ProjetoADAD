@@ -12,15 +12,15 @@
     <link rel="stylesheet" href="/assets/css/novo-design/footer_style.css">
 
     {{-- Fonts --}}
-    <link rel="stylesheet" href="https:;;fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 
     <title>Início</title>
 </head>
 <body>
     <nav>
         <div>
-            <a href="{{ route('main.page') }}">
-                <img id="logo-igreja" src="/assets/img/logoIgreja.png" alt="Logo da Igreja">
+            <a href="{{ route('index.page') }}">
+                <img id="logo-igreja" src="/assets/img/igreja/logoIgreja.png" alt="Logo da Igreja">
             </a>
         </div>
         <div class="nav-logo">
@@ -58,8 +58,8 @@
             <br><br>
             <p class="api-p">
                 <?php
-                    echo $dailyVerse['text'], '.', '<br><br>';
-                    echo $dailyVerse['book']['name'], ' ', $dailyVerse['chapter'], '.', $dailyVerse['number'];
+                    echo "O senhor é meu pastor e nada me faltará.";
+                    echo "Salmo 91.1";
                 ?>
             </p>
         </div>
