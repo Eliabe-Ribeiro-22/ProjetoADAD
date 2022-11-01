@@ -48,7 +48,7 @@
     <main>
         <div class="projetos-igreja">
             <h2>Nossos Projetos</h2>
-        
+
             <h3>Projeto Prática de Fé</h3>
             <ul class="projeto-lista">
                 <li>Realização de cultos com ministração de louvores e palavra.</li>
@@ -62,7 +62,7 @@
             <h3>Projeto Educacional</h3>
 
             <a href="{{ route('aluno_create') }}" id="imagem-logo-adad">
-                <img src="/ssets/img/igreja/adad_logo.png" alt="logo do projeto ADAD">
+                <img src="/assets/img/igreja/adad_logo.png" alt="logo do projeto ADAD">
             </a>
 
             <ul class="projeto-lista">
@@ -83,9 +83,8 @@
                     localidades do interior.</li>
             </ul>
         </div>
-        <hr>
     </main>
-
+    
     <footer>
         <div class="boxs">
             <h2>Contatos</h2>

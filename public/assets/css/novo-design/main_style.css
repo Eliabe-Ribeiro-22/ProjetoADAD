@@ -34,9 +34,9 @@ hr {
     box-sizing: border-box;
 
     width: 100vw;
-    
+
     border: 2px solid #e77e41;
-    
+
     margin-top: 10px;
     /*
     margin-left: -1000px; */
@@ -171,7 +171,10 @@ li {
 
 
 #imagem-logo-adad {
-    background: red;
     cursor: default;
-    width: 100px;
+}
+
+#imagem-logo-adad>img {
+    margin-top: 1.7rem;
+    max-width: 100px;
 }
