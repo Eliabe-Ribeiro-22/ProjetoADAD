@@ -91,7 +91,7 @@
         <ul>
             <li><a href="https://www.facebook.com/deusprovera.campobelodosul" target="_blank">Facebook</a></li>
             <li><a href="mailto:adcbsul@gmail.com" target="_blank">Gmail</a></li>
-            <li><a href="#" target="_blank">WhatsApp</a></li>
+            <li><a href="https://web.whatsapp.com/send?phone=5549988477611" target="_blank">WhatsApp</a></li>
         </ul>
     </div>
 
