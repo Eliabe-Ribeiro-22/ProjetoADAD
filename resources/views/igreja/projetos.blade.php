@@ -6,8 +6,7 @@
 @section('titulo', 'Nossos Projetos')
 
 @section('corpo')
-    <!-- Church's Projects -->
-    <x-igreja.carrosel.carrosel />
+    
     <h1 class="titlePage" id="title-projetos">Nossos Projetos</h1>
 
     {{-- div Projetos desenvolvidos pela igreja --}}
