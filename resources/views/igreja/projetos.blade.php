@@ -7,5 +7,13 @@
 
 @section('corpo')
     <!-- Church's Projects -->
-    <x-igreja.projetos.projetos_main />
+    <x-igreja.carrosel.carrosel />
+    <h1 class="titlePage" id="title-projetos">Nossos Projetos</h1>
+
+    {{-- div Projetos desenvolvidos pela igreja --}}
+    <div>
+        <x-igreja.projetos.projeto-fe />
+        <x-igreja.projetos.projeto-adad />
+        <x-igreja.projetos.projeto-social />
+    </div>
 @endsection
