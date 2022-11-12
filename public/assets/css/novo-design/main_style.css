@@ -1,6 +1,9 @@
+@import 'form-contato.css';
+
 * {
     font-family: 'Poppins', sans-serif;
 }
+
 
 main {
     background: #e2e2e2;

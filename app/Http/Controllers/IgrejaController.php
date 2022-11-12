@@ -8,38 +8,25 @@ use Illuminate\Support\Facades\Mail;
 class IgrejaController extends Controller
 {
     public function mainPg() {
-        #$dailyVerse = ['ok', 'teste'];
-        #$api = "https://www.abibliadigital.com.br/api/verses/nvi/sl/91/1";
-        #$dailyVerse = json_decode(file_get_contents($api), true);
-            $dailyVerse = [
-                'book' => [
-                    'abbrev' => 'en',
-                    'name' => 'Salmos',
-                    'author' => 'David, Moisés, Salomão',
-                    'group' => 'Poéticos',
-                    'version' => 'nvi',
-                ],
-                'chapter' => 91,
-                'number' => 1,
-                'text' => 'Aquele que habita no abrigo do Altíssimo e descansa à sombra do Todo-poderoso',
-            ];
+        $api = "https://www.abibliadigital.com.br/api/verses/nvi/sl/91/1";
+        $dailyVerse = json_decode(file_get_contents($api), true);
         return view('igreja.inicio', ['dailyVerse'=> $dailyVerse ]);
     }
 
     public function institutionalPg () {
-        return view('novo-design.institucional');
+        return view('igreja.institucional');
     }
 
     public function contactPg () {
-        return view('novo-design.contato');
+        return view('igreja.contato');
     }
 
     public function projectsPg () {
-        return view('novo-design.projetos');
+        return view('igreja.projetos');
     }
 
     public function reunionsPg () {
-        return view('novo-design.reunioes');
+        return view('igreja.reunioes');
     }
 
     public function index()
