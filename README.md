@@ -170,10 +170,13 @@ Adicionadas as imagens do cliente ao carrossel.
 <h4>17/10 - Segunda-feira - Eliabe </h4>
 Realizada responsividade da página de cadastro de alunos, chamada Área Restrita.
 
-<h4>19/10 - Quarta-feira - ELiabe</h4>
+<h4>19/10 - Quarta-feira - Eliabe</h4>
 Refatoração do footer do site.<br>
 Refatoração da página Área Restrita.
 
+<h4>11/11 - Sexta-feira - Eliabe</h4>
+Refatoração da página Projetos<br>
+Inclusão de Carrossel de imagens
 
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
