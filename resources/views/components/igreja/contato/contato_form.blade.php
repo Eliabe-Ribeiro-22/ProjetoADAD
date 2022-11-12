@@ -1,6 +1,4 @@
-{{-- Main do Form - Formulário de Contato --}}
-<h1 class="titlePage" id="title-form-contato">Entre em Contato Conosco!</h1>
-
+{{-- Formulário de Contato --}}
 <form action="{{ route('form_send') }}" method="POST" class="bg-div" id="form-contato">
     @csrf
     <h1 class="color-white" id="formContato-title">Formulário de Contato</h1>
@@ -22,5 +20,4 @@
     </div>
 
     <button type="submit" id="formContato-enviar">Enviar</a>
-
 </form>
