@@ -1,17 +1,10 @@
 {{-- Template Igreja --}}
+<x-igreja.head.head />
 
-<head>
-    <x-igreja.head.head />
-</head>
+<x-igreja.nav.nav />
 
-<nav class="nav-bar">
-    <x-igreja.nav.navbar />
-</nav>
-
-<main class="bg-main">
+<main>
     @yield('corpo')
 </main>
 
-<footer>
-    <x-igreja.footer.footer />
-</footer>
+<x-igreja.footer.footer />

@@ -1,8 +1,9 @@
-{{-- Form - Formulário de Contato --}}
 @extends('layouts.templateIgreja')
 
-@section('titulo', 'Entre em Contato')
+@section('titulo', 'Início')
 
 @section('corpo')
-    <x-igreja.form.form_main />
+    <h1 class="titlePage" id="title-form-contato">Entre em Contato Conosco!</h1>
+
+    <x-igreja.contato.contato-form/>
 @endsection

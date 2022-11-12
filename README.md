@@ -187,9 +187,6 @@ Realizada responsividade da página de cadastro de alunos, chamada Área Restrit
 Refatoração do footer do site.<br>
 Refatoração da página Área Restrita.
 
-<h4>22/10 - Sábado - Eliabe</h4>
-Refatoração da navbar do site
-
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----

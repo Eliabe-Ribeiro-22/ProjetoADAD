@@ -1,0 +1,180 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    background: #e2e2e2;
+}
+
+/* Página Inicial */
+
+.video-inicial {
+    height: 64vh;
+    width: 100%;
+    position: static;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.slogan-inicio h1 {
+    color: #e77e41;
+    text-align: center;
+    font-size: 56px;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    background: #7c411f;
+    border-bottom: 2px solid #e77e41;
+    cursor: default;
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    width: 100vw;
+
+    border: 2px solid #e77e41;
+
+    margin-top: 10px;
+    /*
+    margin-left: -1000px; */
+}
+
+h2,
+h3 {
+    padding-top: 30px;
+}
+
+h3 {
+    color: #e77e41;
+}
+
+.api-versiculo {
+    text-align: center;
+    color: #111827;
+    font-size: 16px;
+}
+
+.api-p {
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 0px 500px 30px;
+}
+
+.projetos-igreja {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.projeto-lista {
+    margin: 15px 0px;
+    list-style-type: square;
+    list-style-position: inside;
+    text-align: left;
+    margin-left: 15%;
+}
+
+.projeto-lista p,
+li {
+    font-size: 18px;
+}
+
+.projetos-mais-info {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.projetos-mais-info a {
+    color: #e77e41;
+}
+
+.reunioes {
+    text-align: center;
+    background: #e77e41;
+    border-radius: 5px;
+    width: 13%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.reunioes p {
+    color: #e2e2e2;
+    font-size: 18px;
+    margin: 15px 0px;
+    padding-bottom: 20px;
+}
+
+.reunioes h2 {
+    color: #e2e2e2;
+}
+
+/* Página Reuniões */
+
+.reunioes-pg {
+    text-align: center;
+    background: #e77e41;
+    border-radius: 5px;
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.reunioes-pg p {
+    color: #e2e2e2;
+    font-size: 18px;
+    margin: 15px 0px;
+    padding-bottom: 20px;
+}
+
+.reunioes-pg h2 {
+    color: #e2e2e2;
+}
+
+.reunioes-p {
+    text-align: center;
+    font-size: 18px;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.reunioes-p h2 {
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 20px;
+
+}
+
+.institucional-pg {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.institucional-pg p {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.institucional-pg h2 {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+
+#imagem-logo-adad {
+    cursor: default;
+}
+
+#imagem-logo-adad>img {
+    margin-top: 1.7rem;
+    max-width: 100px;
+}
