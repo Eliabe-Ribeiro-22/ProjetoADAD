@@ -8,14 +8,6 @@ footer {
     border-top: 2px solid #a04d0a;
 }
 
-/* .footer-content {
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 footer .boxs {
     width: 320px;
     min-height: 150px;

@@ -3,7 +3,6 @@
 @section('titulo', 'Início')
 
 @section('corpo')
-    <h1 class="titlePage" id="title-form-contato">Entre em Contato Conosco!</h1>
-
+    <h1 id="formContato-title">Entre em Contato Conosco!</h1>
     <x-igreja.contato.contato-form/>
 @endsection

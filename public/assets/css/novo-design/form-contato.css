@@ -1,37 +1,61 @@
-* {
+form {
+    width: 1000px;
+}
+
+#formContato-title {
+    position: relative;
+    top: 5px;
+    font-size: 20px;
     text-align: center;
 }
 
+.formContato-container {
+    background: red;
+    display: block;
+    width: 100%;
+}
+
+label {
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+
+}
+
+input {
+    width: 70%;
+}
+
 #formContato-enviar {
-        width: 40%;
-        height: 2rem;
-        display: inline-block;
+    width: 40%;
+    height: 2rem;
+    display: inline-block;
 
-        background: #e6e6e6;
-        background: linear-gradient(to bottom, #e6e6e6 5%, #5e6161 100%);
+    background: #e6e6e6;
+    background: linear-gradient(to bottom, #e6e6e6 5%, #5e6161 100%);
 
-        border: 1px solid #566963;
-        border-radius: 5px;
+    border: 1px solid #566963;
+    border-radius: 5px;
 
-        font-family: Arial;
-        font-size: 18px;
-        color: #000000;
-        font-weight: bold;
-        text-decoration: none;
+    font-family: Arial;
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
 
-        text-shadow: 0px -1px 0px #c7c7c7;
-        box-shadow: inset 0px 1px 3px 0px #f5f5f5;
+    text-shadow: 0px -1px 0px #c7c7c7;
+    box-shadow: inset 0px 1px 3px 0px #f5f5f5;
 
-        cursor: pointer;
-    }
+    cursor: pointer;
+}
 
-    #formContato-enviar:hover {
-        background: #5e6161;
-        background: linear-gradient(to bottom, #5e6161 5%, #e6e6e6 100%);
-    }
+#formContato-enviar:hover {
+    background: #5e6161;
+    background: linear-gradient(to bottom, #5e6161 5%, #e6e6e6 100%);
+}
 
-    #formContato-enviar:active {
-        top: 1px;
+#formContato-enviar:active {
+    top: 1px;
 
-        position: relative;
-    }
+    position: relative;
+}
