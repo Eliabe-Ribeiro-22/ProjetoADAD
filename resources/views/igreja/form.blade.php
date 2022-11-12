@@ -1,8 +1,7 @@
-{{-- Form - Formulário de Contato --}}
 @extends('layouts.templateIgreja')
 
-@section('titulo', 'Entre em Contato')
+@section('titulo', 'Início')
 
 @section('corpo')
-    <x-igreja.form.form_main />
+    <x-igreja.contato.contato_main />
 @endsection
