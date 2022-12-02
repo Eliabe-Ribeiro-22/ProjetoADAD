@@ -7,6 +7,6 @@
         <h2>Sobre nós</h2>
         Instituição religiosa sem fins lucrativos que visa o bem social e
         espiritual de toda a comunidade.
-        (Aprimorar este texto. Podemos falar um pouco da história da IEAD Campo Belo)
+        {{-- update --}}
     </div>
 @endsection

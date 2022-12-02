@@ -1,5 +1,9 @@
 form {
-    width: 1000px;
+    margin: 0 auto;
+
+    width: 50vw;
+    /* testeheight: 1000px;
+    background-color: blue; */
 }
 
 #formContato-title {
@@ -10,26 +14,44 @@ form {
 }
 
 .formContato-container {
-    background: red;
     display: block;
     width: 100%;
+    margin-bottom: 0.5rem;
 }
 
+/*@media screen and (min-width: 1024px) { */
 label {
-    display: inline-block;
     width: 30%;
-    text-align: right;
 
+    display: inline-block;
+
+    text-align: right;
 }
 
-input {
-    width: 70%;
+#formContato-container-nome {
+    width: 45%;
+}
+
+#formContato-container-telefone {
+    width: 45%;
+}
+
+#formContato-container-mensagem {
+    resize: vertical;
+    width: 45%;
+}
+
+/*} */
+#formContato-container-enviar{
+    margin: 0;
 }
 
 #formContato-enviar {
+    margin: 0 auto;
+
     width: 40%;
     height: 2rem;
-    display: inline-block;
+    display: flex;
 
     background: #e6e6e6;
     background: linear-gradient(to bottom, #e6e6e6 5%, #5e6161 100%);
@@ -38,6 +60,7 @@ input {
     border-radius: 5px;
 
     font-family: Arial;
+    text-align: justify;
     font-size: 18px;
     color: #000000;
     font-weight: bold;
@@ -58,4 +81,8 @@ input {
     top: 1px;
 
     position: relative;
+}
+
+#formContato-enviar > p {
+    margin: 0 auto;
 }
