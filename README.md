@@ -178,6 +178,9 @@ Refatoração da página Área Restrita.
 Refatoração da página Projetos<br>
 Inclusão de Carrossel de imagens
 
+<h4>01/12 - Quinta-feira - Eliabe</h4>
+Finalizado refatoração do formulário de contato com a igreja.
+
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----
