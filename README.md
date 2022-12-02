@@ -184,8 +184,16 @@ Adicionadas as imagens do cliente ao carrossel.
 Realizada responsividade da página de cadastro de alunos, chamada Área Restrita.
 
 <h4>19/10 - Quarta-feira - Eliabe</h4>
+<h4>19/10 - Quarta-feira - Eliabe</h4>
 Refatoração do footer do site.<br>
 Refatoração da página Área Restrita.
+
+<h4>11/11 - Sexta-feira - Eliabe</h4>
+Refatoração da página Projetos<br>
+Inclusão de Carrossel de imagens
+
+<h4>01/12 - Quinta-feira - Eliabe</h4>
+Finalizado refatoração do formulário de contato com a igreja.
 
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
