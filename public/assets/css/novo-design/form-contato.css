@@ -1,9 +1,6 @@
 form {
     margin: 0 auto;
-
     width: 50vw;
-    /* testeheight: 1000px;
-    background-color: blue; */
 }
 
 #formContato-title {
@@ -19,38 +16,24 @@ form {
     margin-bottom: 0.5rem;
 }
 
-/*@media screen and (min-width: 1024px) { */
 label {
-    width: 30%;
-
     display: inline-block;
 
     text-align: right;
 }
 
-#formContato-container-nome {
-    width: 45%;
-}
-
-#formContato-container-telefone {
-    width: 45%;
-}
-
+#formContato-container-nome,
+#formContato-container-telefone,
 #formContato-container-mensagem {
-    resize: vertical;
-    width: 45%;
-}
-
-/*} */
-#formContato-container-enviar{
-    margin: 0;
+    width: 60vw;
 }
 
 #formContato-enviar {
     margin: 0 auto;
+    padding: 3vw 15vw;
+    width: 60vw;
+    height: 3rem;
 
-    width: 40%;
-    height: 2rem;
     display: flex;
 
     background: #e6e6e6;
@@ -72,17 +55,84 @@ label {
     cursor: pointer;
 }
 
-#formContato-enviar:hover {
-    background: #5e6161;
-    background: linear-gradient(to bottom, #5e6161 5%, #e6e6e6 100%);
+@media screen and (min-width: 640px) {
+
+    #formContato-container-nome,
+    #formContato-container-telefone,
+    #formContato-container-mensagem {
+        width: 50vw;
+    }
 }
 
-#formContato-enviar:active {
-    top: 1px;
+@media screen and (min-width: 1024px) {
+    label {
+        width: 30%;
+    }
 
-    position: relative;
+    #formContato-container-nome {
+        width: 45%;
+    }
+
+    #formContato-container-telefone {
+        width: 45%;
+    }
+
+    #formContato-container-mensagem {
+        resize: vertical;
+        width: 45%;
+    }
+
+    #formContato-container-enviar {
+        margin: 0;
+    }
+
+    #formContato-enviar {
+        width: 40%;
+        height: 2rem;
+        
+        padding: 0;
+    }
+
+    #formContato-enviar:hover {
+        background: #5e6161;
+        background: linear-gradient(to bottom, #5e6161 5%, #e6e6e6 100%);
+    }
+
+    #formContato-enviar:active {
+        top: 1px;
+
+        position: relative;
+    }
+
+    #formContato-enviar>p {
+        margin: 0 auto;
+    }
 }
 
-#formContato-enviar > p {
-    margin: 0 auto;
-}
+/*#formContato-enviar {
+        margin: 0 auto;
+
+        width: 40%;
+        height: 2rem;
+        display: flex;
+
+        background: #e6e6e6;
+        background: linear-gradient(to bottom, #e6e6e6 5%, #5e6161 100%);
+
+        border: 1px solid #566963;
+        border-radius: 5px;
+
+        font-family: Arial;
+        text-align: justify;
+        font-size: 18px;
+        color: #000000;
+        font-weight: bold;
+        text-decoration: none;
+
+        text-shadow: 0px -1px 0px #c7c7c7;
+        box-shadow: inset 0px 1px 3px 0px #f5f5f5;
+
+        cursor: pointer;
+    }
+
+ */
