@@ -8,8 +8,14 @@ use Illuminate\Support\Facades\Mail;
 class IgrejaController extends Controller
 {
     public function mainPg() {
-        $api = "https://www.abibliadigital.com.br/api/verses/nvi/sl/91/1";
-        $dailyVerse = json_decode(file_get_contents($api), true);
+        //$api = "https://www.abibliadigital.com.br/api/verses/nvi/sl/91/1";
+        //$dailyVerse = json_decode(file_get_contents($api), true);
+        $dailyVerse = [ 
+            'text' => "O Senhor é meu pastor e nada me faltará",
+            'book' => [ 'name' => 'Sl'],
+            'chapter' => '23',
+            'number' => '1',
+        ];
         return view('igreja.inicio', ['dailyVerse'=> $dailyVerse ]);
     }
 
