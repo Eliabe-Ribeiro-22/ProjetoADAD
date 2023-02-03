@@ -3,6 +3,8 @@
 
     <a href="{{ route('aluno_create') }}" id="imagem-logo-adad">
         <img src="/assets/img/igreja/adad_logo.png" alt="logo do projeto ADAD">
+        <br>
+        ADAD
     </a>
 
     <ul class="projeto-lista">

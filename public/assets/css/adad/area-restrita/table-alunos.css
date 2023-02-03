@@ -70,7 +70,7 @@ td {
     margin: auto 0;
 }
 
-/* form de alterar aluno */
+/* lápis de alteração de aluno */
 #info-editar {
     font-family: "Roboto", "sans-serif", "Calibri", Helvetica, "Helvetica Neue";
     font-size: 1.5rem;
@@ -124,15 +124,6 @@ td {
 
     .adad-logo {
         width: 12rem;
-    }
-
-    /* form de alterar aluno */
-    #title-sem-alunos {
-        font-size: clamp(4rem, 4rem, 9rem);
-    }
-
-    #text-sem-alunos {
-        font-size: clamp(3.5rem, 3.5rem, 4rem);
     }
 
     /* valores default for desktop */

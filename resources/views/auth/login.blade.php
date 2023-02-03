@@ -14,7 +14,7 @@
             class="h-screen center mx-auto lg:min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100"
         >
             <div>
-                <a href="/">
+               <a>
                     <img class="adad-logo" src="/assets/img/igreja/adad_logo.png">
                 </a>
             </div>
@@ -55,7 +55,7 @@
                     <br>
                     <a class="underline text-sm text-gray-600 hover:text-gray-900"
                         href="{{ route('showForgetPasswordForm') }}">
-                        Esqueceu a senha?
+                        <!-- Esqueceu a senha? -->
                     </a>
 
                     <button type="submit"
@@ -71,6 +71,7 @@
                         Entrar
                     </button>
                 </form>
+                <a href="{{route('main.page')}}">Voltar ao início do site</a>
             </div>
         </div>
     </div>

@@ -11,12 +11,12 @@ class IgrejaController extends Controller
         //$api = "https://www.abibliadigital.com.br/api/verses/nvi/sl/91/1";
         //$dailyVerse = json_decode(file_get_contents($api), true);
         $dailyVerse = [ 
-            'text' => "O Senhor é meu pastor e nada me faltará",
+            'text' => "Aquele que habita no esconderijo do Altíssimo, à sombra do Onipotente descansará.",
             'book' => [ 'name' => 'Sl'],
-            'chapter' => '23',
+            'chapter' => '91',
             'number' => '1',
         ];
-        return view('igreja.inicio', ['dailyVerse'=> $dailyVerse ]);
+        return view('igreja.inicio', ['dailyVerse'=> $dailyVerse]);
     }
 
     public function institutionalPg () {
