@@ -1,10 +1,10 @@
 // Ativar Toaster ao tentar logar
 const loading = (messagem) => {
-toastr.options = {
-    progressBar: true,
-    timeOut: "60000",
-};
-toastr["info"](messagem);
+    toastr.options = {
+        progressBar: true,
+        timeOut: "60000",
+    };
+    toastr["info"](messagem);
 };
 
 

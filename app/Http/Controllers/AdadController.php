@@ -56,7 +56,7 @@ class AdadController extends Controller
             $aluno->save();
 
             // deu certo o salvar
-            return redirect('/AreaRestrita');
+            return redirect('/AreaRestrita')->with('msg', 'Aluno cadastrado com sucesso');
         } catch (Exception $e) {
             return 'Ocorreu um erro ao cadastrar um aluno!<br/>' . $e->getMessage();
         }
@@ -155,7 +155,6 @@ class AdadController extends Controller
         $user->phone_number = $request->phone_number;
         $user->address = $request->address;
         $user->password = Hash::make($request->password);
-
         $user->save();
 
         Auth::login($user); // Loga com Sanctum
@@ -281,7 +280,6 @@ class AdadController extends Controller
         $user->password = Hash::make($request->password);
 
         $user->save();
-
         return redirect(route('dashboard'))->with('msg', 'Senha alterada com sucesso');
     }
 }

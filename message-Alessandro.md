@@ -1,0 +1,1 @@
+Você tem disponibilidade essa semana para você me ensinar a migrar o banco de dados do ProjetoAda para o Postgre Online, igual você fez no projetoEVA?

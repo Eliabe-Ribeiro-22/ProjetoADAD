@@ -1,5 +1,5 @@
 ## Info que preciso
-Líderes devem me enviar:
+Favor informar:
     Nome completo, email, telefone, endereco completo(rua, nº, bairro, cidade, SC)
 
 Mas será que preciso pedir a todos os líderes OU somente ao SECREário, responsável por cadastrar os alunos do SITE?

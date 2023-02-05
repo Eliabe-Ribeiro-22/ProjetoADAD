@@ -4,6 +4,7 @@
 @section('titulo', 'Início')
 
 @section('corpo')
+    
     <div class="slogan-inicio">
         <h1>Seja bem vindo ao nosso site!</h1>
     </div>
