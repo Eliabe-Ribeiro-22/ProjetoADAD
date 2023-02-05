@@ -15,7 +15,6 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
 
 date_default_timezone_set('America/Sao_Paulo');
-//end
 
 class AdadController extends Controller
 {
@@ -26,9 +25,10 @@ class AdadController extends Controller
             $alunos = Aluno::all();
             # Form que cadastra alunos,
             // por isso passamos o value false na var. alterar
-            return view('adad.area-restrita', [ 'alterar' => false, 'alunos' => $alunos]);
+            return view('adad.area-restrita', ['alterar' => false, 'alunos' => $alunos]);
         } catch (Exception $e) {
-            return $e->getMessage();
+            // return $e->getMessage();
+            return redirect('/')->with('error', 'Ocorreu erro ao carregar a página de alunos');
         }
     }
 
@@ -58,7 +58,8 @@ class AdadController extends Controller
             // deu certo o salvar
             return redirect('/AreaRestrita')->with('msg', 'Aluno cadastrado com sucesso');
         } catch (Exception $e) {
-            return 'Ocorreu um erro ao cadastrar um aluno!<br/>' . $e->getMessage();
+            // return 'Ocorreu um erro ao cadastrar um aluno!<br/>' . $e->getMessage();
+            return redirect('/')->with('error', 'Ocorreu erro ao cadastrar um aluno');
         }
     }
 
@@ -71,17 +72,21 @@ class AdadController extends Controller
 
             return redirect('/AreaRestrita');
         } catch (Exception $e) {
-            return 'Ocorreu um erro ao excluir um aluno!<br/>' . $e->getMessage();
+            // return 'Ocorreu um erro ao excluir um aluno!<br/>' . $e->getMessage();
+            return redirect('/')->with('error', 'Ocorreu erro ao excluir um aluno');
         }
     }
 
     // Função para exibir formulário de alteração de Aluno
     public function aluno_edit($id)
     {
-        $aluno = Aluno::findOrFail($id);
+        try {
+            $aluno = Aluno::findOrFail($id);
 
-        // return view('adad.area-restrita', ['aluno' => $aluno, 'alterar' => true]);
-        return view('adad.area-restrita', ['aluno' => $aluno, 'alterar' => true]);
+            return view('adad.area-restrita', ['aluno' => $aluno, 'alterar' => true]);
+        } catch (Exception $e) {
+            return redirect('/')->with('error', 'Ocorreu erro ao visualizar a página de alteração de aluno');
+        }
     }
 
     // Função para alterar alunos ADAD
@@ -93,7 +98,7 @@ class AdadController extends Controller
             Aluno::findOrFail($request->id)->update($data);
             return redirect('/AreaRestrita');
         } catch (Exception $e) {
-            return 'Ocorreu um erro ao alterar um aluno!<br/>' . $e->getMessage();
+            return redirect('/')->with('error', 'Ocorreu erro ao alterar um aluno');
         }
     }
 
@@ -123,44 +128,48 @@ class AdadController extends Controller
         if (Auth::attempt($credentials)) {
             return redirect()->intended();
         } else {
-            return back()->with('msg', 'Erro de autenticação: Verifique seu email e a senha');
+            return back()->with('error', 'Erro de autenticação: Verifique seu email e a senha');
         }
     }
 
     public function store(Request $request)
     {
-        // Validação de senha
-        $request->validate([
-            'email' => ['required', 'email'],
-            'password' => [
-                'required', // REQUISITOS DE SENHA:
-                'min:8', // No mínimo 8 caracteres
-                'regex:/[A-Z]/', // Pelo menos uma letra maiúscula
-                'regex:/[@$!%*#?&]/', // Pelo menos um caractere especial
-            ],
-            'password_confirmation' => [
-                'required', // REQUISITOS DE SENHA:
-                'min:8', // No mínimo 8 caracteres
-                'regex:/[A-Z]/', // Pelo menos uma letra maiúscula
-                'regex:/[@$!%*#?&]/', // Pelo menos um caractere especial
-                'same:password', // Ser idêntica a senha do campo anterior
-            ],
-        ]);
+        try {
+            // Validação de senha
+            $request->validate([
+                'email' => ['required', 'email'],
+                'password' => [
+                    'required', // REQUISITOS DE SENHA:
+                    'min:8', // No mínimo 8 caracteres
+                    'regex:/[A-Z]/', // Pelo menos uma letra maiúscula
+                    'regex:/[@$!%*#?&]/', // Pelo menos um caractere especial
+                ],
+                'password_confirmation' => [
+                    'required', // REQUISITOS DE SENHA:
+                    'min:8', // No mínimo 8 caracteres
+                    'regex:/[A-Z]/', // Pelo menos uma letra maiúscula
+                    'regex:/[@$!%*#?&]/', // Pelo menos um caractere especial
+                    'same:password', // Ser idêntica a senha do campo anterior
+                ],
+            ]);
 
-        // Adicionar informações do usuário no banco
-        $user = new User();
+            // Adicionar informações do usuário no banco
+            $user = new User();
 
-        $user->name = $request->name;
-        $user->email = $request->email;
-        $user->phone_number = $request->phone_number;
-        $user->address = $request->address;
-        $user->password = Hash::make($request->password);
-        $user->save();
+            $user->name = $request->name;
+            $user->email = $request->email;
+            $user->phone_number = $request->phone_number;
+            $user->address = $request->address;
+            $user->password = Hash::make($request->password);
+            $user->save();
 
-        Auth::login($user); // Loga com Sanctum
-        return redirect()->intended('/');
+            Auth::login($user); // Loga com Sanctum
+            return redirect()->intended('/');
+        } catch (Exception $e) {
+            return redirect('/')->with('error', 'Ocorreu erro ao cadastrar um usuário');
+        }
     }
-    
+
     public function logout()
     {
         Auth::logout();
@@ -198,7 +207,7 @@ class AdadController extends Controller
 
                 return redirect('/')->with('msg', 'O email de recuperação de senha foi enviado');
             } else {
-                return redirect('/')->with('message', 'Falha ao enviar o email de recuperação de senha. Tente mais tarde');
+                return redirect('/')->with('error', 'Falha ao enviar o email de recuperação de senha. Tente mais tarde');
             }
         }
     }
@@ -212,74 +221,84 @@ class AdadController extends Controller
 
     public function submitResetPasswordForm(Request $request)
     {
-        $request->validate([
-            'email' => ['required', 'email'],
-            'password' => [
-                'required',
-                'min:8', // must be at least 8 characters in length
-                //    'regex:/[a-z]/',       must contain at least one lowercase letter
-                'regex:/[A-Z]/', // must contain at least one uppercase letter
-                //    'regex:/[0-9]/',       must contain at least one digit
-                'regex:/[@$!%*#?&]/', // must contain a special character
-            ],
-            'password_confirmation' => [
-                'required',
-                'min:8', // must be at least 8 characters in length
-                //    'regex:/[a-z]/',       must contain at least one lowercase letter
-                'regex:/[A-Z]/', // must contain at least one uppercase letter
-                //    'regex:/[0-9]/',       must contain at least one digit
-                'regex:/[@$!%*#?&]/', // must contain a special character
-                'same:password',
-            ],
-        ]);
+        try {
+            $request->validate([
+                'email' => ['required', 'email'],
+                'password' => [
+                    'required',
+                    'min:8', // must be at least 8 characters in length
+                    //    'regex:/[a-z]/',       must contain at least one lowercase letter
+                    'regex:/[A-Z]/', // must contain at least one uppercase letter
+                    //    'regex:/[0-9]/',       must contain at least one digit
+                    'regex:/[@$!%*#?&]/', // must contain a special character
+                ],
+                'password_confirmation' => [
+                    'required',
+                    'min:8', // must be at least 8 characters in length
+                    //    'regex:/[a-z]/',       must contain at least one lowercase letter
+                    'regex:/[A-Z]/', // must contain at least one uppercase letter
+                    //    'regex:/[0-9]/',       must contain at least one digit
+                    'regex:/[@$!%*#?&]/', // must contain a special character
+                    'same:password',
+                ],
+            ]);
 
-        $updatePassword = DB::table('password_resets')
-            ->where([
-                'email' => $request->email,
-                'token' => $request->token,
-            ])
-            ->first();
+            $updatePassword = DB::table('password_resets')
+                ->where([
+                    'email' => $request->email,
+                    'token' => $request->token,
+                ])
+                ->first();
 
-        if (!$updatePassword) {
-            return redirect('/')->with('msg', 'Falha no link de verificação');
+            if (!$updatePassword) {
+                return redirect('/')->with('error', 'Falha no link de verificação');
+            }
+
+            $user = User::where('email', $request->email)->update(['password' => Hash::make($request->password)]);
+
+            DB::table('password_resets')
+                ->where(['email' => $request->email])
+                ->delete();
+
+            return redirect('auth/login')->with('msg', 'Sua senha foi alterada com sucesso');
+        } catch (Exception $e) {
+            return redirect('/')->with('error', 'Falha ao tentar recuperar a senha. Tente mais tarde');
         }
-
-        $user = User::where('email', $request->email)->update(['password' => Hash::make($request->password)]);
-
-        DB::table('password_resets')
-            ->where(['email' => $request->email])
-            ->delete();
-
-        return redirect('auth/login')->with('message', 'Sua senha foi alterada com sucesso');
     }
 
     public function setnewPassword(Request $request)
     {
-        $request->validate([
-            'password' => [
-                'required',
-                'min:8', // must be at least 8 characters in length
-                //    'regex:/[a-z]/',       must contain at least one lowercase letter
-                'regex:/[A-Z]/', // must contain at least one uppercase letter
-                //    'regex:/[0-9]/',       must contain at least one digit
-                'regex:/[@$!%*#?&]/', // must contain a special character
-            ],
-            'newpassword' => [
-                'required',
-                'min:8', // must be at least 8 characters in length
-                //    'regex:/[a-z]/',       must contain at least one lowercase letter
-                'regex:/[A-Z]/', // must contain at least one uppercase letter
-                //    'regex:/[0-9]/',       must contain at least one digit
-                'regex:/[@$!%*#?&]/', // must contain a special character
-                'same:password',
-            ],
-        ]);
+        try {
+            $request->validate([
+                'password' => [
+                    'required',
+                    'min:8', // must be at least 8 characters in length
+                    //    'regex:/[a-z]/',       must contain at least one lowercase letter
+                    'regex:/[A-Z]/', // must contain at least one uppercase letter
+                    //    'regex:/[0-9]/',       must contain at least one digit
+                    'regex:/[@$!%*#?&]/', // must contain a special character
+                ],
+                'newpassword' => [
+                    'required',
+                    'min:8', // must be at least 8 characters in length
+                    //    'regex:/[a-z]/',       must contain at least one lowercase letter
+                    'regex:/[A-Z]/', // must contain at least one uppercase letter
+                    //    'regex:/[0-9]/',       must contain at least one digit
+                    'regex:/[@$!%*#?&]/', // must contain a special character
+                    'same:password',
+                ],
+            ]);
 
-        $user = User::find(Auth::user()->id);
+            $user = User::find(Auth::user()->id);
 
-        $user->password = Hash::make($request->password);
+            $user->password = Hash::make($request->password);
 
-        $user->save();
-        return redirect(route('dashboard'))->with('msg', 'Senha alterada com sucesso');
+            $user->save();
+            return redirect()
+                ->intended()
+                ->with('msg', 'Senha alterada com sucesso');
+        } catch (Exception $e) {
+            return back()->with('error', 'Ocorreu erro a atualizar a senha');
+        }
     }
 }
