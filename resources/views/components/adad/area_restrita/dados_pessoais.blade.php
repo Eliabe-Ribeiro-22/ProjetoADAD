@@ -1,3 +1,47 @@
+{{-- Variáveis settadas com valor, que por padrão são para exibir o form de cadastro de alunos --}}
+@php
+    $nome = '';
+    $idade = '';
+    $nascimento = '';
+    $serie = '';
+    $cpf = '';
+    $mae = '';
+    $pai = '';
+    $rua = '';
+    $numero = '';
+    $bairro = '';
+    $complemento = '';
+    $cidade = '';
+    $religiao = '';
+@endphp
+
+{{-- // Se o form for exibido para realizar alteração de aluno --}}
+@if ($alterar)
+    @method('PUT')
+    {{ <h1 id='title-form-alunos'>Editando: $aluno->NOME </h1> }}
+    @php
+        
+        // As variáveis recebem os valores vindos do aluno cadastrado no Banco de Dados
+        $nome = $aluno->NOME;
+        $idade = $aluno->IDADE;
+        $serie = $aluno->SERIE;
+        $nascimento = $aluno->nascimento->format('Y-m-d');
+        $cpf = $aluno->CPF;
+        $mae = $aluno->MAE;
+        $pai = $aluno->PAI;
+        $rua = $aluno->RUA;
+        $numero = $aluno->NUMERO;
+        $bairro = $aluno->BAIRRO;
+        $complemento = $aluno->COMPLEMENTO;
+        $cidade = $aluno->CIDADE;
+        $religiao = $aluno->RELIGIAO;
+    @endphp
+@else
+    // Senão, é porque o form será exibido para realizar cadastro
+    // de alunos as vars mantêm setadas com null.
+    echo "<h1 class='CentralizaText title-alunos' id='title-form-alunos'>Cadastro de Alunos ADAD</h1>";
+@endif
+
 <h3 class="CentralizaText"> Dados Pessoais</h3>
 {{-- Input Nome --}}
 <div>

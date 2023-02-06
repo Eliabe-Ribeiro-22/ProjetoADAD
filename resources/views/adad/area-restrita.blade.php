@@ -24,8 +24,15 @@
             </div>
 
             <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
+                
                 {{-- Formulário de Cadastro e Alteração de Alunos --}}
-                <x-adad.area_restrita.formulario_cad_alterar :alunos="$alunos" :aluno="$aluno" :alterar="$alterar" />
+                @if (isset($alunos))
+                    <x-adad.area_restrita.formulario_cad_alterar :alunos="$alunos" :alterar="$alterar" />
+                @else
+                    <x-adad.area_restrita.formulario_cad_alterar :aluno="$aluno" :alterar="$alterar" />
+                @endif
+
+                {{-- <x-adad.area_restrita.formulario_cad_alterar :alunos="$alunos" :aluno="$aluno" :alterar="$alterar" /> --}}
             </div>
         </div>
     </div>

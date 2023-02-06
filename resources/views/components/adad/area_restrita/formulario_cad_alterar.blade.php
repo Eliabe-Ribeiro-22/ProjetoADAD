@@ -6,54 +6,16 @@
     @endif
 >
     @csrf
-    {{-- Variáveis settadas com valor, que por padrão são para exibir o form de cadastro de alunos --}}
-    @php
-    $nome = '';
-    $idade = '';
-    $nascimento = '';
-    $serie = '';
-    $cpf = '';
-    $mae = '';
-    $pai = '';
-    $rua = '';
-    $numero = '';
-    $bairro = '';
-    $complemento = '';
-    $cidade = '';
-    $religiao = '';
-    
-    // Se o form for exibido para realizar alteração de aluno
-    if ($alterar) {
-    @endphp
-    @method('PUT')
-    @php
-    echo "<h1 id='title-form-alunos'>Editando: " . $aluno->NOME . "</h1>";
-    // As variáveis recebem os valores vindos do aluno cadastrado no Banco de Dados
-    $nome = $aluno->NOME;
-    $idade = $aluno->IDADE;
-    $serie = $aluno->SERIE;
-    $nascimento = $aluno->nascimento->format('Y-m-d');
-    $cpf = $aluno->CPF;
-    $mae = $aluno->MAE;
-    $pai = $aluno->PAI;
-    $rua = $aluno->RUA;
-    $numero = $aluno->NUMERO;
-    $bairro = $aluno->BAIRRO;
-    $complemento = $aluno->COMPLEMENTO;
-    $cidade = $aluno->CIDADE;
-    $religiao = $aluno->RELIGIAO;
-    } 
-    else {
-        // Senão, é porque o form será exibido para realizar cadastro 
-	    // de alunos as vars mantêm setadas com null.
-        echo "<h1 class='CentralizaText title-alunos' id='title-form-alunos'>Cadastro de Alunos ADAD</h1>";
-    }
-    @endphp
-    
+
+    @if (isset($alunos))
+        <x-adad.area_restrita.dados_pessoais :alunos="$alunos" :alterar="$alterar" />
+    @else
+        <x-adad.area_restrita.dados_pessoais :aluno="$aluno" :alterar="$alterar" />
+    @endif
     {{-- Todos os inputs do formulário --}}
-    {{-- <x-adad.area_restrita.dados_pessoais :aluno="$alunos" :alunos="$alunos" :alterar="$alterar"/> --}}
+    {{-- <x-adad.area_restrita.dados_pessoais :alunos="$alunos" :alterar="$alterar"/> --}}
     {{-- Buttões que realizam ações, seja ela cadastro, alteraçao --}}
-    <x-adad.area_restrita.botoes_acao_form :alunos="$alunos" :alterar="$alterar"/>
+    <x-adad.area_restrita.botoes_acao_form :alterar="$alterar"/>
 </form>
 {{-- Botão para acessar tela de cadastro de usuários --}}
     {{--  

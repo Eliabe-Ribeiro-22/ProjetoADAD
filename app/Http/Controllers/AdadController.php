@@ -82,7 +82,7 @@ class AdadController extends Controller
     {
         try {
             $aluno = Aluno::findOrFail($id);
-
+        
             return view('adad.area-restrita', ['aluno' => $aluno, 'alterar' => true]);
         } catch (Exception $e) {
             return redirect('/')->with('error', 'Ocorreu erro ao visualizar a página de alteração de aluno');

@@ -14,8 +14,8 @@ class formularioCadAlterar extends Component
     public $alunos;
     public $aluno;
     public $alterar;
-    
-    public function __construct($alunos, $aluno, $alterar)
+
+    public function __construct($alunos = null, $aluno = null, $alterar = false)
     {
         $this->alunos = $alunos;
         $this->aluno = $aluno;
