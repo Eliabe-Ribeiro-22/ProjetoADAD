@@ -4,17 +4,6 @@
 @section('titulo', 'Início')
 
 @section('corpo')
-    @if (session('msg'))
-        <script type="text/javascript">
-            success("<?php echo session('msg'); ?>")
-        </script>
-    @endif
-    @if (session('error'))
-        <script type="text/javascript">
-            error("<?php echo session('error'); ?>")
-        </script>
-    @endif
-
     <div class="slogan-inicio">
         <h1>Seja bem vindo ao nosso site!</h1>
     </div>

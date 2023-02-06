@@ -15,12 +15,11 @@
     $religiao = '';
 @endphp
 
-{{-- // Se o form for exibido para realizar alteração de aluno --}}
+{{-- Se o form for exibido para realizar alteração de aluno --}}
 @if ($alterar)
     @method('PUT')
-    {{ <h1 id='title-form-alunos'>Editando: $aluno->NOME </h1> }}
+    <h1 id='title-form-alunos'>Editando: {{ $aluno->NOME }}</h1>
     @php
-        
         // As variáveis recebem os valores vindos do aluno cadastrado no Banco de Dados
         $nome = $aluno->NOME;
         $idade = $aluno->IDADE;
@@ -37,9 +36,9 @@
         $religiao = $aluno->RELIGIAO;
     @endphp
 @else
-    // Senão, é porque o form será exibido para realizar cadastro
-    // de alunos as vars mantêm setadas com null.
-    echo "<h1 class='CentralizaText title-alunos' id='title-form-alunos'>Cadastro de Alunos ADAD</h1>";
+    {{-- Senão, é porque o form será exibido para realizar cadastro --}}
+    {{-- de alunos as vars mantêm setadas com null. --}}
+    <h1 class='CentralizaText title-alunos' id='title-form-alunos'>Cadastro de Alunos ADAD</h1>
 @endif
 
 <h3 class="CentralizaText"> Dados Pessoais</h3>
