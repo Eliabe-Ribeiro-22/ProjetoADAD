@@ -190,7 +190,7 @@ class AdadController extends Controller
     public function logout()
     {
         Auth::logout();
-        return redirect('/');
+        return redirect('/')->with('msg', 'Usuário deslogado com suceso');
     }
 
     public function showForgetPasswordForm()

@@ -13,7 +13,7 @@
         </video>
     </div>
 
-    <x-igreja.inicio.api-versiculo :dailyVerse="$dailyVerse" />
+    {{--    <x-igreja.inicio.api-versiculo :dailyVerse="$dailyVerse" /> --}}
     <div class="projetos-igreja">
         <h2>Nossos Projetos</h2>
     </div>
