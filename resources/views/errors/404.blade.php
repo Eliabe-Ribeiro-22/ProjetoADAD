@@ -15,7 +15,7 @@
 <body>
     <div class="full-size-pg">
         <div class="church-logo">
-            <a href="{{ route('index.page') }}">
+            <a href="{{ route('main.page') }}">
                 <img id="img-logo-chur" src="/assets/img/igreja/logoIgreja.png" alt="Logo da Igreja">
             </a>
         </div>
