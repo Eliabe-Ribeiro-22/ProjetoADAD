@@ -8,14 +8,14 @@
     {{-- TailWind --}}
     <link rel="stylesheet" href="/assets/css/tailwind.css">
 
-    {{-- Toastr --}}
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-    <script src="/assets/js/toaster.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-
     {{-- JQuery --}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
+
+    {{-- Toastr --}}
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script type="text/javascript" src="/assets/js/messagesToastr.js"></script>
 
     {{-- Favicon e título da página --}}
     <link rel="icon" type="image/x-icon" href="/adad.ico">
@@ -28,6 +28,15 @@
 <body>
     <script type="text/javascript" src="/assets/js/password.js"></script>
 
+    @if (session('msg'))
+        <script type="text/javascript">
+            success("{{ session('msg') }}");
+        </script>
+    @elseif (session('error'))
+        <script type="text/javascript">
+            error("{{ session('error') }}");
+        </script>
+    @endif
     <div class="font-sans text-gray-900 antialiased">
         <div
             class="h-screen center mx-auto lg:min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
@@ -82,7 +91,7 @@
                                 active:bg-gray-900 focus:outline-none 
                                 focus:border-gray-900 focus:ring focus:ring-gray-300 
                                 disabled:opacity-25 transition ml-4"
-                        onclick="loading('Autenticando usuário');">
+                        onclick="loading('logando usuário...');">
                         Entrar
                     </button>
                 </form>

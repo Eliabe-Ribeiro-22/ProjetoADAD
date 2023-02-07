@@ -16,16 +16,15 @@ Route::get('/contato', [IgrejaController::class, 'form_create'])->name('contact.
 Route::post('/sendForm', [IgrejaController::class, 'sendForm'])->name('form_send');
 
 // Rotas para o sistema de gestão do adad
-Route::get('/AreaRestrita', [AdadController::class, 'aluno_create'])->name('aluno_create');
-// ->middleware('auth');
+Route::get('/AreaRestrita', [AdadController::class, 'aluno_create'])
+    ->name('aluno_create')
+    ->middleware('auth');
 
 Route::post('/alunos', [AdadController::class, 'aluno_store'])->name('aluno_store');
 
 Route::delete('/alunos/{id}', [AdadController::class, 'aluno_destroy'])->name('aluno_destroy');
 
-
 Route::get('/alunos/edit/{id}', [AdadController::class, 'aluno_edit'])->name('aluno_edit');
-
 
 Route::put('/alunos/update/{id}', [AdadController::class, 'aluno_update'])->name('aluno_update');
 

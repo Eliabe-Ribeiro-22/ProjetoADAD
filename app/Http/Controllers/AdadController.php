@@ -143,9 +143,9 @@ class AdadController extends Controller
         if (Auth::attempt($credentials)) {
             return redirect()
                 ->route('aluno_create')
-                ->with('msg', 'Login funcionou corretamente');
+                ->with('msg', 'Logado com sucesso!');
         } else {
-            return back()->with('error', 'Erro de autenticação: Verifique seu email e a senha');
+            return back()->with('error', 'Erro de autenticação: Verifique seu email e senha');
         }
     }
 
