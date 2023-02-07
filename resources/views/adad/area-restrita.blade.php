@@ -72,12 +72,11 @@
 
                 {{-- Formulário de Cadastro e Alteração de Alunos --}}
                 @if (isset($alunos))
+                    {{-- $errou --}}
                     <x-adad.area_restrita.formulario_cad_alterar :alunos="$alunos" :alterar="$alterar" />
                 @else
                     <x-adad.area_restrita.formulario_cad_alterar :aluno="$aluno" :alterar="$alterar" />
                 @endif
-
-                {{-- <x-adad.area_restrita.formulario_cad_alterar :alunos="$alunos" :aluno="$aluno" :alterar="$alterar" /> --}}
             </div>
         </div>
     </div>
@@ -87,20 +86,20 @@
             <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-gray-800 shadow-md overflow_scroll sm:rounded-lg">
                 @if ($alterar) {{-- Se o visitante estiver editando um aluno --}}
                     <h3 class="CentralizaText color-white"><b>Dados do Alunos a ser Alterado:</b></h3>
-                    <label class="CentralizaText color-white">Nome: {{ $aluno->NOME }}</label>
+                    <label class="CentralizaText color-white">Nome: {{ $aluno->nome }}</label>
                     <br />
-                    <label class="CentralizaText color-white">Idade: {{ $aluno->IDADE }}</label>
+                    <label class="CentralizaText color-white">Idade: {{ $aluno->idade }}</label>
                     <br>
                     <label class="CentralizaText color-white">Data de Nascimento: {{ $aluno->nascimento }}</label>
                     <br>
-                    <label class="CentralizaText color-white">Série escolar: {{ $aluno->SERIE }}.</label>
+                    <label class="CentralizaText color-white">Série escolar: {{ $aluno->serie }}.</label>
                     <br>
                     <label class="CentralizaText color-white">
-                        {{ $aluno->RUA }}, nº {{ $aluno->NUMERO }}, bairro {{ $aluno->BAIRRO }},
+                        {{ $aluno->RUA }}, nº {{ $aluno->NUMERO }}, bairro {{ $aluno->bairro }},
                         {{ $aluno->CIDADE }}.
                     </label>
                     <br>
-                    <label class="CentralizaText color-white">Crença/Religião: {{ $aluno->RELIGIAO }}</label>
+                    <label class="CentralizaText color-white">Crença/Religião: {{ $aluno->religiao }}</label>
                     <br>
                     <br>
                 @else
@@ -134,11 +133,11 @@
                             </tr>
                             @foreach ($alunos as $aluno)
                                 <tr class="w-1\1 line-body-alunos">
-                                    <td>{{ $aluno->NOME }}</td>
-                                    <td>{{ $aluno->IDADE }}</td>
-                                    <td>{{ $aluno->SERIE }}</td>
-                                    <td>{{ $aluno->CIDADE }}</td>
-                                    <td>{{ $aluno->RELIGIAO }}</td>
+                                    <td>{{ $aluno->nome }}</td>
+                                    <td>{{ $aluno->idade }}</td>
+                                    <td>{{ $aluno->serie }}</td>
+                                    <td>{{ $aluno->cidade }}</td>
+                                    <td>{{ $aluno->religiao }}</td>
                                     <td class="btn-edit-del">
 
                                         <form action="{{ route('aluno_edit', ['id' => $aluno->id]) }}" method="get">

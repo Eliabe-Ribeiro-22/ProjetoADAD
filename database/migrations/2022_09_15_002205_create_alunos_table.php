@@ -14,19 +14,19 @@ return new class extends Migration {
     {
         Schema::create('alunos', function (Blueprint $table) {
             $table->id();
-            $table->string('NOME');
-            $table->string('IDADE');
+            $table->string('nome');
+            $table->string('idade');
             $table->date('nascimento');
-            $table->string('SERIE')->nullable()->default(NULL);
-            $table->string('CPF');
-            $table->string('MAE');
-            $table->string('PAI')->nullable()->default(NULL);
-            $table->string('RUA');
-            $table->integer('NUMERO');
-            $table->string('BAIRRO');
-            $table->string('COMPLEMENTO')->nullable()->default(NULL);
-            $table->string('CIDADE');
-            $table->string('RELIGIAO');
+            $table->string('serie')->nullable()->default(NULL);
+            $table->string('cpf');
+            $table->string('mae');
+            $table->string('pai')->nullable()->default(NULL);
+            $table->string('rua');
+            $table->integer('numero');
+            $table->string('bairro');
+            $table->string('complemento')->nullable()->default(NULL);
+            $table->string('cidade');
+            $table->string('religiao');
             $table->timestamps();
         });
     }

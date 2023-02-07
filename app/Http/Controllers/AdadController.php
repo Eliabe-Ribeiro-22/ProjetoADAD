@@ -40,19 +40,19 @@ class AdadController extends Controller
             // salvar aluno
             $aluno = new Aluno();
 
-            $aluno->NOME = $request->nome;
-            $aluno->IDADE = $request->idade;
+            $aluno->nome = $request->nome;
+            $aluno->idade = $request->idade;
             $aluno->nascimento = $request->nascimento;
-            $aluno->SERIE = $request->serie;
-            $aluno->CPF = $request->cpf;
-            $aluno->MAE = $request->mae;
-            $aluno->PAI = $request->pai;
-            $aluno->RUA = $request->rua;
-            $aluno->NUMERO = $request->numero;
-            $aluno->BAIRRO = $request->bairro;
-            $aluno->COMPLEMENTO = $request->complemento;
-            $aluno->CIDADE = $request->cidade;
-            $aluno->RELIGIAO = $request->religiao;
+            $aluno->serie = $request->serie;
+            $aluno->cpf = $request->cpf;
+            $aluno->mae = $request->mae;
+            $aluno->pai = $request->pai;
+            $aluno->rua = $request->rua;
+            $aluno->numero = $request->numero;
+            $aluno->bairro = $request->bairro;
+            $aluno->complemento = $request->complemento;
+            $aluno->cidade = $request->cidade;
+            $aluno->religiao = $request->religiao;
 
             $aluno->save();
 
@@ -78,7 +78,6 @@ class AdadController extends Controller
                 ->route('aluno_create')
                 ->with('msg', 'Aluno excluído com sucesso');
         } catch (Exception $e) {
-            // return 'Ocorreu um erro ao excluir um aluno!<br/>' . $e->getMessage();
             return redirect()
                 ->route('aluno_create')
                 ->with('error', 'Ocorreu erro ao excluir um aluno');
@@ -110,9 +109,11 @@ class AdadController extends Controller
                 ->route('aluno_create')
                 ->with('msg', 'Aluno alterado com sucesso');
         } catch (Exception $e) {
-            return redirect()
-                ->route('aluno_create')
-                ->with('error', 'Ocorreu erro ao alterar um aluno');
+            $alunos = Aluno::all();
+            return view('adad.area-restrita', ['alterar' => false, 'alunos' => $alunos, 'errou' => $e->getMessage()]);
+            // return redirect()
+            //     ->route('aluno_create')
+            //     ->with('error', "$e->getMessage()");
         }
     }
 
