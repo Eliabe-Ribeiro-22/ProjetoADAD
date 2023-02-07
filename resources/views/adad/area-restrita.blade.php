@@ -1,5 +1,11 @@
 <head>
     <x-adad.head.head />
+    {{-- Toastr --}}
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="/assets/js/toaster.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+    {{-- CSS da página --}}
     <link rel="stylesheet" href="/assets/css/adad/area-restrita/alunos.css">
 
     @php
@@ -15,6 +21,53 @@
 </head>
 
 <body>
+    <script type="text/javascript">
+        // Ativar Toaster ao tentar logar
+        const loading = (messagem) => {
+            toastr.options = {
+                progressBar: true,
+                timeOut: "60000",
+            };
+            toastr["info"](messagem);
+        };
+
+
+        // Ativar Toastr (Mensagem de sucesso)
+        const success = (mensagem) => {
+            toastr.options = {
+                progressBar: true,
+                timeOut: "5000",
+            };
+            toastr["success"](mensagem);
+        };
+
+        // Ativar Toastr (Mensagem  de erro)
+        const error = (mensagem) => {
+            toastr.options = {
+                progressBar: true,
+                timeOut: "5000",
+            };
+            toastr["error"](mensagem);
+        };
+    </script>
+
+    @php
+        $ok = false;
+        $errou = 'errou';
+    @endphp
+    @if ($ok)
+        Mensagem de Sessão(sucesso): {{ session('error') }}
+        <script type="text/javascript">
+            // success("<?php echo session('msg'); ?>")
+            success("Deu certo");
+        </script>
+    @elseif ($errou = 'errou')
+        Mensagem de Sessão(erro): {{ session('error') }}
+        <script type="text/javascript">
+            // error("<?php echo session('error'); ?>")
+            error("Deu erro");
+        </script>
+    @endif
     <div class="font-sans text-gray-900 antialiased">
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
             <div>
@@ -24,7 +77,7 @@
             </div>
 
             <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
-                
+
                 {{-- Formulário de Cadastro e Alteração de Alunos --}}
                 @if (isset($alunos))
                     <x-adad.area_restrita.formulario_cad_alterar :alunos="$alunos" :alterar="$alterar" />

@@ -1,17 +1,16 @@
 {{-- Template Igreja --}}
 <x-igreja.head.head />
-{{ session('msg') }}
-{{ session('error') }}
-
-@if (session('msg'))
+{{-- @if (session('msg'))
+    {{ session('msg') }}
     <script type="text/javascript">
-        success("<?php echo session('msg'); ?>")
+        
     </script>
-@elseif (session('msg'))
+@elseif (session('error'))
+    {{ session('error') }}
     <script type="text/javascript">
-        error("<?php echo session('error'); ?>")
+        
     </script>
-@endif
+@endif --}}
 
 <x-igreja.nav.nav />
 
