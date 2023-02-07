@@ -51,21 +51,13 @@
         };
     </script>
 
-    @php
-        $ok = false;
-        $errou = 'errou';
-    @endphp
-    @if ($ok)
-        Mensagem de Sessão(sucesso): {{ session('error') }}
+    @if (session('msg'))
         <script type="text/javascript">
-            // success("<?php echo session('msg'); ?>")
-            success("Deu certo");
+            success("{{ session('msg') }}");
         </script>
-    @elseif ($errou = 'errou')
-        Mensagem de Sessão(erro): {{ session('error') }}
+    @elseif (session('error'))
         <script type="text/javascript">
-            // error("<?php echo session('error'); ?>")
-            error("Deu erro");
+            error("{{ session('error') }}");
         </script>
     @endif
     <div class="font-sans text-gray-900 antialiased">
@@ -148,16 +140,25 @@
                                     <td>{{ $aluno->CIDADE }}</td>
                                     <td>{{ $aluno->RELIGIAO }}</td>
                                     <td class="btn-edit-del">
-                                        <a href="{{ route('aluno_edit', ['id' => $aluno->id]) }}">
-                                            &#128393;
-                                        </a>
+
+                                        <form action="{{ route('aluno_edit', ['id' => $aluno->id]) }}" method="get">
+                                            <a href="{{ route('aluno_edit', ['id' => $aluno->id]) }}"
+                                                onclick="
+                                                this.closest('form').submit();loading('Carregando informações do aluno');return false;">
+                                                &#128393;
+                                            </a>
+                                        </form>
+
                                     </td>
                                     <td class="btn-edit-del">
                                         <form action="{{ route('aluno_destroy', ['id' => $aluno->id]) }}"
                                             method="POST" id="btn-form-del">
                                             @csrf
                                             @method('DELETE')
-                                            <button>&#128465;</button>
+                                            {{-- <button>&#128465;</button> --}}
+                                            <a href="{{ route('aluno_destroy', ['id' => $aluno->id]) }}"
+                                                onclick="
+                                            this.closest('form').submit();loading('Excluindo aluno');return false;">&#128465;</a>
                                         </form>
                                     </td>
                                 </tr>

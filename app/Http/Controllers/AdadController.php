@@ -24,11 +24,12 @@ class AdadController extends Controller
         try {
             $alunos = Aluno::all();
             # Form que cadastra alunos,
-            // por isso passamos o value false na var. alterar
+            // por isso passamos o value false na variável alterar
             return view('adad.area-restrita', ['alterar' => false, 'alunos' => $alunos]);
         } catch (Exception $e) {
-            // return $e->getMessage();
-            return redirect('/')->with('error', 'Ocorreu erro ao carregar a página de alunos');
+            return redirect()
+                ->route('aluno_create')
+                ->with('error', 'Ocorreu erro ao carregar a página de alunos');
         }
     }
 
@@ -56,10 +57,13 @@ class AdadController extends Controller
             $aluno->save();
 
             // deu certo o salvar
-            return redirect('/AreaRestrita')->with('msg', 'Aluno cadastrado com sucesso');
+            return redirect()
+                ->route('aluno_create')
+                ->with('msg', 'Aluno cadastrado com sucesso');
         } catch (Exception $e) {
-            // return 'Ocorreu um erro ao cadastrar um aluno!<br/>' . $e->getMessage();
-            return redirect('/')->with('error', 'Ocorreu erro ao cadastrar um aluno');
+            return redirect()
+                ->route('aluno_create')
+                ->with('error', 'Ocorreu erro ao cadastrar um aluno');
         }
     }
 
@@ -70,10 +74,14 @@ class AdadController extends Controller
             // encontrar o id do aluno, para depois excluí-lo
             Aluno::findOrFail($id)->delete();
 
-            return redirect('/AreaRestrita');
+            return redirect()
+                ->route('aluno_create')
+                ->with('msg', 'Aluno excluído com sucesso');
         } catch (Exception $e) {
             // return 'Ocorreu um erro ao excluir um aluno!<br/>' . $e->getMessage();
-            return redirect('/')->with('error', 'Ocorreu erro ao excluir um aluno');
+            return redirect()
+                ->route('aluno_create')
+                ->with('error', 'Ocorreu erro ao excluir um aluno');
         }
     }
 
@@ -82,10 +90,12 @@ class AdadController extends Controller
     {
         try {
             $aluno = Aluno::findOrFail($id);
-        
+
             return view('adad.area-restrita', ['aluno' => $aluno, 'alterar' => true]);
         } catch (Exception $e) {
-            return redirect('/')->with('error', 'Ocorreu erro ao visualizar a página de alteração de aluno');
+            return redirect()
+                ->route('aluno_create')
+                ->with('error', 'Ocorreu erro ao visualizar a página de alteração de aluno');
         }
     }
 
@@ -96,9 +106,13 @@ class AdadController extends Controller
             $data = $request->all();
 
             Aluno::findOrFail($request->id)->update($data);
-            return redirect('/AreaRestrita');
+            return redirect()
+                ->route('aluno_create')
+                ->with('msg', 'Aluno alterado com sucesso');
         } catch (Exception $e) {
-            return redirect('/')->with('error', 'Ocorreu erro ao alterar um aluno');
+            return redirect()
+                ->route('aluno_create')
+                ->with('error', 'Ocorreu erro ao alterar um aluno');
         }
     }
 
@@ -126,7 +140,9 @@ class AdadController extends Controller
         ]);
 
         if (Auth::attempt($credentials)) {
-            return redirect()->intended();
+            return redirect()
+                ->intended()
+                ->with('msg', 'Login funcionou corretamente');
         } else {
             return back()->with('error', 'Erro de autenticação: Verifique seu email e a senha');
         }
