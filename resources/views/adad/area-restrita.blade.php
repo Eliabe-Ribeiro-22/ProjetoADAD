@@ -2,8 +2,8 @@
     <x-adad.head.head />
     {{-- Toastr --}}
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-    <script src="/assets/js/toaster.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script type="text/javascript" src="/assets/js/messagesToastr.js"></script>
 
     {{-- CSS da página --}}
     <link rel="stylesheet" href="/assets/css/adad/area-restrita/alunos.css">
@@ -18,39 +18,10 @@
     @endphp
 
     <title><?php echo $titulo; ?></title>
+    
 </head>
 
 <body>
-    <script type="text/javascript">
-        // Ativar Toaster ao tentar logar
-        const loading = (messagem) => {
-            toastr.options = {
-                progressBar: true,
-                timeOut: "60000",
-            };
-            toastr["info"](messagem);
-        };
-
-
-        // Ativar Toastr (Mensagem de sucesso)
-        const success = (mensagem) => {
-            toastr.options = {
-                progressBar: true,
-                timeOut: "5000",
-            };
-            toastr["success"](mensagem);
-        };
-
-        // Ativar Toastr (Mensagem  de erro)
-        const error = (mensagem) => {
-            toastr.options = {
-                progressBar: true,
-                timeOut: "5000",
-            };
-            toastr["error"](mensagem);
-        };
-    </script>
-
     @if (session('msg'))
         <script type="text/javascript">
             success("{{ session('msg') }}");
@@ -95,8 +66,8 @@
                     <label class="CentralizaText color-white">Série escolar: {{ $aluno->serie }}.</label>
                     <br>
                     <label class="CentralizaText color-white">
-                        {{ $aluno->RUA }}, nº {{ $aluno->NUMERO }}, bairro {{ $aluno->bairro }},
-                        {{ $aluno->CIDADE }}.
+                        {{ $aluno->rua }}, nº {{ $aluno->numero }}, bairro {{ $aluno->bairro }},
+                        {{ $aluno->cidade }}.
                     </label>
                     <br>
                     <label class="CentralizaText color-white">Crença/Religião: {{ $aluno->religiao }}</label>

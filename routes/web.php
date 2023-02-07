@@ -9,10 +9,10 @@ use App\Http\Controllers\IgrejaController;
 Route::get('/', [IgrejaController::class, 'mainPg'])->name('main.page');
 
 Route::redirect('/institucional', 'api/institucional')->name('institutional.page');
-Route::redirect('/contato', 'api/contato')->name('contact.page');
 Route::redirect('/projetos', 'api/projetos')->name('projects.page');
 Route::redirect('/reunioes', 'api/reunioes')->name('reunions.page');
 
+Route::get('/contato', [IgrejaController::class, 'form_create'])->name('contact.page');
 Route::post('/sendForm', [IgrejaController::class, 'sendForm'])->name('form_send');
 
 // Rotas para o sistema de gestão do adad
@@ -31,9 +31,10 @@ Route::put('/alunos/update/{id}', [AdadController::class, 'aluno_update'])->name
 
 // Funções de Sistema de Login
 //  Login / Registrar (get)
-Route::redirect('/auth/login_web', '/api/auth/login')->name('login');
+Route::get('/auth/login', [AdadController::class, 'login'])->name('login');
 
-Route::redirect('/auth/register_web', '/api/auth/register')->name('register');
+Route::get('/auth/register', [AdadController::class, 'register'])->name('register');
+// ->middleware('auth');
 
 Route::redirect('forgot-password_web', '/api/forgot-password')->name('showForgetPasswordForm');
 

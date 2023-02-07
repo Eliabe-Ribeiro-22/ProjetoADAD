@@ -1,12 +1,14 @@
-// Ativar Toaster ao tentar logar
+// Usando Toastr na Tela de Login e Cadastro/Alteração de Alunos
+
+// Ativar Toastr - mensagem de carregamento: 
+//  cadastrando aluno..., alterando aluno..., excluindo aluno...
 const loading = (messagem) => {
     toastr.options = {
         progressBar: true,
-        timeOut: "60000",
+        timeOut: "9000",
     };
     toastr["info"](messagem);
 };
-
 
 // Ativar Toastr (Mensagem de sucesso)
 const success = (mensagem) => {
@@ -25,17 +27,3 @@ const error = (mensagem) => {
     };
     toastr["error"](mensagem);
 };
-
-
-/*
-
-Modelo de lógica para chamar as funções na página
-<script>
-    loading();
-    @if (true)
-        success();
-    @else
-        error();
-    @endif
-</script>
-*/
