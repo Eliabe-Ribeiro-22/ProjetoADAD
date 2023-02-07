@@ -43,7 +43,7 @@ Route::post('/authenticate', [AdadController::class, 'autorizar'])->name('authen
 Route::post('/newuser', [AdadController::class, 'store'])->name('newuser');
 
 // Autenticação
-Route::redirect('/logout_web', '/api/logout')->name('logout');
+Route::get('/logout', [AdadController::class, 'logout'])->name('logout');
 
 Route::post('forget_password', [AdadController::class, 'submitForgetPasswordForm'])->name('submitForgetPasswordForm');
 

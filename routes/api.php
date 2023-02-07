@@ -13,12 +13,9 @@ Route::get('/projetos', [IgrejaController::class, 'projectsPg'])->name('projects
 Route::get('/reunioes', [IgrejaController::class, 'reunionsPg'])->name('reunions.page');
 
 // Funções de Sistema de Login
-
 Route::get('forgot-password', [AdadController::class, 'showForgetPasswordForm'])->name('showForgetPasswordForm');
 
 // Autenticação
-Route::get('/logout', [AdadController::class, 'logout'])->name('logout');
-
 Route::get('reset_password/{token}', [AdadController::class, 'showResetPasswordForm'])->name('resetPassword');
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

@@ -195,6 +195,13 @@ Inclusão de Carrossel de imagens
 <h4>01/12 - Quinta-feira - Eliabe</h4>
 Finalizado refatoração do formulário de contato com a igreja.
 
+<h4>07/02/2023 - Terça-feira - Eliabe</h4>
+Refatoração da Área Restrita, onde realizamos o gerenciamento dos alunos participantes da escola ADAD
+
+Implantação do Toastr na página Área Restrita
+
+Implantação do Toastr na Tela de Login
+
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----
