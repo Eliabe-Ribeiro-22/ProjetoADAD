@@ -7,31 +7,36 @@ use Illuminate\Support\Facades\Mail;
 
 class IgrejaController extends Controller
 {
-    public function mainPg() {
+   public function mainPg()
+    {
         //$api = "https://www.abibliadigital.com.br/api/verses/nvi/sl/91/1";
         //$dailyVerse = json_decode(file_get_contents($api), true);
-        $dailyVerse = [ 
-            'text' => "Aquele que habita no esconderijo do Altíssimo, à sombra do Onipotente descansará.",
-            'book' => [ 'name' => 'Sl'],
+        $dailyVerse = [
+            'text' => 'Aquele que habita no esconderijo do Altíssimo, à sombra do Onipotente descansará.',
+            'book' => ['name' => 'Sl'],
             'chapter' => '91',
             'number' => '1',
         ];
-        return view('igreja.inicio', ['dailyVerse'=> $dailyVerse]);
+        return view('igreja.inicio', ['dailyVerse' => $dailyVerse]);
     }
 
-    public function institutionalPg () {
+    public function institutionalPg()
+    {
         return view('igreja.institucional');
     }
 
-    public function contactPg () {
+    public function contactPg()
+    {
         return view('igreja.contato');
     }
 
-    public function projectsPg () {
+    public function projectsPg()
+    {
         return view('igreja.projetos');
     }
 
-    public function reunionsPg () {
+    public function reunionsPg()
+    {
         return view('igreja.reunioes');
     }
 
@@ -131,14 +136,15 @@ class IgrejaController extends Controller
 
                 return redirect('/')->with('msg', 'O formulário foi enviado com sucesso');
             } else {
-                return redirect('/')->with('msg', 'Falha ao enviar o formulário. Tente mais tarde');
+                return redirect('/')->with('error', 'Falha ao enviar o formulário. Tente mais tarde');
             }
         } catch (Exception $e) {
-            return $e->getMessage();
+            return redirect('/')->with('error', 'Falha ao enviar o formulário. Tente mais tarde');
         }
     }
 
-    public function rest() {
+    public function rest()
+    {
         return view('rest.error_404');
     }
 }

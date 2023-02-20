@@ -13,11 +13,11 @@
         </video>
     </div>
 
-    <x-igreja.inicio.api-versiculo :dailyVerse="$dailyVerse"/>
+    {{--    <x-igreja.inicio.api-versiculo :dailyVerse="$dailyVerse" /> --}}
     <div class="projetos-igreja">
         <h2>Nossos Projetos</h2>
     </div>
-    
+
     <div class="projetos-igreja">
         <h3>Projeto Educacional</h3>
 
@@ -27,7 +27,9 @@
 
         <ul class="projeto-lista">
             <p>
-                Desenvolvem atividades com crianças, adolescentes e jovens visando fortalecer o Caráter de Cristo,valores, princípios morais e éticos, patriotismo, recreação, acampamentos, prática de escotismo e integração em busca de uma formação educacional por princípios. 
+                Desenvolvem atividades com crianças, adolescentes e jovens visando fortalecer o Caráter de Cristo,valores,
+                princípios morais e éticos, patriotismo, recreação, acampamentos, prática de escotismo e integração em busca
+                de uma formação educacional por princípios.
             </p>
             <br><br>
             <li>Realização de Palestras educativas de socialização para todas as faixas etárias.</li>
@@ -57,5 +59,3 @@
             Domingos às 19:00 hs</p>
     </div>
 @endsection
-
-
