@@ -202,6 +202,13 @@ Implantação do Toastr na página Área Restrita
 
 Implantação do Toastr na Tela de Login
 
+<h4>19/02/2023 - Domingo - Eliabe</h4>
+Realizada Hospedagem do site na plataforma Hostinger.
+
+Acesse ele pela URL: <https://adadcampobelo.com>
+
+Para isso, foi necessário alterar a versão do Laravel, Composer e PHP no ProjetoAdad.
+
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----
