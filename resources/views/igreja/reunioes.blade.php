@@ -11,6 +11,6 @@
         <p>Noite da Família <br>
             Domingos às 19:00 hs</p>
     </div>
-    {{-- <x-igreja.reunioes.descricao-reuniao /> --}}
+    <x-igreja.reunioes.descricao-reuniao />
     {{-- update --}}
 @endsection

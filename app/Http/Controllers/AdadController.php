@@ -1,28 +1,40 @@
 <?php
 namespace App\Http\Controllers;
+use Exception;
 use Illuminate\Http\Request;
 use App\Exception\HttpException;
-use Exception;
-use App\Models\Aluno;
-use App\Models\User;
 use Illuminate\Console\View\Components\Alert;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use App\Models\Permission;
-use App\Models\Warning;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
 
+use App\Models\Permission;
+use App\Models\Warning;
+
+// Laravel 8
+//use App\Models\Aluno;
+//use App\Models\User;
+
+use App\Aluno;
+use App\User;
+
+use App\Flight;
+
 date_default_timezone_set('America/Sao_Paulo');
+
 
 class AdadController extends Controller
 {
+    
     // Função para exibir Formulário para cadastro de alunos
     public function aluno_create()
     {
         try {
-            $alunos = Aluno::all();
+            $alunos = 0;
+            // $alunos = Flight::all();
+            //$alunos = Aluno::all();
             # Form que cadastra alunos,
             // por isso passamos o value false na variável alterar
             return view('adad.area-restrita', ['alterar' => false, 'alunos' => $alunos]);
@@ -37,9 +49,10 @@ class AdadController extends Controller
     public function aluno_store(Request $request)
     {
         try {
-            // salvar aluno
-            $aluno = new Aluno();
-
+            // salvar um aluno
+            $aluno = new \App\Flight;
+            //$aluno = new Aluno();
+            
             $aluno->nome = $request->nome;
             $aluno->idade = $request->idade;
             $aluno->nascimento = $request->nascimento;

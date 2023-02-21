@@ -17,8 +17,8 @@ Route::post('/sendForm', [IgrejaController::class, 'sendForm'])->name('form_send
 
 // Rotas para o sistema de gestão do adad
 Route::get('/AreaRestrita', [AdadController::class, 'aluno_create'])
-    ->name('aluno_create')
-    ->middleware('auth');
+    ->name('aluno_create');
+//    ->middleware('auth');
 
 Route::post('/alunos', [AdadController::class, 'aluno_store'])->name('aluno_store');
 
