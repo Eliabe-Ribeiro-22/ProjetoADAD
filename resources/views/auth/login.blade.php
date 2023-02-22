@@ -2,6 +2,10 @@
 
 <head>
     <x-adad.head.head/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script type="text/javascript" src="assets/js/messagesToastr.js"></script>
+
     <link rel="stylesheet" href="/assets/css/adad/login.css">
     <title>Tela de login</title>
 </head>
@@ -20,7 +24,7 @@
             </div>
 
             <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
-                <form method="POST" action="{{ route('authenticate') }}">
+                <form method="POST" action="{{ route('autorizar') }}">
                     @csrf
                     <div>
                         <label class="block font-medium text-sm text-gray-700" 
@@ -47,10 +51,10 @@
                             autocomplete="current-password">
                     </div>
 
-                    <input type="checkbox" onclick="showPassword()" />
-                    <a class="text-sm text-gray-900">
+                    <input type="checkbox" onclick="showPassword()" id="chkExibirSenha" />
+                    <label for="chkExibirSenha" class="text-sm text-gray-900">
                         Exibir senha
-                    </a>
+                    </label>
 
                     <br>
                     <a class="underline text-sm text-gray-600 hover:text-gray-900"
@@ -58,7 +62,9 @@
                         Esqueceu a senha?
                     </a>
 
-                    <button type="submit"
+                    <button>
+                    <a onclick="alert('A:href de enviar');loading('Cadastrando aluno');this.closest('form').submit();return false; ">Entrar</a>
+                    {{-- <button type="submit"
                         class="inline-flex items-center px-4 py-2 
                                 bg-gray-800 border border-transparent 
                                 rounded-md font-semibold text-xs text-white 
@@ -68,8 +74,9 @@
                                 disabled:opacity-25 transition ml-4"
                                 onclick="loading('Autenticando usuário');"
                     >
-                        Entrar
                     </button>
+                        Entrar
+                    </button> --}}
                 </form>
             </div>
         </div>

@@ -11,6 +11,7 @@ class CreateFlightsTable extends Migration
      *
      * @return void
      */
+    
     public function up()
     {
         Schema::create('flights', function (Blueprint $table) {
@@ -28,7 +29,7 @@ class CreateFlightsTable extends Migration
             $table->string('COMPLEMENTO')->nullable()->default(NULL);
             $table->string('CIDADE');
             $table->string('RELIGIAO');
-            $table->timestamps();
+            //$table->timestamps();
         });
     }
 

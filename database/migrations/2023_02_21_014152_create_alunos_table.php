@@ -28,7 +28,7 @@ class CreateAlunosTable extends Migration
             $table->string('COMPLEMENTO')->nullable()->default(NULL);
             $table->string('CIDADE');
             $table->string('RELIGIAO');
-            $table->timestamps();
+            //$table->timestamps();
         });
     }
 

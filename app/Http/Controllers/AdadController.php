@@ -146,21 +146,10 @@ class AdadController extends Controller
     }
 
     // Efetua a validação do login
-    public function autorizar(Request $request)
-    {
-        $credentials = $request->validate([
-            'email' => ['required', 'email'],
-            'password' => ['required'],
-        ]);
-
-        if (Auth::attempt($credentials)) {
-            return redirect()
-                ->route('aluno_create')
-                ->with('msg', 'Logado com sucesso!');
-        } else {
-            return back()->with('error', 'Erro de autenticação: Verifique seu email e senha');
-        }
-    }
+    // public function autorizar(Request $request)
+    // {
+        
+    // }
 
     public function store(Request $request)
     {

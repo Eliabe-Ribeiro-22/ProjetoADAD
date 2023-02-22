@@ -1,5 +1,5 @@
 // Usando Toastr na Tela de Login e Cadastro/Alteração de Alunos
-
+alert('Entrou JS')
 // Ativar Toastr - mensagem de carregamento: 
 //  cadastrando aluno..., alterando aluno..., excluindo aluno...
 const loading = (messagem) => {
@@ -27,3 +27,5 @@ const error = (mensagem) => {
     };
     toastr["error"](mensagem);
 };
+
+loading('Entrou no toastr');
