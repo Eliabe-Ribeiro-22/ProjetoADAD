@@ -3,7 +3,6 @@
 @section('titulo', 'Início')
 
 @section('corpo')
-
     <div class="reunioes-pg">
         <h2>Nossas Reuniões</h2>
         <p>Noite da Vitória <br>

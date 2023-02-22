@@ -73,10 +73,9 @@ class AdadController extends Controller
                 ->route('aluno_create')
                 ->with('msg', 'Aluno cadastrado com sucesso');
         } catch (Exception $e) {
-            return $e->getMessage();
-            //return redirect()
-              //  ->route('aluno_create')
-                //->with('error', 'Ocorreu erro ao cadastrar um aluno');
+            return redirect()
+              ->route('aluno_create')
+               ->with('error', 'Ocorreu erro ao cadastrar um aluno');
 
         }
     }
@@ -123,11 +122,9 @@ class AdadController extends Controller
                 ->route('aluno_create')
                 ->with('msg', 'Aluno alterado com sucesso');
         } catch (Exception $e) {
-            $alunos = Aluno::all();
-            return view('adad.area-restrita', ['alterar' => false, 'alunos' => $alunos, 'errou' => $e->getMessage()]);
-            // return redirect()
-            //     ->route('aluno_create')
-            //     ->with('error', "$e->getMessage()");
+            return redirect()
+                ->route('aluno_create')
+                ->with('error', 'Ocorreu erro ao alterar um aluno. Tente mais tarde!');
         }
     }
 
