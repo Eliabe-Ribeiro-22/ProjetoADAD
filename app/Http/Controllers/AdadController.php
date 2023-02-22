@@ -32,9 +32,9 @@ class AdadController extends Controller
     public function aluno_create()
     {
         try {
-            $alunos = 0;
+            //$alunos = 0;
             // $alunos = Flight::all();
-            //$alunos = Aluno::all();
+            $alunos = Aluno::all();
             # Form que cadastra alunos,
             // por isso passamos o value false na variável alterar
             return view('adad.area-restrita', ['alterar' => false, 'alunos' => $alunos]);
@@ -50,22 +50,21 @@ class AdadController extends Controller
     {
         try {
             // salvar um aluno
-            $aluno = new \App\Flight;
-            //$aluno = new Aluno();
+            $aluno = new Aluno;
             
-            $aluno->nome = $request->nome;
-            $aluno->idade = $request->idade;
+            $aluno->NOME = $request->nome;
+            $aluno->IDADE = $request->idade;
             $aluno->nascimento = $request->nascimento;
-            $aluno->serie = $request->serie;
-            $aluno->cpf = $request->cpf;
-            $aluno->mae = $request->mae;
-            $aluno->pai = $request->pai;
-            $aluno->rua = $request->rua;
-            $aluno->numero = $request->numero;
-            $aluno->bairro = $request->bairro;
-            $aluno->complemento = $request->complemento;
-            $aluno->cidade = $request->cidade;
-            $aluno->religiao = $request->religiao;
+            $aluno->SERIE = $request->serie;
+            $aluno->CPF = $request->cpf;
+            $aluno->MAE = $request->mae;
+            $aluno->PAI = $request->pai;
+            $aluno->RUA = $request->rua;
+            $aluno->NUMERO = $request->numero;
+            $aluno->BAIRRO = $request->bairro;
+            $aluno->COMPLEMENTO = $request->complemento;
+            $aluno->CIDADE = $request->cidade;
+            $aluno->RELIGIAO = $request->religiao;
 
             $aluno->save();
 
@@ -74,9 +73,11 @@ class AdadController extends Controller
                 ->route('aluno_create')
                 ->with('msg', 'Aluno cadastrado com sucesso');
         } catch (Exception $e) {
-            return redirect()
-                ->route('aluno_create')
-                ->with('error', 'Ocorreu erro ao cadastrar um aluno');
+            return $e->getMessage();
+            //return redirect()
+              //  ->route('aluno_create')
+                //->with('error', 'Ocorreu erro ao cadastrar um aluno');
+
         }
     }
 

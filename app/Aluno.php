@@ -22,4 +22,10 @@ class Aluno extends Model
         'cidade', 
         'religiao'
     ];
+
+    // campo de data de nascimento, usado no update
+    protected $dates = ['nascimento'];
+
+    // codigo para realizar update
+    protected $guarded = [];
 }

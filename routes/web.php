@@ -17,7 +17,8 @@ Route::post('/sendForm', [IgrejaController::class, 'sendForm'])->name('form_send
 
 // Rotas para o sistema de gestão do adad
 Route::get('/AreaRestrita', [AdadController::class, 'aluno_create'])
-    ->name('aluno_create')->middleware('auth');
+    ->name('aluno_create');
+    //->middleware('auth');
 
 Route::post('/alunos', [AdadController::class, 'aluno_store'])->name('aluno_store');
 
@@ -45,20 +46,19 @@ Route::post('/autorizar', function(Request $request){
         $credentials = $request->validate([
         'email' => 'email',
         'password' => 'required',
-    ]);
-        dd($credentials);
-        Auth::attempt($credentials);
-        // if (Auth::attempt($credentials)) {
-        return redirect('AreaRestrita');
-        //->with('msg', 'Logado com sucesso!');
-        // } else {
-        //     return back()->with('error', 'Erro de autenticação: Verifique seu email e senha');
-        // }
+        ]);
+        
+        if (Auth::attempt($credentials)) {
+            return redirect('AreaRestrita')->with('msg', 'Logado com sucesso!');
+        } else {
+            return back()->with('error', 'Erro de autenticação: Verifique seu email e senha');
+        }
    }
    catch(Exception $e){
        return $e->getMessage();
     }
 })->name('autorizar');
+
 Route::post('/newuser', [AdadController::class, 'store'])->name('newuser');
 
 // Autenticação
