@@ -66,12 +66,16 @@
                     </label>
 
                     <br>
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900"
-                        href="{{ route('showForgetPasswordForm') }}">
+<!-- Opção desabilitada: Recuperação de Senha
+    <a class="underline text-sm text-gray-600 hover:text-gray-900"
+                        href="{{ route('showForgetPasswordForm') }}"
+                        onclick="loading('Autenticando usuário')";
+                        >
                         Esqueceu a senha?
                     </a>
+ -->
 
-                    <a onclick="loading('Cadastrando aluno');this.closest('form').submit();return false; ">
+                    <a onclick="this.closest('form').submit();return false; ">
                         <button type="submit"
                         class="inline-flex items-center px-4 py-2 
                                 bg-gray-800 border border-transparent 

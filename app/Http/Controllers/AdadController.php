@@ -210,6 +210,7 @@ class AdadController extends Controller
 
     public function submitForgetPasswordForm(Request $request)
     {
+        echo "<script>alert('entrou no Controller')</script>";
         $credentials = $request->validate([
             'email' => ['required', 'email'],
         ]);
@@ -230,9 +231,9 @@ class AdadController extends Controller
                     $message->subject('Recuperação de senha');
                 });
 
-                return redirect('/')->with('msg', 'O email de recuperação de senha foi enviado');
+                return redirect()->name('showForgetPasswordForm')->with('msg', 'O email de recuperação de senha foi enviado! Verfique seu email');
             } else {
-                return redirect('/')->with('error', 'Falha ao enviar o email de recuperação de senha. Tente mais tarde');
+                return back()->name('showForgetPasswordForm')->with('error', 'Falha ao enviar o email de recuperação de senha. Tente mais tarde');
             }
         }
     }

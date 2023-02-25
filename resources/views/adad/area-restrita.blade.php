@@ -31,12 +31,18 @@
             error("{{ session('error') }}");
         </script>
     @endif
+
     <div class="font-sans text-gray-900 antialiased">
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
             <a href="{{ route('logout') }}">
                 <img src="/assets/img/igreja/adad_logo.png" class="adad-logo">
             </a>
-            <a href="{{ route('logout') }}">Sair</a>
+            <a href="{{ route('logout') }}">
+                <button type="submit"
+                class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition ml-4">
+                    Sair
+            </button>
+            </a>
             
             <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
 

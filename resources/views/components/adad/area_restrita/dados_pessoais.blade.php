@@ -80,7 +80,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        type="text" name="serie" value="{{ $SERIE }}" required="required" autofocus="autofocus">
+        type="text" name="SERIE" value="{{ $SERIE }}" required="required" autofocus="autofocus">
 </div>
 
 {{-- Input CPF --}}
@@ -90,7 +90,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        type="text" name="cpf" value="{{ $CPF }}" required="required" autofocus="autofocus">
+        type="text" name="CPF" value="{{ $CPF }}" required="required" autofocus="autofocus">
 </div>
 
 {{-- Input Mãe --}}
@@ -100,7 +100,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        type="text" name="mae" value="{{ $MAE }}" required="required" autofocus="autofocus">
+        type="text" name="MAE" value="{{ $MAE }}" required="required" autofocus="autofocus">
 </div>
 
 {{-- Input Pai --}}
@@ -110,7 +110,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        type="text" name="pai" value="{{ $PAI }}" autofocus="autofocus">
+        type="text" name="PAI" value="{{ $PAI }}" autofocus="autofocus">
 </div><br>
 
 <h3 class="CentralizaText">Endereço</h3>
@@ -122,7 +122,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        type="text" name="rua" value="{{ $RUA }}" autofocus="autofocus">
+        type="text" name="RUA" value="{{ $RUA }}" autofocus="autofocus">
 </div>
 
 {{-- Input Número da Casa/Apartamento  --}}
@@ -132,7 +132,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        type="number" name="numero" value="{{ $NUMERO }}" required="required" autofocus="autofocus">
+        type="number" name="NUMERO" value="{{ $NUMERO }}" required="required" autofocus="autofocus">
 </div>
 
 {{-- Input Bairro --}}
@@ -142,7 +142,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        type="text" name="bairro" value="{{ $BAIRRO }}" required="required" autofocus="autofocus">
+        type="text" name="BAIRRO" value="{{ $BAIRRO }}" required="required" autofocus="autofocus">
 </div>
 
 {{-- Input Complemento --}}
@@ -152,7 +152,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        type="text" name="complemento" value="{{ $COMPLEMENTO }}" autofocus="autofocus">
+        type="text" name="COMPLEMENTO" value="{{ $COMPLEMENTO }}" autofocus="autofocus">
 </div>
 
 {{-- Input Cidade --}}
@@ -162,7 +162,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        type="text" name="cidade" value="{{ $CIDADE }}" required="required" autofocus="autofocus">
+        type="text" name="CIDADE" value="{{ $CIDADE }}" required="required" autofocus="autofocus">
 </div><br>
 
 <h3 class="CentralizaText"> Dados Eclesiásticos</h3>
@@ -175,7 +175,7 @@
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200
                                 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        type="text" name="religiao" value="{{ $RELIGIAO }}" required="required" autofocus="autofocus">
+        type="text" name="RELIGIAO" value="{{ $RELIGIAO }}" required="required" autofocus="autofocus">
 </div>
 
 <!-- Alterar name dos inputs: nome => NOME -->
