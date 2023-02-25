@@ -10,12 +10,8 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
 
-use App\Models\Permission;
-use App\Models\Warning;
-
-// Laravel 8
-//use App\Models\Aluno;
-//use App\Models\User;
+//use App\Models\Permission;
+//use App\Models\Warning;
 
 use App\Aluno;
 use App\User;
@@ -52,19 +48,19 @@ class AdadController extends Controller
             // salvar um aluno
             $aluno = new Aluno;
             
-            $aluno->NOME = $request->nome;
-            $aluno->IDADE = $request->idade;
+            $aluno->NOME = $request->NOME;
+            $aluno->IDADE = $request->IDADE;
             $aluno->nascimento = $request->nascimento;
-            $aluno->SERIE = $request->serie;
-            $aluno->CPF = $request->cpf;
-            $aluno->MAE = $request->mae;
-            $aluno->PAI = $request->pai;
-            $aluno->RUA = $request->rua;
-            $aluno->NUMERO = $request->numero;
-            $aluno->BAIRRO = $request->bairro;
-            $aluno->COMPLEMENTO = $request->complemento;
-            $aluno->CIDADE = $request->cidade;
-            $aluno->RELIGIAO = $request->religiao;
+            $aluno->SERIE = $request->SERIE;
+            $aluno->CPF = $request->SERIE;
+            $aluno->MAE = $request->MAE;
+            $aluno->PAI = $request->PAI;
+            $aluno->RUA = $request->RUA;
+            $aluno->NUMERO = $request->NUMERO;
+            $aluno->BAIRRO = $request->BAIRRO;
+            $aluno->COMPLEMENTO = $request->COMPLEMENTO;
+            $aluno->CIDADE = $request->CIDADE;
+            $aluno->RELIGIAO = $request->RELIGIAO;
 
             $aluno->save();
 
@@ -143,12 +139,6 @@ class AdadController extends Controller
             ->setStatusCode(200);
     }
 
-    // Efetua a validação do login
-    // public function autorizar(Request $request)
-    // {
-        
-    // }
-
     public function store(Request $request)
     {
         try {
@@ -181,9 +171,27 @@ class AdadController extends Controller
             $user->save();
 
             Auth::login($user); // Loga com Sanctum
-            return redirect()->intended('/');
+            return redirect()->intended('/')->with('msg', 'Usuário cadastrado com sucesso!');
         } catch (Exception $e) {
             return redirect('/')->with('error', 'Ocorreu erro ao cadastrar um usuário');
+        }
+    }
+    
+    public function autorizar(Request $request){
+        try {
+            $credentials = $request->validate([
+                'email' => 'email',
+                'password' => 'required',
+            ]);
+            
+            if (Auth::attempt($credentials)) {
+                return redirect('AreaRestrita')->with('msg', 'Logado com sucesso!');
+            } else {
+                return back()->with('error', 'Erro de autenticação: Verifique seu email e senha');
+            }
+        }
+        catch(Exception $e){
+            return back()->with('error', 'Erro de autenticação: Verifique seu email e senha');
         }
     }
 
@@ -218,7 +226,7 @@ class AdadController extends Controller
 
                 Mail::send('email.forgetPassword', ['token' => $token], function ($message) use ($request) {
                     $message->to($request->email);
-                    $message->from('projetoevagaropaba@gmail.com', 'Projeto Eva');
+                    $message->from('adcbsul@gmail.com', 'ADCBSUL');
                     $message->subject('Recuperação de senha');
                 });
 

@@ -4,7 +4,7 @@
     <x-adad.head.head/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-    <script type="text/javascript" src="assets/js/messagesToastr.js"></script>
+    <script type="text/javascript" src="/assets/js/messagesToastr.js"></script>
 
     <link rel="stylesheet" href="/assets/css/adad/login.css">
     <title>Tela de login</title>
@@ -13,6 +13,15 @@
 <body>
     <script type="text/javascript" src="/assets/js/password.js"></script>
 
+    @if (session('msg'))
+    <script type="text/javascript">
+            success("{{ session('msg') }}");
+    </script>
+    @elseif (session('error'))
+        <script type="text/javascript">
+            error("{{ session('error') }}");
+        </script>
+    @endif
     <div class="font-sans text-gray-900 antialiased">
         <div
             class="h-screen center mx-auto lg:min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100"
@@ -62,9 +71,8 @@
                         Esqueceu a senha?
                     </a>
 
-                    <button>
-                    <a onclick="alert('A:href de enviar');loading('Cadastrando aluno');this.closest('form').submit();return false; ">Entrar</a>
-                    {{-- <button type="submit"
+                    <a onclick="loading('Cadastrando aluno');this.closest('form').submit();return false; ">
+                        <button type="submit"
                         class="inline-flex items-center px-4 py-2 
                                 bg-gray-800 border border-transparent 
                                 rounded-md font-semibold text-xs text-white 
@@ -73,10 +81,10 @@
                                 focus:border-gray-900 focus:ring focus:ring-gray-300 
                                 disabled:opacity-25 transition ml-4"
                                 onclick="loading('Autenticando usuário');"
-                    >
-                    </button>
+                        >
                         Entrar
-                    </button> --}}
+                        </button>
+                    </a>
                 </form>
             </div>
         </div>

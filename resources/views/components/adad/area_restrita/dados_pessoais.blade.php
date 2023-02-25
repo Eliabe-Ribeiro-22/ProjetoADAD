@@ -49,7 +49,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        id="name" type="text" name="nome" value="{{ $NOME }}" required="required" autofocus="autofocus"
+        id="name" type="text" name="NOME" value="{{ $NOME }}" required="required" autofocus="autofocus"
         autocomplete="name">
 </div>
 
@@ -60,7 +60,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        id="email" type="number" name="idade" value="{{ $IDADE }}" required="required">
+        id="email" type="number" name="IDADE" value="{{ $IDADE }}" required="required">
 </div>
 
 {{-- Input Data de Nascimento --}}
@@ -177,3 +177,5 @@
                                 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
         type="text" name="religiao" value="{{ $RELIGIAO }}" required="required" autofocus="autofocus">
 </div>
+
+<!-- Alterar name dos inputs: nome => NOME -->
