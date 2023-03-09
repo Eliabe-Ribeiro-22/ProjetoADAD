@@ -3,7 +3,7 @@
         <h2>Contatos</h2>
         <ul>
             <li>
-                <p>WhatsApp: (49) 9 8847-7611</p>
+                <p>WhatsApp: (49) 98847-7611</p>
             </li>
             <li>
                 <p>Fixo: (49) 3249-1036</p>
@@ -18,13 +18,10 @@
         <h2>Endereço</h2>
         <ul>
             <li>
-                <p>Rua: Gerônimo Xavier de Oliveira.</p>
+                <p>Rua: Gerônimo Xavier de Oliveira, 230 - Centro.</p>
             </li>
             <li>
-                <p>Número: 230</p>
-            </li>
-            <li>
-                <p>Cidade: Campo Belo do Sul, Santa Catarina.</p>
+                <p>Campo Belo do Sul, Santa Catarina.</p>
             </li>
         </ul>
     </div>

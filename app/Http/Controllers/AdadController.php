@@ -16,7 +16,6 @@ use Illuminate\Support\Facades\DB;
 use App\Aluno;
 use App\User;
 
-use App\Flight;
 
 date_default_timezone_set('America/Sao_Paulo');
 
@@ -28,11 +27,9 @@ class AdadController extends Controller
     public function aluno_create()
     {
         try {
-            //$alunos = 0;
-            // $alunos = Flight::all();
             $alunos = Aluno::all();
             # Form que cadastra alunos,
-            // por isso passamos o value false na variável alterar
+            // por isso passamos o value false na variável alterar, pois não é um form de alteracao
             return view('adad.area-restrita', ['alterar' => false, 'alunos' => $alunos]);
         } catch (Exception $e) {
             return redirect()

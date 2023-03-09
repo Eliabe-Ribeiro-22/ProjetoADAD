@@ -14,6 +14,9 @@
 
     {{-- Buttões que realizam ações, seja ela cadastro, alteraçao --}}
     <x-adad.area_restrita.botoes_acao_form :alterar="$alterar" />
+
+    <a href="/assets/doc/formulario-inscricao-aluno.pdf" download style="text-decoration: underline; color:red;">   &#128462; Baixar formulário de inscrição do aluno ADAD
+    </a>
 </form>
 {{-- Botão para acessar tela de cadastro de usuários --}}
 {{--  
