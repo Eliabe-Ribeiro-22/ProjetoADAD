@@ -3,7 +3,6 @@
     @else 
     action="{{ route('aluno_store') }}" @endif>
     @csrf
-
     @if (isset($alunos))
         {{-- Todos os inputs do formulário --}}
         <x-adad.area_restrita.dados_pessoais :alunos="$alunos" :alterar="$alterar" />
