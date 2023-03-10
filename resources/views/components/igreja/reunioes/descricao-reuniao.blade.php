@@ -1,4 +1,4 @@
-<div class="reunioes-p">
+<div class="descricao-reuniao">
     <h2>Noite da Vitória</h2>
     <br><br>
 

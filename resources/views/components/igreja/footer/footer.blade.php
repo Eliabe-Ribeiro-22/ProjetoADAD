@@ -3,10 +3,10 @@
         <h2>Contatos</h2>
         <ul>
             <li>
-                <p>WhatsApp: (49) 98847-7611</p>
+                <p>WhatsApp:<br>(49) 9 8847-7611</p>
             </li>
             <li>
-                <p>Fixo: (49) 3249-1036</p>
+                <p>Fixo:<br>(49) 3249-1036</p>
             </li>
             <li>
                 <p>E-mail (<a href="mailto:adcbsul@gmail.com">adcbsul@gmail.com</a>)</p>

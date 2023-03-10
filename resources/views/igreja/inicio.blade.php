@@ -8,7 +8,7 @@
         <h1>Seja bem vindo ao nosso site!</h1>
     </div>
     <div>
-        <video class="video-inicial" autoplay muted loop>
+        <video class="video-inicial" autoplay muted loop controls>
             <source src="/assets/videos/video.mp4" type="video/mp4">
         </video>
     </div>
@@ -51,11 +51,19 @@
     </div>
     <hr>
 
-    <div class="reunioes">
+    <div class="reunioes" id="reunioes-inicio">
         <h2>Nossas Reuniões</h2>
-        <p>Noite da Vitória <br>
-            Quintas-Feiras às 19:15 hs</p>
-        <p>Noite da Família <br>
-            Domingos às 19:00 hs</p>
+        <p>
+            Noite da Vitória <br>
+            Quintas-Feiras às 19:00 hs
+        </p>
+        <p>
+            Noite da Família <br>
+            Domingos às 19:00 hs
+        </p>
+        <p>
+            Aula do ADAD <br>
+            Segunda-feiras às 19:30 hs
+        </p>
     </div>
 @endsection

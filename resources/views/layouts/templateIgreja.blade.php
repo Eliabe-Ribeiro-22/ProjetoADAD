@@ -20,8 +20,7 @@
     <x-igreja.nav.nav /> {{-- Botões de navegação --}}
     
     <main>
-        {{-- Conteúdo do site --}}
-        @yield('corpo')
+        @yield('corpo') {{-- Conteúdo do site --}}
     </main>
 
     <x-igreja.footer.footer /> {{-- Rodapé do site --}}
