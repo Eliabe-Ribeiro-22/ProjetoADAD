@@ -7,7 +7,7 @@
     <script type="text/javascript" src="/assets/js/messagesToastr.js"></script>
 
     <link rel="stylesheet" href="/assets/css/adad/login.css">
-    <title>Tela de login</title>
+    <title>Login</title>
 </head>
 
 <body>

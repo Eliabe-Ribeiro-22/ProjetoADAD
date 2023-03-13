@@ -13,7 +13,7 @@
         </video>
     </div>
 
-    <x-igreja.inicio.api-versiculo :dailyVerse="$dailyVerse" />
+    {{-- <x-igreja.inicio.api-versiculo :dailyVerse="$dailyVerse" /> --}}
     <div class="projetos-igreja">
         <h2>Nossos Projetos</h2>
     </div>
@@ -25,14 +25,15 @@
             <img src="/assets/img/igreja/adad_logo.png" alt="logo do projeto ADAD">
         </a>
 
-        <ul class="projeto-lista">
+        <ul class="projeto-lista" id="projeto-lista-adad">
             <p>
-                Desenvolvem atividades com crianças, adolescentes e jovens visando fortalecer o Caráter de Cristo,valores,
-                princípios morais e éticos, patriotismo, recreação, acampamentos, prática de escotismo e integração em busca
-                de uma formação educacional por princípios.
+                Desenvolvem atividades com crianças, adolescentes e jovens visando fortalecer o Caráter de Cristo, valores, princípios morais e éticos, patriotismo, recreação, acampamentos, prática de escotismo e
+                integração em busca de uma formação educacional por princípios. 
             </p>
-            <br><br>
-            <li>Realização de Palestras educativas de socialização para todas as faixas etárias.</li>
+            <br>
+            <li>
+                Realização de Palestras educativas de socialização para todas as faixas etárias.
+            </li>
         </ul>
     </div>
 

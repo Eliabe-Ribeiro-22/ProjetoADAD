@@ -66,18 +66,30 @@ h3 {
     padding: 0px 500px 30px;
 }
 
-.projetos-igreja {
-    text-align: center;
-    width: 40%;
-    margin: 0 auto;
+/* Estilos da página Projetos e na pagina inicial, na seção Projetos */
+#titulo-nossos-projetos-pg{
+    text-align: center; 
+    position: relative; 
+    top: -10px;
 }
 
+.projetos-igreja {
+    margin: 0 auto;
+    width: 70%;
+
+    text-align: center;
+}
+
+
 .projeto-lista {
-    margin: 15px 0px;
+    width: 100%;
     list-style-type: square;
     list-style-position: inside;
     text-align: left;
-    margin-left: 15%;
+}
+
+#projeto-lista-adad{
+    text-align: center;
 }
 
 .projeto-lista p,
@@ -86,6 +98,8 @@ li {
 }
 
 .projetos-mais-info {
+    width: 70%;
+    margin: 0 15%;
     text-align: center;
     padding-top: 20px;
 }
@@ -100,13 +114,14 @@ li {
 }
 
 .reunioes {
-    width: 30%;
+    width: 70%;
     margin: 0 auto;
 
     text-align: center;
     background: #e77e41;
     border-radius: 5px;
 }
+
 
 #reunioes-inicio {
     margin-top: 10px;
@@ -126,11 +141,10 @@ li {
 
 /* Página Reuniões */
 
-
 .descricao-reuniao {
     text-align: center;
     font-size: 18px;
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     padding-bottom: 20px;
 }
@@ -164,4 +178,40 @@ li {
 #imagem-logo-adad > img {
     margin-top: 1.7rem;
     max-width: 100px;
+}
+
+/* Responsivida Mobile First */
+/* Maiores telas aqui */
+@media screen and (min-width: 640px){
+    
+    .projetos-mais-info {
+        width: 100%;
+        margin: 0;
+    }
+    /* Estilos para a página Reniões e Página Inicial */
+    .reunioes {
+        width: 50%;
+    }
+
+    .descricao-reuniao {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .projetos-igreja {
+    
+    }
+
+    .projetos-mais-info {
+    
+    }
+
+    .reunioes {
+        width: 30%;
+    }
+    
+    .descricao-reuniao {
+        width: 50%;
+    }
 }

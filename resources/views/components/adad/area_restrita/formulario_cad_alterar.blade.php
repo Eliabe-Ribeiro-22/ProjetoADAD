@@ -13,15 +13,16 @@
 
     {{-- Buttões que realizam ações, seja ela cadastro, alteraçao --}}
     <x-adad.area_restrita.botoes_acao_form :alterar="$alterar" />
-
-    <h3>Impressos:</h3>
-    <a href="/assets/doc/formulario-inscricao-aluno.pdf" download class="btn-download-file pdf">
-        &#128462; Baixar formulário de inscrição do aluno ADAD(PDF)
-    </a>
-    <br>
-    <a href="/assets/doc/chamadas-alunos-adad.xlsx" download class="btn-download-file excel">
-        &#128462; Baixar chamada dos alunos ADAD(Excel)
-    </a>
+    @if (isset($alunos))
+        <h3>Impressos:</h3>
+        <a href="/assets/doc/formulario-inscricao-aluno.pdf" download class="btn-download-file pdf">
+            &#128462; Baixar formulário de inscrição do aluno (PDF)
+        </a>
+        <br>
+        <a href="/assets/doc/chamadas-alunos-adad.xlsx" download class="btn-download-file excel">
+            &#128462; Baixar chamada dos alunos (Excel)
+        </a>
+    @endif
 </form>
 
 {{-- Botão para acessar tela de cadastro de usuários --}}

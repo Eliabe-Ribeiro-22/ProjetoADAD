@@ -3,7 +3,7 @@
 @section('titulo', 'Projetos')
 
 @section('corpo')
-    <h2 style="text-align: center; position: relative; top: -10px">Nossos Projetos</h2>
+    <h2 id="titulo-nossos-projetos-pg">Nossos Projetos</h2>
 
     <!-- Church's Projects -->
     <x-igreja.carrossel.carrossel />
