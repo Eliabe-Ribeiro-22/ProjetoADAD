@@ -6,7 +6,7 @@
 --}}
 
 {{-- CSS e JS do carrossel --}}
-<link rel="stylesheet" href="/assets/css/igreja/carrossel/carrossel.css">
+<link rel="stylesheet" href="/assets/css/carrossel/carrossel.css">
 <script type="text/javascript" src="/assets/js/carousel.js"></script>
 
 <div class="container">

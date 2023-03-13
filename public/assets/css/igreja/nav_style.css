@@ -37,11 +37,19 @@ nav {
 }
 
 .nav-links a {
-    color: #e2e2e2;
+    font-size: 16px;
     text-decoration: none;
+    color: #e2e2e2;
+    
     letter-spacing: 1px;
     font-weight: bold;
+}
+
+.nav-links a:hover {
     font-size: 16px;
+    color: #a04d0a;
+
+    font-weight: bolder;
 }
 
 .burger {
@@ -50,10 +58,13 @@ nav {
 }
 
 .burger div {
+    margin: 5px;
+
     width: 25px;
     height: 3px;
+
     background: #e2e2e2;
-    margin: 5px;
+    
     transition: all 0.3s ease;
 }
 
@@ -69,17 +80,25 @@ nav {
     }
 
     .nav-links {
-        position: absolute;
-        right: 0px;
-        height: 92vh;
         top: 8vh;
-        background: #c7652c;
+        right: 0px;
+    
+        width: 40%;
+        height: 92vh;
+        
+        position: absolute;
+        
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 40%;
-        transform: translateX(100%);
+        
+        background: #c7652c;
+        
+        
         transition: transform 0.5s ease-in;
+        transform: translateX(100%);
+
+        z-index: 1;
     }
 
     .nav-links li {
@@ -88,6 +107,7 @@ nav {
 
     .burger {
         display: block;
+        z-index: 2;
     }
 }
 
@@ -117,10 +137,4 @@ nav {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
-}
-
-.nav-links a:hover {
-    font-size: 16px;
-    font-weight: bolder;
-    color: #a04d0a;
 }

@@ -7,6 +7,5 @@
         <h2>Sobre nós</h2>
         Instituição religiosa sem fins lucrativos que visa o bem social e
         espiritual de toda a comunidade.
-        {{-- update --}}
     </div>
 @endsection

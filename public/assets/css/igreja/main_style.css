@@ -1,5 +1,6 @@
 @import "form-contato.css";
 
+/* Globais */
 * {
     margin: 0;
     padding: 0;
@@ -11,37 +12,39 @@ main {
 }
 
 /* Página Inicial */
-
 .video-inicial {
-    height: 64vh;
-    width: 100%;
-    position: static;
     top: 0;
     left: 0;
+    
+    height: 64vh;
+    width: 100%;
+    
+    position: static;
     object-fit: cover;
 }
 
 .slogan-inicio h1 {
-    color: #e77e41;
-    text-align: center;
-    font-size: 56px;
-    padding-top: 4vh;
-    padding-bottom: 4vh;
+    padding: 4vh 0vh;
+
     background: #7c411f;
     border-bottom: 2px solid #e77e41;
+    text-align: center;
+    font-size: 56px;
+    color: #e77e41;
+
     cursor: default;
 }
 
 hr {
     margin: 0;
     padding: 0;
+    margin-top: 10px;
+
     box-sizing: border-box;
 
     width: 100vw;
 
-    border: 2px solid #e77e41;
-
-    margin-top: 10px;
+    border: 2px solid #e77e41;    
 }
 
 h2,
@@ -106,11 +109,6 @@ li {
 
 .projetos-mais-info a {
     color: #e77e41;
-}
-
-
-#div-reunioes-above {
-    padding-top: 10px;
 }
 
 .reunioes {
@@ -180,13 +178,13 @@ li {
 }
 
 /* Responsivida Mobile First */
-/* Maiores telas aqui */
 @media screen and (min-width: 640px){
     
     .projetos-mais-info {
         width: 100%;
         margin: 0;
     }
+
     /* Estilos para a página Reniões e Página Inicial */
     .reunioes {
         width: 50%;
@@ -198,14 +196,6 @@ li {
 }
 
 @media screen and (min-width: 768px){
-    .projetos-igreja {
-    
-    }
-
-    .projetos-mais-info {
-    
-    }
-
     .reunioes {
         width: 30%;
     }

@@ -55,6 +55,10 @@ label {
     cursor: pointer;
 }
 
+#formContato-container-enviar {
+    margin: 0;
+}
+
 @media screen and (min-width: 640px) {
 
     #formContato-container-nome,
@@ -80,10 +84,6 @@ label {
     #formContato-container-mensagem {
         resize: vertical;
         width: 45%;
-    }
-
-    #formContato-container-enviar {
-        margin: 0;
     }
 
     #formContato-enviar {
