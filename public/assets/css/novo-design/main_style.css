@@ -1,11 +1,10 @@
-@import 'form-contato.css';
+@import "form-contato.css";
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
-
 
 main {
     background: #e2e2e2;
@@ -43,8 +42,6 @@ hr {
     border: 2px solid #e77e41;
 
     margin-top: 10px;
-    /*
-    margin-left: -1000px; */
 }
 
 h2,
@@ -69,18 +66,30 @@ h3 {
     padding: 0px 500px 30px;
 }
 
-.projetos-igreja {
-    text-align: center;
-    width: 40%;
-    margin: 0 auto;
+/* Estilos da página Projetos e na pagina inicial, na seção Projetos */
+#titulo-nossos-projetos-pg{
+    text-align: center; 
+    position: relative; 
+    top: -10px;
 }
 
+.projetos-igreja {
+    margin: 0 auto;
+    width: 70%;
+
+    text-align: center;
+}
+
+
 .projeto-lista {
-    margin: 15px 0px;
+    width: 100%;
     list-style-type: square;
     list-style-position: inside;
     text-align: left;
-    margin-left: 15%;
+}
+
+#projeto-lista-adad{
+    text-align: center;
 }
 
 .projeto-lista p,
@@ -89,6 +98,8 @@ li {
 }
 
 .projetos-mais-info {
+    width: 70%;
+    margin: 0 15%;
     text-align: center;
     padding-top: 20px;
 }
@@ -97,19 +108,29 @@ li {
     color: #e77e41;
 }
 
+
+#div-reunioes-above {
+    padding-top: 10px;
+}
+
 .reunioes {
+    width: 70%;
+    margin: 0 auto;
+
     text-align: center;
     background: #e77e41;
     border-radius: 5px;
-    width: 13%;
-    margin: 0 auto;
+}
+
+
+#reunioes-inicio {
     margin-top: 10px;
 }
+
 
 .reunioes p {
     color: #e2e2e2;
     font-size: 18px;
-    margin: 15px 0px;
     padding-bottom: 20px;
 }
 
@@ -119,38 +140,17 @@ li {
 
 /* Página Reuniões */
 
-.reunioes-pg {
-    text-align: center;
-    background: #e77e41;
-    border-radius: 5px;
-    width: 20%;
-    margin: 0 auto;
-    margin-top: 10px;
-}
-
-.reunioes-pg p {
-    color: #e2e2e2;
-    font-size: 18px;
-    margin: 15px 0px;
-    padding-bottom: 20px;
-}
-
-.reunioes-pg h2 {
-    color: #e2e2e2;
-}
-
-.reunioes-p {
+.descricao-reuniao {
     text-align: center;
     font-size: 18px;
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     padding-bottom: 20px;
 }
 
-.reunioes-p h2 {
-    font-family: 'Poppins', sans-serif;
+.descricao-reuniao h2 {
+    font-family: "Poppins", sans-serif;
     padding-bottom: 20px;
-
 }
 
 .institucional-pg {
@@ -174,8 +174,43 @@ li {
     padding-bottom: 20px;
 }
 
-
-#imagem-logo-adad>img {
+#imagem-logo-adad > img {
     margin-top: 1.7rem;
     max-width: 100px;
+}
+
+/* Responsivida Mobile First */
+/* Maiores telas aqui */
+@media screen and (min-width: 640px){
+    
+    .projetos-mais-info {
+        width: 100%;
+        margin: 0;
+    }
+    /* Estilos para a página Reniões e Página Inicial */
+    .reunioes {
+        width: 50%;
+    }
+
+    .descricao-reuniao {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .projetos-igreja {
+    
+    }
+
+    .projetos-mais-info {
+    
+    }
+
+    .reunioes {
+        width: 30%;
+    }
+    
+    .descricao-reuniao {
+        width: 50%;
+    }
 }

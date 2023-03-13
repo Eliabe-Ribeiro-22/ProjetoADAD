@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Mail;
 
 class IgrejaController extends Controller
 {
-    public function mainPg()
+   public function mainPg()
     {
         //$api = "https://www.abibliadigital.com.br/api/verses/nvi/sl/91/1";
         //$dailyVerse = json_decode(file_get_contents($api), true);

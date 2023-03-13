@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class projetos_main extends Component
+class carrossel extends Component
 {
     /**
      * Create a new component instance.
@@ -19,10 +19,10 @@ class projetos_main extends Component
     /**
      * Get the view / contents that represent the component.
      *
-     * @return \Illuminate\Contracts\View\View|\Closure|string
+     * @return \Illuminate\View\View|string
      */
     public function render()
     {
-        return view('components.igreja.projetos.projetos_main');
+        return view('components.igreja.carrossel.carrossel');
     }
 }

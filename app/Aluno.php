@@ -1,29 +1,26 @@
 <?php
 
-namespace App\Models;
+namespace App;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Aluno extends Model
 {
-    use HasFactory;
-
     // codigo realizar insert dos alunos
     protected $fillable = [
-        'nome', 
-        'idade', 
+        'NOME', 
+        'IDADE', 
         'nascimento', 
-        'serie', 
-        'cpf', 
-        'mae', 
-        'pai', 
-        'rua', 
-        'numero', 
-        'bairro', 
-        'complemento', 
-        'cidade', 
-        'religiao'
+        'SERIE', 
+        'CPF', 
+        'MAE', 
+        'PAI', 
+        'RUA', 
+        'NUMERO', 
+        'BAIRRO', 
+        'COMPLEMENTO', 
+        'CIDADE', 
+        'RELIGIAO'
     ];
 
     // campo de data de nascimento, usado no update

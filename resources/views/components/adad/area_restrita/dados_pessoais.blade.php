@@ -1,39 +1,39 @@
 {{-- Variáveis settadas com valor, que por padrão são para exibir o form de cadastro de alunos --}}
 @php
-    $nome = '';
-    $idade = '';
+    $NOME = '';
+    $IDADE = '';
     $nascimento = '';
-    $serie = '';
-    $cpf = '';
-    $mae = '';
-    $pai = '';
-    $rua = '';
-    $numero = '';
-    $bairro = '';
-    $complemento = '';
-    $cidade = '';
-    $religiao = '';
+    $SERIE = '';
+    $CPF = '';
+    $MAE = '';
+    $PAI = '';
+    $RUA = '';
+    $NUMERO = '';
+    $BAIRRO = '';
+    $COMPLEMENTO = '';
+    $CIDADE = '';
+    $RELIGIAO = '';
 @endphp
 
 {{-- Se o form for exibido para realizar alteração de aluno --}}
 @if ($alterar)
     @method('PUT')
-    <h1 id='title-form-alunos'>Editando: {{ $aluno->nome }}</h1>
+    <h1 id='title-form-alunos'>Editando: {{ $aluno->NOME }}</h1>
     @php
         // As variáveis recebem os valores vindos do aluno cadastrado no Banco de Dados
-        $nome = $aluno->nome;
-        $idade = $aluno->idade;
-        $serie = $aluno->serie;
+        $NOME = $aluno->NOME;
+        $IDADE = $aluno->IDADE;
         $nascimento = $aluno->nascimento->format('Y-m-d');
-        $cpf = $aluno->cpf;
-        $mae = $aluno->mae;
-        $pai = $aluno->pai;
-        $rua = $aluno->rua;
-        $numero = $aluno->numero;
-        $bairro = $aluno->bairro;
-        $complemento = $aluno->complemento;
-        $cidade = $aluno->cidade;
-        $religiao = $aluno->religiao;
+        $SERIE = $aluno->SERIE;
+        $CPF = $aluno->CPF;
+        $MAE = $aluno->MAE;
+        $PAI = $aluno->PAI;
+        $RUA = $aluno->RUA;
+        $NUMERO = $aluno->NUMERO;
+        $BAIRRO = $aluno->BAIRRO;
+        $COMPLEMENTO = $aluno->COMPLEMENTO;
+        $CIDADE = $aluno->CIDADE;
+        $RELIGIAO = $aluno->RELIGIAO;
     @endphp
 @else
     {{-- Senão, é porque o form será exibido para realizar cadastro --}}
@@ -49,7 +49,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        id="name" type="text" name="nome" value="{{ $nome }}" required="required" autofocus="autofocus"
+        id="name" type="text" name="NOME" value="{{ $NOME }}" required="required" autofocus="autofocus"
         autocomplete="name">
 </div>
 
@@ -60,7 +60,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        id="email" type="number" name="idade" value="{{ $idade }}" required="required">
+        id="email" type="number" name="IDADE" value="{{ $IDADE }}" required="required">
 </div>
 
 {{-- Input Data de Nascimento --}}
@@ -80,7 +80,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        type="text" name="serie" value="{{ $serie }}" required="required" autofocus="autofocus">
+        type="text" name="SERIE" value="{{ $SERIE }}" required="required" autofocus="autofocus">
 </div>
 
 {{-- Input CPF --}}
@@ -90,7 +90,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        type="text" name="cpf" value="{{ $cpf }}" required="required" autofocus="autofocus">
+        type="text" name="CPF" value="{{ $CPF }}" required="required" autofocus="autofocus">
 </div>
 
 {{-- Input Mãe --}}
@@ -100,7 +100,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        type="text" name="mae" value="{{ $mae }}" required="required" autofocus="autofocus">
+        type="text" name="MAE" value="{{ $MAE }}" required="required" autofocus="autofocus">
 </div>
 
 {{-- Input Pai --}}
@@ -110,7 +110,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        type="text" name="pai" value="{{ $pai }}" autofocus="autofocus">
+        type="text" name="PAI" value="{{ $PAI }}" autofocus="autofocus">
 </div><br>
 
 <h3 class="CentralizaText">Endereço</h3>
@@ -122,7 +122,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        type="text" name="rua" value="{{ $rua }}" autofocus="autofocus">
+        type="text" name="RUA" value="{{ $RUA }}" autofocus="autofocus">
 </div>
 
 {{-- Input Número da Casa/Apartamento  --}}
@@ -132,7 +132,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        type="number" name="numero" value="{{ $numero }}" required="required" autofocus="autofocus">
+        type="number" name="NUMERO" value="{{ $NUMERO }}" required="required" autofocus="autofocus">
 </div>
 
 {{-- Input Bairro --}}
@@ -142,7 +142,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        type="text" name="bairro" value="{{ $bairro }}" required="required" autofocus="autofocus">
+        type="text" name="BAIRRO" value="{{ $BAIRRO }}" required="required" autofocus="autofocus">
 </div>
 
 {{-- Input Complemento --}}
@@ -152,7 +152,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        type="text" name="complemento" value="{{ $complemento }}" autofocus="autofocus">
+        type="text" name="COMPLEMENTO" value="{{ $COMPLEMENTO }}" autofocus="autofocus">
 </div>
 
 {{-- Input Cidade --}}
@@ -162,7 +162,7 @@
     </label>
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        type="text" name="cidade" value="{{ $cidade }}" required="required" autofocus="autofocus">
+        type="text" name="CIDADE" value="{{ $CIDADE }}" required="required" autofocus="autofocus">
 </div><br>
 
 <h3 class="CentralizaText"> Dados Eclesiásticos</h3>
@@ -175,5 +175,7 @@
     <input
         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200
                                 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full"
-        type="text" name="religiao" value="{{ $religiao }}" required="required" autofocus="autofocus">
+        type="text" name="RELIGIAO" value="{{ $RELIGIAO }}" required="required" autofocus="autofocus">
 </div>
+
+<!-- Alterar name dos inputs: nome => NOME -->

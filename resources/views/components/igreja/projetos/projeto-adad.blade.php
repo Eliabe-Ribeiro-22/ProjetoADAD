@@ -7,11 +7,11 @@
         ADAD
     </a>
 
-    <ul class="projeto-lista">
+    <ul class="projeto-lista" id="projeto-lista-adad">
         <p>Desenvolvem atividades com crianças, adolescentes e jovens visando fortalecer o Caráter de Cristo,
             valores, princípios morais e éticos, patriotismo, recreação, acampamentos, prática de escotismo e
             integração em busca de uma formação educacional por princípios. </p>
-        <br><br>
+        <br>
         <li>Realização de Palestras educativas de socialização para todas as faixas etárias.</li>
     </ul>
 </div>

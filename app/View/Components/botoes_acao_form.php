@@ -14,19 +14,18 @@ class botoes_acao_form extends Component
     public $alunos;
     public $alterar;
     
-    public function __construct($alunos, $alterar)
+    public function __construct()
     {
-        $this->alunos = $alunos;
+          $this->alunos = $alunos;
         $this->alterar = $alterar;
-    }
 
     /**
      * Get the view / contents that represent the component.
      *
-     * @return \Illuminate\Contracts\View\View|\Closure|string
+     * @return \Illuminate\View\View|string
      */
     public function render()
     {
-        return view('components.adad.area_restrita.botoes_acao_form');
+         return view('components.adad.area_restrita.botoes_acao_form');
     }
 }

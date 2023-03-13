@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class carousel extends Component
+class projeto-adad extends Component
 {
     /**
      * Create a new component instance.
@@ -19,10 +19,10 @@ class carousel extends Component
     /**
      * Get the view / contents that represent the component.
      *
-     * @return \Illuminate\Contracts\View\View|\Closure|string
+     * @return \Illuminate\View\View|string
      */
     public function render()
     {
-        return view('components.carousel');
+        return view('components.igreja.inicio.projeto-adad');
     }
 }

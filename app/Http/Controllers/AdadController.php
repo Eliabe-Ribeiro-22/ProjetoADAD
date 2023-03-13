@@ -1,30 +1,35 @@
 <?php
 namespace App\Http\Controllers;
+use Exception;
 use Illuminate\Http\Request;
 use App\Exception\HttpException;
-use Exception;
-use App\Models\Aluno;
-use App\Models\User;
 use Illuminate\Console\View\Components\Alert;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use App\Models\Permission;
-use App\Models\Warning;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
 
+//use App\Models\Permission;
+//use App\Models\Warning;
+
+use App\Aluno;
+use App\User;
+
+
 date_default_timezone_set('America/Sao_Paulo');
+
 
 class AdadController extends Controller
 {
+    
     // Função para exibir Formulário para cadastro de alunos
     public function aluno_create()
     {
         try {
             $alunos = Aluno::all();
             # Form que cadastra alunos,
-            // por isso passamos o value false na variável alterar
+            // por isso passamos o value false na variável alterar, pois não é um form de alteracao
             return view('adad.area-restrita', ['alterar' => false, 'alunos' => $alunos]);
         } catch (Exception $e) {
             return redirect()
@@ -37,22 +42,22 @@ class AdadController extends Controller
     public function aluno_store(Request $request)
     {
         try {
-            // salvar aluno
-            $aluno = new Aluno();
-
-            $aluno->nome = $request->nome;
-            $aluno->idade = $request->idade;
+            // salvar um aluno
+            $aluno = new Aluno;
+            
+            $aluno->NOME = $request->NOME;
+            $aluno->IDADE = $request->IDADE;
             $aluno->nascimento = $request->nascimento;
-            $aluno->serie = $request->serie;
-            $aluno->cpf = $request->cpf;
-            $aluno->mae = $request->mae;
-            $aluno->pai = $request->pai;
-            $aluno->rua = $request->rua;
-            $aluno->numero = $request->numero;
-            $aluno->bairro = $request->bairro;
-            $aluno->complemento = $request->complemento;
-            $aluno->cidade = $request->cidade;
-            $aluno->religiao = $request->religiao;
+            $aluno->SERIE = $request->SERIE;
+            $aluno->CPF = $request->SERIE;
+            $aluno->MAE = $request->MAE;
+            $aluno->PAI = $request->PAI;
+            $aluno->RUA = $request->RUA;
+            $aluno->NUMERO = $request->NUMERO;
+            $aluno->BAIRRO = $request->BAIRRO;
+            $aluno->COMPLEMENTO = $request->COMPLEMENTO;
+            $aluno->CIDADE = $request->CIDADE;
+            $aluno->RELIGIAO = $request->RELIGIAO;
 
             $aluno->save();
 
@@ -62,8 +67,9 @@ class AdadController extends Controller
                 ->with('msg', 'Aluno cadastrado com sucesso');
         } catch (Exception $e) {
             return redirect()
-                ->route('aluno_create')
-                ->with('error', 'Ocorreu erro ao cadastrar um aluno');
+              ->route('aluno_create')
+               ->with('error', 'Ocorreu erro ao cadastrar um aluno');
+
         }
     }
 
@@ -109,11 +115,9 @@ class AdadController extends Controller
                 ->route('aluno_create')
                 ->with('msg', 'Aluno alterado com sucesso');
         } catch (Exception $e) {
-            $alunos = Aluno::all();
-            return view('adad.area-restrita', ['alterar' => false, 'alunos' => $alunos, 'errou' => $e->getMessage()]);
-            // return redirect()
-            //     ->route('aluno_create')
-            //     ->with('error', "$e->getMessage()");
+            return redirect()
+                ->route('aluno_create')
+                ->with('error', 'Ocorreu erro ao alterar um aluno. Tente mais tarde!');
         }
     }
 
@@ -130,23 +134,6 @@ class AdadController extends Controller
         return response()
             ->view('auth/register')
             ->setStatusCode(200);
-    }
-
-    // Efetua a validação do login
-    public function autorizar(Request $request)
-    {
-        $credentials = $request->validate([
-            'email' => ['required', 'email'],
-            'password' => ['required'],
-        ]);
-
-        if (Auth::attempt($credentials)) {
-            return redirect()
-                ->route('aluno_create')
-                ->with('msg', 'Logado com sucesso!');
-        } else {
-            return back()->with('error', 'Erro de autenticação: Verifique seu email e senha');
-        }
     }
 
     public function store(Request $request)
@@ -181,9 +168,27 @@ class AdadController extends Controller
             $user->save();
 
             Auth::login($user); // Loga com Sanctum
-            return redirect()->intended('/');
+            return redirect()->intended('/')->with('msg', 'Usuário cadastrado com sucesso!');
         } catch (Exception $e) {
             return redirect('/')->with('error', 'Ocorreu erro ao cadastrar um usuário');
+        }
+    }
+    
+    public function autorizar(Request $request){
+        try {
+            $credentials = $request->validate([
+                'email' => 'email',
+                'password' => 'required',
+            ]);
+            
+            if (Auth::attempt($credentials)) {
+                return redirect('AreaRestrita')->with('msg', 'Logado com sucesso!');
+            } else {
+                return back()->with('error', 'Erro de autenticação: Verifique seu email e senha');
+            }
+        }
+        catch(Exception $e){
+            return back()->with('error', 'Erro de autenticação: Verifique seu email e senha');
         }
     }
 
@@ -202,6 +207,7 @@ class AdadController extends Controller
 
     public function submitForgetPasswordForm(Request $request)
     {
+        echo "<script>alert('entrou no Controller')</script>";
         $credentials = $request->validate([
             'email' => ['required', 'email'],
         ]);
@@ -218,13 +224,13 @@ class AdadController extends Controller
 
                 Mail::send('email.forgetPassword', ['token' => $token], function ($message) use ($request) {
                     $message->to($request->email);
-                    $message->from('projetoevagaropaba@gmail.com', 'Projeto Eva');
+                    $message->from('adcbsul@gmail.com', 'ADCBSUL');
                     $message->subject('Recuperação de senha');
                 });
 
-                return redirect('/')->with('msg', 'O email de recuperação de senha foi enviado');
+                return redirect()->name('showForgetPasswordForm')->with('msg', 'O email de recuperação de senha foi enviado! Verfique seu email');
             } else {
-                return redirect('/')->with('error', 'Falha ao enviar o email de recuperação de senha. Tente mais tarde');
+                return back()->name('showForgetPasswordForm')->with('error', 'Falha ao enviar o email de recuperação de senha. Tente mais tarde');
             }
         }
     }

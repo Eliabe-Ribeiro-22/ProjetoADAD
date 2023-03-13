@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class form_main extends Component
+class projeto-social extends Component
 {
     /**
      * Create a new component instance.
@@ -19,10 +19,10 @@ class form_main extends Component
     /**
      * Get the view / contents that represent the component.
      *
-     * @return \Illuminate\Contracts\View\View|\Closure|string
+     * @return \Illuminate\View\View|string
      */
     public function render()
     {
-        return view('components.form.form_main');
+        return view('components.igreja.inicio.projeto-social');
     }
 }

@@ -209,6 +209,12 @@ Acesse ele pela URL: <https://adadcampobelo.com>
 
 Para isso, foi necessário alterar a versão do Laravel, Composer e PHP no ProjetoAdad.
 
+<h4>09/03 - Quinta-feira - Eliabe</h4>
+
+Adicionado botão para download de arquivo. Ele será usado para baixar o formulário de inscrição do aluno ADAD, visto que o preencimento do mesmo é obrigatório para a participação do aluno no "Grupo de Escoteiros ADAD".
+
+Adicionada descrição de cultos, na página Reuniões
+
 <p align="right">(<a href="#index">Voltar ao índice</a>)</p>
 
 -----

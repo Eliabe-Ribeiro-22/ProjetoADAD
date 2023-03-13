@@ -2357,3 +2357,15 @@ select {
 .font-bold{
     font-weight: bold;
 }
+
+.btn-download-file{
+    text-decoration: underline; 
+}
+
+.pdf{
+    color:#b60000;
+}
+
+.excel{
+    color: #026702;
+}

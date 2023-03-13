@@ -1,5 +1,4 @@
 // Usando Toastr na Tela de Login e Cadastro/Alteração de Alunos
-
 // Ativar Toastr - mensagem de carregamento: 
 //  cadastrando aluno..., alterando aluno..., excluindo aluno...
 const loading = (messagem) => {
