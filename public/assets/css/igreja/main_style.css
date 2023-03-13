@@ -47,11 +47,6 @@ hr {
     border: 2px solid #e77e41;    
 }
 
-h2,
-h3 {
-    padding-top: 30px;
-}
-
 h3 {
     color: #e77e41;
 }
@@ -68,6 +63,7 @@ h3 {
     font-size: 18px;
     padding: 0px 500px 30px;
 }
+
 
 /* Estilos da página Projetos e na pagina inicial, na seção Projetos */
 #titulo-nossos-projetos-pg{
@@ -111,6 +107,33 @@ li {
     color: #e77e41;
 }
 
+/* Página institucional */
+#title-institucional{
+    text-align: center;
+}
+
+.institucional-pg {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.institucional-pg p {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.institucional-pg h2 {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+/* Reuniões -> seção e Página */
 .reunioes {
     width: 70%;
     margin: 0 auto;
@@ -148,27 +171,6 @@ li {
 
 .descricao-reuniao h2 {
     font-family: "Poppins", sans-serif;
-    padding-bottom: 20px;
-}
-
-.institucional-pg {
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
-    padding-bottom: 20px;
-}
-
-.institucional-pg p {
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
-    font-size: 18px;
-}
-
-.institucional-pg h2 {
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
     padding-bottom: 20px;
 }
 

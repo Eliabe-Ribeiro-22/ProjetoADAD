@@ -1,4 +1,5 @@
 <div class="projetos-igreja">
+    <br><br>
     <h3>Projeto Prática de Fé</h3>
     {{-- Adicionar mais informações acerca de cada projeto --}}
     <ul class="projeto-lista">

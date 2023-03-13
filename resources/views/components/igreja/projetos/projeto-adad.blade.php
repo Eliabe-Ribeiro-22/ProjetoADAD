@@ -1,4 +1,5 @@
 <div class="projetos-igreja">
+    <br><br>
     <h3>Projeto Educacional</h3>
 
     <a href="{{ route('aluno_create') }}" id="imagem-logo-adad">

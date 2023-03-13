@@ -1,7 +1,7 @@
+
+<br><br>
 <div class="descricao-reuniao">
     <h2>Noite da Vitória</h2>
-    <br><br>
-
     <p>
         Venha participar de nossa campanha de fé todas as quintas-feiras às 19:00 hs no Templo Sede e receba de Deus a resposta para suas petições. 
         <br>

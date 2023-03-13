@@ -13,7 +13,7 @@ class projeto-adad extends Component
      */
     public function __construct()
     {
-        //
+        
     }
 
     /**

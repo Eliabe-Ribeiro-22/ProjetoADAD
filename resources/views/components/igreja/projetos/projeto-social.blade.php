@@ -1,4 +1,5 @@
 <div class="projetos-igreja">
+    <br><br>
     <h3>Projeto Social</h3>
     <ul class="projeto-lista">
         <li>Distribuimos roupas usadas para pessoas carentes de nossa cidade e também nas localidades do
@@ -7,3 +8,4 @@
             localidades do interior.</li>
     </ul>
 </div>
+<br>

@@ -13,7 +13,7 @@ class projeto-social extends Component
      */
     public function __construct()
     {
-        //
+        
     }
 
     /**

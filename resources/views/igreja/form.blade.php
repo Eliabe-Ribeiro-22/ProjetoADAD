@@ -2,6 +2,7 @@
 @section('titulo', 'Contato')
 
 @section('corpo')
+<br>
 <h1 id="formContato-title">Entre em Contato Conosco!</h1>
 
 {{-- Formulário de Contato --}}
@@ -28,5 +29,6 @@
         <br>
         <button type="submit" id="formContato-enviar">Enviar</button>
     </div>
+    <br>
 </form>
 @endsection

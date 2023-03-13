@@ -3,6 +3,7 @@
 @section('titulo', 'Projetos')
 
 @section('corpo')
+    <br>
     <h2 id="titulo-nossos-projetos-pg">Nossos Projetos</h2>
 
     <!-- Church's Projects -->

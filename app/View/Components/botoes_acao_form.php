@@ -16,7 +16,7 @@ class botoes_acao_form extends Component
     
     public function __construct()
     {
-          $this->alunos = $alunos;
+        $this->alunos = $alunos;
         $this->alterar = $alterar;
 
     /**

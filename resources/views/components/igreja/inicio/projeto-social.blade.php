@@ -1,4 +1,5 @@
 <div class="projetos-igreja">
+    <br><br>
     <h3>Projeto Social</h3>
     <ul class="projeto-lista">
         <li>Distribuimos roupas usadas para pessoas carentes de nossa cidade e também nas localidades do interior do
@@ -12,4 +13,3 @@
     <p>Mais informações na página de projetos: <a href="{{ route('projects.page') }}">Quero saber mais!</a></p>
 </div>
 <hr>
-<br>

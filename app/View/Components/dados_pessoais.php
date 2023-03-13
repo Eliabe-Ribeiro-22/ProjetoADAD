@@ -13,7 +13,7 @@ class dados_pessoais extends Component
      */
     public function __construct()
     {
-        //
+        
     }
 
     /**
