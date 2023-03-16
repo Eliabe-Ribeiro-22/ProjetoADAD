@@ -19,9 +19,15 @@
             &#128462; Baixar formulário de inscrição do aluno (PDF)
         </a>
         <br>
+        
+        <a href="/assets/doc/ficha-autorizacao-para-acampamento-adad.pdf" download class="btn-download-file pdf">
+            &#128462; Baixar ficha de autorização para participar do acampamento do ADAD (PDF)
+        </a>
+        <br>
+        
         <a href="/assets/doc/chamadas-alunos-adad.xlsx" download class="btn-download-file excel">
             &#128462; Baixar chamada dos alunos (Excel)
-        </a>
+        </a> 
     @endif
 </form>
 
