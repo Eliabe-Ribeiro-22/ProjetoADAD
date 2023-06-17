@@ -14,7 +14,7 @@ Route::get('/projetos', [IgrejaController::class, 'projectsPg'])->name('projects
 Route::get('/reunioes', [IgrejaController::class, 'reunionsPg'])->name('reunions.page');
 Route::get('/contato', [IgrejaController::class, 'form_create'])->name('contact.page');
 Route::post('/sendForm', [IgrejaController::class, 'sendForm'])->name('form_send');
-
+Route::get('/eventos', [IgrejaController::class, 'eventsPg'])->name('events.page');
 
 // Rotas para o sistema de gestão do adad
 Route::get('/AreaRestrita', [AdadController::class, 'aluno_create'])

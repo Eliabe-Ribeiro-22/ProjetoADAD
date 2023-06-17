@@ -13,6 +13,7 @@
         <li class="nav-btn"><a href="{{ route('contact.page') }}">Contato</a></li>
         <li class="nav-btn"><a href="{{ route('projects.page') }}">Projetos</a></li>
         <li class="nav-btn"><a href="{{ route('reunions.page') }}">Reuniões</a></li>
+        <li class="nav-btn"><a href="{{route('events.page')}}">Eventos</a></li>
     </ul>
     <div class="burger">
         <div class="line1"></div>

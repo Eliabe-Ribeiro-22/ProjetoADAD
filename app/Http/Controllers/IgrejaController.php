@@ -35,8 +35,7 @@ class IgrejaController extends Controller
         return view('igreja.projetos');
     }
 
-    public function reunionsPg()
-    {
+    public function reunionsPg() {
         return view('igreja.reunioes');
     }
 
@@ -141,6 +140,10 @@ class IgrejaController extends Controller
         } catch (Exception $e) {
             return redirect('/')->with('error', 'Falha ao enviar o formulário. Tente mais tarde');
         }
+    }
+    
+    public function eventsPg(){
+        return view('igreja.eventos');
     }
 
     public function rest()

@@ -12,7 +12,7 @@
         Noite da Vitória <br>
         Quintas-Feiras às 19:00 hs
     </p>
-    
+     
     <p>
         Noite da Família <br>
         Domingos às 19:00 hs
